@@ -85,6 +85,41 @@ body {
   color: #047857;
 }
 
+/* Section subheadings (h3/h4) inherit the section's accent color */
+.briefing-content .section-block.section-a h3,
+.briefing-content .section-block.section-a h4 {
+  color: #0a1628;
+}
+.briefing-content .section-block.section-b h3,
+.briefing-content .section-block.section-b h4 {
+  color: #2563eb;
+}
+.briefing-content .section-block.section-c h3,
+.briefing-content .section-block.section-c h4 {
+  color: #0d9488;
+}
+.briefing-content .section-block.section-d h3,
+.briefing-content .section-block.section-d h4 {
+  color: #4f46e5;
+}
+.briefing-content .section-block.section-e h3,
+.briefing-content .section-block.section-e h4 {
+  color: #d97706;
+}
+.briefing-content .section-block.section-f h3,
+.briefing-content .section-block.section-f h4 {
+  color: #7c3aed;
+}
+.briefing-content .section-block.section-g h3,
+.briefing-content .section-block.section-g h4 {
+  color: #059669;
+}
+
+/* Modest spacing for section blocks */
+.briefing-content .section-block {
+  margin-bottom: 1rem;
+}
+
 .briefing-content h3 {
   font-size: 1.05rem;
   font-weight: 700;

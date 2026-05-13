@@ -41,11 +41,17 @@ function ensureDir(dir: string) {
 }
 
 function addSectionClasses(html: string): string {
-  return html.replace(
-    /<h2>Section ([A-G])([^<]*)<\/h2>/g,
-    (_match, letter: string, rest: string) =>
-      `<h2 class="section-heading section-${letter.toLowerCase()}">Section ${letter}${rest}</h2>`,
+  const pattern = /<h2>Section ([A-G])([^<]*)<\/h2>/g;
+  if (!pattern.test(html)) return html;
+  const wrapped = html.replace(
+    pattern,
+    (_match, letter: string, rest: string) => {
+      const cls = `section-${letter.toLowerCase()}`;
+      return `</section><section class="section-block ${cls}"><h2 class="section-heading ${cls}">Section ${letter}${rest}</h2>`;
+    },
   );
+  // Strip the orphan `</section>` inserted before the first section, then close the last section.
+  return wrapped.replace("</section>", "") + "</section>";
 }
 
 async function renderMarkdown(md: string): Promise<string> {
