@@ -40,9 +40,17 @@ function ensureDir(dir: string) {
   return true;
 }
 
+function addSectionClasses(html: string): string {
+  return html.replace(
+    /<h2>Section ([A-G])([^<]*)<\/h2>/g,
+    (_match, letter: string, rest: string) =>
+      `<h2 class="section-heading section-${letter.toLowerCase()}">Section ${letter}${rest}</h2>`,
+  );
+}
+
 async function renderMarkdown(md: string): Promise<string> {
   const file = await remark().use(remarkGfm).use(remarkHtml).process(md);
-  return String(file);
+  return addSectionClasses(String(file));
 }
 
 export function getAllBriefingSlugs(): string[] {
