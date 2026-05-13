@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* Markdown prose styling for briefing body */
+.briefing-content h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0a1628;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 2px solid #e5e7eb;
+}
+
+.briefing-content h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.briefing-content h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.briefing-content p {
+  margin-bottom: 0.85rem;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+.briefing-content ul,
+.briefing-content ol {
+  margin: 0.5rem 0 1rem 1.25rem;
+  padding-left: 0.5rem;
+}
+
+.briefing-content ul {
+  list-style: disc;
+}
+
+.briefing-content ol {
+  list-style: decimal;
+}
+
+.briefing-content li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+.briefing-content a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.briefing-content a:hover {
+  color: #1d4ed8;
+}
+
+.briefing-content strong {
+  font-weight: 600;
+  color: #0a1628;
+}
+
+.briefing-content em {
+  font-style: italic;
+  color: #4b5563;
+}
+
+.briefing-content blockquote {
+  border-left: 3px solid #0a1628;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #4b5563;
+  font-style: italic;
+}
+
+.briefing-content hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 2rem 0;
+}
