@@ -38,13 +38,31 @@ These weights govern what gets prioritized when selecting stories, signals, and 
 
 ---
 
-## CROSS-SECTION BREADTH RULE
+## CROSS-SECTION BREADTH RULE (HARD-ENFORCED)
 
-**No theme or topic may appear in more than one section of the report.**
+**No theme may appear in more than one section of the report.** This rule is enforced by an explicit audit step (STEP 7.5 below) — it is not optional.
 
-Before finalizing the report, audit all sections A through G. If the same theme appears in multiple sections, keep it only in the highest-priority section where it fits best and replace it with a fresh topic in the others. The goal is maximum breadth of coverage across the report. Over-concentration on any single theme is a quality failure.
+### Why this rule exists
+Prior briefings repeatedly let one big story (e.g., Robinhood RVII, the Anthropic-SpaceX compute deal) bleed into Sections A, C, E, *and* G — turning a 7-section briefing into four angles on one story. Over-concentration on any single theme is a quality failure that erodes the value of the report.
 
-Each section must earn its own distinct coverage territory. (Phase 2 of this project tightens this rule with hard tag-based enforcement.)
+### How it is enforced
+
+1. **Theme tagging (during STEP 5):** As you draft each item in Sections A (items 2–4 only; the Markets summary in A-1 is exempt), B, C, D, and E, you MUST assign a **1–3 word kebab-case theme tag** that captures the core subject. Examples of good tags:
+   - `retail-vc-access`
+   - `anthropic-spacex-compute`
+   - `humanoid-robots-factory`
+   - `ai-safety-alignment`
+   - `chinese-embodied-ai`
+
+   Bad tags are too broad (`ai`, `tech`, `startups`) or too narrow (`anthropic-spacex-300mw-220k-gpus`). Aim for the level a journalist would use to file a story under.
+
+2. **Exemptions:** Section F (calendar) and Section G (coaching topic) are exempt from cross-section breadth — they have their own uniqueness mechanisms.
+
+3. **Hard audit (STEP 7.5):** Before producing any output files, you run an explicit breadth audit that detects duplicates and resolves them by swapping in fresh candidates from the research pool you built in Steps 1–2. Details in STEP 7.5.
+
+4. **Front-matter manifest:** The final markdown briefing's front-matter records the resolved `themes` map so the audit is auditable post-hoc.
+
+Each section must earn its own distinct coverage territory. Two items can sit in the SAME section under one theme (e.g., two robotics items in Section B), but the same theme cannot appear in TWO sections.
 
 ---
 
@@ -345,6 +363,16 @@ week_of: YYYY-MM-DD       # the Monday that starts the covered week
 slug: YYYY-MM-DD
 top_story: "[one-sentence Section A item 2 headline]"
 sections_covered: ["Top Stories", "On My Radar", "Trends", "Learn & Watch", "Ideas", "Calendar", "VC Coaching"]
+themes:                    # required — populated by STEP 7.5 breadth audit
+  section_a: ["theme-tag-1", "theme-tag-2", "theme-tag-3"]   # items 2-4 (item 1 markets is exempt)
+  section_b: ["theme-tag-1", ...]
+  section_c: ["theme-tag-1", ...]
+  section_d: ["theme-tag-1", ...]
+  section_e: ["theme-tag-1", ...]
+breadth_audit:             # required — populated by STEP 7.5
+  initial_themes: N
+  duplicates_resolved: N
+  passes: N
 ---
 ```
 
@@ -365,6 +393,79 @@ key_terms: ["term 1", "term 2"]
 ```
 
 Body: lesson text, key terms, real-world example, Jamie's action prompt — markdown only.
+
+---
+
+## STEP 7.5 - BREADTH AUDIT (HARD GATE — RUN BEFORE STEP 8)
+
+**This step gates publishing. The briefing cannot ship until every theme tag is unique across Sections A–E.**
+
+### 1. Collect theme tags
+
+Walk every published item in:
+- Section A items 2, 3, 4 (item 1 Markets summary is **exempt** — always tagged `markets-macro` and never counted as a duplicate)
+- Section B (all items)
+- Section C (all items)
+- Section D (all items)
+- Section E (all items)
+
+For each item you have a kebab-case theme tag from STEP 5. If you skipped tagging during drafting, tag now before continuing.
+
+Build a working theme map:
+```
+section_a: [tag_a2, tag_a3, tag_a4]
+section_b: [tag_b1, tag_b2, ...]
+section_c: [tag_c1, tag_c2, ...]
+section_d: [tag_d1, tag_d2, ...]
+section_e: [tag_e1, tag_e2, ...]
+```
+
+### 2. Detect duplicates
+
+Flatten all tags across sections A–E into one list. Find every tag that appears in **more than one section**. (Same tag appearing twice in the SAME section is allowed and not a violation.)
+
+### 3. Resolve duplicates
+
+For each duplicate tag:
+
+a. **Determine the keeper** — the section with the highest priority gets the item. Section priority for breadth resolution: **A > C > E > B > D**.
+   - Section A wins because it's the headline section
+   - Section C wins over B/D/E because Trends draw on cumulative pattern recognition that's harder to swap
+   - Section E wins over B/D because Ideas/Opportunities are tied to specific themes
+   - Section B and D have the deepest "next-best" research pools, so they're the cheapest to swap
+
+b. **Swap out the loser(s).** In each non-keeper section, replace the duplicate-themed item with the **next-best candidate** from the research pool you built in Steps 1–2.
+   - Pull from the cluster that section is sourced from (e.g., Section B from Clusters 1–5 broadly; Section D from Cluster 2/4 educational content)
+   - Pick something with a genuinely different theme tag — do not just rephrase the duplicate
+   - Re-apply topic weighting and freshness rules to the swap-in
+   - If no fresh candidate exists at all (rare), shorten the section by dropping the duplicate item rather than shipping a duplicate. "No additional fresh items this week" is honest and acceptable.
+
+### 4. Re-audit
+
+After swaps, repeat steps 1–2. If any duplicates remain, do another swap pass. **Maximum 3 passes.** If on the 3rd pass duplicates still remain (highly unlikely), shorten the lowest-priority offending section to remove the duplicate rather than ship.
+
+### 5. Record the audit
+
+Once clean, write the final theme map into the briefing's front-matter `themes` and `breadth_audit` fields (see STEP 7's front-matter spec):
+```yaml
+themes:
+  section_a: ["tag1", "tag2", "tag3"]
+  section_b: ["tag1", ...]
+  ...
+breadth_audit:
+  initial_themes: 14            # tag count before audit
+  duplicates_resolved: 2        # number of cross-section dupes fixed
+  passes: 2                     # how many audit passes it took
+```
+
+### 6. Status
+
+Print a one-line audit summary that will also appear in STEP 11's status line:
+```
+Breadth audit: <initial_themes> initial themes, <duplicates_resolved> duplicates resolved in <passes> pass(es). All sections breadth-clean.
+```
+
+If you had to shorten a section to resolve a duplicate, note which one and why.
 
 ---
 
@@ -442,6 +543,7 @@ Markdown saved: content/briefings/YYYY-MM-DD.md
 Section G saved: content/learning/<topic>/YYYY-MM-DD.md
 Web searches: [N] queries run
 Calendar: checked (week of [Mon DD])
+Breadth audit: [N] initial themes, [N] duplicates resolved in [N] pass(es)
 Email sent: jallison@newworldangels.com → [link]
 Dedup log: [N] items tracked
 Section G log: [N]/25 topics covered
