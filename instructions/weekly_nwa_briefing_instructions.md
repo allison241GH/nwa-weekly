@@ -5,10 +5,10 @@
 
 Each Sunday run produces TWO independent deliverables:
 
-1. **The weekly briefing** (Sections A–F): markdown at `content/briefings/YYYY-MM-DD.md`, rendered at `nwa-weekly.vercel.app/briefings/YYYY-MM-DD`. This is the news + insights digest.
+1. **The weekly briefing** (Sections A–F only): markdown at `content/briefings/YYYY-MM-DD.md`, rendered at `nwa-weekly.vercel.app/briefings/YYYY-MM-DD`. This is the news + insights digest.
 2. **The week's Learning Venture Investing lesson** (formerly Section G): a standalone markdown file at `content/learning/<topic-slug>/YYYY-MM-DD.md`, rendered at `nwa-weekly.vercel.app/learning/<topic-slug>/YYYY-MM-DD`. This is the coaching curriculum, organized by topic across the 25-topic rotation.
 
-The briefing and the lesson are written separately. The lesson is **not** included in the briefing markdown. The briefing's Section G heading (if you keep it for navigation) should be a one-line cross-link to the lesson on the Vercel site, not lesson content.
+The briefing and the lesson are completely separate files. The briefing has **no Section G** — readers reach the week's lesson via the site's "Learning" nav link, not via the briefing.
 
 ---
 
@@ -264,14 +264,7 @@ Do not repeat themes already covered in Sections A, B, C, or D.
 ### Section F - This Week's Calendar
 The upcoming week's notable events from Google Calendar. Flag anything that needs active prep.
 
-### Section G — Learning Venture Investing (cross-link only)
-In the briefing markdown, Section G is a **one-line cross-link** to this week's lesson on the Vercel `/learning` module. Format:
-
-> ## Section G — Learning Venture Investing
->
-> This week's lesson — **[<Lesson Title>](/learning/<topic-slug>/YYYY-MM-DD)** — and all past lessons live in the dedicated [Learning Venture Investing](/learning) module.
-
-Do not include lesson content in the briefing. The full lesson is generated as a SEPARATE file in STEP 5.5 below.
+**The briefing ends at Section F.** Do not add a Section G heading. The week's Learning Venture Investing lesson is generated as a standalone file in STEP 5.5; readers reach it via the site's `/learning` nav, not via a link in the briefing.
 
 ---
 
