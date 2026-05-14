@@ -1,7 +1,14 @@
 # Weekly NWA Briefings — Weekly Run Instructions
-*These instructions drive the Sunday 6:00 PM ET generation of Jamie's Weekly NWA Briefing. The scheduled Claude agent runs them automatically; they can also be pasted into a manual Cowork session.*
+*These instructions drive the Sunday 6:00 PM ET generation of Jamie's Weekly NWA Briefing. The scheduled Claude agent runs them automatically.*
 
-> **Note on Section G (transitional):** Section G (Learning Venture Investing) currently lives in this weekly briefing. In Phase 3 of the project, Section G migrates to its own `/learning` route on the Vercel site, with all past lessons backfilled. Until that ships, **keep Section G in the weekly briefing** so the coaching cadence is not interrupted.
+## TWO OUTPUTS PER RUN
+
+Each Sunday run produces TWO independent deliverables:
+
+1. **The weekly briefing** (Sections A–F): markdown at `content/briefings/YYYY-MM-DD.md`, rendered at `nwa-weekly.vercel.app/briefings/YYYY-MM-DD`. This is the news + insights digest.
+2. **The week's Learning Venture Investing lesson** (formerly Section G): a standalone markdown file at `content/learning/<topic-slug>/YYYY-MM-DD.md`, rendered at `nwa-weekly.vercel.app/learning/<topic-slug>/YYYY-MM-DD`. This is the coaching curriculum, organized by topic across the 25-topic rotation.
+
+The briefing and the lesson are written separately. The lesson is **not** included in the briefing markdown. The briefing's Section G heading (if you keep it for navigation) should be a one-line cross-link to the lesson on the Vercel site, not lesson content.
 
 ---
 
@@ -56,7 +63,7 @@ Prior briefings repeatedly let one big story (e.g., Robinhood RVII, the Anthropi
 
    Bad tags are too broad (`ai`, `tech`, `startups`) or too narrow (`anthropic-spacex-300mw-220k-gpus`). Aim for the level a journalist would use to file a story under.
 
-2. **Exemptions:** Section F (calendar) and Section G (coaching topic) are exempt from cross-section breadth — they have their own uniqueness mechanisms.
+2. **Exemptions:** Section F (calendar) is exempt from cross-section breadth — it has no themes. The standalone Learning lesson (separate file under `content/learning/`) is also exempt; its uniqueness is managed by the Section G rotation log.
 
 3. **Hard audit (STEP 7.5):** Before producing any output files, you run an explicit breadth audit that detects duplicates and resolves them by swapping in fresh candidates from the research pool you built in Steps 1–2. Details in STEP 7.5.
 
@@ -257,8 +264,30 @@ Do not repeat themes already covered in Sections A, B, C, or D.
 ### Section F - This Week's Calendar
 The upcoming week's notable events from Google Calendar. Flag anything that needs active prep.
 
-### Section G - Learning Venture Investing (weekly coaching - always include)
-Your weekly session with your VC coach. Think of this as having Marc Cuban's directness, Peter Thiel's contrarian framework, Elon Musk's first-principles intensity, and Reid Hoffman's network-effect wisdom - all distilled into one tight coaching session.
+### Section G — Learning Venture Investing (cross-link only)
+In the briefing markdown, Section G is a **one-line cross-link** to this week's lesson on the Vercel `/learning` module. Format:
+
+> ## Section G — Learning Venture Investing
+>
+> This week's lesson — **[<Lesson Title>](/learning/<topic-slug>/YYYY-MM-DD)** — and all past lessons live in the dedicated [Learning Venture Investing](/learning) module.
+
+Do not include lesson content in the briefing. The full lesson is generated as a SEPARATE file in STEP 5.5 below.
+
+---
+
+## STEP 5.5 — GENERATE THIS WEEK'S LEARNING LESSON (STANDALONE FILE)
+
+After drafting Sections A-F, generate this week's Learning Venture Investing lesson as a standalone markdown file. This is the **coaching curriculum** content that used to live inside Section G; it now has its own home at `/learning/<topic-slug>/<date>` on the Vercel site.
+
+### Pick the topic
+
+1. Read `instructions/weekly_nwa_section_g_log.json`. The `covered` array lists every topic-slug + date already taught.
+2. Pick a topic-slug from the 25-topic rotation (listed below) that has the fewest entries in `covered` (preferably zero). If multiple topics tie at zero, pick the one whose subject best connects to this week's Cluster 3 (Venture and Angel Investing) research findings.
+3. If every topic in the catalog has been covered at least once, restart the cycle with the topic that was covered longest ago.
+
+### Write the lesson
+
+Approach this as a 1:1 coaching session with the directness of Marc Cuban, the contrarian framework of Peter Thiel, the first-principles intensity of Elon Musk, and the network-effect wisdom of Reid Hoffman — distilled into one tight teaching.
 
 Each week, cover one focused lesson from the venture and angel investing curriculum. Rotate through topics systematically so that over time Jamie builds a complete foundation. Structure each lesson as:
 
@@ -275,36 +304,67 @@ Real-World Example - A brief case study or example from a known company/deal (YC
 
 Jamie's Action Prompt - One question or exercise Jamie can act on this week to internalize the lesson
 
-Topic rotation (cycle through these, never repeat until all are covered):
-- Pre-money vs. post-money valuation
-- SAFE notes vs. convertible notes vs. priced rounds
-- Cap table mechanics and dilution
-- Due diligence frameworks for early-stage companies
-- Deal flow: sourcing and filtering opportunities
-- Term sheet anatomy: key terms and what to negotiate
-- Board seats, observer rights, and governance
-- Pro-rata rights and why they matter
-- Portfolio construction: diversification vs. concentration
-- The power law in VC returns
-- Founder evaluation: what to look for beyond the pitch
-- Product-market fit signals at pre-seed/seed
-- Market sizing: TAM/SAM/SOM and when they matter
-- Burn rate, runway, and cash management signals
-- Anti-dilution provisions and their effects
-- Exit scenarios: M&A, IPO, secondary sales
-- Follow-on investing strategy
-- Angel syndicates and SPVs
-- Convertible note mechanics: discount, cap, interest
-- How VCs think about risk at each stage (pre-seed to seed to Series A+)
-- Network effects as a moat
-- The YC model and what accelerators signal to investors
-- How to write an investment memo
-- Red flags in early-stage pitches
-- Negotiating founder-friendly vs. investor-friendly terms
+### 25-topic rotation (cycle through these — same slugs as `content/learning/` folders)
 
-Track which topic was covered each week. Never repeat a topic until all 25 have been covered once.
+| topic-slug | Title |
+|---|---|
+| `pre-money-vs-post-money-valuation` | Pre-money vs. Post-money Valuation |
+| `safe-notes-vs-convertible-notes-vs-priced-rounds` | SAFE Notes vs. Convertible Notes vs. Priced Rounds |
+| `cap-table-mechanics-and-dilution` | Cap Table Mechanics and Dilution |
+| `due-diligence-frameworks` | Due Diligence Frameworks for Early-Stage Companies |
+| `deal-flow-sourcing-and-filtering` | Deal Flow: Sourcing and Filtering Opportunities |
+| `term-sheet-anatomy` | Term Sheet Anatomy — Key Terms and What to Negotiate |
+| `board-seats-observer-rights-governance` | Board Seats, Observer Rights, and Governance |
+| `pro-rata-rights` | Pro-Rata Rights and Why They Matter |
+| `portfolio-construction` | Portfolio Construction: Diversification vs. Concentration |
+| `power-law-vc-returns` | The Power Law in VC Returns |
+| `founder-evaluation` | Founder Evaluation: What to Look For Beyond the Pitch |
+| `product-market-fit-signals` | Product-Market Fit Signals at Pre-Seed/Seed |
+| `market-sizing-tam-sam-som` | Market Sizing: TAM/SAM/SOM and When They Matter |
+| `burn-rate-and-runway` | Burn Rate, Runway, and Cash Management Signals |
+| `anti-dilution-provisions` | Anti-Dilution Provisions and Their Effects |
+| `exit-scenarios` | Exit Scenarios: M&A, IPO, Secondary Sales |
+| `follow-on-investing-strategy` | Follow-On Investing Strategy |
+| `angel-syndicates-and-spvs` | Angel Syndicates and SPVs |
+| `convertible-note-mechanics` | Convertible Note Mechanics — Discount, Cap, Interest |
+| `risk-at-each-stage` | How VCs Think About Risk at Each Stage |
+| `network-effects-as-a-moat` | Network Effects as a Moat |
+| `yc-and-accelerators` | The YC Model and What Accelerators Signal to Investors |
+| `investment-memo` | How to Write an Investment Memo |
+| `red-flags-in-pitches` | Red Flags in Early-Stage Pitches |
+| `founder-friendly-vs-investor-friendly-terms` | Founder-Friendly vs. Investor-Friendly Terms |
 
-If this week's news (from Cluster 3) contains a highly relevant investing event or deal, connect it to the week's lesson where natural.
+The folder structure mirrors the slugs: `content/learning/<topic-slug>/<date>.md`. Use the table's exact slugs.
+
+### Write the lesson file
+
+Save the lesson to `content/learning/<topic-slug>/YYYY-MM-DD.md` with this front-matter:
+
+```yaml
+---
+title: "[Topic Title from the table above]"
+topic_slug: "[matching slug from the table]"
+date: "YYYY-MM-DD"
+key_terms:
+  - "[Term 1]"
+  - "[Term 2]"
+---
+```
+
+Body structure (markdown, no inline HTML):
+
+- 2–3 paragraphs covering: (a) **the concept** in plain language, (b) **why it matters** for angel/seed investors specifically, (c) **the coaching insight** that a seasoned VC would share but business school won't.
+- `## Key Terms` heading, then 1–2 bold-led definitions.
+- `## Real-World Example` heading, then a brief case study from a known company/deal (YC, Sequoia, a16z deals are fair game).
+- `## Jamie's Action Prompt` heading, then one question or exercise Jamie can act on this week.
+
+If this week's Cluster 3 (Venture and Angel Investing) news contains a highly relevant investing event or deal, connect it to the lesson where natural.
+
+### Update the rotation log
+
+After writing the lesson file, append to `instructions/weekly_nwa_section_g_log.json`:
+- Add `{ "topic_slug": "<chosen-slug>", "date": "YYYY-MM-DD" }` to the `covered` array
+- Update `last_updated` to today's date
 
 ---
 
@@ -362,7 +422,7 @@ date: YYYY-MM-DD          # Sunday's date (generation date)
 week_of: YYYY-MM-DD       # the Monday that starts the covered week
 slug: YYYY-MM-DD
 top_story: "[one-sentence Section A item 2 headline]"
-sections_covered: ["Top Stories", "On My Radar", "Trends", "Learn & Watch", "Ideas", "Calendar", "VC Coaching"]
+sections_covered: ["Top Stories", "On My Radar", "Trends", "Learn & Watch", "Ideas", "Calendar"]
 themes:                    # required — populated by STEP 7.5 breadth audit
   section_a: ["theme-tag-1", "theme-tag-2", "theme-tag-3"]   # items 2-4 (item 1 markets is exempt)
   section_b: ["theme-tag-1", ...]
@@ -376,23 +436,11 @@ breadth_audit:             # required — populated by STEP 7.5
 ---
 ```
 
-Body: each section as an H2 (`## Section A — Top Stories of the Week`) with items as H3/lists. Keep markdown clean and free of inline HTML so it renders well on the Next.js site.
+Body: each section A–F as an H2 (`## Section A — Top Stories of the Week`) with items as H3/lists. Keep markdown clean and free of inline HTML so it renders well on the Next.js site.
 
-Also extract Section G into a separate file for the (future) `/learning` route:
-`content/learning/<topic-slug>/YYYY-MM-DD.md`
+**Section G in the briefing:** include the H2 heading and a one-line cross-link only (see STEP 5's Section G description). The full lesson lives in a separate file written in STEP 5.5.
 
-Front-matter for the Section G file:
-```yaml
----
-title: "[Topic Title]"
-topic: "[topic-slug, e.g., 'safe-notes-vs-convertible-notes']"
-topic_category: "[one of the 25 rotation topics, kebab-case]"
-date: YYYY-MM-DD
-key_terms: ["term 1", "term 2"]
----
-```
-
-Body: lesson text, key terms, real-world example, Jamie's action prompt — markdown only.
+The Section G standalone lesson file was already written in STEP 5.5 at `content/learning/<topic-slug>/YYYY-MM-DD.md`. No additional work here.
 
 ---
 

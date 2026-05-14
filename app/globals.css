@@ -120,6 +120,70 @@ body {
   margin-bottom: 1rem;
 }
 
+/* Lesson prose styling — mirrors briefing styles but tinted emerald */
+.lesson-content h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #047857;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 2px solid #e5e7eb;
+}
+
+.lesson-content h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.lesson-content h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.lesson-content p {
+  margin-bottom: 0.85rem;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+.lesson-content ul,
+.lesson-content ol {
+  margin: 0.5rem 0 1rem 1.25rem;
+  padding-left: 0.5rem;
+}
+
+.lesson-content ul { list-style: disc; }
+.lesson-content ol { list-style: decimal; }
+
+.lesson-content li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+.lesson-content a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.lesson-content strong {
+  font-weight: 600;
+  color: #047857;
+}
+
+.lesson-content em {
+  font-style: italic;
+  color: #4b5563;
+}
+
 .briefing-content h3 {
   font-size: 1.05rem;
   font-weight: 700;

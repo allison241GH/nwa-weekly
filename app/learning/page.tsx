@@ -1,23 +1,82 @@
-export default function LearningPage() {
+import Link from "next/link";
+import { getTopicCatalogWithStats } from "@/lib/content";
+
+function formatDate(iso: string) {
+  const d = new Date(`${iso}T12:00:00Z`);
+  return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+}
+
+export const metadata = {
+  title: "Learning Venture Investing — Weekly NWA Briefings",
+  description: "Weekly coaching lessons across 25 angel and venture investing topics.",
+};
+
+export default function LearningIndex() {
+  const topics = getTopicCatalogWithStats();
+  const withLessons = topics.filter((t) => t.lesson_count > 0);
+  const empty = topics.filter((t) => t.lesson_count === 0);
+
   return (
     <div className="max-w-3xl mx-auto px-5 py-10">
-      <h1 className="text-3xl font-bold text-[#059669] mb-3">
-        Learning Venture Investing
-      </h1>
-      <p className="text-slate-700 mb-6 text-base">
-        A curated library of weekly lessons on angel and venture investing —
-        from SAFEs and cap tables to founder evaluation and exit strategy.
-      </p>
-      <div className="rounded-xl border border-dashed border-slate-300 p-8 bg-slate-50">
-        <p className="text-sm uppercase tracking-wider text-slate-500 mb-2">
-          Coming soon
+      <header className="mb-8">
+        <h1 className="text-3xl font-bold text-[#059669] mb-3">
+          Learning Venture Investing
+        </h1>
+        <p className="text-slate-700 text-base">
+          A weekly coaching curriculum across 25 angel and venture investing topics —
+          one lesson per Sunday, building a complete foundation over time. Below: every
+          topic you&rsquo;ve already covered, plus the ones still ahead.
         </p>
-        <p className="text-slate-700">
-          The Learning Venture Investing module launches in Phase 3 of the
-          project. It will include all past lessons backfilled from prior
-          briefings, organized by topic (25 categories) and chronologically.
-        </p>
-      </div>
+      </header>
+
+      {withLessons.length > 0 && (
+        <section className="mb-10">
+          <h2 className="text-xs uppercase tracking-wider text-slate-500 mb-3">
+            Covered ({withLessons.length} of {topics.length})
+          </h2>
+          <ul className="divide-y divide-slate-200">
+            {withLessons.map((t) => (
+              <li key={t.slug}>
+                <Link
+                  href={`/learning/${t.slug}`}
+                  className="block py-4 hover:bg-slate-50 -mx-2 px-2 rounded-lg"
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex-1">
+                      <p className="font-semibold text-[#047857]">{t.title}</p>
+                      <p className="text-sm text-slate-600 mt-0.5">{t.blurb}</p>
+                    </div>
+                    <div className="text-right text-xs text-slate-500 shrink-0 pt-1">
+                      <span className="font-semibold text-[#047857]">
+                        {t.lesson_count} {t.lesson_count === 1 ? "lesson" : "lessons"}
+                      </span>
+                      {t.latest_date && (
+                        <p className="mt-0.5">{formatDate(t.latest_date)}</p>
+                      )}
+                    </div>
+                  </div>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {empty.length > 0 && (
+        <section>
+          <h2 className="text-xs uppercase tracking-wider text-slate-500 mb-3">
+            Not yet covered ({empty.length})
+          </h2>
+          <ul className="divide-y divide-slate-200">
+            {empty.map((t) => (
+              <li key={t.slug} className="py-3">
+                <p className="font-medium text-slate-700">{t.title}</p>
+                <p className="text-sm text-slate-500 mt-0.5">{t.blurb}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
     </div>
   );
 }
