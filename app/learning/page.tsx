@@ -7,7 +7,7 @@ function formatDate(iso: string) {
 }
 
 export const metadata = {
-  title: "Learning Venture Investing — Weekly NWA Briefings",
+  title: "Venture Learning — Weekly NWA Briefings",
   description: "Weekly coaching lessons across 25 angel and venture investing topics.",
 };
 
@@ -20,7 +20,7 @@ export default function LearningIndex() {
     <div className="max-w-3xl mx-auto px-5 py-10">
       <header className="mb-8">
         <h1 className="text-3xl font-bold text-[#059669] mb-3">
-          Learning Venture Investing
+          Venture Learning
         </h1>
         <p className="text-slate-700 text-base">
           A weekly coaching curriculum across 25 angel and venture investing topics —

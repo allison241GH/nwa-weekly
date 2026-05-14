@@ -6,7 +6,7 @@
 Each Sunday run produces TWO independent deliverables:
 
 1. **The weekly briefing** (Sections A–F only): markdown at `content/briefings/YYYY-MM-DD.md`, rendered at `nwa-weekly.vercel.app/briefings/YYYY-MM-DD`. This is the news + insights digest.
-2. **The week's Learning Venture Investing lesson** (formerly Section G): a standalone markdown file at `content/learning/<topic-slug>/YYYY-MM-DD.md`, rendered at `nwa-weekly.vercel.app/learning/<topic-slug>/YYYY-MM-DD`. This is the coaching curriculum, organized by topic across the 25-topic rotation.
+2. **The week's Venture Learning lesson** (formerly Section G): a standalone markdown file at `content/learning/<topic-slug>/YYYY-MM-DD.md`, rendered at `nwa-weekly.vercel.app/learning/<topic-slug>/YYYY-MM-DD`. This is the coaching curriculum, organized by topic across the 25-topic rotation.
 
 The briefing and the lesson are completely separate files. The briefing has **no Section G** — readers reach the week's lesson via the site's "Learning" nav link, not via the briefing.
 
@@ -108,7 +108,7 @@ Also search for multi-format learning content:
 - Instagram and X: Surface posts from prominent AI educators and builders on practical AI use cases
 
 ### CLUSTER 3 - Venture and Angel Investing (highest-weight cluster)
-Investor intelligence - what the smartest money is thinking. This cluster feeds Section G (Learning Venture Investing) as well as Sections A-E.
+Investor intelligence - what the smartest money is thinking. This cluster feeds Section G (Venture Learning) as well as Sections A-E.
 - venture capital angel investing news [this week]
 - startup funding rounds OR term sheets OR cap tables [this week]
 - Marc Andreessen OR a16z AI investing [this week]
@@ -264,19 +264,21 @@ Do not repeat themes already covered in Sections A, B, C, or D.
 ### Section F - This Week's Calendar
 The upcoming week's notable events from Google Calendar. Flag anything that needs active prep.
 
-**The briefing ends at Section F.** Do not add a Section G heading. The week's Learning Venture Investing lesson is generated as a standalone file in STEP 5.5; readers reach it via the site's `/learning` nav, not via a link in the briefing.
+**The briefing ends at Section F.** Do not add a Section G heading. The week's Venture Learning lesson is generated as a standalone file in STEP 5.5; readers reach it via the site's `/learning` nav, not via a link in the briefing.
 
 ---
 
 ## STEP 5.5 — GENERATE THIS WEEK'S LEARNING LESSON (STANDALONE FILE)
 
-After drafting Sections A-F, generate this week's Learning Venture Investing lesson as a standalone markdown file. This is the **coaching curriculum** content that used to live inside Section G; it now has its own home at `/learning/<topic-slug>/<date>` on the Vercel site.
+After drafting Sections A-F, generate this week's Venture Learning lesson as a standalone markdown file. This is the **coaching curriculum** content that used to live inside Section G; it now has its own home at `/learning/<topic-slug>/<date>` on the Vercel site.
 
 ### Pick the topic
 
 1. Read `instructions/weekly_nwa_section_g_log.json`. The `covered` array lists every topic-slug + date already taught.
-2. Pick a topic-slug from the 25-topic rotation (listed below) that has the fewest entries in `covered` (preferably zero). If multiple topics tie at zero, pick the one whose subject best connects to this week's Cluster 3 (Venture and Angel Investing) research findings.
-3. If every topic in the catalog has been covered at least once, restart the cycle with the topic that was covered longest ago.
+2. **HARD RULE — no duplicate topics while uncovered topics remain.** Compute the set of zero-coverage topics: every slug in the 25-topic rotation table below that does NOT appear in `covered`. If this set is non-empty, you MUST pick a slug from it. Picking a slug that already appears in `covered` is forbidden until every topic has been covered at least once.
+3. Among zero-coverage topics, prefer the one whose subject best connects to this week's Cluster 3 (Venture and Angel Investing) research findings. If no connection is strong, pick the topic that sits highest in the rotation table.
+4. Only after every topic in the catalog has appeared in `covered` at least once may the rotation cycle restart. When it does, pick the topic that was covered longest ago (oldest `date`).
+5. **Verification before writing:** confirm the chosen `topic_slug` is not already present in `covered` (unless the cycle has restarted per step 4). If it is, the pick is invalid — stop and re-pick.
 
 ### Write the lesson
 
@@ -394,7 +396,7 @@ Style Guidelines:
   - Section D (Learn and Watch): Indigo #4f46e5
   - Section E (Ideas and Opportunities): Amber #d97706
   - Section F (Calendar): Purple #7c3aed
-  - Section G (Learning Venture Investing): Emerald green #059669
+  - Section G (Venture Learning): Emerald green #059669
 - Section A items displayed as cards with subtle shadow
 - Section G displayed as a coaching card with a slightly warm background tint (#f0fdf4) and emerald left border - distinct from news sections to signal "this is a lesson, not a headline"
 - Each section has a thin colored top border matching its accent color
