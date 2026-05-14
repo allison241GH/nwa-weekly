@@ -1,11 +1,7 @@
 {
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-14",
   "covered": [
-    { "topic_slug": "angel-syndicates-and-spvs", "date": "2026-04-14" },
-    { "topic_slug": "convertible-note-mechanics", "date": "2026-04-17" },
     { "topic_slug": "follow-on-investing-strategy", "date": "2026-04-21" },
-    { "topic_slug": "safe-notes-vs-convertible-notes-vs-priced-rounds", "date": "2026-04-24" },
-    { "topic_slug": "angel-syndicates-and-spvs", "date": "2026-04-28" },
     { "topic_slug": "convertible-note-mechanics", "date": "2026-05-01" },
     { "topic_slug": "term-sheet-anatomy", "date": "2026-05-05" },
     { "topic_slug": "safe-notes-vs-convertible-notes-vs-priced-rounds", "date": "2026-05-09" },

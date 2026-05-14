@@ -43,7 +43,7 @@ export default function RootLayout({
                 Briefings
               </Link>
               <Link href="/learning" className="hover:opacity-80">
-                Learning
+                Venture Learning
               </Link>
             </nav>
           </div>
