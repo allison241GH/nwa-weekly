@@ -361,6 +361,28 @@ After writing the lesson file, append to `instructions/weekly_nwa_section_g_log.
 - Add `{ "topic_slug": "<chosen-slug>", "date": "YYYY-MM-DD" }` to the `covered` array
 - Update `last_updated` to today's date
 
+### Save the lesson HTML mirror to `reports/`
+
+Every run must also produce an HTML archive copy of the lesson alongside the markdown source. The HTML file goes to:
+
+`reports/weekly_nwa_lesson_<topic-slug>_YYYY-MM-DD.html`
+
+(Same `<topic-slug>` and date used for the markdown file — no exceptions, no abbreviations.)
+
+**Use the template — do not regenerate the CSS.** The canonical lesson HTML template lives at `instructions/lesson_html_template.html`. Load it, substitute the placeholders, and write the result to `reports/`. The template owns the visual style (emerald coaching-card, navy header bar, `#f0fdf4` background tint, `#059669` accent). If the style ever needs to change, edit the template — never hand-roll CSS in a weekly run.
+
+Placeholders to substitute:
+
+- `{{LESSON_TITLE}}` — the lesson title from the markdown front-matter
+- `{{TOPIC_SLUG}}` — the kebab-case slug from the 25-topic table
+- `{{DATE_DISPLAY}}` — human-readable date (e.g., `May 25, 2026`)
+- `{{DATE_ISO}}` — ISO date `YYYY-MM-DD`
+- `{{BODY_HTML}}` — the lesson body rendered to clean semantic HTML (no `<html>`/`<body>` wrappers). Render the markdown to: 2–3 `<p>` teaching paragraphs, then `<h2>Key Terms</h2>` + bold-led `<p>` definitions, then `<h2>Real-World Example</h2>` + 1–2 `<p>` paragraphs, then `<h2>Jamie's Action Prompt</h2>` + one `<p>` paragraph. Use `<strong>`/`<em>` for inline emphasis. No inline styles.
+
+If `instructions/lesson_html_template.html` is missing, **fail the run loudly** — do not silently fall back to ad-hoc CSS. A missing template means the archive style would drift, which is the exact failure mode this template prevents.
+
+Lesson HTML files in `reports/` are an **archive** and are **never auto-pruned** by STEP 9 — they accumulate over time alongside the markdown lessons.
+
 ---
 
 ## STEP 6 - CONTENT FILTERS (HARD RULES)
@@ -535,7 +557,8 @@ Procedure:
 1. List all files matching `weekly_nwa_briefing_*.html` in `reports/` (or `content/briefings/*.md` once the repo is the source of truth), sorted by date in the filename, newest first.
 2. The file you just generated is #1. Keep file #2 (the immediately prior week's briefing). **Delete all other files** matching the pattern.
 3. Do the same for `content/learning/<topic-slug>/*.md` only if a duplicate-date file exists — otherwise keep all lesson files (they are the lesson archive and must never be auto-pruned).
-4. Print a one-line confirmation: `Retention: kept [2] briefing files, deleted [N] older files.`
+4. **Lesson HTMLs in `reports/` are part of the archive — never auto-prune them.** Files matching `weekly_nwa_lesson_*.html` accumulate alongside the markdown lessons. The 2-file retention rule applies to `weekly_nwa_briefing_*.html` ONLY; do not touch `weekly_nwa_lesson_*.html` files.
+5. Print a one-line confirmation: `Retention: kept [2] briefing files, deleted [N] older files. Lesson HTMLs archived: [N] total (never pruned).`
 
 If for any reason deletion fails (permission error, file locked), surface the error explicitly in the status line — do not silently move on.
 
@@ -583,14 +606,15 @@ Close your response with:
 ```
 Report saved: weekly_nwa_briefing_YYYY-MM-DD.html
 Markdown saved: content/briefings/YYYY-MM-DD.md
-Section G saved: content/learning/<topic>/YYYY-MM-DD.md
+Lesson saved: content/learning/<topic-slug>/YYYY-MM-DD.md
+Lesson HTML saved: reports/weekly_nwa_lesson_<topic-slug>_YYYY-MM-DD.html
 Web searches: [N] queries run
 Calendar: checked (week of [Mon DD])
 Breadth audit: [N] initial themes, [N] duplicates resolved in [N] pass(es)
 Email sent: jallison@newworldangels.com → [link]
 Dedup log: [N] items tracked
 Section G log: [N]/25 topics covered
-Retention: kept [2] briefings, deleted [N] older files
+Retention: kept [2] briefings, deleted [N] older files. Lesson HTMLs archived: [N] total (never pruned).
 ```
 
 ---

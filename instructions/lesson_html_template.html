@@ -1,0 +1,79 @@
+<!--
+  Weekly NWA Briefings — Venture Learning lesson HTML template.
+
+  The Sunday agent fills this template (do NOT regenerate the CSS each week).
+
+  Placeholders to substitute:
+    {{LESSON_TITLE}}  — the lesson title (e.g., "Due Diligence Frameworks for Early-Stage Companies")
+    {{TOPIC_SLUG}}    — kebab-case slug from the 25-topic table (e.g., "due-diligence-frameworks")
+    {{DATE_DISPLAY}}  — human-readable date (e.g., "May 25, 2026")
+    {{DATE_ISO}}      — ISO date YYYY-MM-DD (e.g., "2026-05-25")
+    {{BODY_HTML}}     — the rendered lesson body. Render the markdown body to clean
+                       semantic HTML (no <html>/<body> wrappers). Expected sequence:
+                         - 2–3 <p> paragraphs of teaching
+                         - <h2>Key Terms</h2> followed by <p><strong>Term</strong> — definition.</p> entries
+                         - <h2>Real-World Example</h2> followed by 1–2 <p> paragraphs
+                         - <h2>Jamie's Action Prompt</h2> followed by one <p> paragraph
+                       Use <strong>/<em> for inline emphasis. No inline styles.
+
+  Output filename: reports/weekly_nwa_lesson_{{TOPIC_SLUG}}_{{DATE_ISO}}.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venture Learning — {{LESSON_TITLE}}</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #ffffff; color: #1a1a1a; line-height: 1.65; font-size: 16px; }
+    .outer { max-width: 860px; margin: 0 auto; padding: 0 20px 60px; }
+
+    .site-header { background: #0a1628; color: #fff; padding: 32px 24px 28px; margin-bottom: 36px; }
+    .site-header .eyebrow { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #6ee7b7; margin-bottom: 8px; }
+    .site-header h1 { font-size: 1.55rem; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 4px; }
+    .site-header .date-range { font-size: 0.95rem; opacity: 0.78; margin-bottom: 8px; }
+    .site-header .subtitle { font-size: 0.82rem; opacity: 0.6; font-style: italic; }
+
+    .coaching-card { background: #f0fdf4; border-left: 5px solid #059669; border-radius: 0 8px 8px 0; padding: 28px 30px; margin-bottom: 28px; }
+    .coaching-card .coaching-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #059669; margin-bottom: 8px; }
+    .coaching-card h1.lesson-title { font-size: 1.35rem; font-weight: 700; color: #14532d; margin-bottom: 6px; letter-spacing: -0.01em; }
+    .coaching-card .lesson-date { font-size: 0.85rem; color: #047857; margin-bottom: 18px; font-style: italic; }
+    .coaching-card h2 { font-size: 1rem; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 24px; margin-bottom: 10px; padding-top: 16px; border-top: 1px solid #bbf7d0; }
+    .coaching-card h2:first-of-type { padding-top: 0; border-top: none; }
+    .coaching-card p { font-size: 0.95rem; color: #166534; margin-bottom: 14px; }
+    .coaching-card p:last-child { margin-bottom: 0; }
+    .coaching-card strong { font-weight: 700; color: #14532d; }
+    .coaching-card em { font-style: italic; }
+    .coaching-card a { color: #059669; font-weight: 600; }
+
+    .footer-link { text-align: center; font-size: 0.85rem; color: #64748b; margin-top: 24px; }
+    .footer-link a { color: #059669; font-weight: 600; text-decoration: none; }
+    .footer-link a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+<div class="site-header">
+  <div class="outer" style="padding-bottom:0;">
+    <div class="eyebrow">Weekly NWA Briefings · Venture Learning</div>
+    <h1>{{LESSON_TITLE}}</h1>
+    <div class="date-range">Lesson of {{DATE_DISPLAY}}</div>
+    <div class="subtitle">25-topic venture curriculum · 1:1 coaching format</div>
+  </div>
+</div>
+
+<div class="outer">
+  <div class="coaching-card">
+    <div class="coaching-label">This Week's Lesson</div>
+    <h1 class="lesson-title">{{LESSON_TITLE}}</h1>
+    <div class="lesson-date">{{DATE_DISPLAY}} · Topic: {{TOPIC_SLUG}}</div>
+
+    {{BODY_HTML}}
+  </div>
+
+  <div class="footer-link">
+    Read on web: <a href="https://weekly-nwa-briefings.vercel.app/learning/{{TOPIC_SLUG}}/{{DATE_ISO}}" target="_blank" rel="noopener">weekly-nwa-briefings.vercel.app/learning/{{TOPIC_SLUG}}/{{DATE_ISO}}</a>
+  </div>
+</div>
+</body>
+</html>
