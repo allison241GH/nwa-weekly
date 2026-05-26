@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-25",
   "items": [
     {
       "headline": "Anthropic signs massive compute deal with SpaceX (xAI) — 300MW, 220K GPUs",
@@ -72,6 +72,84 @@
       "source": "Fundup AI",
       "url": "https://fundup.ai/recently-funded-startups",
       "date_reported": "2026-05-12"
+    },
+    {
+      "headline": "Modal Labs raises $355M Series C at $4.65B — serverless AI infrastructure 5x revenue in 8 months",
+      "source": "SiliconANGLE / Modal Blog",
+      "url": "https://siliconangle.com/2026/05/21/serverless-ai-infrastructure-startup-modal-labs-seals-355m-funding-round/",
+      "date_reported": "2026-05-25"
+    },
+    {
+      "headline": "Anthropic 'Code w/ Claude' London event — 'dreaming' agent memory feature announced",
+      "source": "MIT Technology Review / Fortune",
+      "url": "https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/",
+      "date_reported": "2026-05-25"
+    },
+    {
+      "headline": "Mercury raises $200M Series D at $5.2B — 1 in 3 US startups, federal bank charter conditional approval",
+      "source": "CNBC / TechStartups",
+      "url": "https://www.cnbc.com/2026/05/20/fintech-mercury-valuation-fundraise-bank-charter.html",
+      "date_reported": "2026-05-25"
+    },
+    {
+      "headline": "KPMG + Anthropic global alliance — 276,000 employees get Claude via Digital Gateway",
+      "source": "KPMG / Anthropic",
+      "url": "https://kpmg.com/us/en/media/news/kpmg-anthropic-global-alliance.html",
+      "date_reported": "2026-05-25"
+    },
+    {
+      "headline": "YC W26 Demo Day June 16 — 64% B2B batch, projected 10% unicorn rate",
+      "source": "The VC Corner / YC",
+      "url": "https://www.thevccorner.com/p/yc-w26-demo-day-2026-complete-breakdown",
+      "date_reported": "2026-05-25"
+    },
+    {
+      "headline": "Microsoft canceling internal Claude Code licenses by June 30, shifting to GitHub Copilot CLI",
+      "source": "Startup Fortune",
+      "url": "https://startupfortune.com/microsofts-claude-pullback-shows-ai-coding-still-has-a-budget-problem/",
+      "date_reported": "2026-05-25"
+    },
+    {
+      "headline": "Claude Mythos: Anthropic's frontier model with nation-state cyber capabilities not publicly released",
+      "source": "Anthropic / red.anthropic.com",
+      "url": "https://red.anthropic.com/2026/mythos-preview/",
+      "date_reported": "2026-05-25"
+    },
+    {
+      "headline": "Giro d'Italia: Vingegaard takes Maglia Rosa with Stage 14 solo victory, 2:26 lead over Eulálio",
+      "source": "CyclingNews / CyclingWeekly",
+      "url": "https://www.cyclingnews.com/pro-cycling/racing/giro-d-italia-gc-standings-2026/",
+      "date_reported": "2026-05-25"
+    },
+    {
+      "headline": "Humanoid robots showing clearer industrial ROI as deployment costs fall; JAL deploys Unitree at Haneda",
+      "source": "Robotics & Automation News / Bessemer VP",
+      "url": "https://roboticsandautomationnews.com/2026/05/19/humanoid-robots-show-clearer-roi-but-commercial-success-depends-on-effective-output/101714/",
+      "date_reported": "2026-05-25"
+    },
+    {
+      "headline": "BCG study: 27% of AI users are Self-Automators developing neither AI nor domain skills — 'cognitive debt'",
+      "source": "BCG / Psychology Today",
+      "url": "https://www.psychologytoday.com/us/blog/the-asymmetric-brain/202602/cognitive-offloading-using-ai-reduces-new-skill-formation",
+      "date_reported": "2026-05-25"
+    },
+    {
+      "headline": "$5.5B capital targets AI deployment gap in one quarter; infrastructure layer emerges as consensus VC bet",
+      "source": "AI Funding Tracker / Crunchbase",
+      "url": "https://aifundingtracker.com/ai-startup-funding-news-today/",
+      "date_reported": "2026-05-25"
+    },
+    {
+      "headline": "Series A bar rising: investors now require $2M+ ARR and $0.50 burn per $1 new ARR in 2026",
+      "source": "Angel Investors Network",
+      "url": "https://angelinvestorsnetwork.com/venture-capital/series-a-funding-requirements-2026-what-investors-expect",
+      "date_reported": "2026-05-25"
+    },
+    {
+      "headline": "30-year Treasury yield hits 5.19% — highest since pre-2008 financial crisis; S&P retreats from highs",
+      "source": "CNBC / CNN Business",
+      "url": "https://www.cnbc.com/2026/05/19/treasurys-yields-inflation-traders-fed-interest-rates.html",
+      "date_reported": "2026-05-25"
     }
   ]
 }
