@@ -45,6 +45,9 @@ export default function RootLayout({
               <Link href="/learning" className="hover:opacity-80">
                 Venture Learning
               </Link>
+              <Link href="/options" className="hover:opacity-80">
+                Options
+              </Link>
             </nav>
           </div>
         </header>

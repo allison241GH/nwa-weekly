@@ -21,7 +21,7 @@ You are generating a personalized weekly briefing for **Jamie Allison**. Write s
 3. **Teaching & Building with AI** — Adjunct Professor at FAU Executive Education (AI for Business Leaders), Mentor at FAU Center for Entrepreneurship
 4. **Former CPO, FordPass** — automotive/product lens, relevant when AV/EV or product strategy comes up
 
-Jamie manages his family's wealth portfolio (S&P 500, QQQ, treasuries) and is an avid **cyclist** (core passion — prioritize cycling tech, pro races, and training regimens) and competitive Ironman triathlete (training across swim, bike, run — but cycling is first).
+Jamie manages his family's wealth portfolio (S&P 500, QQQ, treasuries, plus income/covered-call ETFs **JEPQ** and **JEPI**) and individual positions in **QQQ** and **F (Ford)** that he writes covered calls against. He is an avid **cyclist** (core passion — prioritize cycling tech, pro races, and training regimens) and competitive Ironman triathlete (training across swim, bike, run — but cycling is first).
 
 Write specifically for Jamie, not a general audience. Keep the tone sharp, professional, and human. The whole report should take under 7 minutes to read.
 
@@ -136,6 +136,8 @@ Not a data feed - a weekly narrative. What moved this week, why, and what it mea
 
 Summarize as: (1) where markets ended the week, (2) the key driver(s), and (3) strategic read for a long-term passive investor holding S&P/QQQ/treasuries. Keep it to two sentences maximum - crisp and specific, no laundry list of numbers.
 
+**JEPQ/JEPI lens (when relevant):** Jamie also holds the income/covered-call ETFs **JEPQ** (Nasdaq-linked) and **JEPI** (S&P-linked). When the week's move is material, briefly note what it means for these positions — monthly distribution context, and the structural reality that in a strong melt-up (e.g. QQQ making new highs) their covered-call overlay caps upside versus the passive S&P/QQQ core, while in choppy or down weeks their premium income cushions the ride. This is a natural bridge to the new Covered-Call Watch (STEP 5.6) — JEPQ/JEPI *are* systematic covered-call writers. Keep it to one clause inside the "Why it matters" line; do not expand Section A into an options section.
+
 ### CLUSTER 7 - Automotive: AV/EV Noteworthy Announcements
 High bar - only things worth a former automotive CPO's attention.
 - autonomous vehicles AV announcement [this week]
@@ -222,7 +224,7 @@ Using the Markets and Macro research from Cluster 6, write a crisp, tight entry 
 
 Format: Two sentences maximum. No sub-bullets. One flowing paragraph. Label it "Markets and Macro".
 
-Then add a one-line "Why it matters to Jamie:" - connect it directly to his role as a long-term passive investor managing S&P/QQQ/treasuries. Be specific, not generic.
+Then add a one-line "Why it matters to Jamie:" - connect it directly to his role as a long-term passive investor managing S&P/QQQ/treasuries **plus his income/covered-call ETFs JEPQ and JEPI**. Be specific, not generic. When the week's move is material to JEPQ/JEPI (a strong rally that caps their upside, or a choppy/down week where their premium cushions), work that into the line per the JEPQ/JEPI lens in Cluster 6 — one clause, not a paragraph.
 
 Items 2-4: Top Dynamic Stories
 The 3 most important, confirmed-fresh developments from the last 7 days. Prioritize items that directly affect Jamie's work as an angel investor, AI leader, or startup ecosystem participant. Apply topic weighting - investing angles lead when available.
@@ -388,6 +390,79 @@ Placeholders to substitute:
 If `instructions/lesson_html_template.html` is missing, **fail the run loudly** — do not silently fall back to ad-hoc CSS. A missing template means the archive style would drift, which is the exact failure mode this template prevents.
 
 Lesson HTML files in `reports/` are an **archive** and are **never auto-pruned** by STEP 9 — they accumulate over time alongside the markdown lessons.
+
+---
+
+## STEP 5.6 — GENERATE THIS WEEK'S COVERED-CALL WATCH (STANDALONE FILE)
+
+The **Options** tab on the site has two areas: a weekly **Covered-Call Watch** (this step) and an **Options Learning** curriculum (STEP 5.7). The Watch is a tactical, position-specific entry for the individual positions Jamie writes covered calls against: **QQQ** and **F (Ford)**.
+
+This is **framework + illustrative strikes**, not live brokerage data. The Sunday run is headless with WebSearch only — there is no options-data API. Source approximate prices and ex-dividend dates via WebSearch, present clearly-labeled *illustrative* candidates, and let Jamie make the final call in his broker.
+
+### Research (WebSearch)
+For **QQQ** and **F** each gather: (1) current/most-recent share price, (2) the next **ex-dividend date** and approximate distribution. (QQQ pays a small quarterly distribution, typically ex-div around the third Friday of Mar/Jun/Sep/Dec; F pays a ~$0.15 regular quarterly dividend and occasionally a supplemental — check for both.)
+
+### Build the candidates
+For each ticker, present out-of-the-money (OTM) covered-call candidates across the **30 / 45 / 60-DTE** windows. Target roughly **2–5% OTM** and a **~0.25–0.35 delta** (the rough probability of assignment). For each candidate estimate: strike, % OTM, approximate delta, illustrative premium, **static yield** (premium ÷ price), and **if-called return** ((strike − price + premium) ÷ price). A markdown table per ticker renders well (the `.watch-content` styles support tables).
+
+Frame every entry around the **dual goal — income + share protection**: the premium is both rent and a thin downside cushion; the strike is how much upside Jamie is renting out.
+
+### Ex-dividend assignment-risk flag (REQUIRED)
+For each ticker, explicitly flag whether any ex-dividend date falls **inside** the option windows, and whether the candidate strikes would be ITM near it. State the rule plainly: **never let a covered call sit in-the-money into an ex-dividend date Jamie cares about** — an ITM call can be assigned early the day before ex-div to capture the dividend. Note F's early-assignment risk specifically when a roll into a later expiry would straddle its ex-div.
+
+### Write the Watch file
+Save to `content/options-watch/YYYY-MM-DD.md` (Sunday's date) with this front-matter:
+
+```yaml
+---
+title: "Covered-Call Watch — Week of [Mon DD]"
+date: YYYY-MM-DD          # Sunday's date (generation date)
+week_of: YYYY-MM-DD       # the Monday that starts the covered week
+slug: YYYY-MM-DD
+positions: ["QQQ", "F"]
+summary: "[one-sentence read of the week's setup]"
+---
+```
+
+Body: a short "How to read this" intro, one section per ticker (price + table + an income/protection read + the ex-div flag), and a closing "this week's framing" that maps Jamie's priority (income vs. protection vs. keeping upside) to which leg to favor. Keep it tight — Jamie scans and decides in his broker. The page already appends the standing compliance disclaimer (`OPTIONS_DISCLAIMER` in `lib/options.ts`), so you do **not** need to repeat it verbatim, but the "illustrative, verify live" caveat should be clear in the intro.
+
+The Watch is rendered at `nwa-weekly.vercel.app/options/watch/YYYY-MM-DD`.
+
+---
+
+## STEP 5.7 — GENERATE THIS WEEK'S OPTIONS LEARNING LESSON (STANDALONE FILE)
+
+Mirrors STEP 5.5, but for the **Options Learning** curriculum — a novice-friendly covered-call tutorial. Lessons live at `content/options-learning/<topic-slug>/YYYY-MM-DD.md`, rendered at `/options/learning/<topic-slug>/YYYY-MM-DD`.
+
+### Pick the topic
+1. Read `instructions/options_learning_log.json`. The `covered` array lists every options topic-slug + date already taught.
+2. **HARD RULE — no duplicate topics while uncovered topics remain.** The catalog is the `OPTIONS_TOPIC_CATALOG` in `lib/options.ts` (slugs must match its folder slugs exactly). Compute the zero-coverage set (catalog slugs not in `covered`); if non-empty, you MUST pick from it.
+3. Among zero-coverage topics, prefer the one that best connects to this week's Covered-Call Watch (STEP 5.6) — e.g. if the Watch leaned on rolling around an ex-div, teach `rolling-a-covered-call`. Otherwise pick the highest remaining topic in catalog order.
+4. Only after every catalog topic has appeared in `covered` may the rotation restart (then pick the one covered longest ago).
+
+The 12-topic catalog, in rotation order (the first 6 are seeded/covered):
+`what-is-a-covered-call`, `moneyness-and-strike-selection`, `dte-and-theta-decay`, `premium-yield-and-annualizing`, `ex-dividend-and-early-assignment-risk`, `assignment-and-share-protection`, `rolling-a-covered-call`, `covered-calls-on-etfs-vs-single-stocks`, `tax-treatment-of-covered-calls`, `when-not-to-sell-covered-calls`, `the-wheel-and-cash-secured-puts`, `poor-mans-covered-call`.
+
+### Write the lesson
+Approach it as a patient, plain-language 1:1 for a smart beginner — no jargon without defining it. Front-matter:
+
+```yaml
+---
+title: "[Topic Title from the catalog]"
+topic_slug: "[matching slug]"
+date: "YYYY-MM-DD"
+key_terms:
+  - "[Term 1]"
+  - "[Term 2]"
+---
+```
+
+Body (markdown, no inline HTML): 2–3 teaching paragraphs (the concept in plain language → why it matters for a covered-call seller → the coaching insight a beginner misses), then `## Key Terms` (1–3 bold-led definitions), `## Worked Example` (use QQQ or F numbers where natural), and `## Jamie's Action Prompt` (one concrete thing to do this week). Tie to that week's Watch where it's natural.
+
+### Update the rotation log
+After writing, append `{ "topic_slug": "<chosen-slug>", "date": "YYYY-MM-DD" }` to `covered` in `instructions/options_learning_log.json` and update `last_updated`.
+
+*(HTML archive mirrors in `reports/` for the Watch and options lessons are optional and not required by this step — the web tab is the deliverable.)*
 
 ---
 
@@ -564,7 +639,8 @@ Procedure:
 2. The file you just generated is #1. Keep file #2 (the immediately prior week's briefing). **Delete all other files** matching the pattern.
 3. Do the same for `content/learning/<topic-slug>/*.md` only if a duplicate-date file exists — otherwise keep all lesson files (they are the lesson archive and must never be auto-pruned).
 4. **Lesson HTMLs in `reports/` are part of the archive — never auto-prune them.** Files matching `weekly_nwa_lesson_*.html` accumulate alongside the markdown lessons. The 2-file retention rule applies to `weekly_nwa_briefing_*.html` ONLY; do not touch `weekly_nwa_lesson_*.html` files.
-5. Print a one-line confirmation: `Retention: kept [2] briefing files, deleted [N] older files. Lesson HTMLs archived: [N] total (never pruned).`
+5. **Covered-Call Watch (`content/options-watch/*.md`):** apply the same 2-file retention as briefings — keep the file you just generated (#1) and the immediately prior week's (#2); delete older ones. **Options Learning lessons (`content/options-learning/<topic-slug>/*.md`) are an archive — never auto-prune them** (delete only a genuine duplicate-date file).
+6. Print a one-line confirmation: `Retention: kept [2] briefing files + [2] watch files, deleted [N] older files. Lesson HTMLs archived: [N] total (never pruned).`
 
 If for any reason deletion fails (permission error, file locked), surface the error explicitly in the status line — do not silently move on.
 
@@ -614,13 +690,16 @@ Report saved: weekly_nwa_briefing_YYYY-MM-DD.html
 Markdown saved: content/briefings/YYYY-MM-DD.md
 Lesson saved: content/learning/<topic-slug>/YYYY-MM-DD.md
 Lesson HTML saved: reports/weekly_nwa_lesson_<topic-slug>_YYYY-MM-DD.html
+Covered-Call Watch saved: content/options-watch/YYYY-MM-DD.md
+Options lesson saved: content/options-learning/<topic-slug>/YYYY-MM-DD.md
 Web searches: [N] queries run
 Calendar: checked (week of [Mon DD])
 Breadth audit: [N] initial themes, [N] duplicates resolved in [N] pass(es)
 Email sent: jallison@newworldangels.com → [link]
 Dedup log: [N] items tracked
 Section G log: [N]/25 topics covered
-Retention: kept [2] briefings, deleted [N] older files. Lesson HTMLs archived: [N] total (never pruned).
+Options Learning log: [N]/12 topics covered
+Retention: kept [2] briefings + [2] watch files, deleted [N] older files. Lesson HTMLs archived: [N] total (never pruned).
 ```
 
 ---

@@ -1,9 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
-import { remark } from "remark";
-import remarkGfm from "remark-gfm";
-import remarkHtml from "remark-html";
+import { renderMarkdown } from "./markdown";
 
 const ROOT = process.cwd();
 const BRIEFINGS_DIR = path.join(ROOT, "content", "briefings");
@@ -80,25 +78,6 @@ export function getTopicBySlug(slug: string): Topic | undefined {
 function ensureDir(dir: string) {
   if (!fs.existsSync(dir)) return false;
   return true;
-}
-
-function addSectionClasses(html: string): string {
-  const pattern = /<h2>Section ([A-G])([^<]*)<\/h2>/g;
-  if (!pattern.test(html)) return html;
-  const wrapped = html.replace(
-    pattern,
-    (_match, letter: string, rest: string) => {
-      const cls = `section-${letter.toLowerCase()}`;
-      return `</section><section class="section-block ${cls}"><h2 class="section-heading ${cls}">Section ${letter}${rest}</h2>`;
-    },
-  );
-  // Strip the orphan `</section>` inserted before the first section, then close the last section.
-  return wrapped.replace("</section>", "") + "</section>";
-}
-
-async function renderMarkdown(md: string): Promise<string> {
-  const file = await remark().use(remarkGfm).use(remarkHtml).process(md);
-  return addSectionClasses(String(file));
 }
 
 export function getAllBriefingSlugs(): string[] {

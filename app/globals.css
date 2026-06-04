@@ -259,3 +259,118 @@ body {
   border-top: 1px solid #e5e7eb;
   margin: 2rem 0;
 }
+
+/* ---- Options module (Covered-Call Watch + Options Learning) ---- */
+/* Distinct cyan accent: #0891b2, tint #ecfeff. Mirrors lesson prose styling. */
+
+.options-content h2,
+.watch-content h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0e7490;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 2px solid #e5e7eb;
+}
+
+.options-content h3,
+.watch-content h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #155e75;
+}
+
+.options-content h4,
+.watch-content h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.options-content p,
+.watch-content p {
+  margin-bottom: 0.85rem;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+.options-content ul,
+.options-content ol,
+.watch-content ul,
+.watch-content ol {
+  margin: 0.5rem 0 1rem 1.25rem;
+  padding-left: 0.5rem;
+}
+
+.options-content ul,
+.watch-content ul { list-style: disc; }
+.options-content ol,
+.watch-content ol { list-style: decimal; }
+
+.options-content li,
+.watch-content li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+.options-content a,
+.watch-content a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.options-content strong,
+.watch-content strong {
+  font-weight: 600;
+  color: #0e7490;
+}
+
+.options-content em,
+.watch-content em {
+  font-style: italic;
+  color: #4b5563;
+}
+
+/* Tables in the watch (strike-candidate grids) */
+.watch-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 1.25rem;
+  font-size: 0.85rem;
+}
+
+.watch-content th,
+.watch-content td {
+  border: 1px solid #e5e7eb;
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+}
+
+.watch-content th {
+  background: #ecfeff;
+  color: #155e75;
+  font-weight: 600;
+}
+
+.watch-content blockquote,
+.options-content blockquote {
+  border-left: 3px solid #0891b2;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #4b5563;
+  font-style: italic;
+}
+
+.watch-content hr,
+.options-content hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 2rem 0;
+}
