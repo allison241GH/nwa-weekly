@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "Write",
+      "PushNotification",
+      "mcp__claude_ai_Google_Calendar__*",
+      "Bash(git -C /Users/jamie/ClaudeCodeProjects/nwa-weekly *)",
+      "Bash(git fetch *)",
+      "Bash(git log *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
+    ]
+  }
+}

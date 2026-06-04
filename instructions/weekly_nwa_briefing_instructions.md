@@ -181,6 +181,12 @@ Pull only items published in the **last 7 days** from the following. If nothing 
 
 Check Jamie's Google Calendar for **the upcoming week (Monday through Sunday)**.
 
+> **Unattended-run fallback:** The Google Calendar connector is a claude.ai login-based
+> connector and may be unavailable in the automated Sunday background run. If a calendar
+> call fails or the connector is not reachable, do **not** block, prompt, or retry — write
+> "Calendar unavailable this week (connector not reachable in scheduled run)." in Section F
+> and continue with the rest of the briefing.
+
 For each notable event list:
 - Day & time
 - Event name / meeting title
@@ -262,7 +268,7 @@ Examples of opportunity types:
 Do not repeat themes already covered in Sections A, B, C, or D.
 
 ### Section F - This Week's Calendar
-The upcoming week's notable events from Google Calendar. Flag anything that needs active prep.
+The upcoming week's notable events from Google Calendar. Flag anything that needs active prep. If the calendar connector was unavailable (see STEP 3 fallback), state that here and move on.
 
 **The briefing ends at Section F.** Do not add a Section G heading. The week's Venture Learning lesson is generated as a standalone file in STEP 5.5; readers reach it via the site's `/learning` nav, not via a link in the briefing.
 

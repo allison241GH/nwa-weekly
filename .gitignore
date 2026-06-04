@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# claude — track only the shared allowlist (settings.json); ignore local settings & scratch
+.claude/*
+!.claude/settings.json
