@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly NWA Briefing — Week of June 1–5, 2026</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #ffffff;
+      color: #1a1a1a;
+      line-height: 1.65;
+      font-size: 16px;
+    }
+    .outer { max-width: 860px; margin: 0 auto; padding: 0 20px 60px; }
+
+    .site-header {
+      background: #0a1628;
+      color: #fff;
+      padding: 32px 24px 28px;
+      margin-bottom: 36px;
+    }
+    .site-header h1 { font-size: 1.55rem; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 4px; }
+    .site-header .date-range { font-size: 0.95rem; opacity: 0.78; margin-bottom: 8px; }
+    .site-header .subtitle { font-size: 0.82rem; opacity: 0.6; font-style: italic; }
+
+    .section { margin-bottom: 44px; }
+    .section-header { border-top: 4px solid; padding-top: 14px; margin-bottom: 20px; }
+    .section-header h2 { font-size: 1.05rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+
+    .sec-a .section-header { border-color: #0a1628; }
+    .sec-a .section-header h2 { color: #0a1628; }
+    .sec-b .section-header { border-color: #2563eb; }
+    .sec-b .section-header h2 { color: #2563eb; }
+    .sec-c .section-header { border-color: #0d9488; }
+    .sec-c .section-header h2 { color: #0d9488; }
+    .sec-d .section-header { border-color: #4f46e5; }
+    .sec-d .section-header h2 { color: #4f46e5; }
+    .sec-e .section-header { border-color: #d97706; }
+    .sec-e .section-header h2 { color: #d97706; }
+    .sec-f .section-header { border-color: #7c3aed; }
+    .sec-f .section-header h2 { color: #7c3aed; }
+
+    .card {
+      background: #f8fafc;
+      border-radius: 8px;
+      padding: 20px 22px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    }
+    .card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; color: #0a1628; }
+    .card .label { display: inline-block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #64748b; margin-bottom: 6px; }
+    .card p { margin-bottom: 10px; font-size: 0.95rem; }
+    .card p:last-child { margin-bottom: 0; }
+    .card .why { color: #374151; font-style: italic; font-size: 0.9rem; }
+    .card .action { color: #0a1628; font-size: 0.88rem; border-left: 3px solid #0a1628; padding-left: 10px; margin-top: 8px; }
+
+    .markets-card {
+      background: #0a1628;
+      color: #e2e8f0;
+      border-radius: 8px;
+      padding: 20px 22px;
+      margin-bottom: 16px;
+    }
+    .markets-card .label { color: #94a3b8; }
+    .markets-card h3 { color: #f1f5f9; margin-bottom: 8px; }
+    .markets-card p { color: #cbd5e1; font-size: 0.95rem; margin-bottom: 8px; }
+    .markets-card .why { color: #94a3b8; font-style: italic; font-size: 0.88rem; }
+
+    .radar-list { list-style: none; }
+    .radar-list li { padding: 12px 0; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+    .radar-list li:last-child { border-bottom: none; }
+    .radar-list .item-title { font-weight: 700; color: #0a1628; }
+
+    .trend-card {
+      border-left: 4px solid #0d9488;
+      padding: 14px 18px;
+      background: #f0fdfa;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 14px;
+    }
+    .trend-card h3 { font-size: 0.97rem; font-weight: 700; color: #134e4a; margin-bottom: 6px; }
+    .trend-card p { font-size: 0.93rem; margin-bottom: 6px; }
+    .trend-card .why { font-size: 0.88rem; color: #0f766e; font-style: italic; }
+
+    .learn-card {
+      display: flex;
+      gap: 14px;
+      background: #eef2ff;
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin-bottom: 12px;
+      align-items: flex-start;
+    }
+    .learn-icon { font-size: 1.5rem; flex-shrink: 0; margin-top: 2px; }
+    .learn-card .learn-title { font-weight: 700; font-size: 0.95rem; color: #3730a3; margin-bottom: 4px; }
+    .learn-card p { font-size: 0.9rem; color: #374151; margin-bottom: 4px; }
+    .learn-card .reason { font-size: 0.86rem; color: #4f46e5; font-style: italic; }
+
+    .idea-card {
+      border-left: 4px solid #d97706;
+      padding: 14px 18px;
+      background: #fffbeb;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 14px;
+    }
+    .idea-card h3 { font-size: 0.97rem; font-weight: 700; color: #92400e; margin-bottom: 6px; }
+    .idea-card p { font-size: 0.93rem; margin-bottom: 6px; }
+    .idea-card .why { font-size: 0.88rem; color: #b45309; font-style: italic; }
+
+    .cal-empty {
+      background: #faf5ff;
+      border-left: 4px solid #7c3aed;
+      border-radius: 0 6px 6px 0;
+      padding: 14px 18px;
+      font-size: 0.93rem;
+      color: #6b21a8;
+    }
+
+    a { color: inherit; }
+    strong { font-weight: 700; }
+    em { font-style: italic; }
+  </style>
+</head>
+<body>
+<div class="site-header">
+  <div class="outer" style="padding-bottom:0;">
+    <h1>Weekly NWA Briefings</h1>
+    <div class="date-range">Week of June 1–5, 2026</div>
+    <div class="subtitle">Anthropic Files S-1 · Ramp $44B Pension-Led · Generalist AI $2B · Chip-Led Selloff · Helion $15.5B</div>
+  </div>
+</div>
+
+<div class="outer">
+
+  <!-- SECTION A -->
+  <div class="section sec-a">
+    <div class="section-header">
+      <h2>Section A — Top Stories of the Week</h2>
+    </div>
+
+    <div class="markets-card">
+      <div class="label">Markets &amp; Macro</div>
+      <h3>Chip-Led Friday Rout Erases the Week — Hot Jobs Print Lifts Yields</h3>
+      <p>The S&amp;P 500 fell ~2.6% Friday and ~2% on the week to ~7,384, while the Nasdaq dropped 4.2% — its worst session since April 2025 — and shed 4.7% on the week, led by a chipmaker rout (Broadcom -7%, Marvell -16%, Micron -13%, AMD/Intel ~-11%). May payrolls printed +172K (double consensus), pushing the 10-year to 4.54% and 2026 rate-hike odds up to ~57%. QQQ closed at $740.61 — a "good news is bad news" tape where AI-leveraged semis became the pressure valve.</p>
+      <p class="why"><strong>Why it matters to Jamie:</strong> Your S&amp;P/QQQ core handed back two weeks of gains in a single session — uncomfortable, but not a thesis-break for a long-term passive holder; the treasury sleeve is the right place for those higher yields to land. Your income/covered-call ETFs <strong>JEPQ and JEPI</strong> did exactly what they're designed to do — JEPQ paid its June distribution of ~$0.56 (10.25% yield) and JEPI ~$0.389 (8.23%), both ex-div June 1 <em>before</em> Friday's selloff, so the premium income cushioned the drawdown the same week the chip names led the tape lower. This is the trade-off you bought them for, and a useful proof point as you re-examine the covered-call ladder on your individual QQQ and F positions (see Options tab).</p>
+    </div>
+
+    <div class="card">
+      <div class="label">AI · Public Markets · Angel Investing</div>
+      <h3>Anthropic Confidentially Files S-1 — First AI Lab to File for IPO</h3>
+      <p>Anthropic confidentially submitted a draft Form S-1 to the SEC on June 1, formally launching the IPO process less than a week after its $65B Series H at a $965B valuation. Revenue run-rate hit ~$47B in May (up from ~$10B at year-end 2025), and the filing comes alongside Project Glasswing's expansion of Claude Mythos to 150+ organizations across 15+ countries, including critical-infrastructure pilots and a new Claude Security offering. Anthropic is moving ahead of OpenAI, which is preparing its own confidential filing. <a href="https://www.anthropic.com/news/confidential-draft-s1-sec" target="_blank" rel="noopener">[Anthropic]</a> <a href="https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html" target="_blank" rel="noopener">[CNBC]</a></p>
+      <p class="why"><strong>Why it matters to Jamie:</strong> As an Applied AI Leader betting NWA Intelligence on Claude as durable plumbing, this is the strongest possible signal that the model layer is no longer a science project — it's becoming a publicly-traded utility with audited financials, an SEC-supervised disclosure regime, and a forced cadence of forward guidance. As an Angel Investor, Anthropic's transition into the public market resets the comparison set for every AI-native deal you evaluate: private valuations now anchor against a (soon-to-be) listed comp with ~$47B ARR and known unit economics, which makes 2026 vintage deal pricing materially more legible than 2024 was.</p>
+      <div class="action"><strong>Suggested action:</strong> Add an "implied public comp" line to your standard NWA diligence template — once Anthropic's S-1 goes public-public, every AI-native deal in your pipeline gets a real comparable, not a hand-waved one.</div>
+    </div>
+
+    <div class="card">
+      <div class="label">Fintech · Late-Stage Venture</div>
+      <h3>Ramp Raises $750M at $44B — Pension Capital Now Lead-Investing in Private Fintech</h3>
+      <p>Ramp closed a $750M financing led by Iconiq Capital with Canadian pension giant <strong>Ontario Teachers' Pension Plan</strong> and Singapore sovereign fund <strong>GIC</strong> as co-leads, setting a $44B valuation for the seven-year-old spend-management platform — roughly double its prior round. The structure matters as much as the size: when OTPP and GIC are <em>leading</em> a private growth round (not just participating), the late-stage market is functionally absorbing what used to be public-market demand. <a href="https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/" target="_blank" rel="noopener">[Crunchbase News]</a></p>
+      <p class="why"><strong>Why it matters to Jamie:</strong> As an Angel Investor and Board Director, this is a structural signal worth filing away — pension funds taking lead positions in private growth rounds means the liquidity calendar for your early-stage portfolio is shifting again. Companies can now realistically stay private to $40B+ with pension/sovereign LPs underwriting the late stages, which extends time-to-exit but also tightens the secondary market window for angels who want partial liquidity before a true IPO. Worth raising at the next NWA member meeting.</p>
+    </div>
+
+    <div class="card">
+      <div class="label">Robotics · Physical AI · Angel Investing</div>
+      <h3>Generalist AI Raises $400M at $2B — The Consensus Physical-AI Bet Forms</h3>
+      <p>Generalist AI closed a $400M round led by Radical Ventures (with USV, 8VC, Norwest, Nvidia, and Bezos Expeditions) at a $2B valuation to build general-purpose AI models for robots operating in factories, warehouses, and labs. The company's GEN-1 model (launched April 2026) is reported to execute complex physical tasks ~3× faster than prior baselines at ~99% success vs. ~64% for older systems. Angels in the round include <strong>Fei-Fei Li, Naval Ravikant, Eric Yuan, and Bin Lin</strong> — the kind of cap-table density that signals category consensus. <a href="https://siliconangle.com/2026/06/04/generalist-ai-raises-400m-2b-valuation-build-general-intelligence-real-world/" target="_blank" rel="noopener">[SiliconANGLE]</a></p>
+      <p class="why"><strong>Why it matters to Jamie:</strong> As an Angel Investor watching where the smartest money is converging, this is the round to study — when Fei-Fei Li, Naval, and Bezos Expeditions all show up in a single robotics deal, you're looking at the emerging consensus framework for evaluating physical-AI bets. The reusable lesson is the same one Anthropic taught at the model layer: in categories where the winner becomes infrastructure, expect mega-rounds at small revenue but verified technical lead, and a power-law outcome distribution. Lines up perfectly with this week's Venture Learning lesson.</p>
+    </div>
+  </div>
+
+  <!-- SECTION B -->
+  <div class="section sec-b">
+    <div class="section-header">
+      <h2>Section B — On My Radar</h2>
+    </div>
+    <ul class="radar-list">
+      <li>
+        <span class="item-title">Helion Raises $465M Series G at $15.5B — Fusion Goes From R&amp;D to Power-Plant Build</span> — Helion closed a $465M round led by Thrive Capital on June 4 at a $15.5B post-money (nearly 3× its January 2025 mark), with <strong>Bill Ford</strong> participating personally alongside Lux, Lightspeed, SoftBank Vision Fund 2, and Sam Altman; capital is going toward Helion's first commercial fusion plant under contract with Microsoft. Largest PNW VC round of the year so far. <a href="https://techcrunch.com/2026/06/04/helion-the-sam-altman-backed-fusion-startup-raises-465m-to-build-a-power-plant-for-microsoft/" target="_blank" rel="noopener">[TechCrunch]</a>
+      </li>
+      <li>
+        <span class="item-title">Supabase Raises $500M at $10.5B — GIC Leads, Open-Source AI App Platform</span> — GIC led a $500M round at a $10.5B valuation, capping a 6-year run for the open-source backend platform that has become the default for AI app builders. GIC leading both Ramp and Supabase this week reinforces that sovereign capital is now setting late-stage AI/fintech price discovery. <a href="https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/" target="_blank" rel="noopener">[Crunchbase News]</a>
+      </li>
+      <li>
+        <span class="item-title">Suno Raises $400M at $5.4B — AI Music ARR Hits $300M While Copyright Cases Continue</span> — Bond Capital led Suno's Series D at $5.4B (2.2× its valuation from seven months ago), with the company at $300M ARR, 2M+ paid subscribers, and 7M+ tracks/day generated. Universal and Sony copyright lawsuits remain active, but Suno is simultaneously teasing its first <em>licensed</em> music model — a textbook "build fast, settle later" generative-AI playbook. <a href="https://techcrunch.com/2026/06/03/still-facing-copyright-lawsuits-ai-music-generator-suno-raises-another-400m/" target="_blank" rel="noopener">[TechCrunch]</a>
+      </li>
+      <li>
+        <span class="item-title">Microsoft Unveils MAI-Code-1-Flash at Build — Lessens OpenAI Dependence, Lowers Dev Costs</span> — Microsoft introduced MAI-Code-1-Flash, its first internally trained coding model, in a clear strategic move to reduce reliance on OpenAI for Copilot and developer tooling. Pairs with the prior decision to sunset internal Claude Code licenses on June 30 — Microsoft is consolidating around its own stack while everyone else is paying tribute to Anthropic. <a href="https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html" target="_blank" rel="noopener">[CNBC]</a>
+      </li>
+      <li>
+        <span class="item-title">AlphaSense Raises $350M — AI Market-Intelligence Workflow Tool</span> — Closed a $350M round led by Vitruvian Partners with Accenture Ventures, JPM Asset Management, D.E. Shaw Ventures, and Pinegrove participating, positioning itself as the AI-native workflow layer for institutional research and competitive intelligence. A useful comp when evaluating NWA's own intelligence-layer thesis. <a href="https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/" target="_blank" rel="noopener">[Crunchbase News]</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- SECTION C -->
+  <div class="section sec-c">
+    <div class="section-header">
+      <h2>Section C — Trends to Watch</h2>
+    </div>
+
+    <div class="trend-card">
+      <h3>The Series A Bar Keeps Rising — AI Is Now ~80% of Global Venture Dollars</h3>
+      <p>Series A rounds for AI startups now average $51.9M — roughly 30% above non-AI peers — and AI captured 80% of total global venture funding in Q1 2026 ($242B of $300B+). At the same time, the operating-metric bar for an AI Series A is hardening: $2M+ ARR, sub-1.5× burn multiples, 70%+ gross margins, and AI-discoverability ("does your category summary surface you?") is now a real diligence axis. The result: bifurcation — proven repeat founders get pre-revenue mega-rounds; first-timers face a harder gate than at any point in the last decade.</p>
+      <p class="why"><strong>Why it matters to Jamie:</strong> Your diligence framework has to know which game it's playing on each deal — repeat-founder mega-round logic and first-timer Series A logic are now structurally different deals. As a board director and AI educator, this is also the data backing for why founder evaluation and burn discipline are the curriculum to lean into.</p>
+    </div>
+
+    <div class="trend-card">
+      <h3>Enterprise AI Agent Adoption — From &lt;5% to 40% in 18 Months</h3>
+      <p>Gartner now projects <strong>40% of enterprise apps</strong> will integrate AI agents by end of 2026, up from less than 5% in 2025. The reinforcing tells this week: Microsoft Copilot Studio expanding, Salesforce Agentforce 360, ServiceNow AI Agents, and IBM/Oracle agent builders all shipping into GA. Anthropic's expansion of Claude Mythos into critical-infrastructure deployments is the same trend at the regulated-industry end of the curve.</p>
+      <p class="why"><strong>Why it matters to Jamie:</strong> As an applied AI builder and FAU educator, this is the adoption curve your students and the boards you sit on are now actually inside. The interesting strategic question is no longer "should we adopt agents?" — it's "which workflows are agent-native vs. assistant-augmented?" That's a better-shaped teaching question for the next FAU session.</p>
+    </div>
+
+    <div class="trend-card">
+      <h3>"Cognitive Debt" Becomes the Counter-Narrative to Agentic Adoption</h3>
+      <p>New research is sharpening the "AI-as-Amplifier Paradox" — initial productivity gains masking "intuition rust" and identity commoditization in expert roles. The BCG self-automator stat (27%) from May has been reinforced this week by fresh academic and Microsoft Research framing that AI usage often suppresses critical engagement rather than augmenting it. The frame that's emerging: human expertise matters <em>more</em> in an AI-powered world, but only if individuals and organizations design for <em>guiding-and-critiquing</em> rather than <em>delegating-and-trusting</em>.</p>
+      <p class="why"><strong>Why it matters to Jamie:</strong> As an AI educator and public thinker, this is the most fertile counter-narrative of the year — and one your builder/educator/board credibility is uniquely positioned to occupy. As an angel investor, it's also a real signal on enterprise AI tooling: products that earn long-term wallet share will be the ones that <em>develop</em> their users, not the ones that quietly atrophy them.</p>
+    </div>
+  </div>
+
+  <!-- SECTION D -->
+  <div class="section sec-d">
+    <div class="section-header">
+      <h2>Section D — Learn and Watch</h2>
+    </div>
+
+    <div class="learn-card">
+      <div class="learn-icon">&#127911;</div>
+      <div>
+        <div class="learn-title">Marc Andreessen's 2026 Outlook: AI Timelines, US vs. China, and The Price of AI (a16z Podcast)</div>
+        <p>Marc's most current framework on AI timelines, geopolitical posture, and the falling cost of intelligence (~10×/year for equivalent capability). The "price of AI" segment is the most useful piece for sharpening your investor-and-educator mental model on where defensibility actually lives.</p>
+        <p class="reason">Worth your time: The clearest articulation this year of how rapidly-deflating inference cost reshapes investor expectations for AI-app gross margins — directly affects how you read every AI deal you see.</p>
+        <p><a href="https://a16z.com/podcast/marc-andreessens-2026-outlook-ai-timelines-us-vs-china-and-the-price-of-ai/" target="_blank" rel="noopener">a16z podcast page →</a> · <a href="https://www.youtube.com/watch?v=xRh2sVcNXQ8" target="_blank" rel="noopener">YouTube version →</a></p>
+      </div>
+    </div>
+
+    <div class="learn-card">
+      <div class="learn-icon">&#128221;</div>
+      <div>
+        <div class="learn-title">Introducing Dynamic Workflows in Claude Code (Anthropic)</div>
+        <p>The official write-up on the dynamic-workflows feature shipped with Opus 4.8: how planning, hundreds of parallel subagents, and verification fold into a single Claude Code session. Directly relevant to your NWA Intelligence builds — pair with the "Even Anthropic Engineers Use This Claude Code Workflow" YouTube walkthrough for a concrete pattern to copy.</p>
+        <p class="reason">Worth your time: This is the production-grade pattern Anthropic engineers actually use — copy it, don't reinvent it. Your next codebase-scale NWA Intelligence task is the right place to try it.</p>
+        <p><a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code" target="_blank" rel="noopener">Anthropic blog →</a> · <a href="https://www.youtube.com/watch?v=ASAaKhK1B5w" target="_blank" rel="noopener">YouTube walkthrough →</a></p>
+      </div>
+    </div>
+
+    <div class="learn-card">
+      <div class="learn-icon">&#128218;</div>
+      <div>
+        <div class="learn-title">Power Law Returns in VC: The Concept That Makes or Breaks Your Portfolio (Hustle Fund)</div>
+        <p>The single best plain-English, angel-grade primer on the math of power-law returns and why portfolio construction at the angel level (25+ companies, often more) is the only honest answer. Pairs <em>exactly</em> with this week's Venture Learning lesson — read first, then study the lesson.</p>
+        <p class="reason">Worth your time: 15-minute read that will quietly change how you size your next 12 months of angel checks. The math is more honest than the marketing of the asset class.</p>
+        <p><a href="https://www.hustlefund.vc/post/angel-squad-power-law-returns-in-venture-capital-the-concept-that-makes-or-breaks-your-portfolio" target="_blank" rel="noopener">Hustle Fund →</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION E -->
+  <div class="section sec-e">
+    <div class="section-header">
+      <h2>Section E — Ideas and Opportunities</h2>
+    </div>
+
+    <div class="idea-card">
+      <h3>FAU Teaching Case Study: This Week's Mega-Round Map</h3>
+      <p>This week alone, ~$2.2B+ landed in four AI-adjacent mega-rounds (Ramp $750M, Helion $465M, Supabase $500M, Suno $400M) plus Generalist AI's $400M. Use them as a real-time "capital gravity" case in the next FAU AI for Business Leaders session: which would your students fund, which would they short, and what would they want to see in the next quarter to revise that view? Forces students to articulate diligence intuition, not memorize categories.</p>
+      <p class="why"><strong>Why it matters:</strong> As an AI educator, current-quarter empirical case studies give your sessions a credibility that no textbook framework can match — and the diversity of these five deals (fintech, fusion, infra, music, robotics) is the perfect spread for an "all of AI is now investable" discussion.</p>
+    </div>
+
+    <div class="idea-card">
+      <h3>Medium Essay: "The Public-Private Pricing Bridge"</h3>
+      <p>Anthropic's S-1, Ramp's pension-led $44B round, and Friday's chip-led public selloff are three faces of the same story: the wall between public and private pricing is dissolving. There's a Medium essay here on what that means for founders, angels, and the LPs underneath them — written from the angel-board-builder vantage point that almost no one in mainstream AI commentary holds.</p>
+      <p class="why"><strong>Why it matters:</strong> As an Applied AI Leader and angel investor, this is exactly the differentiated thesis piece that builds your public voice — empirical, opinionated, and grounded in the deals you actually see.</p>
+    </div>
+
+    <div class="idea-card">
+      <h3>Portfolio Action: JEPQ/JEPI Cushion Validated; Re-Examine the Covered-Call Ladder</h3>
+      <p>A choppy/down week with chips leading the selloff is precisely the regime in which JEPQ/JEPI's call-overlay premium does its job — both ETFs paid their June distributions before Friday's drawdown. It's also a nudge to revisit the individual QQQ/F covered-call ladder while implied vol is briefly less compressed. The Options tab's Watch this week is the operational page for that.</p>
+      <p class="why"><strong>Why it matters:</strong> As the steward of the family wealth portfolio, this is the kind of week where the income/covered-call sleeve earns its keep — and a useful empirical pass on the JEPQ/JEPI thesis as you continue to size them.</p>
+    </div>
+  </div>
+
+  <!-- SECTION F -->
+  <div class="section sec-f">
+    <div class="section-header">
+      <h2>Section F — This Week's Calendar</h2>
+    </div>
+
+    <div class="cal-empty">
+      <strong>Calendar unavailable this week</strong> — Google Calendar connector not reachable in the scheduled run. Reach out directly if there's a specific board, NWA, FAU, or OuchySport date you'd like surfaced into next week's briefing — I'll pull it manually then.
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

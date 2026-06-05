@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31",
+  "last_updated": "2026-06-05",
   "items": [
     {
       "headline": "Modal Labs raises $355M Series C at $4.65B — serverless AI infrastructure 5x revenue in 8 months",
@@ -132,6 +132,66 @@
       "source": "CNBC / Yahoo Finance",
       "url": "https://pugsma.com/2026/05/26/may-26th-2026-sp-500-qqq-and-iwm-chart-update/",
       "date_reported": "2026-05-31"
+    },
+    {
+      "headline": "Anthropic confidentially files draft S-1 with SEC for IPO — $47B ARR run-rate, first AI lab to file",
+      "source": "Anthropic / CNBC / TechCrunch",
+      "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "date_reported": "2026-06-05"
+    },
+    {
+      "headline": "Ramp raises $750M at $44B led by Iconiq with Ontario Teachers' Pension Plan and GIC as co-leads",
+      "source": "Crunchbase News",
+      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/",
+      "date_reported": "2026-06-05"
+    },
+    {
+      "headline": "Generalist AI raises $400M at $2B led by Radical Ventures — Fei-Fei Li, Naval, Bezos Expeditions, Nvidia in cap table",
+      "source": "SiliconANGLE / Bloomberg",
+      "url": "https://siliconangle.com/2026/06/04/generalist-ai-raises-400m-2b-valuation-build-general-intelligence-real-world/",
+      "date_reported": "2026-06-05"
+    },
+    {
+      "headline": "Helion raises $465M Series G at $15.5B led by Thrive Capital — fusion power plant for Microsoft, Bill Ford participates",
+      "source": "TechCrunch / Helion",
+      "url": "https://techcrunch.com/2026/06/04/helion-the-sam-altman-backed-fusion-startup-raises-465m-to-build-a-power-plant-for-microsoft/",
+      "date_reported": "2026-06-05"
+    },
+    {
+      "headline": "Supabase raises $500M at $10.5B led by GIC — open-source backend platform default for AI app builders",
+      "source": "Crunchbase News",
+      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/",
+      "date_reported": "2026-06-05"
+    },
+    {
+      "headline": "Suno raises $400M Series D at $5.4B led by Bond Capital — $300M ARR AI music, copyright lawsuits ongoing",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/06/03/still-facing-copyright-lawsuits-ai-music-generator-suno-raises-another-400m/",
+      "date_reported": "2026-06-05"
+    },
+    {
+      "headline": "Microsoft unveils MAI-Code-1-Flash at Build — first in-house coding model, lessens OpenAI dependence",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html",
+      "date_reported": "2026-06-05"
+    },
+    {
+      "headline": "AlphaSense raises $350M led by Vitruvian Partners — AI-native market intelligence workflow platform",
+      "source": "Crunchbase News",
+      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/",
+      "date_reported": "2026-06-05"
+    },
+    {
+      "headline": "Anthropic expands Project Glasswing — Claude Mythos preview to 150+ orgs in 15+ countries with Claude Security",
+      "source": "TechCrunch / Anthropic",
+      "url": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/",
+      "date_reported": "2026-06-05"
+    },
+    {
+      "headline": "S&P 500 falls ~2% on week, Nasdaq -4.7% as chipmakers led Friday rout; 10Y to 4.54% on hot May +172K payrolls",
+      "source": "Motley Fool / Schwab / CNBC",
+      "url": "https://www.schwab.com/learn/story/stock-market-update-open",
+      "date_reported": "2026-06-05"
     }
   ]
 }

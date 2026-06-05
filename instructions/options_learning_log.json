@@ -1,11 +1,12 @@
 {
-  "last_updated": "2026-06-04",
+  "last_updated": "2026-06-05",
   "covered": [
     { "topic_slug": "what-is-a-covered-call", "date": "2026-05-04" },
     { "topic_slug": "moneyness-and-strike-selection", "date": "2026-05-11" },
     { "topic_slug": "dte-and-theta-decay", "date": "2026-05-18" },
     { "topic_slug": "premium-yield-and-annualizing", "date": "2026-05-25" },
     { "topic_slug": "ex-dividend-and-early-assignment-risk", "date": "2026-06-01" },
-    { "topic_slug": "assignment-and-share-protection", "date": "2026-06-04" }
+    { "topic_slug": "assignment-and-share-protection", "date": "2026-06-04" },
+    { "topic_slug": "covered-calls-on-etfs-vs-single-stocks", "date": "2026-06-05" }
   ]
 }
