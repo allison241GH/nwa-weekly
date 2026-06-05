@@ -2,7 +2,7 @@
 #
 # run-weekly-briefing.sh — unattended generator for the Weekly NWA Briefing.
 #
-# Invoked by the launchd agent ai.lvng.nwa-weekly-briefing every Sunday at 6:07 PM ET
+# Invoked by the launchd agent ai.lvng.nwa-weekly-briefing every Friday at 6:00 PM ET
 # (or on next wake if the Mac is asleep). Runs Claude Code headlessly in full-bypass
 # mode so no tool ever prompts, then commits + pushes so Vercel rebuilds the site.
 #
@@ -36,7 +36,7 @@ LOG="$LOG_DIR/run-$STAMP.log"
 
 cd "$REPO" || { echo "FATAL: cannot cd to $REPO" >> "$LOG"; exit 1; }
 
-PROMPT="This is the automated Sunday scheduled run of the Weekly NWA Briefing (NOT a manual run). \
+PROMPT="This is the automated Friday scheduled run of the Weekly NWA Briefing (NOT a manual run). \
 Read $SKILL and follow it end-to-end, including Step 8 (commit, push, notify). \
 Use today's actual date for all file naming. If the Google Calendar connector is unavailable, \
 note that in Section F and continue — never block or retry."

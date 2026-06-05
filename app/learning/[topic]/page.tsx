@@ -55,7 +55,7 @@ export default async function TopicPage({
           </p>
           <p className="text-slate-700">
             This topic hasn&rsquo;t come up in the rotation yet. Lessons will appear
-            here as they&rsquo;re taught in upcoming Sunday briefings.
+            here as they&rsquo;re taught in upcoming weekly briefings.
           </p>
         </div>
       ) : (

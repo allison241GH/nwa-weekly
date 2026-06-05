@@ -24,7 +24,7 @@ export default function LearningIndex() {
         </h1>
         <p className="text-slate-700 text-base">
           A weekly coaching curriculum across 25 angel and venture investing topics —
-          one lesson per Sunday, building a complete foundation over time. Below: every
+          one lesson per week, building a complete foundation over time. Below: every
           topic you&rsquo;ve already covered, plus the ones still ahead.
         </p>
       </header>

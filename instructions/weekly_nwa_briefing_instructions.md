@@ -1,9 +1,9 @@
 # Weekly NWA Briefings — Weekly Run Instructions
-*These instructions drive the Sunday 6:00 PM ET generation of Jamie's Weekly NWA Briefing. The scheduled Claude agent runs them automatically.*
+*These instructions drive the Friday 6:00 PM ET generation of Jamie's Weekly NWA Briefing. The scheduled Claude agent runs them automatically.*
 
 ## TWO OUTPUTS PER RUN
 
-Each Sunday run produces TWO independent deliverables:
+Each Friday run produces TWO independent deliverables:
 
 1. **The weekly briefing** (Sections A–F only): markdown at `content/briefings/YYYY-MM-DD.md`, rendered at `nwa-weekly.vercel.app/briefings/YYYY-MM-DD`. This is the news + insights digest.
 2. **The week's Venture Learning lesson** (formerly Section G): a standalone markdown file at `content/learning/<topic-slug>/YYYY-MM-DD.md`, rendered at `nwa-weekly.vercel.app/learning/<topic-slug>/YYYY-MM-DD`. This is the coaching curriculum, organized by topic across the 25-topic rotation.
@@ -184,7 +184,7 @@ Pull only items published in the **last 7 days** from the following. If nothing 
 Check Jamie's Google Calendar for **the upcoming week (Monday through Sunday)**.
 
 > **Unattended-run fallback:** The Google Calendar connector is a claude.ai login-based
-> connector and may be unavailable in the automated Sunday background run. If a calendar
+> connector and may be unavailable in the automated Friday background run. If a calendar
 > call fails or the connector is not reachable, do **not** block, prompt, or retry — write
 > "Calendar unavailable this week (connector not reachable in scheduled run)." in Section F
 > and continue with the rest of the briefing.
@@ -397,7 +397,7 @@ Lesson HTML files in `reports/` are an **archive** and are **never auto-pruned**
 
 The **Options** tab on the site has two areas: a weekly **Covered-Call Watch** (this step) and an **Options Learning** curriculum (STEP 5.7). The Watch is a tactical, position-specific entry for the individual positions Jamie writes covered calls against: **QQQ** and **F (Ford)**.
 
-This is **framework + illustrative strikes**, not live brokerage data. The Sunday run is headless with WebSearch only — there is no options-data API. Source approximate prices and ex-dividend dates via WebSearch, present clearly-labeled *illustrative* candidates, and let Jamie make the final call in his broker.
+This is **framework + illustrative strikes**, not live brokerage data. The Friday run is headless with WebSearch only — there is no options-data API. Source approximate prices and ex-dividend dates via WebSearch, present clearly-labeled *illustrative* candidates, and let Jamie make the final call in his broker.
 
 ### Research (WebSearch)
 For **QQQ** and **F** each gather: (1) current/most-recent share price, (2) the next **ex-dividend date** and approximate distribution. (QQQ pays a small quarterly distribution, typically ex-div around the third Friday of Mar/Jun/Sep/Dec; F pays a ~$0.15 regular quarterly dividend and occasionally a supplemental — check for both.)
@@ -411,12 +411,12 @@ Frame every entry around the **dual goal — income + share protection**: the pr
 For each ticker, explicitly flag whether any ex-dividend date falls **inside** the option windows, and whether the candidate strikes would be ITM near it. State the rule plainly: **never let a covered call sit in-the-money into an ex-dividend date Jamie cares about** — an ITM call can be assigned early the day before ex-div to capture the dividend. Note F's early-assignment risk specifically when a roll into a later expiry would straddle its ex-div.
 
 ### Write the Watch file
-Save to `content/options-watch/YYYY-MM-DD.md` (Sunday's date) with this front-matter:
+Save to `content/options-watch/YYYY-MM-DD.md` (Friday's date) with this front-matter:
 
 ```yaml
 ---
 title: "Covered-Call Watch — Week of [Mon DD]"
-date: YYYY-MM-DD          # Sunday's date (generation date)
+date: YYYY-MM-DD          # Friday's date (generation date)
 week_of: YYYY-MM-DD       # the Monday that starts the covered week
 slug: YYYY-MM-DD
 positions: ["QQQ", "F"]
@@ -487,7 +487,7 @@ The weekly briefing is published in **two formats**:
 Save the HTML report to:
 `reports/weekly_nwa_briefing_YYYY-MM-DD.html`
 
-The date in the filename is **Sunday's date** (the generation date). Use the same visual style as before:
+The date in the filename is **Friday's date** (the generation date). Use the same visual style as before:
 
 Style Guidelines:
 - White background (#ffffff), clean sans-serif font (system-ui, -apple-system, sans-serif), dark readable text (#1a1a1a)
@@ -516,7 +516,7 @@ Front-matter format:
 ```yaml
 ---
 title: "Weekly NWA Briefing — Week of [Mon DD]"
-date: YYYY-MM-DD          # Sunday's date (generation date)
+date: YYYY-MM-DD          # Friday's date (generation date)
 week_of: YYYY-MM-DD       # the Monday that starts the covered week
 slug: YYYY-MM-DD
 top_story: "[one-sentence Section A item 2 headline]"
@@ -617,7 +617,7 @@ If you had to shorten a section to resolve a duplicate, note which one and why.
 
 ## STEP 8 - PUBLISH AND NOTIFY
 
-When run by the scheduled agent (Sunday 6:00 PM ET):
+When run by the scheduled agent (Friday 6:00 PM ET):
 
 1. **Commit & push** the new files to the `nwa-weekly` GitHub repo (`allison241GH/nwa-weekly`) on `main`. Vercel auto-deploys.
 2. **Wait for Vercel deploy** to complete (poll the deployment status briefly).

@@ -21,7 +21,7 @@ export default function Home() {
         <div className="text-slate-600">
           <p className="text-lg font-semibold mb-2">No briefings yet.</p>
           <p className="text-sm">
-            The first weekly briefing will publish Sunday at 6:00 PM ET.
+            The first weekly briefing will publish Friday at 6:00 PM ET.
           </p>
         </div>
       ) : (
