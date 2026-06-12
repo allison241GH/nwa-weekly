@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly NWA Briefing — Week of June 8–12, 2026</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #ffffff;
+      color: #1a1a1a;
+      line-height: 1.65;
+      font-size: 16px;
+    }
+    .outer { max-width: 860px; margin: 0 auto; padding: 0 20px 60px; }
+
+    .site-header {
+      background: #0a1628;
+      color: #fff;
+      padding: 32px 24px 28px;
+      margin-bottom: 36px;
+    }
+    .site-header h1 { font-size: 1.55rem; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 4px; }
+    .site-header .date-range { font-size: 0.95rem; opacity: 0.78; margin-bottom: 8px; }
+    .site-header .subtitle { font-size: 0.82rem; opacity: 0.6; font-style: italic; }
+
+    .section { margin-bottom: 44px; }
+    .section-header { border-top: 4px solid; padding-top: 14px; margin-bottom: 20px; }
+    .section-header h2 { font-size: 1.05rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+
+    .sec-a .section-header { border-color: #0a1628; }
+    .sec-a .section-header h2 { color: #0a1628; }
+    .sec-b .section-header { border-color: #2563eb; }
+    .sec-b .section-header h2 { color: #2563eb; }
+    .sec-c .section-header { border-color: #0d9488; }
+    .sec-c .section-header h2 { color: #0d9488; }
+    .sec-d .section-header { border-color: #4f46e5; }
+    .sec-d .section-header h2 { color: #4f46e5; }
+    .sec-e .section-header { border-color: #d97706; }
+    .sec-e .section-header h2 { color: #d97706; }
+    .sec-f .section-header { border-color: #7c3aed; }
+    .sec-f .section-header h2 { color: #7c3aed; }
+
+    .card {
+      background: #f8fafc;
+      border-radius: 8px;
+      padding: 20px 22px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    }
+    .card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; color: #0a1628; }
+    .card .label { display: inline-block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #64748b; margin-bottom: 6px; }
+    .card p { margin-bottom: 10px; font-size: 0.95rem; }
+    .card p:last-child { margin-bottom: 0; }
+    .card .why { color: #374151; font-style: italic; font-size: 0.9rem; }
+    .card .action { color: #0a1628; font-size: 0.88rem; border-left: 3px solid #0a1628; padding-left: 10px; margin-top: 8px; }
+
+    .markets-card {
+      background: #0a1628;
+      color: #e2e8f0;
+      border-radius: 8px;
+      padding: 20px 22px;
+      margin-bottom: 16px;
+    }
+    .markets-card .label { color: #94a3b8; }
+    .markets-card h3 { color: #f1f5f9; margin-bottom: 8px; }
+    .markets-card p { color: #cbd5e1; font-size: 0.95rem; margin-bottom: 8px; }
+    .markets-card .why { color: #94a3b8; font-style: italic; font-size: 0.88rem; }
+
+    .radar-list { list-style: none; }
+    .radar-list li { padding: 12px 0; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+    .radar-list li:last-child { border-bottom: none; }
+    .radar-list .item-title { font-weight: 700; color: #0a1628; }
+
+    .trend-card {
+      border-left: 4px solid #0d9488;
+      padding: 14px 18px;
+      background: #f0fdfa;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 14px;
+    }
+    .trend-card h3 { font-size: 0.97rem; font-weight: 700; color: #134e4a; margin-bottom: 6px; }
+    .trend-card p { font-size: 0.93rem; margin-bottom: 6px; }
+    .trend-card .why { font-size: 0.88rem; color: #0f766e; font-style: italic; }
+
+    .learn-card {
+      display: flex;
+      gap: 14px;
+      background: #eef2ff;
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin-bottom: 12px;
+      align-items: flex-start;
+    }
+    .learn-icon { font-size: 1.5rem; flex-shrink: 0; margin-top: 2px; }
+    .learn-card .learn-title { font-weight: 700; font-size: 0.95rem; color: #3730a3; margin-bottom: 4px; }
+    .learn-card p { font-size: 0.9rem; color: #374151; margin-bottom: 4px; }
+    .learn-card .reason { font-size: 0.86rem; color: #4f46e5; font-style: italic; }
+
+    .idea-card {
+      border-left: 4px solid #d97706;
+      padding: 14px 18px;
+      background: #fffbeb;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 14px;
+    }
+    .idea-card h3 { font-size: 0.97rem; font-weight: 700; color: #92400e; margin-bottom: 6px; }
+    .idea-card p { font-size: 0.93rem; margin-bottom: 6px; }
+    .idea-card .why { font-size: 0.88rem; color: #b45309; font-style: italic; }
+
+    .cal-card {
+      background: #faf5ff;
+      border-left: 4px solid #7c3aed;
+      border-radius: 0 6px 6px 0;
+      padding: 14px 18px;
+      font-size: 0.93rem;
+      color: #4c1d95;
+      margin-bottom: 14px;
+    }
+    .cal-card .cal-title { font-weight: 700; color: #5b21b6; margin-bottom: 6px; }
+    .cal-card .prep { font-style: italic; color: #6b21a8; font-size: 0.88rem; }
+
+    a { color: inherit; }
+    strong { font-weight: 700; }
+    em { font-style: italic; }
+  </style>
+</head>
+<body>
+<div class="site-header">
+  <div class="outer" style="padding-bottom:0;">
+    <h1>Weekly NWA Briefings</h1>
+    <div class="date-range">Week of June 8–12, 2026</div>
+    <div class="subtitle">SpaceX $75B IPO · Claude Fable 5 Goes Public · Mach Industries $1.8B · NinjaOne $12.3B Secondary · The Cheapening Frontier</div>
+  </div>
+</div>
+
+<div class="outer">
+
+  <!-- SECTION A -->
+  <div class="section sec-a">
+    <div class="section-header">
+      <h2>Section A — Top Stories of the Week</h2>
+    </div>
+
+    <div class="markets-card">
+      <div class="label">Markets &amp; Macro</div>
+      <h3>Stocks Melt Up on Peace-and-Cuts Hopes; SpaceX Debut Adds the Jolt</h3>
+      <p>The S&amp;P 500 clawed back last week's chip-led rout to finish near 7,449 and the Nasdaq rebounded toward ~25,889, as fading Iran tensions (a possible ceasefire/sanctions-relief deal pushed crude down ~2% to ~$85) revived rate-cut hopes — odds of a 2026 cut climbed back to ~43% — and SpaceX's blockbuster Nasdaq debut added a jolt of risk-on energy ahead of next week's June 16–17 Fed meeting. The strategic read: a "peace-and-cuts" tape lifted the whole risk complex, but the 10-year still sits at ~4.48% and the Fed, not the headlines, sets the next leg, so the long-term passive stance is unchanged.</p>
+      <p class="why"><strong>Why it matters to Jamie:</strong> Your S&amp;P/QQQ core recovered most of last week's drawdown in a melt-up week — pleasant, but the more useful signal is for your income sleeve: in exactly this kind of sharp rally, <strong>JEPQ and JEPI's</strong> covered-call overlay caps the upside you'd otherwise capture on the passive QQQ/S&amp;P core, the mirror image of the cushion they gave you during last week's selloff. That trade-off is the whole reason they sit beside the core rather than replacing it — and it's the same upside-rent decision now staring at your individual QQQ and F covered-call ladder with QQQ back near highs into a June 22 ex-dividend (see this week's Options tab).</p>
+    </div>
+
+    <div class="card">
+      <div class="label">Venture Exits · Public Markets · Angel Investing</div>
+      <h3>SpaceX Prices the Largest IPO Ever — and the AI-Era Listing Window Cracks Open</h3>
+      <p>SpaceX debuted on the Nasdaq (ticker <strong>SPCX</strong>) on June 12, pricing the largest IPO in history at <strong>$135/share to raise ~$75B</strong>, then opening at $150 and closing up <strong>19% at $160.95</strong> — briefly touching a &gt;$2.25T valuation intraday and making Elon Musk the world's first trillionaire on paper. Commentators framed it as the opening act of a wave of AI- and frontier-tech listings expected over the coming months, with Anthropic's confidential S-1 (filed June 1) and a likely OpenAI filing in the same queue. <a href="https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html" target="_blank" rel="noopener">[CNBC]</a> <a href="https://www.bloomberg.com/news/articles/2026-06-12/spacex-ipo-spcx-prepares-for-debut-after-75-billion-ipo-smashes-record" target="_blank" rel="noopener">[Bloomberg]</a></p>
+      <p class="why"><strong>Why it matters to Jamie:</strong> As an Angel Investor, this is the single most important liquidity signal of the year — after a multi-year IPO drought that forced angels to model 10-year-plus holds and lean on secondaries, a marquee debut popping 19% reopens the <em>exit</em> end of the power-law math you actually live in. As a Board Director, a credibly open listing window changes the strategic conversation at the companies you advise: "default-stay-private" was a function of a closed IPO market, and that assumption is now testable again. It pairs directly with this week's Venture Learning lesson on exit scenarios.</p>
+      <div class="action"><strong>Suggested action:</strong> At the next NWA member meeting, reframe the pipeline review around exit <em>timing</em>, not just entry price — if the window holds through the Anthropic/OpenAI filings, your later-stage positions may have a real liquidity path 12–24 months sooner than the 2024–25 base case assumed.</div>
+    </div>
+
+    <div class="card">
+      <div class="label">AI · Applied AI Leadership · Frontier Models</div>
+      <h3>Anthropic Releases Claude Fable 5 — Its First Public Mythos-Class Model, With Hard Safety Rails</h3>
+      <p>On June 9 Anthropic made <strong>Claude Fable 5</strong> generally available — the first Mythos-class model released to the public — alongside the restricted <strong>Mythos 5</strong> for government-adjacent cybersecurity work. Anthropic calls Fable 5 state-of-the-art across nearly every benchmark tested (&gt;10% above Opus 4.8 on some), with standout software-engineering, knowledge-work, vision, scientific-research, and autonomous-task performance. Critically, it ships with <em>hard</em> safety limits: in high-risk cyber, bio, chemistry, and "distillation" domains the model refuses and falls back to Opus 4.8. It's live on the Claude API, AWS Bedrock, Vertex AI, and Microsoft Foundry — free to Pro/Max/Team/Enterprise seats through June 22, then priced at $10/M input and $50/M output tokens. <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener">[Anthropic]</a> <a href="https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/" target="_blank" rel="noopener">[TechCrunch]</a></p>
+      <p class="why"><strong>Why it matters to Jamie:</strong> As an Applied AI Leader betting NWA Intelligence on Claude as durable plumbing, this is the most capable model you can now build on — and the safety-tiering design (refuse-and-fall-back rather than degrade silently) is itself a deployable pattern for any agent you put in front of members. As an AI Educator, the "released days after warning AI is getting too dangerous" framing is the cleanest real-world case you'll get on the capability-vs-control tension your FAU students keep asking about.</p>
+      <div class="action"><strong>Suggested action:</strong> Run your NWA Intelligence diligence/research pipeline on Fable 5 <em>before June 22</em> while it's free on your existing seats — benchmark it head-to-head against your current Opus 4.8 workflows so you know whether the output lift justifies the $50/M output token cost when metering kicks in June 23.</div>
+    </div>
+
+    <div class="card">
+      <div class="label">Defense Tech · American Dynamism · Angel Investing</div>
+      <h3>Mach Industries Raises $300M at $1.8B — "American Dynamism" Capital Keeps Compounding</h3>
+      <p>Defense-tech startup <strong>Mach Industries</strong> closed a <strong>$300M Series C at a $1.8B valuation</strong>, led by Ribbit Capital and Infinite Capital. The round lands in the same week a16z continues deploying its record $15B fund partly earmarked for "American Dynamism," and alongside SpaceX's debut and several space/defense megarounds — a clear sign that defense and hard-tech have hardened into a consensus venture category, not a contrarian bet. <a href="https://news.crunchbase.com/venture/biggest-funding-rounds-anthropic-leads-ai-robotics/" target="_blank" rel="noopener">[Crunchbase News]</a></p>
+      <p class="why"><strong>Why it matters to Jamie:</strong> As an Angel Investor watching where the smartest money is converging, defense/hard-tech is now doing what AI infrastructure did 18 months ago — moving from "interesting" to "consensus," which means entry valuations are repricing fast and the easy alpha is already gone. The reusable lesson for your own sourcing: by the time a category is this crowded with megarounds, the angel edge is in the <em>adjacent picks-and-shovels</em> names, not the flagship platform everyone is already funding.</p>
+    </div>
+  </div>
+
+  <!-- SECTION B -->
+  <div class="section sec-b">
+    <div class="section-header">
+      <h2>Section B — On My Radar</h2>
+    </div>
+    <ul class="radar-list">
+      <li>
+        <span class="item-title">NinjaOne Hits $12.3B in a $400M <em>Secondary</em> Share Sale — Angels and Employees Take Chips Off the Table</span> — The IT-operations platform raised ~$400M (Wellington, ICONIQ, CapitalG, Sequoia, Teachers' Venture Growth, NEA and others) at a $12.3B valuation, up from $5B in early 2025 — but the structure is the story: it was largely a <strong>secondary</strong> sale letting early investors and longtime employees sell equity without an IPO. A textbook example of the secondary-liquidity path this week's lesson covers. <a href="https://www.bloomberg.com/news/articles/2026-06-09/iconiq-backed-it-startup-ninjaone-hits-12-3-billion-valuation" target="_blank" rel="noopener">[Bloomberg]</a> <a href="https://news.crunchbase.com/cybersecurity/ninjaone-valuation-doubles-iconiq-capitalg" target="_blank" rel="noopener">[Crunchbase]</a>
+      </li>
+      <li>
+        <span class="item-title">PhysicsX Raises $300M Series C Led by Temasek — AI Physics Simulators for Hardware Design</span> — The UK startup building AI-driven physics-simulation models for engineering and hardware design closed $300M led by sovereign investor Temasek, a strong tell that "AI for the physical/industrial economy" is the funding lane gathering momentum behind pure-software AI. A useful comp as NWA evaluates applied-AI-for-industry theses. <a href="https://techstartups.com/2026/06/08/venture-capital-startup-funding-roundup-june-9-2026/" target="_blank" rel="noopener">[Tech Startups]</a>
+      </li>
+      <li>
+        <span class="item-title">KPMG Rolls Out Microsoft Agent 365 to All 276,000 Staff</span> — On June 9 KPMG announced it will deploy Microsoft Agent 365 plus M365 Copilot across its entire global workforce — the largest professional-services agent rollout yet, and notable coming weeks after KPMG's parallel Anthropic alliance. The "which workflows get agentized first?" question is now being answered at six-figure-headcount scale. <a href="https://enterprisedna.co/resources/news/kpmg-microsoft-agent-365-enterprise-ai-agents-2026/" target="_blank" rel="noopener">[Enterprise DNA]</a>
+      </li>
+      <li>
+        <span class="item-title">Waymo Scaling Toward ~20 Markets in 2026; Tesla Still Sub-50 Vehicles in Austin</span> — Waymo is running hundreds of thousands of paid trips per week across a ~3,000-vehicle fleet and expanding into as many as 20 markets this year, while Tesla's Robotaxi program operates ~44 vehicles in Austin and targets 30 markets by year-end. The gap between deployed-scale and announced-ambition is the number worth tracking — relevant context for your FordPass/automotive lens. <a href="https://www.cnbc.com/2026/05/28/tesla-robotaxi-fleet-texas-one-tenth-size-of-waymos-filings-reveal.html" target="_blank" rel="noopener">[CNBC]</a>
+      </li>
+      <li>
+        <span class="item-title">&#128692; Tour Auvergne-Rhône-Alpes (née Critérium du Dauphiné) Wraps Sunday — the Tour de France Dress Rehearsal</span> — The eight-day WorldTour stage race (June 7–14) closes with back-to-back summit finishes on the Grand Colombier and Plateau de Solaison, with French prospect <strong>Paul Seixas</strong> trading blows with UAE and Visma ahead of his Tour debut. The cleanest read on July GC form you'll get. <a href="https://www.cyclingnews.com/pro-cycling/races/criterium-du-dauphine-auvergne-rhone-alpes-2026/" target="_blank" rel="noopener">[Cyclingnews]</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- SECTION C -->
+  <div class="section sec-c">
+    <div class="section-header">
+      <h2>Section C — Trends to Watch</h2>
+    </div>
+
+    <div class="trend-card">
+      <h3>The Cost Curve of Frontier Intelligence Is Bending Down Faster Than Capability Is Slowing</h3>
+      <p>Two things are happening at once: frontier <em>capability</em> keeps climbing (Fable 5, GPT-5.5, Gemini 3.1) while the <em>cost</em> of equivalent intelligence keeps collapsing — MiniMax's M3, for instance, is reported to cut per-token compute to ~1/20th of prior models with multi-fold faster decoding at million-token contexts. The signal isn't any single release; it's that "good-enough frontier" is becoming cheap and abundant while the absolute frontier stays expensive and gated.</p>
+      <p class="why"><strong>Why it matters to Jamie:</strong> As an Applied AI Leader, this is the single most important planning assumption for NWA Intelligence — architect so you can drop in a cheaper model for 80% of calls and reserve the expensive frontier (Fable 5 at $50/M output) for the 20% that truly needs it. As an Angel Investor, it also tells you where <em>not</em> to invest: the thin model-wrapper is being commoditized by exactly this curve.</p>
+    </div>
+
+    <div class="trend-card">
+      <h3>Humanoid Robotics Moves From Pilot to Platform</h3>
+      <p>The embodied-AI field is shifting from demos to deployment: Figure is ramping its Figure 03 toward ~1 robot/hour production with a confirmed BMW pilot, 1X has opened preorders for its home-use NEO, and China now fields 150+ humanoid companies (vs. ~20 in the US) backed by a ~$138B state fund. The interesting line is no longer "can they walk?" but "what's the per-unit ROI and who controls the manufacturing base?"</p>
+      <p class="why"><strong>Why it matters to Jamie:</strong> As an Angel Investor, the China-vs-US manufacturing-base asymmetry is the strategic variable that will decide where the durable returns accrue in physical AI — worth a serious read before you take any humanoid-adjacent position. As a former automotive CPO, the "factory as the first real customer" pattern rhymes exactly with how driver-assist scaled, and your instinct for production-line economics is a genuine edge here.</p>
+    </div>
+  </div>
+
+  <!-- SECTION D -->
+  <div class="section sec-d">
+    <div class="section-header">
+      <h2>Section D — Learn and Watch</h2>
+    </div>
+
+    <div class="learn-card">
+      <div class="learn-icon">&#127909;</div>
+      <div>
+        <div class="learn-title">From Zero to Your First Agentic AI Workflow in 26 Minutes — Claude Code (Nate Herk / AI Automation)</div>
+        <p>The tightest hands-on walkthrough for going from a blank Claude Code session to a working multi-step agentic workflow, mapping cleanly to the five canonical patterns (sequential, operator, split-and-merge, agent teams, headless).</p>
+        <p class="reason">Worth your time: It's a copy-able template for the kind of internal pipeline you're building at NWA Intelligence — and a fast way to sanity-check the Claude Code "spine" demo before Friday's platform catchup.</p>
+        <p><a href="https://www.youtube.com/watch?v=tDGiWn0flK8" target="_blank" rel="noopener">YouTube →</a></p>
+      </div>
+    </div>
+
+    <div class="learn-card">
+      <div class="learn-icon">&#128221;</div>
+      <div>
+        <div class="learn-title">The Case for Scaling Venture (a16z Essay)</div>
+        <p>Andreessen Horowitz's argument for why venture is becoming a scaled, multi-strategy asset class (the same logic behind their $15B fund) — the clearest articulation of the structural shift you're watching play out in this week's secondary sales and pension-led megarounds.</p>
+        <p class="reason">Worth your time: Read it as the "house view" you're implicitly competing with and learning from as an angel — it sharpens where a small, fast, relationship-driven check still wins against scaled capital.</p>
+        <p><a href="https://a16z.com/the-case-for-scaling-venture/" target="_blank" rel="noopener">a16z →</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION E -->
+  <div class="section sec-e">
+    <div class="section-header">
+      <h2>Section E — Ideas and Opportunities</h2>
+    </div>
+
+    <div class="idea-card">
+      <h3>Portfolio Action: Roll the Covered-Call Ladder Up-and-Out Before QQQ's June 22 Ex-Div</h3>
+      <p>A melt-up week put QQQ back near highs heading into a June 22 ex-dividend, which is exactly the setup where a covered call written too close can get assigned early to capture the distribution. This week's Options tab lays out 30/45/60-DTE OTM candidates on QQQ and F and the rule for stepping strikes up before ex-div.</p>
+      <p class="why"><strong>Why it matters:</strong> As steward of the family portfolio, this is the week your individual QQQ/F call ladder needs an active decision — keep the upside on the rally or take the richer premium — and the JEPQ/JEPI overlay is the systematic version of the same call you're making by hand.</p>
+    </div>
+
+    <div class="idea-card">
+      <h3>OuchySport Feature Angle: AI Injury-Risk Prediction From Wearable Data</h3>
+      <p>The sports-medicine literature is converging on AI/ML layered over consumer wearables (Garmin/Apple Watch/Whoop-class data) to flag injury risk <em>earlier</em> and individualize return-to-sport timelines — precisely the "objective, on-field, athlete-owned" gap OuchySport sits in.</p>
+      <p class="why"><strong>Why it matters:</strong> As OuchySport co-founder, a predictive injury-risk layer on top of data athletes already generate is a more defensible wedge than another recovery-tracking dashboard — and it's a concrete feature thesis to pressure-test with your endurance-athlete network.</p>
+    </div>
+  </div>
+
+  <!-- SECTION F -->
+  <div class="section sec-f">
+    <div class="section-header">
+      <h2>Section F — This Week's Calendar</h2>
+    </div>
+
+    <div class="cal-card">
+      <div class="cal-title">Fri June 19, 10:00–11:00 AM ET — NWAi Platform Catchup (Google Meet)</div>
+      <p>With Marc (Swarm Intelligence), Mike Maniscalco, Dominic Tarro, Richard Tarro, Jared, and Jessica. Agenda per the invite: feedback on Marc's MVP/demo pipeline and the <strong>Claude Code pipeline "spine" demo</strong>, plus plans to run past deals through the pipeline and ingest member data from Dealum.</p>
+      <p class="prep"><strong>Prep note:</strong> This is the build-status meeting for NWA Intelligence — come with a clear point of view on the Claude Code "spine" architecture and, given this week's Fable 5 release, whether to benchmark it against Opus 4.8 in the pipeline before the June 22 free-access window closes. Have the "run past deals through the pipeline" success criteria defined so the Dealum ingestion scope doesn't expand without a yardstick.</p>
+    </div>
+    <p style="font-size:0.85rem; color:#6b7280; font-style:italic;">Only one notable event surfaced on the calendar for next week (Mon June 15 – Sun June 21); routine/recurring items omitted.</p>
+  </div>
+
+</div>
+</body>
+</html>

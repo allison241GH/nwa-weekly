@@ -1,84 +1,6 @@
 {
-  "last_updated": "2026-06-05",
+  "last_updated": "2026-06-12",
   "items": [
-    {
-      "headline": "Modal Labs raises $355M Series C at $4.65B — serverless AI infrastructure 5x revenue in 8 months",
-      "source": "SiliconANGLE / Modal Blog",
-      "url": "https://siliconangle.com/2026/05/21/serverless-ai-infrastructure-startup-modal-labs-seals-355m-funding-round/",
-      "date_reported": "2026-05-25"
-    },
-    {
-      "headline": "Anthropic 'Code w/ Claude' London event — 'dreaming' agent memory feature announced",
-      "source": "MIT Technology Review / Fortune",
-      "url": "https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/",
-      "date_reported": "2026-05-25"
-    },
-    {
-      "headline": "Mercury raises $200M Series D at $5.2B — 1 in 3 US startups, federal bank charter conditional approval",
-      "source": "CNBC / TechStartups",
-      "url": "https://www.cnbc.com/2026/05/20/fintech-mercury-valuation-fundraise-bank-charter.html",
-      "date_reported": "2026-05-25"
-    },
-    {
-      "headline": "KPMG + Anthropic global alliance — 276,000 employees get Claude via Digital Gateway",
-      "source": "KPMG / Anthropic",
-      "url": "https://kpmg.com/us/en/media/news/kpmg-anthropic-global-alliance.html",
-      "date_reported": "2026-05-25"
-    },
-    {
-      "headline": "YC W26 Demo Day June 16 — 64% B2B batch, projected 10% unicorn rate",
-      "source": "The VC Corner / YC",
-      "url": "https://www.thevccorner.com/p/yc-w26-demo-day-2026-complete-breakdown",
-      "date_reported": "2026-05-25"
-    },
-    {
-      "headline": "Microsoft canceling internal Claude Code licenses by June 30, shifting to GitHub Copilot CLI",
-      "source": "Startup Fortune",
-      "url": "https://startupfortune.com/microsofts-claude-pullback-shows-ai-coding-still-has-a-budget-problem/",
-      "date_reported": "2026-05-25"
-    },
-    {
-      "headline": "Claude Mythos: Anthropic's frontier model with nation-state cyber capabilities not publicly released",
-      "source": "Anthropic / red.anthropic.com",
-      "url": "https://red.anthropic.com/2026/mythos-preview/",
-      "date_reported": "2026-05-25"
-    },
-    {
-      "headline": "Giro d'Italia: Vingegaard takes Maglia Rosa with Stage 14 solo victory, 2:26 lead over Eulálio",
-      "source": "CyclingNews / CyclingWeekly",
-      "url": "https://www.cyclingnews.com/pro-cycling/racing/giro-d-italia-gc-standings-2026/",
-      "date_reported": "2026-05-25"
-    },
-    {
-      "headline": "Humanoid robots showing clearer industrial ROI as deployment costs fall; JAL deploys Unitree at Haneda",
-      "source": "Robotics & Automation News / Bessemer VP",
-      "url": "https://roboticsandautomationnews.com/2026/05/19/humanoid-robots-show-clearer-roi-but-commercial-success-depends-on-effective-output/101714/",
-      "date_reported": "2026-05-25"
-    },
-    {
-      "headline": "BCG study: 27% of AI users are Self-Automators developing neither AI nor domain skills — 'cognitive debt'",
-      "source": "BCG / Psychology Today",
-      "url": "https://www.psychologytoday.com/us/blog/the-asymmetric-brain/202602/cognitive-offloading-using-ai-reduces-new-skill-formation",
-      "date_reported": "2026-05-25"
-    },
-    {
-      "headline": "$5.5B capital targets AI deployment gap in one quarter; infrastructure layer emerges as consensus VC bet",
-      "source": "AI Funding Tracker / Crunchbase",
-      "url": "https://aifundingtracker.com/ai-startup-funding-news-today/",
-      "date_reported": "2026-05-25"
-    },
-    {
-      "headline": "Series A bar rising: investors now require $2M+ ARR and $0.50 burn per $1 new ARR in 2026",
-      "source": "Angel Investors Network",
-      "url": "https://angelinvestorsnetwork.com/venture-capital/series-a-funding-requirements-2026-what-investors-expect",
-      "date_reported": "2026-05-25"
-    },
-    {
-      "headline": "30-year Treasury yield hits 5.19% — highest since pre-2008 financial crisis; S&P retreats from highs",
-      "source": "CNBC / CNN Business",
-      "url": "https://www.cnbc.com/2026/05/19/treasurys-yields-inflation-traders-fed-interest-rates.html",
-      "date_reported": "2026-05-25"
-    },
     {
       "headline": "Anthropic raises $65B at $965B valuation — most valuable AI startup in history; Opus 4.8 released with 1,000-subagent dynamic workflows",
       "source": "Fortune / Axios / TechCrunch",
@@ -176,7 +98,7 @@
       "date_reported": "2026-06-05"
     },
     {
-      "headline": "AlphaSense raises $350M led by Vitruvian Partners — AI-native market intelligence workflow platform",
+      "headline": "AlphaSense raises $350M led by Vitruvian Partners at $7.5B — AI-native market intelligence workflow platform",
       "source": "Crunchbase News",
       "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/",
       "date_reported": "2026-06-05"
@@ -192,6 +114,72 @@
       "source": "Motley Fool / Schwab / CNBC",
       "url": "https://www.schwab.com/learn/story/stock-market-update-open",
       "date_reported": "2026-06-05"
+    },
+    {
+      "headline": "SpaceX prices largest IPO in history at $135/share, raises ~$75B, closes +19% at $160.95 on Nasdaq debut; Musk becomes first trillionaire",
+      "source": "CNBC / Bloomberg / NPR",
+      "url": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
+      "date_reported": "2026-06-12"
+    },
+    {
+      "headline": "Anthropic releases Claude Fable 5 — first public Mythos-class model — alongside restricted Mythos 5; hard safety rails fall back to Opus 4.8",
+      "source": "Anthropic / TechCrunch / CNBC",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "date_reported": "2026-06-12"
+    },
+    {
+      "headline": "Mach Industries raises $300M Series C at $1.8B led by Ribbit Capital and Infinite Capital — defense/hard-tech 'American Dynamism'",
+      "source": "Crunchbase News",
+      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-anthropic-leads-ai-robotics/",
+      "date_reported": "2026-06-12"
+    },
+    {
+      "headline": "NinjaOne hits $12.3B valuation in ~$400M secondary share sale (from $5B in early 2025); Wellington, ICONIQ, CapitalG, Sequoia, NEA participate",
+      "source": "Bloomberg / Crunchbase",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-09/iconiq-backed-it-startup-ninjaone-hits-12-3-billion-valuation",
+      "date_reported": "2026-06-12"
+    },
+    {
+      "headline": "PhysicsX raises $300M Series C led by Temasek — AI-driven physics simulators for hardware/engineering design",
+      "source": "Tech Startups",
+      "url": "https://techstartups.com/2026/06/08/venture-capital-startup-funding-roundup-june-9-2026/",
+      "date_reported": "2026-06-12"
+    },
+    {
+      "headline": "KPMG to deploy Microsoft Agent 365 + M365 Copilot across all 276,000 staff — largest professional-services agent rollout yet",
+      "source": "Enterprise DNA",
+      "url": "https://enterprisedna.co/resources/news/kpmg-microsoft-agent-365-enterprise-ai-agents-2026/",
+      "date_reported": "2026-06-12"
+    },
+    {
+      "headline": "Waymo scaling toward ~20 markets in 2026 with ~3,000-vehicle fleet and hundreds of thousands of paid trips/week; Tesla Robotaxi ~44 vehicles in Austin",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/05/28/tesla-robotaxi-fleet-texas-one-tenth-size-of-waymos-filings-reveal.html",
+      "date_reported": "2026-06-12"
+    },
+    {
+      "headline": "Tour Auvergne-Rhône-Alpes (formerly Critérium du Dauphiné) June 7–14 — Tour de France prep; Paul Seixas battles UAE/Visma ahead of Tour debut",
+      "source": "Cyclingnews",
+      "url": "https://www.cyclingnews.com/pro-cycling/races/criterium-du-dauphine-auvergne-rhone-alpes-2026/",
+      "date_reported": "2026-06-12"
+    },
+    {
+      "headline": "Frontier-model cost curve bending down: MiniMax M3 cuts per-token compute to ~1/20th with faster decoding; capability rises (Fable 5/GPT-5.5/Gemini 3.1) as cost collapses",
+      "source": "LLM-Stats / Crescendo AI",
+      "url": "https://llm-stats.com/ai-news",
+      "date_reported": "2026-06-12"
+    },
+    {
+      "headline": "Humanoid robotics moves pilot-to-platform: Figure 03 ramping ~1 robot/hour with BMW pilot; 1X opens NEO home-robot preorders; China fields 150+ humanoid firms",
+      "source": "KraneShares / VaaSBlock",
+      "url": "https://kraneshares.com/humanoid-robotics-in-2026-the-race-from-pilot-to-platform/",
+      "date_reported": "2026-06-12"
+    },
+    {
+      "headline": "S&P 500 melts up to ~7,449 and Nasdaq rebounds on Iran peace/rate-cut hopes; SpaceX debut adds risk-on; 10Y ~4.48% into June 16-17 Fed meeting",
+      "source": "TheStreet / Schwab",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-12-2026",
+      "date_reported": "2026-06-12"
     }
   ]
 }
