@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-12",
+  "last_updated": "2026-06-19",
   "covered": [
     { "topic_slug": "follow-on-investing-strategy", "date": "2026-04-21" },
     { "topic_slug": "convertible-note-mechanics", "date": "2026-05-01" },
@@ -9,6 +9,7 @@
     { "topic_slug": "due-diligence-frameworks", "date": "2026-05-25" },
     { "topic_slug": "pre-money-vs-post-money-valuation", "date": "2026-05-31" },
     { "topic_slug": "power-law-vc-returns", "date": "2026-06-05" },
-    { "topic_slug": "exit-scenarios", "date": "2026-06-12" }
+    { "topic_slug": "exit-scenarios", "date": "2026-06-12" },
+    { "topic_slug": "cap-table-mechanics-and-dilution", "date": "2026-06-19" }
   ]
 }

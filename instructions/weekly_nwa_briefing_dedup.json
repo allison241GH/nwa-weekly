@@ -1,60 +1,6 @@
 {
-  "last_updated": "2026-06-12",
+  "last_updated": "2026-06-19",
   "items": [
-    {
-      "headline": "Anthropic raises $65B at $965B valuation — most valuable AI startup in history; Opus 4.8 released with 1,000-subagent dynamic workflows",
-      "source": "Fortune / Axios / TechCrunch",
-      "url": "https://fortune.com/2026/05/29/anthropic-raises-65-billion-at-record-965-billion-valuation-promises-mythos-ai-model-in-wide-release-in-coming-weeks-releases-claude-opus-4-8/",
-      "date_reported": "2026-05-31"
-    },
-    {
-      "headline": "OpenRouter raises $113M Series B led by CapitalG at $1.3B; weekly token volume grows from 5T to 25T in 6 months",
-      "source": "TechCrunch / OpenRouter",
-      "url": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/",
-      "date_reported": "2026-05-31"
-    },
-    {
-      "headline": "Corgi raises $106M Series B1 at $2.6B — AI-native insurance infrastructure with embedded underwriting and claims automation",
-      "source": "TechStartups",
-      "url": "https://techstartups.com/2026/05/28/venture-capital-startup-funding-roundup-may-28-2026/",
-      "date_reported": "2026-05-31"
-    },
-    {
-      "headline": "Jonas Vingegaard wins 2026 Giro d'Italia in Rome — five stage wins, Felix Gall 2nd, Jai Hindley 3rd",
-      "source": "CyclingWeekly / CyclingNews",
-      "url": "https://www.cyclingweekly.com/racing/who-is-leading-the-giro-d-italia-2026",
-      "date_reported": "2026-05-31"
-    },
-    {
-      "headline": "China accelerates embodied AI development at 50%+ annual growth; targets ¥1 trillion ($146B) market by 2035",
-      "source": "Xinhua",
-      "url": "https://english.news.cn/20260529/fcb430e1924846dfb8daac843752504d/c.html",
-      "date_reported": "2026-05-31"
-    },
-    {
-      "headline": "MOIA + Uber begin LA autonomous microbus testing; Aurora expands US Sun Belt driverless routes by year-end",
-      "source": "InsideEVs / AutoConnectedCar",
-      "url": "https://www.autoconnectedcar.com/2026/05/autonomous-self-driving-vehicle-news-nuro-uber-lucid-aurora-innoviz-aeva-daimler-volvo-ouster-hpe-kodiak-ai/",
-      "date_reported": "2026-05-31"
-    },
-    {
-      "headline": "Hark raises $700M Series A at $6B valuation — Brett Adcock's 'universal AI interface' personal AI hardware startup",
-      "source": "TechCrunch / Bloomberg",
-      "url": "https://techcrunch.com/2026/05/21/hark-raises-700m-series-a-for-its-secretive-universal-ai-interface/",
-      "date_reported": "2026-05-31"
-    },
-    {
-      "headline": "Gartner: 40% of enterprise apps will integrate AI agents by end of 2026, up from less than 5% in 2025",
-      "source": "Google Cloud / Capgemini / TechAhead",
-      "url": "https://cloud.google.com/resources/content/ai-agent-trends-2026",
-      "date_reported": "2026-05-31"
-    },
-    {
-      "headline": "S&P 500 hits intraday ATH of 7,539; QQQ closes at record 738.32 — Iran deal speculation drives risk-on week",
-      "source": "CNBC / Yahoo Finance",
-      "url": "https://pugsma.com/2026/05/26/may-26th-2026-sp-500-qqq-and-iwm-chart-update/",
-      "date_reported": "2026-05-31"
-    },
     {
       "headline": "Anthropic confidentially files draft S-1 with SEC for IPO — $47B ARR run-rate, first AI lab to file",
       "source": "Anthropic / CNBC / TechCrunch",
@@ -116,7 +62,7 @@
       "date_reported": "2026-06-05"
     },
     {
-      "headline": "SpaceX prices largest IPO in history at $135/share, raises ~$75B, closes +19% at $160.95 on Nasdaq debut; Musk becomes first trillionaire",
+      "headline": "SpaceX prices the largest IPO in history at $135/share, raises ~$75B, closes +19% at $160.95 on Nasdaq debut; Musk becomes first trillionaire",
       "source": "CNBC / Bloomberg / NPR",
       "url": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
       "date_reported": "2026-06-12"
@@ -152,25 +98,19 @@
       "date_reported": "2026-06-12"
     },
     {
-      "headline": "Waymo scaling toward ~20 markets in 2026 with ~3,000-vehicle fleet and hundreds of thousands of paid trips/week; Tesla Robotaxi ~44 vehicles in Austin",
+      "headline": "Waymo scaling toward ~20 markets in 2026 with ~3,000-vehicle fleet; Tesla Robotaxi ~44 vehicles in Austin",
       "source": "CNBC",
       "url": "https://www.cnbc.com/2026/05/28/tesla-robotaxi-fleet-texas-one-tenth-size-of-waymos-filings-reveal.html",
       "date_reported": "2026-06-12"
     },
     {
-      "headline": "Tour Auvergne-Rhône-Alpes (formerly Critérium du Dauphiné) June 7–14 — Tour de France prep; Paul Seixas battles UAE/Visma ahead of Tour debut",
-      "source": "Cyclingnews",
-      "url": "https://www.cyclingnews.com/pro-cycling/races/criterium-du-dauphine-auvergne-rhone-alpes-2026/",
-      "date_reported": "2026-06-12"
-    },
-    {
-      "headline": "Frontier-model cost curve bending down: MiniMax M3 cuts per-token compute to ~1/20th with faster decoding; capability rises (Fable 5/GPT-5.5/Gemini 3.1) as cost collapses",
+      "headline": "Frontier-model cost curve bending down: MiniMax M3 cuts per-token compute to ~1/20th with faster decoding",
       "source": "LLM-Stats / Crescendo AI",
       "url": "https://llm-stats.com/ai-news",
       "date_reported": "2026-06-12"
     },
     {
-      "headline": "Humanoid robotics moves pilot-to-platform: Figure 03 ramping ~1 robot/hour with BMW pilot; 1X opens NEO home-robot preorders; China fields 150+ humanoid firms",
+      "headline": "Humanoid robotics moves pilot-to-platform: Figure 03 ramping ~1 robot/hour with BMW pilot; 1X opens NEO preorders; China fields 150+ firms",
       "source": "KraneShares / VaaSBlock",
       "url": "https://kraneshares.com/humanoid-robotics-in-2026-the-race-from-pilot-to-platform/",
       "date_reported": "2026-06-12"
@@ -180,6 +120,90 @@
       "source": "TheStreet / Schwab",
       "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-12-2026",
       "date_reported": "2026-06-12"
+    },
+    {
+      "headline": "Fed holds at 3.50-3.75% under new Chair Warsh but dot plot flips hawkish (median 2026 to ~3.8%, possible hike); S&P ends week ~7,500 (+1.6%, 9th straight gain), QQQ near record ~$740, 10Y ~4.46%; US-Iran peace deal signed",
+      "source": "CNBC / TheStreet / Schwab",
+      "url": "https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html",
+      "date_reported": "2026-06-19"
+    },
+    {
+      "headline": "Y Combinator S26 Demo Day wraps June 16 — ~196 startups (AI agents/defense/robotics/infra), new $500K-in-USDC standard deal; standouts Uno Wallet, Silmaril",
+      "source": "TechCrunch / Crypto Briefing",
+      "url": "https://techcrunch.com/2026/06/18/the-11-standout-startups-from-ycs-demo-day-according-to-vcs/",
+      "date_reported": "2026-06-19"
+    },
+    {
+      "headline": "Odyssey raises $310M Series B at $1.45B for AI world models — led by Natural Capital with Amazon, AMD Ventures, GV, EQT, IQT; week's biggest round",
+      "source": "TechCrunch / Crunchbase",
+      "url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names/",
+      "date_reported": "2026-06-19"
+    },
+    {
+      "headline": "US government orders Anthropic to suspend Fable 5 and Mythos 5 worldwide via export-control directive; Opus 4.8 stays live; Anthropic opens Seoul office days later",
+      "source": "Anthropic / 9to5Mac / Korea Times",
+      "url": "https://www.anthropic.com/news/fable-mythos-access",
+      "date_reported": "2026-06-19"
+    },
+    {
+      "headline": "Sarvam becomes India's newest AI unicorn — $234M Series B first close at $1.5B, led by HCLTech ($150M, >10% stake) with Bessemer, Khosla, Peak XV",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech/",
+      "date_reported": "2026-06-19"
+    },
+    {
+      "headline": "DeepSeek closes first outside round (~$7.4B) at $50B+ via founder-controlled LP with no voting rights, 5-year lockup; Tencent, CATL, national AI fund back",
+      "source": "CNBC / Crunchbase",
+      "url": "https://www.cnbc.com/2026/06/03/deepseek-slated-to-draw-7-billion-in-maiden-fundraising-sources-say.html",
+      "date_reported": "2026-06-19"
+    },
+    {
+      "headline": "Twenty raises $100M Series B at $1B led by Accel — 'America's first VC-backed cyber-warfare startup' (offensive cyber for US military/IC)",
+      "source": "PR Newswire / GovCon Wire",
+      "url": "https://www.prnewswire.com/news-releases/americas-first-vc-backed-cyber-warfare-startup-raises-100m-series-b-at-1b-valuation-302802401.html",
+      "date_reported": "2026-06-19"
+    },
+    {
+      "headline": "Atom Computing raises $100M Series C (>$300M total) led by Third Point Ventures + signed LOI with US Dept. of Commerce for $100M — fault-tolerant neutral-atom quantum",
+      "source": "The Quantum Insider / Axios Pro",
+      "url": "https://thequantuminsider.com/2026/06/17/atom-computing-raises-more-than-300-million-to-accelerate-deployment-of-fault-tolerant-neutral-atom-quantum-computers/",
+      "date_reported": "2026-06-19"
+    },
+    {
+      "headline": "Salesforce Summer '26: Agentforce Multi-Agent Orchestration goes GA on ~$800M ARR base; Cognizant wires ServiceNow agents into Neuro control plane",
+      "source": "Salesforce News / Enterprise DNA",
+      "url": "https://www.salesforce.com/news/stories/summer-2026-product-release-announcement/",
+      "date_reported": "2026-06-19"
+    },
+    {
+      "headline": "Hydra Host raises $100M for GPU marketplace with NVIDIA, ARK, Comcast Ventures, Founders Fund participating — AI-compute infrastructure financing",
+      "source": "SiliconANGLE / BusinessWire",
+      "url": "https://siliconangle.com/2026/06/15/gpu-infrastructure-management-startup-hydra-host-raises-100m/",
+      "date_reported": "2026-06-19"
+    },
+    {
+      "headline": "OpenAI launches Partner Network — $150M to certify ~300,000 consultants (Select/Advanced/Elite tiers) after restructuring Microsoft deal to sell direct",
+      "source": "OpenAI / TechTimes",
+      "url": "https://openai.com/index/introducing-openai-partner-network/",
+      "date_reported": "2026-06-19"
+    },
+    {
+      "headline": "Pogačar opens 2026 Tour de Suisse with ~70km solo Stage 1 win (by 2:14 over Carapaz), seizes GC — 10th win in 12 race days ahead of Tour de France (July 4 start)",
+      "source": "Cycling Weekly / Velo",
+      "url": "https://www.cyclingweekly.com/racing/tadej-pogacar-sends-tour-de-france-warning-with-70km-stage-winning-attack-at-tour-de-suisse",
+      "date_reported": "2026-06-19"
+    },
+    {
+      "headline": "Nate Herk (w/ Cole): 'How to Build Effective Claude Code Agents in 2026' — planning + verification system for directing coding agents",
+      "source": "AI Automation Society (YouTube/Skool)",
+      "url": "https://www.skool.com/ai-automation-society/new-video-1000-hours-in-claude-code-in-60-mins",
+      "date_reported": "2026-06-19"
+    },
+    {
+      "headline": "Cambridge Judge Business School: 'Why human expertise still matters in the age of AI certainty' — the 'artificial certainty' expertise-illusion framing",
+      "source": "Cambridge Judge Business School",
+      "url": "https://www.jbs.cam.ac.uk/2026/why-human-expertise-still-matters-in-the-age-of-ai-certainty/",
+      "date_reported": "2026-06-19"
     }
   ]
 }
