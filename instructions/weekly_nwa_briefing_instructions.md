@@ -5,7 +5,7 @@
 
 Each Friday run produces TWO independent deliverables:
 
-1. **The weekly briefing** (Sections A–F only): markdown at `content/briefings/YYYY-MM-DD.md`, rendered at `nwa-weekly.vercel.app/briefings/YYYY-MM-DD`. This is the news + insights digest.
+1. **The weekly briefing** (Sections A–E only): markdown at `content/briefings/YYYY-MM-DD.md`, rendered at `nwa-weekly.vercel.app/briefings/YYYY-MM-DD`. This is the news + insights digest.
 2. **The week's Venture Learning lesson** (formerly Section G): a standalone markdown file at `content/learning/<topic-slug>/YYYY-MM-DD.md`, rendered at `nwa-weekly.vercel.app/learning/<topic-slug>/YYYY-MM-DD`. This is the coaching curriculum, organized by topic across the 25-topic rotation.
 
 The briefing and the lesson are completely separate files. The briefing has **no Section G** — readers reach the week's lesson via the site's "Learning" nav link, not via the briefing.
@@ -47,7 +47,7 @@ These weights govern what gets prioritized when selecting stories, signals, and 
 
 ## CROSS-SECTION BREADTH RULE (HARD-ENFORCED)
 
-**No theme may appear in more than one section of the report.** This rule is enforced by an explicit audit step (STEP 7.5 below) — it is not optional.
+**No theme may appear in more than one section of the report.** This rule is enforced by an explicit audit step (STEP 6.5 below) — it is not optional.
 
 ### Why this rule exists
 Prior briefings repeatedly let one big story (e.g., Robinhood RVII, the Anthropic-SpaceX compute deal) bleed into Sections A, C, E, *and* G — turning a 7-section briefing into four angles on one story. Over-concentration on any single theme is a quality failure that erodes the value of the report.
@@ -63,9 +63,9 @@ Prior briefings repeatedly let one big story (e.g., Robinhood RVII, the Anthropi
 
    Bad tags are too broad (`ai`, `tech`, `startups`) or too narrow (`anthropic-spacex-300mw-220k-gpus`). Aim for the level a journalist would use to file a story under.
 
-2. **Exemptions:** Section F (calendar) is exempt from cross-section breadth — it has no themes. The standalone Learning lesson (separate file under `content/learning/`) is also exempt; its uniqueness is managed by the Section G rotation log.
+2. **Exemptions:** The standalone Learning lesson (separate file under `content/learning/`) is exempt; its uniqueness is managed by the Section G rotation log.
 
-3. **Hard audit (STEP 7.5):** Before producing any output files, you run an explicit breadth audit that detects duplicates and resolves them by swapping in fresh candidates from the research pool you built in Steps 1–2. Details in STEP 7.5.
+3. **Hard audit (STEP 6.5):** Before producing any output files, you run an explicit breadth audit that detects duplicates and resolves them by swapping in fresh candidates from the research pool you built in STEPs 1–2. Details in STEP 6.5.
 
 4. **Front-matter manifest:** The final markdown briefing's front-matter records the resolved `themes` map so the audit is auditable post-hoc.
 
@@ -136,7 +136,7 @@ Not a data feed - a weekly narrative. What moved this week, why, and what it mea
 
 Summarize as: (1) where markets ended the week, (2) the key driver(s), and (3) strategic read for a long-term passive investor holding S&P/QQQ/treasuries. Keep it to two sentences maximum - crisp and specific, no laundry list of numbers.
 
-**JEPQ/JEPI lens (when relevant):** Jamie also holds the income/covered-call ETFs **JEPQ** (Nasdaq-linked) and **JEPI** (S&P-linked). When the week's move is material, briefly note what it means for these positions — monthly distribution context, and the structural reality that in a strong melt-up (e.g. QQQ making new highs) their covered-call overlay caps upside versus the passive S&P/QQQ core, while in choppy or down weeks their premium income cushions the ride. This is a natural bridge to the new Covered-Call Watch (STEP 5.6) — JEPQ/JEPI *are* systematic covered-call writers. Keep it to one clause inside the "Why it matters" line; do not expand Section A into an options section.
+**JEPQ/JEPI lens (when relevant):** Jamie also holds the income/covered-call ETFs **JEPQ** (Nasdaq-linked) and **JEPI** (S&P-linked). When the week's move is material, briefly note what it means for these positions — monthly distribution context, and the structural reality that in a strong melt-up (e.g. QQQ making new highs) their covered-call overlay caps upside versus the passive S&P/QQQ core, while in choppy or down weeks their premium income cushions the ride. This is a natural bridge to the new Covered-Call Watch (STEP 4.6) — JEPQ/JEPI *are* systematic covered-call writers. Keep it to one clause inside the "Why it matters" line; do not expand Section A into an options section.
 
 ### CLUSTER 7 - Automotive: AV/EV Noteworthy Announcements
 High bar - only things worth a former automotive CPO's attention.
@@ -179,27 +179,7 @@ Pull only items published in the **last 7 days** from the following. If nothing 
 
 ---
 
-## STEP 3 - CHECK GOOGLE CALENDAR
-
-Check Jamie's Google Calendar for **the upcoming week (Monday through Sunday)**.
-
-> **Unattended-run fallback:** The Google Calendar connector is a claude.ai login-based
-> connector and may be unavailable in the automated Friday background run. If a calendar
-> call fails or the connector is not reachable, do **not** block, prompt, or retry — write
-> "Calendar unavailable this week (connector not reachable in scheduled run)." in Section F
-> and continue with the rest of the briefing.
-
-For each notable event list:
-- Day & time
-- Event name / meeting title
-- Attendees (if visible)
-- A brief prep note for anything significant (board meeting, investor call, FAU class, mentorship session, OuchySport call, etc.)
-
-Focus on the meetings that need active prep — not routine recurring events.
-
----
-
-## STEP 4 - DEDUP AND FRESHNESS FILTERING
+## STEP 3 - DEDUP AND FRESHNESS FILTERING
 
 Before building the report:
 
@@ -210,7 +190,7 @@ Before building the report:
 
 ---
 
-## STEP 5 - BUILD THE REPORT
+## STEP 4 - BUILD THE REPORT
 
 Organize all findings into the following sections. Remember: apply the Cross-Section Breadth Rule - no theme repeats across sections.
 
@@ -269,16 +249,13 @@ Examples of opportunity types:
 
 Do not repeat themes already covered in Sections A, B, C, or D.
 
-### Section F - This Week's Calendar
-The upcoming week's notable events from Google Calendar. Flag anything that needs active prep. If the calendar connector was unavailable (see STEP 3 fallback), state that here and move on.
-
-**The briefing ends at Section F.** Do not add a Section G heading. The week's Venture Learning lesson is generated as a standalone file in STEP 5.5; readers reach it via the site's `/learning` nav, not via a link in the briefing.
+**The briefing ends at Section E.** Do not add a Section F or Section G heading. The week's Venture Learning lesson is generated as a standalone file in STEP 4.5; readers reach it via the site's `/learning` nav, not via a link in the briefing.
 
 ---
 
-## STEP 5.5 — GENERATE THIS WEEK'S LEARNING LESSON (STANDALONE FILE)
+## STEP 4.5 — GENERATE THIS WEEK'S LEARNING LESSON (STANDALONE FILE)
 
-After drafting Sections A-F, generate this week's Venture Learning lesson as a standalone markdown file. This is the **coaching curriculum** content that used to live inside Section G; it now has its own home at `/learning/<topic-slug>/<date>` on the Vercel site.
+After drafting Sections A-E, generate this week's Venture Learning lesson as a standalone markdown file. This is the **coaching curriculum** content that used to live inside Section G; it now has its own home at `/learning/<topic-slug>/<date>` on the Vercel site.
 
 ### Pick the topic
 
@@ -389,13 +366,13 @@ Placeholders to substitute:
 
 If `instructions/lesson_html_template.html` is missing, **fail the run loudly** — do not silently fall back to ad-hoc CSS. A missing template means the archive style would drift, which is the exact failure mode this template prevents.
 
-Lesson HTML files in `reports/` are an **archive** and are **never auto-pruned** by STEP 9 — they accumulate over time alongside the markdown lessons.
+Lesson HTML files in `reports/` are an **archive** and are **never auto-pruned** by STEP 8 — they accumulate over time alongside the markdown lessons.
 
 ---
 
-## STEP 5.6 — GENERATE THIS WEEK'S COVERED-CALL WATCH (STANDALONE FILE)
+## STEP 4.6 — GENERATE THIS WEEK'S COVERED-CALL WATCH (STANDALONE FILE)
 
-The **Options** tab on the site has two areas: a weekly **Covered-Call Watch** (this step) and an **Options Learning** curriculum (STEP 5.7). The Watch is a tactical, position-specific entry for the individual positions Jamie writes covered calls against: **QQQ** and **F (Ford)**.
+The **Options** tab on the site has two areas: a weekly **Covered-Call Watch** (this step) and an **Options Learning** curriculum (STEP 4.7). The Watch is a tactical, position-specific entry for the individual positions Jamie writes covered calls against: **QQQ** and **F (Ford)**.
 
 This is **framework + illustrative strikes**, not live brokerage data. The Friday run is headless with WebSearch only — there is no options-data API. Source approximate prices and ex-dividend dates via WebSearch, present clearly-labeled *illustrative* candidates, and let Jamie make the final call in his broker.
 
@@ -430,14 +407,14 @@ The Watch is rendered at `nwa-weekly.vercel.app/options/watch/YYYY-MM-DD`.
 
 ---
 
-## STEP 5.7 — GENERATE THIS WEEK'S OPTIONS LEARNING LESSON (STANDALONE FILE)
+## STEP 4.7 — GENERATE THIS WEEK'S OPTIONS LEARNING LESSON (STANDALONE FILE)
 
-Mirrors STEP 5.5, but for the **Options Learning** curriculum — a novice-friendly covered-call tutorial. Lessons live at `content/options-learning/<topic-slug>/YYYY-MM-DD.md`, rendered at `/options/learning/<topic-slug>/YYYY-MM-DD`.
+Mirrors STEP 4.5, but for the **Options Learning** curriculum — a novice-friendly covered-call tutorial. Lessons live at `content/options-learning/<topic-slug>/YYYY-MM-DD.md`, rendered at `/options/learning/<topic-slug>/YYYY-MM-DD`.
 
 ### Pick the topic
 1. Read `instructions/options_learning_log.json`. The `covered` array lists every options topic-slug + date already taught.
 2. **HARD RULE — no duplicate topics while uncovered topics remain.** The catalog is the `OPTIONS_TOPIC_CATALOG` in `lib/options.ts` (slugs must match its folder slugs exactly). Compute the zero-coverage set (catalog slugs not in `covered`); if non-empty, you MUST pick from it.
-3. Among zero-coverage topics, prefer the one that best connects to this week's Covered-Call Watch (STEP 5.6) — e.g. if the Watch leaned on rolling around an ex-div, teach `rolling-a-covered-call`. Otherwise pick the highest remaining topic in catalog order.
+3. Among zero-coverage topics, prefer the one that best connects to this week's Covered-Call Watch (STEP 4.6) — e.g. if the Watch leaned on rolling around an ex-div, teach `rolling-a-covered-call`. Otherwise pick the highest remaining topic in catalog order.
 4. Only after every catalog topic has appeared in `covered` may the rotation restart (then pick the one covered longest ago).
 
 The 12-topic catalog, in rotation order (the first 6 are seeded/covered):
@@ -466,7 +443,7 @@ After writing, append `{ "topic_slug": "<chosen-slug>", "date": "YYYY-MM-DD" }` 
 
 ---
 
-## STEP 6 - CONTENT FILTERS (HARD RULES)
+## STEP 5 - CONTENT FILTERS (HARD RULES)
 
 - No politics
 - No religion
@@ -479,7 +456,7 @@ After writing, append `{ "topic_slug": "<chosen-slug>", "date": "YYYY-MM-DD" }` 
 
 ---
 
-## STEP 7 - PRODUCE TWO OUTPUTS (HTML + MARKDOWN)
+## STEP 6 - PRODUCE TWO OUTPUTS (HTML + MARKDOWN)
 
 The weekly briefing is published in **two formats**:
 
@@ -498,7 +475,6 @@ Style Guidelines:
   - Section C (Trends to Watch): Teal #0d9488
   - Section D (Learn and Watch): Indigo #4f46e5
   - Section E (Ideas and Opportunities): Amber #d97706
-  - Section F (Calendar): Purple #7c3aed
   - Section G (Venture Learning): Emerald green #059669
 - Section A items displayed as cards with subtle shadow
 - Section G displayed as a coaching card with a slightly warm background tint (#f0fdf4) and emerald left border - distinct from news sections to signal "this is a lesson, not a headline"
@@ -520,31 +496,32 @@ date: YYYY-MM-DD          # Friday's date (generation date)
 week_of: YYYY-MM-DD       # the Monday that starts the covered week
 slug: YYYY-MM-DD
 top_story: "[one-sentence Section A item 2 headline]"
-sections_covered: ["Top Stories", "On My Radar", "Trends", "Learn & Watch", "Ideas", "Calendar"]
-themes:                    # required — populated by STEP 7.5 breadth audit
+sections_covered: ["Top Stories", "On My Radar", "Trends", "Learn & Watch", "Ideas"]
+themes:                    # required — populated by STEP 6.5 breadth audit
   section_a: ["theme-tag-1", "theme-tag-2", "theme-tag-3"]   # items 2-4 (item 1 markets is exempt)
   section_b: ["theme-tag-1", ...]
   section_c: ["theme-tag-1", ...]
   section_d: ["theme-tag-1", ...]
   section_e: ["theme-tag-1", ...]
-breadth_audit:             # required — populated by STEP 7.5
+breadth_audit:             # required — populated by STEP 6.5
   initial_themes: N
   duplicates_resolved: N
   passes: N
 ---
 ```
 
-Body: each section A–F as an H2 (`## Section A — Top Stories of the Week`) with items as H3/lists. Keep markdown clean and free of inline HTML so it renders well on the Next.js site.
+Body: each section A–E as an H2 (`## Section A — Top Stories of the Week`) with items as H3/lists. Keep markdown clean and free of inline HTML so it renders well on the Next.js site.
 
-**Section G in the briefing:** include the H2 heading and a one-line cross-link only (see STEP 5's Section G description). The full lesson lives in a separate file written in STEP 5.5.
+**Section G in the briefing:** include the H2 heading and a one-line cross-link only (see STEP 4's Section G description). The full lesson lives in a separate file written in STEP 4.5.
 
-The Section G standalone lesson file was already written in STEP 5.5 at `content/learning/<topic-slug>/YYYY-MM-DD.md`. No additional work here.
+The Section G standalone lesson file was already written in STEP 4.5 at `content/learning/<topic-slug>/YYYY-MM-DD.md`. No additional work here.
 
 ---
 
-## STEP 7.5 - BREADTH AUDIT (HARD GATE — RUN BEFORE STEP 8)
+## STEP 6.5 - BREADTH AUDIT (HARD GATE — RUN BEFORE STEP 7)
 
 **This step gates publishing. The briefing cannot ship until every theme tag is unique across Sections A–E.**
+
 
 ### 1. Collect theme tags
 
@@ -580,7 +557,7 @@ a. **Determine the keeper** — the section with the highest priority gets the i
    - Section E wins over B/D because Ideas/Opportunities are tied to specific themes
    - Section B and D have the deepest "next-best" research pools, so they're the cheapest to swap
 
-b. **Swap out the loser(s).** In each non-keeper section, replace the duplicate-themed item with the **next-best candidate** from the research pool you built in Steps 1–2.
+b. **Swap out the loser(s).** In each non-keeper section, replace the duplicate-themed item with the **next-best candidate** from the research pool you built in STEPs 1–2.
    - Pull from the cluster that section is sourced from (e.g., Section B from Clusters 1–5 broadly; Section D from Cluster 2/4 educational content)
    - Pick something with a genuinely different theme tag — do not just rephrase the duplicate
    - Re-apply topic weighting and freshness rules to the swap-in
@@ -606,7 +583,7 @@ breadth_audit:
 
 ### 6. Status
 
-Print a one-line audit summary that will also appear in STEP 11's status line:
+Print a one-line audit summary that will also appear in STEP 10's status line:
 ```
 Breadth audit: <initial_themes> initial themes, <duplicates_resolved> duplicates resolved in <passes> pass(es). All sections breadth-clean.
 ```
@@ -615,7 +592,7 @@ If you had to shorten a section to resolve a duplicate, note which one and why.
 
 ---
 
-## STEP 8 - PUBLISH AND NOTIFY
+## STEP 7 - PUBLISH AND NOTIFY
 
 When run by the scheduled agent (Friday 6:00 PM ET):
 
@@ -626,11 +603,11 @@ When run by the scheduled agent (Friday 6:00 PM ET):
    - Body (plain + simple HTML): one-paragraph teaser using the week's top story + a "Read on web" link to `https://weekly-nwa-briefings.vercel.app/briefings/YYYY-MM-DD`
    - From: a verified Resend sender (configured during Phase 1 setup)
 
-For manual runs (paste-in-Cowork mode), Step 8 is skipped — Jamie reads the HTML locally.
+For manual runs (paste-in-Cowork mode), Step 7 is skipped — Jamie reads the HTML locally.
 
 ---
 
-## STEP 9 - HOUSEKEEPING: ENFORCE RETENTION (EXPLICIT, EXECUTE EVERY RUN)
+## STEP 8 - HOUSEKEEPING: ENFORCE RETENTION (EXPLICIT, EXECUTE EVERY RUN)
 
 **This step must execute on every run. No exceptions.** Past behavior of skipping this step is the primary reason 9 old reports accumulated.
 
@@ -646,7 +623,7 @@ If for any reason deletion fails (permission error, file locked), surface the er
 
 ---
 
-## STEP 10 - UPDATE DEDUP LOG
+## STEP 9 - UPDATE DEDUP LOG
 
 Save or update `weekly_nwa_briefing_dedup.json` in the workspace with this week's reported items using this structure:
 
@@ -681,7 +658,7 @@ This prevents accidental repetition of Section G topics. When all 25 topics have
 
 ---
 
-## STEP 11 - END WITH A STATUS LINE
+## STEP 10 - END WITH A STATUS LINE
 
 Close your response with:
 
@@ -693,7 +670,6 @@ Lesson HTML saved: reports/weekly_nwa_lesson_<topic-slug>_YYYY-MM-DD.html
 Covered-Call Watch saved: content/options-watch/YYYY-MM-DD.md
 Options lesson saved: content/options-learning/<topic-slug>/YYYY-MM-DD.md
 Web searches: [N] queries run
-Calendar: checked (week of [Mon DD])
 Breadth audit: [N] initial themes, [N] duplicates resolved in [N] pass(es)
 Email sent: jallison@newworldangels.com → [link]
 Dedup log: [N] items tracked

@@ -37,9 +37,8 @@ LOG="$LOG_DIR/run-$STAMP.log"
 cd "$REPO" || { echo "FATAL: cannot cd to $REPO" >> "$LOG"; exit 1; }
 
 PROMPT="This is the automated Friday scheduled run of the Weekly NWA Briefing (NOT a manual run). \
-Read $SKILL and follow it end-to-end, including Step 8 (commit, push, notify). \
-Use today's actual date for all file naming. If the Google Calendar connector is unavailable, \
-note that in Section F and continue — never block or retry."
+Read $SKILL and follow it end-to-end, including Step 7 (commit, push, notify). \
+Use today's actual date for all file naming."
 
 {
   echo "===== Weekly NWA Briefing run: $STAMP ====="
@@ -48,11 +47,24 @@ note that in Section F and continue — never block or retry."
   echo "----- claude output -----"
 } >> "$LOG"
 
-claude -p "$PROMPT" \
-  --dangerously-skip-permissions \
-  --model opus \
-  >> "$LOG" 2>&1
+MAX_ATTEMPTS=3
+ATTEMPT=0
+STATUS=1
 
-STATUS=$?
-echo "----- claude exit status: $STATUS -----" >> "$LOG"
+while [ $ATTEMPT -lt $MAX_ATTEMPTS ] && [ $STATUS -ne 0 ]; do
+  ATTEMPT=$((ATTEMPT + 1))
+  if [ $ATTEMPT -gt 1 ]; then
+    echo "----- retry attempt $ATTEMPT (sleeping 90s after exit $STATUS) -----" >> "$LOG"
+    sleep 90
+  fi
+
+  claude -p "$PROMPT" \
+    --dangerously-skip-permissions \
+    --model opus \
+    >> "$LOG" 2>&1
+
+  STATUS=$?
+  echo "----- claude exit status: $STATUS (attempt $ATTEMPT) -----" >> "$LOG"
+done
+
 exit $STATUS
