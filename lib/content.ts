@@ -7,6 +7,21 @@ const ROOT = process.cwd();
 const BRIEFINGS_DIR = path.join(ROOT, "content", "briefings");
 const LEARNING_DIR = path.join(ROOT, "content", "learning");
 
+// gray-matter's YAML parser auto-converts unquoted `date: 2026-07-03`-style front matter
+// into native Date objects instead of strings — normalize back to "YYYY-MM-DD" here so
+// every caller gets a real string, not a Date wearing a `string` type assertion.
+export function toISODate(value: unknown, fallback: string): string {
+  if (value instanceof Date) return value.toISOString().slice(0, 10);
+  if (typeof value === "string") return value;
+  return fallback;
+}
+
+export function toISODateOptional(value: unknown): string | undefined {
+  if (value instanceof Date) return value.toISOString().slice(0, 10);
+  if (typeof value === "string") return value;
+  return undefined;
+}
+
 export type BriefingMeta = {
   slug: string;
   title: string;
@@ -97,8 +112,8 @@ export function getAllBriefings(): BriefingMeta[] {
       return {
         slug,
         title: (data.title as string) ?? slug,
-        date: (data.date as string) ?? slug,
-        week_of: data.week_of as string | undefined,
+        date: toISODate(data.date, slug),
+        week_of: toISODateOptional(data.week_of),
         top_story: data.top_story as string | undefined,
         sections_covered: data.sections_covered as string[] | undefined,
       } satisfies BriefingMeta;
@@ -115,8 +130,8 @@ export async function getBriefing(slug: string): Promise<Briefing | null> {
   return {
     slug,
     title: (data.title as string) ?? slug,
-    date: (data.date as string) ?? slug,
-    week_of: data.week_of as string | undefined,
+    date: toISODate(data.date, slug),
+    week_of: toISODateOptional(data.week_of),
     top_story: data.top_story as string | undefined,
     sections_covered: data.sections_covered as string[] | undefined,
     contentHtml,
@@ -131,7 +146,7 @@ function readLessonMeta(topicSlug: string, fileName: string): LessonMeta {
     topic_slug: (data.topic_slug as string) ?? topicSlug,
     slug,
     title: (data.title as string) ?? slug,
-    date: (data.date as string) ?? slug,
+    date: toISODate(data.date, slug),
     key_terms: data.key_terms as string[] | undefined,
   };
 }
@@ -176,7 +191,7 @@ export async function getLesson(
     topic_slug: (data.topic_slug as string) ?? topicSlug,
     slug: dateSlug,
     title: (data.title as string) ?? dateSlug,
-    date: (data.date as string) ?? dateSlug,
+    date: toISODate(data.date, dateSlug),
     key_terms: data.key_terms as string[] | undefined,
     contentHtml,
   };

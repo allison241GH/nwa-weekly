@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import { renderMarkdown } from "./markdown";
+import { toISODate, toISODateOptional } from "./content";
 import type { Topic, LessonMeta, Lesson } from "./content";
 
 const ROOT = process.cwd();
@@ -72,8 +73,8 @@ export function getAllWatches(): WatchMeta[] {
       return {
         slug,
         title: (data.title as string) ?? slug,
-        date: (data.date as string) ?? slug,
-        week_of: data.week_of as string | undefined,
+        date: toISODate(data.date, slug),
+        week_of: toISODateOptional(data.week_of),
         positions: data.positions as string[] | undefined,
         summary: data.summary as string | undefined,
       } satisfies WatchMeta;
@@ -90,8 +91,8 @@ export async function getWatch(slug: string): Promise<Watch | null> {
   return {
     slug,
     title: (data.title as string) ?? slug,
-    date: (data.date as string) ?? slug,
-    week_of: data.week_of as string | undefined,
+    date: toISODate(data.date, slug),
+    week_of: toISODateOptional(data.week_of),
     positions: data.positions as string[] | undefined,
     summary: data.summary as string | undefined,
     contentHtml,
@@ -108,7 +109,7 @@ function readOptionsLessonMeta(topicSlug: string, fileName: string): LessonMeta 
     topic_slug: (data.topic_slug as string) ?? topicSlug,
     slug,
     title: (data.title as string) ?? slug,
-    date: (data.date as string) ?? slug,
+    date: toISODate(data.date, slug),
     key_terms: data.key_terms as string[] | undefined,
   };
 }
@@ -153,7 +154,7 @@ export async function getOptionsLesson(
     topic_slug: (data.topic_slug as string) ?? topicSlug,
     slug: dateSlug,
     title: (data.title as string) ?? dateSlug,
-    date: (data.date as string) ?? dateSlug,
+    date: toISODate(data.date, dateSlug),
     key_terms: data.key_terms as string[] | undefined,
     contentHtml,
   };
