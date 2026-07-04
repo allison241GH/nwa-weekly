@@ -67,4 +67,13 @@ while [ $ATTEMPT -lt $MAX_ATTEMPTS ] && [ $STATUS -ne 0 ]; do
   echo "----- claude exit status: $STATUS (attempt $ATTEMPT) -----" >> "$LOG"
 done
 
+# The SKILL's own failure notification (Step 4) runs *inside* the claude process, so it
+# never fires if that process crashes outright (API errors, dropped connections, etc.) —
+# which is exactly what happened silently for weeks. Fire a local macOS notification here,
+# from the wrapper, so a total failure is never invisible.
+if [ $STATUS -ne 0 ]; then
+  echo "----- all $MAX_ATTEMPTS attempts failed; sending local failure notification -----" >> "$LOG"
+  osascript -e "display notification \"Weekly NWA Briefing run failed after $MAX_ATTEMPTS attempts (exit $STATUS). See $LOG\" with title \"NWA Briefing FAILED\" sound name \"Basso\"" >> "$LOG" 2>&1
+fi
+
 exit $STATUS

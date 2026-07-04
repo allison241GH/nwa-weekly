@@ -492,8 +492,13 @@ Front-matter format:
 ```yaml
 ---
 title: "Weekly NWA Briefing — Week of [Mon DD]"
-date: YYYY-MM-DD          # Friday's date (generation date)
-week_of: YYYY-MM-DD       # the Monday that starts the covered week
+date: YYYY-MM-DD          # today's actual date (generation date)
+week_of: YYYY-MM-DD       # the Monday of the week whose news this covers — NOT necessarily
+                          # the generation date's own week. On a normal Friday run this is
+                          # that same week's Monday (generation date minus 4 days). On a
+                          # manual catch-up run for a previously-missed week, use the Monday
+                          # of the MISSED week, not the current one — check the most recent
+                          # file in content/briefings/ to make sure week_of doesn't repeat.
 slug: YYYY-MM-DD
 top_story: "[one-sentence Section A item 2 headline]"
 sections_covered: ["Top Stories", "On My Radar", "Trends", "Learn & Watch", "Ideas"]
