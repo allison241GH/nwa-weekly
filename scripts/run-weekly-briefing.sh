@@ -32,6 +32,21 @@ if [ -f "$ENV_FILE" ]; then
   set +a
 fi
 
+# --auth-check: lightweight Thursday pre-flight (launchd agent ai.lvng.nwa-briefing-authcheck).
+# The one failure the Friday run can't recover from on its own is an expired OAuth session
+# (needs an interactive /login). Verify it the day BEFORE, so there's 24h to fix it.
+if [ "${1:-}" = "--auth-check" ]; then
+  mkdir -p "$LOG_DIR"
+  OUT="$(claude -p 'Reply with exactly: OK' --model haiku 2>&1)"
+  if [ $? -eq 0 ]; then
+    echo "$(date '+%Y-%m-%d %H:%M:%S') auth-check OK" >> "$LOG_DIR/auth-check.log"
+    exit 0
+  fi
+  echo "$(date '+%Y-%m-%d %H:%M:%S') auth-check FAILED: $OUT" >> "$LOG_DIR/auth-check.log"
+  osascript -e 'display notification "Claude Code is logged out — open Claude Code and run /login BEFORE tomorrow'\''s 6 PM briefing run." with title "NWA Briefing: LOGIN NEEDED (pre-flight)" sound name "Basso"'
+  exit 1
+fi
+
 mkdir -p "$LOG_DIR"
 STAMP="$(date +%Y-%m-%d_%H%M%S)"
 LOG="$LOG_DIR/run-$STAMP.log"
