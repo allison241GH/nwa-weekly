@@ -30,7 +30,9 @@ export default function OptionsHub() {
   const watches = getAllWatches();
   const [latestWatch, ...earlierWatches] = watches;
   const topics = getOptionsTopicCatalogWithStats();
-  const withLessons = topics.filter((t) => t.lesson_count > 0);
+  const withLessons = topics
+    .filter((t) => t.lesson_count > 0)
+    .sort((a, b) => ((a.latest_date ?? "") < (b.latest_date ?? "") ? 1 : -1));
   const empty = topics.filter((t) => t.lesson_count === 0);
 
   return (
@@ -107,16 +109,16 @@ export default function OptionsHub() {
           Options Learning
         </h2>
         <p className="text-sm text-slate-600 mb-4">
-          A step-by-step covered-call curriculum — start at the top if you&rsquo;re new.
+          A covered-call curriculum, one lesson per week.
         </p>
 
         {withLessons.length > 0 && (
           <div className="mb-8">
             <h3 className="text-xs uppercase tracking-wider text-slate-400 mb-2">
-              Covered ({withLessons.length} of {topics.length})
+              Covered ({withLessons.length} of {topics.length}) — most recent first
             </h3>
             <ul className="divide-y divide-slate-200">
-              {withLessons.map((t) => (
+              {withLessons.map((t, i) => (
                 <li key={t.slug}>
                   <Link
                     href={`/options/learning/${t.slug}`}
@@ -124,7 +126,14 @@ export default function OptionsHub() {
                   >
                     <div className="flex items-start justify-between gap-4">
                       <div className="flex-1">
-                        <p className="font-semibold text-[#155e75]">{t.title}</p>
+                        <p className="font-semibold text-[#155e75]">
+                          {t.title}
+                          {i === 0 && (
+                            <span className="ml-2 align-middle text-[10px] font-bold uppercase tracking-wider text-white bg-[#0891b2] rounded-full px-2 py-0.5">
+                              Latest
+                            </span>
+                          )}
+                        </p>
                         <p className="text-sm text-slate-600 mt-0.5">{t.blurb}</p>
                       </div>
                       <div className="text-right text-xs text-slate-500 shrink-0 pt-1">
