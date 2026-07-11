@@ -13,7 +13,9 @@ export const metadata = {
 
 export default function LearningIndex() {
   const topics = getTopicCatalogWithStats();
-  const withLessons = topics.filter((t) => t.lesson_count > 0);
+  const withLessons = topics
+    .filter((t) => t.lesson_count > 0)
+    .sort((a, b) => ((a.latest_date ?? "") < (b.latest_date ?? "") ? 1 : -1));
   const empty = topics.filter((t) => t.lesson_count === 0);
 
   return (
@@ -32,10 +34,10 @@ export default function LearningIndex() {
       {withLessons.length > 0 && (
         <section className="mb-10">
           <h2 className="text-xs uppercase tracking-wider text-slate-500 mb-3">
-            Covered ({withLessons.length} of {topics.length})
+            Covered ({withLessons.length} of {topics.length}) — most recent first
           </h2>
           <ul className="divide-y divide-slate-200">
-            {withLessons.map((t) => (
+            {withLessons.map((t, i) => (
               <li key={t.slug}>
                 <Link
                   href={`/learning/${t.slug}`}
@@ -43,7 +45,14 @@ export default function LearningIndex() {
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex-1">
-                      <p className="font-semibold text-[#047857]">{t.title}</p>
+                      <p className="font-semibold text-[#047857]">
+                        {t.title}
+                        {i === 0 && (
+                          <span className="ml-2 align-middle text-[10px] font-bold uppercase tracking-wider text-white bg-[#059669] rounded-full px-2 py-0.5">
+                            Latest
+                          </span>
+                        )}
+                      </p>
                       <p className="text-sm text-slate-600 mt-0.5">{t.blurb}</p>
                     </div>
                     <div className="text-right text-xs text-slate-500 shrink-0 pt-1">
