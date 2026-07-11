@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-03",
+  "last_updated": "2026-07-11",
   "covered": [
     { "topic_slug": "what-is-a-covered-call", "date": "2026-05-04" },
     { "topic_slug": "moneyness-and-strike-selection", "date": "2026-05-11" },
@@ -11,6 +11,7 @@
     { "topic_slug": "rolling-a-covered-call", "date": "2026-06-12" },
     { "topic_slug": "tax-treatment-of-covered-calls", "date": "2026-06-19" },
     { "topic_slug": "when-not-to-sell-covered-calls", "date": "2026-06-29" },
-    { "topic_slug": "the-wheel-and-cash-secured-puts", "date": "2026-07-03" }
+    { "topic_slug": "the-wheel-and-cash-secured-puts", "date": "2026-07-03" },
+    { "topic_slug": "poor-mans-covered-call", "date": "2026-07-11" }
   ]
 }

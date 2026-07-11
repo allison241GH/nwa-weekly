@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-03",
+  "last_updated": "2026-07-11",
   "covered": [
     { "topic_slug": "follow-on-investing-strategy", "date": "2026-04-21" },
     { "topic_slug": "convertible-note-mechanics", "date": "2026-05-01" },
@@ -12,6 +12,7 @@
     { "topic_slug": "exit-scenarios", "date": "2026-06-12" },
     { "topic_slug": "cap-table-mechanics-and-dilution", "date": "2026-06-19" },
     { "topic_slug": "founder-evaluation", "date": "2026-06-29" },
-    { "topic_slug": "deal-flow-sourcing-and-filtering", "date": "2026-07-03" }
+    { "topic_slug": "deal-flow-sourcing-and-filtering", "date": "2026-07-03" },
+    { "topic_slug": "board-seats-observer-rights-governance", "date": "2026-07-11" }
   ]
 }

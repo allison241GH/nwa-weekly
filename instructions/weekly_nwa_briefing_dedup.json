@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-03",
+  "last_updated": "2026-07-11",
   "items": [
     {
       "headline": "Baseten raises a $1.5B Series F at a $13B valuation (two tranches $13B/$11B) led by Altimeter, Conviction, Spark — 4th raise in 18 months, ~20x YoY revenue, >1B inference requests/day",
@@ -156,6 +156,96 @@
       "source": "20VC (The Twenty Minute VC)",
       "url": "https://open.spotify.com/episode/6EjWkbt83H2WXhDMjjS7PF",
       "date_reported": "2026-07-03"
+    },
+    {
+      "headline": "Markets (wk of Jul 6-10): S&P 500 closed Fri Jul 10 at ~7,575 (+1.2% wk), QQQ ~$726, 10Y ~4.55%; mega-cap tech rebound (Meta ~+15%, Nvidia roadmap reassurance), softer June payrolls (+57k), hawkish June FOMC minutes keep July hold base case",
+      "source": "CNBC / Motley Fool / BBN Times / ETF Trends",
+      "url": "https://www.bbntimes.com/global-economy/s-p-500-today-wall-street-benchmark-closes-higher-at-7-575-39-up-0-42-as-meta-and-nvidia-lead-a-winning-week",
+      "date_reported": "2026-07-11"
+    },
+    {
+      "headline": "SK Hynix debuts on US markets Fri Jul 10 up ~13%, raising $26.5B — the largest-ever US IPO by a foreign company (topping Alibaba's 2014 $25B); trades under SKHY",
+      "source": "TechCrunch / Yahoo Finance",
+      "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
+      "date_reported": "2026-07-11"
+    },
+    {
+      "headline": "Fed Chair Kevin Warsh names a16z co-founder Marc Andreessen to co-lead a new external 'Productivity and Jobs' task force (with Charles I. Jones, Asha Sharma) on AI's effect on employment/productivity; recommendations due end of 2026",
+      "source": "Washington Post",
+      "url": "https://www.washingtonpost.com/business/2026/07/09/federal-reserve-enlists-marc-andreessen-advise-ai-under-warsh/",
+      "date_reported": "2026-07-11"
+    },
+    {
+      "headline": "Norm AI raises $120M Series C led by Khosla Ventures at $1.2B valuation, hits unicorn status — agentic legal/compliance AI (~$260M raised in under 3 years)",
+      "source": "TechCrunch / Bloomberg",
+      "url": "https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation/",
+      "date_reported": "2026-07-11"
+    },
+    {
+      "headline": "Agility Robotics (Digit warehouse robot; CEO Peggy Johnson) to go public via SPAC merger with Churchill Capital Corp XI at ~$2.5B, raising >$620M — first pure-play humanoid robotics company on US public markets",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/05/this-humanoid-robotics-company-is-going-public-but-its-ceo-isnt-promising-a-robot-in-your-home-anytime-soon/",
+      "date_reported": "2026-07-11"
+    },
+    {
+      "headline": "Oratomic raises $300M Series A for quantum computing, co-led by ARCH Venture Partners, Spark Capital, Khosla Ventures (Bezos Expeditions, Index, General Catalyst, Bain participating)",
+      "source": "Tech Startups",
+      "url": "https://techstartups.com/2026/07/09/venture-capital-startup-funding-roundup-july-9-2026-sequoia-khosla-ventures-y-combinator-a16z-accel/",
+      "date_reported": "2026-07-11"
+    },
+    {
+      "headline": "SpaceXAI releases Grok 4.5, described by Musk as an 'Opus-class' model co-built with Cursor; priced $2/$6 per Mtok, available in Grok Build, Cursor, and SpaceXAI console",
+      "source": "TechCrunch / Axios",
+      "url": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/",
+      "date_reported": "2026-07-11"
+    },
+    {
+      "headline": "Prime Intellect raises $130M Series A at $1B valuation (led by Radical Ventures; Nvidia Ventures, Intel Capital, Dell, Iconiq) — agentic AI infrastructure platform reaches unicorn",
+      "source": "Axios Pro Rata / Tech Startups",
+      "url": "https://www.axios.com/pro/all-deals/2026/07/08/pro-rata-premium-first-look",
+      "date_reported": "2026-07-11"
+    },
+    {
+      "headline": "Monogram (Coursera co-founder Eren Bali) raises $40M seed led by DST Global and Lux Capital — voice-driven app that generates entire interactive UIs from queries (generative UI)",
+      "source": "Tech Startups",
+      "url": "https://techstartups.com/2026/07/07/venture-capital-startup-funding-roundup-july-7-2026/",
+      "date_reported": "2026-07-11"
+    },
+    {
+      "headline": "Tour de France 2026: Pogačar seizes yellow with a Stage 6 Tourmalet attack, leads Vingegaard by 2:42 through Stage 7 (del Toro 3rd); peloton tech trends toward ultra-narrow bars and short (160mm) cranks",
+      "source": "Cyclingnews / BikeRadar",
+      "url": "https://www.cyclingnews.com/pro-cycling/racing/tour-de-france-gc-standings-2026/",
+      "date_reported": "2026-07-11"
+    },
+    {
+      "headline": "Almost 90 startups crossed $1B in H1 2026 — more than double last year's pace, AI-driven (standouts: Bezos-linked Prometheus $41B, UK Ineffable Intelligence $5.1B)",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/05/almost-40-new-unicorns-have-been-minted-so-far-this-year-here-they-are/",
+      "date_reported": "2026-07-11"
+    },
+    {
+      "headline": "Waymo announces driverless-ride expansion to San Diego, Las Vegas, Tampa, Denver (targets 1M weekly trips); Tesla launches unsupervised robotaxi in Miami; China's Momenta lists in Hong Kong raising ~$751M (BlackRock, Fidelity, GIC, Mercedes, BYD cornerstones)",
+      "source": "CNBC / BigGo Finance",
+      "url": "https://www.cnbc.com/2026/07/08/waymo-starts-driverless-rides-in-san-diego-las-vegas-tampa-denver.html",
+      "date_reported": "2026-07-11"
+    },
+    {
+      "headline": "Paradigm raises $1.2B fourth fund and rebrands as a 'technical frontier' investor (AI + robotics alongside crypto); Chemistry raising $500M second fund — new-fund formation pivots to frontier tech",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/08/crypto-vc-firm-paradigm-raises-1-2b-to-invest-in-technical-frontier-startups/",
+      "date_reported": "2026-07-11"
+    },
+    {
+      "headline": "Nature: 'Is AI ruining our skills? Early results are in — and they're not good' — first evidence of AI-driven deskilling (med/CS students worse when tested without AI; 77% physicians, 70% nurses worry); SciAm and APA Monitor ran companion analyses",
+      "source": "Nature / Scientific American / APA Monitor",
+      "url": "https://www.nature.com/articles/d41586-026-01947-1",
+      "date_reported": "2026-07-11"
+    },
+    {
+      "headline": "Anthropic brings Claude Cowork to cloud, iOS, Android, and web (Max subscribers first, from Jul 7) — sessions run remotely across devices with background/scheduled tasks; usage limits doubled through Aug 5",
+      "source": "NBC News / Help Net Security",
+      "url": "https://www.nbcnews.com/tech/tech-news/anthropic-will-make-claude-cowork-available-users-cloud-rcna353218",
+      "date_reported": "2026-07-11"
     }
   ]
 }
