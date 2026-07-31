@@ -1,251 +1,71 @@
 {
-  "last_updated": "2026-07-11",
+  "last_updated": "2026-07-31",
   "items": [
     {
-      "headline": "Baseten raises a $1.5B Series F at a $13B valuation (two tranches $13B/$11B) led by Altimeter, Conviction, Spark — 4th raise in 18 months, ~20x YoY revenue, >1B inference requests/day",
-      "source": "Crunchbase News / BusinessWire",
-      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-marketing-robotics-baseten/",
-      "date_reported": "2026-06-29"
+      "headline": "Big Tech earnings super-week: Microsoft & Amazon beat and rallied ~8% (Amazon's first $200B quarter, $200.6B net sales +20% YoY), Meta fell ~9% on capex, Apple slipped; four hyperscalers guide to ~$725B AI capex in 2026 (+77% YoY)",
+      "source": "CNBC / TradingKey / DigitalApplied",
+      "url": "https://www.cnbc.com/2026/07/30/stock-market-today-live-updates.html",
+      "date_reported": "2026-07-31"
     },
     {
-      "headline": "OpenAI previews GPT-5.6 family (Sol/Terra/Luna) to ~20 government-approved companies; Sol sets SOTA on Terminal-Bench 2.1, strongest safety stack to date",
-      "source": "OpenAI / Axios",
-      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
-      "date_reported": "2026-06-29"
+      "headline": "Markets (wk of Jul 27-31): S&P 500 closed Fri Jul 31 at ~7,489.72 (+0.7%), Nasdaq Composite ~25,373.85 (+1%), Dow ~52,485 (4th straight winning month), QQQ ~$687.99, 10Y ~4.5-4.6%; Amazon surge capped an earnings-split week",
+      "source": "24/7 Wall St. / Washington Post / Yahoo Finance",
+      "url": "https://www.washingtonpost.com/business/2026/07/31/wall-street-stocks-dow-nasdaq/ee08da40-8d1d-11f1-8912-d71e69d679d7_story.html",
+      "date_reported": "2026-07-31"
     },
     {
-      "headline": "Anthropic accuses Alibaba (Qwen lab) of illicitly accessing Claude via ~25,000 fake accounts / 28.8M queries (Apr–Jun) for 'adversarial distillation'; briefs White House & senators",
-      "source": "Bloomberg / Japan Times",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-24/anthropic-accuses-alibaba-of-illicitly-accessing-its-ai-models",
-      "date_reported": "2026-06-29"
+      "headline": "Anthropic and OpenAI both disclose their models improperly accessed the internet during isolated safety evaluations; Anthropic says Claude reached 3 orgs' systems and suspended all cyber evals on July 23",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/7/31/after-openai-disclosure-anthropic-claude-hacked-outside-systems",
+      "date_reported": "2026-07-31"
     },
     {
-      "headline": "Trump administration (Commerce/Lutnick) authorizes limited re-release of Anthropic's Mythos 5 to ~100 trusted US firms and federal agencies; Fable 5 stays barred",
-      "source": "CNBC / TechCrunch",
-      "url": "https://www.cnbc.com/2026/06/26/us-government-anthropic-claude-mythos5-ai.html",
-      "date_reported": "2026-06-29"
-    },
-    {
-      "headline": "Markets (wk of Jun 26): Nasdaq -4.5% (QQQ ~$707), S&P -1.9% to ~7,354, 10Y ~4.38% on tech rotation + OpenAI IPO-delay report + Apple/Microsoft price hikes; Micron +16%",
-      "source": "TheStreet / Financial Synergies / Advisor Perspectives",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-26-2026",
-      "date_reported": "2026-06-29"
-    },
-    {
-      "headline": "CRED raises $900M Series H at $4.5B led by Meta (minority stake); founder Kunal Shah steps back from CEO to lead WhatsApp internationally, Miten Sampat interim CEO",
-      "source": "CNBC / Indian Startup News",
-      "url": "https://www.cnbc.com/2026/06/23/4-billion-startup-cred-meta-whatsapp.html",
-      "date_reported": "2026-06-29"
-    },
-    {
-      "headline": "General Intuition raises $320M Series A at $2.3B led by Khosla Ventures — world models trained on Medal gameplay clips; already raising Series B",
-      "source": "TechCrunch / Axios",
-      "url": "https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/",
-      "date_reported": "2026-06-29"
-    },
-    {
-      "headline": "Stark Defence raises €500M at €3.5B+ co-led by Sequoia and Founders Fund — Berlin drone/defense startup up from ~$500M (Aug 2025) in under a year",
-      "source": "The Next Web",
-      "url": "https://thenextweb.com/news/stark-defence-500-million-sequoia-founders-fund-3-5-billion-valuation",
-      "date_reported": "2026-06-29"
-    },
-    {
-      "headline": "a16z leads seed for Mirendil (autonomous AI-for-R&D models); founding team from Google, Anthropic, xAI",
-      "source": "a16z",
-      "url": "https://a16z.com/announcement/investing-in-mirendil/",
-      "date_reported": "2026-06-29"
-    },
-    {
-      "headline": "MIT 'AI and Society Forum' (June 23): David Autor reframes AI's labor threat as expertise scarcity, not job loss",
-      "source": "MIT News",
-      "url": "https://news.mit.edu/2026/exploring-societal-impacts-of-ai-0623",
-      "date_reported": "2026-06-29"
-    },
-    {
-      "headline": "Claude Code late-June release notes — /rewind, finer auto-mode controls, ~37% lower streaming CPU, MCP/OAuth reliability fixes",
-      "source": "Anthropic / Claude Code What's New",
-      "url": "https://code.claude.com/docs/en/whats-new",
-      "date_reported": "2026-06-29"
-    },
-    {
-      "headline": "Markets (wk of Jun 29–Jul 3, holiday-shortened; closed Fri Jul 3): Dow record, Nasdaq lags on AI/semi valuation worries (Nvidia/AMD/Broadcom/Micron), QQQ ~$725, 10Y ~4.48%, softer June jobs report cut Sept hike odds to ~50%",
-      "source": "Sunday Guardian / Federal Reserve H.15 / Trading Economics",
-      "url": "https://www.federalreserve.gov/releases/h15/",
-      "date_reported": "2026-07-03"
-    },
-    {
-      "headline": "Together AI raises $800M Series C at $8.3B valuation (led by Aramco Ventures) — GPU-cloud platform for training/serving open-source models",
-      "source": "Crunchbase News / Tech Startups",
-      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-energy-biotech-joulent/",
-      "date_reported": "2026-07-03"
-    },
-    {
-      "headline": "Joulent raises $1.75B (National Grid Ventures) — energy infrastructure for AI and compute-intensive industries; the week's biggest round",
-      "source": "Crunchbase News",
-      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-energy-biotech-joulent/",
-      "date_reported": "2026-07-03"
-    },
-    {
-      "headline": "Anthropic launches Claude Science (June 30) — AI workbench for researchers/pharma (protein structure prediction, 60+ scientific databases) and announces it will run its own preclinical drug-discovery programs for neglected/rare diseases",
-      "source": "STAT News / Bloomberg / Northeastern",
-      "url": "https://www.statnews.com/2026/06/30/anthropic-release-claude-science-ceo-dario-amodei/",
-      "date_reported": "2026-07-03"
-    },
-    {
-      "headline": "US lifts export controls June 30; Claude Fable 5 returns globally July 1 across Claude platform/Code/Cowork; Anthropic adds new jailbreak classifier blocking the targeted technique >99%",
-      "source": "VentureBeat / 9to5Google / MarkTechPost",
-      "url": "https://venturebeat.com/technology/anthropic-is-bringing-back-claude-fable-5-globally-after-us-lifts-export-control-order-where-can-enterprises-access-it",
-      "date_reported": "2026-07-03"
-    },
-    {
-      "headline": "Quantum Systems raises $1.2B Series D (~$8B valuation; Blackstone, Airbus, Advent) — Munich defense-tech, long-endurance drones + multi-domain autonomy",
+      "headline": "Enigma (physical-AI / robotics infrastructure) raises $71M seed led by Index Ventures, Ribbit Capital, Conviction Partners; angels from OpenAI, Anthropic, DeepMind, xAI, Cognition, Wiz",
       "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/07/02/venture-capital-startup-funding-roundup-july-2-2026/",
-      "date_reported": "2026-07-03"
+      "url": "https://techstartups.com/2026/07/27/venture-capital-startup-funding-roundup-july-27-2026-b-capital-index-ventures-paradigm-point72-ventures-ribbit-capital-more/",
+      "date_reported": "2026-07-31"
     },
     {
-      "headline": "Twelve Labs raises $100M Series B at $1B+ (NEA, Naver Ventures) — video indexing/analysis AI for enterprise archives",
-      "source": "Crunchbase News",
-      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-energy-biotech-joulent/",
-      "date_reported": "2026-07-03"
+      "headline": "Ford Q2 2026: adjusted EPS $0.42 (vs ~$0.35 est), adjusted EBIT $2.5B; raised FY adjusted EBIT guidance to $10-11B; ~$3.6B non-cash BlueOval SK charge; $0.15 dividend ex Aug 11 (payable Sept 1); Citi upgrade to Buy, $20 PT; stock ~$14.63",
+      "source": "StockTitan / Schaeffer's / Qz",
+      "url": "https://www.stocktitan.net/news/F/ford-reports-second-quarter-2026-financial-vds612hmrt0f.html",
+      "date_reported": "2026-07-31"
     },
     {
-      "headline": "8090 Solutions raises $135M led by Salesforce Ventures — AI-agent platform that develops enterprise applications end-to-end",
-      "source": "Crunchbase News",
-      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-energy-biotech-joulent/",
-      "date_reported": "2026-07-03"
-    },
-    {
-      "headline": "Google ships Gemma 4 12B (runs locally on 16GB laptop, unified vision + native voice) and adds computer-use to Gemini 3.5 Flash for cross-device agents",
-      "source": "Google Blog",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
-      "date_reported": "2026-07-03"
-    },
-    {
-      "headline": "Venice raises $65M at $1B valuation (Dragonfly Capital) — privacy-first platform for private access to AI models",
-      "source": "Crunchbase News",
-      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-energy-biotech-joulent/",
-      "date_reported": "2026-07-03"
-    },
-    {
-      "headline": "H1 2026 seed structure: median seed pre-money +19% to ~$16M while seed volume -29% YoY (flight to quality); AI startups carry 1.3–1.6x valuation premium",
-      "source": "Carta State of Pre-Seed Q1 2026 / VC Beast",
-      "url": "https://carta.com/data/state-of-pre-seed-q1-2026/",
-      "date_reported": "2026-07-03"
-    },
-    {
-      "headline": "Embodied AI reaching production scale: Figure producing Figure 03 at ~1 robot/hour (BotQ), Tesla converting Fremont lines for Optimus Gen 3 (summer ramp), China 150+ humanoid firms vs ~20 US",
-      "source": "Humanoid Press / New Market Pitch",
-      "url": "https://www.humanoid.press/humanoid-daily/",
-      "date_reported": "2026-07-03"
-    },
-    {
-      "headline": "Enterprise-agent spending gap: agent-software spend forecast ~$206B 2026 (+139% YoY), Gartner sees 40% of enterprise apps embedding task-specific agents by year-end, but only a small minority production-ready",
-      "source": "Gartner / Forrester",
-      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025",
-      "date_reported": "2026-07-03"
-    },
-    {
-      "headline": "Inc./Medium on AI + human expertise: LinkedIn 2026 Skills Report (Soren Kaplan, June 26) — fastest-growing skills split into AI fluency + human judgment; Papalini Medium argues AI commoditizes ~70% of execution, remaining 30% (judgment/taste) is the value",
-      "source": "Inc. / Medium (Enrico Papalini)",
-      "url": "https://www.inc.com/soren-kaplan/linkedins-2026-skills-report-reveals-the-half-of-your-resume-ai-cant-touch/91365799",
-      "date_reported": "2026-07-03"
-    },
-    {
-      "headline": "20VC late-June episode (June 29) on AI M&A/secondary-market frenzy — reported nine-figure acquisition and trillion-dollar-secondary numbers for marquee AI names",
-      "source": "20VC (The Twenty Minute VC)",
-      "url": "https://open.spotify.com/episode/6EjWkbt83H2WXhDMjjS7PF",
-      "date_reported": "2026-07-03"
-    },
-    {
-      "headline": "Markets (wk of Jul 6-10): S&P 500 closed Fri Jul 10 at ~7,575 (+1.2% wk), QQQ ~$726, 10Y ~4.55%; mega-cap tech rebound (Meta ~+15%, Nvidia roadmap reassurance), softer June payrolls (+57k), hawkish June FOMC minutes keep July hold base case",
-      "source": "CNBC / Motley Fool / BBN Times / ETF Trends",
-      "url": "https://www.bbntimes.com/global-economy/s-p-500-today-wall-street-benchmark-closes-higher-at-7-575-39-up-0-42-as-meta-and-nvidia-lead-a-winning-week",
-      "date_reported": "2026-07-11"
-    },
-    {
-      "headline": "SK Hynix debuts on US markets Fri Jul 10 up ~13%, raising $26.5B — the largest-ever US IPO by a foreign company (topping Alibaba's 2014 $25B); trades under SKHY",
-      "source": "TechCrunch / Yahoo Finance",
-      "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
-      "date_reported": "2026-07-11"
-    },
-    {
-      "headline": "Fed Chair Kevin Warsh names a16z co-founder Marc Andreessen to co-lead a new external 'Productivity and Jobs' task force (with Charles I. Jones, Asha Sharma) on AI's effect on employment/productivity; recommendations due end of 2026",
-      "source": "Washington Post",
-      "url": "https://www.washingtonpost.com/business/2026/07/09/federal-reserve-enlists-marc-andreessen-advise-ai-under-warsh/",
-      "date_reported": "2026-07-11"
-    },
-    {
-      "headline": "Norm AI raises $120M Series C led by Khosla Ventures at $1.2B valuation, hits unicorn status — agentic legal/compliance AI (~$260M raised in under 3 years)",
-      "source": "TechCrunch / Bloomberg",
-      "url": "https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation/",
-      "date_reported": "2026-07-11"
-    },
-    {
-      "headline": "Agility Robotics (Digit warehouse robot; CEO Peggy Johnson) to go public via SPAC merger with Churchill Capital Corp XI at ~$2.5B, raising >$620M — first pure-play humanoid robotics company on US public markets",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/05/this-humanoid-robotics-company-is-going-public-but-its-ceo-isnt-promising-a-robot-in-your-home-anytime-soon/",
-      "date_reported": "2026-07-11"
-    },
-    {
-      "headline": "Oratomic raises $300M Series A for quantum computing, co-led by ARCH Venture Partners, Spark Capital, Khosla Ventures (Bezos Expeditions, Index, General Catalyst, Bain participating)",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/07/09/venture-capital-startup-funding-roundup-july-9-2026-sequoia-khosla-ventures-y-combinator-a16z-accel/",
-      "date_reported": "2026-07-11"
-    },
-    {
-      "headline": "SpaceXAI releases Grok 4.5, described by Musk as an 'Opus-class' model co-built with Cursor; priced $2/$6 per Mtok, available in Grok Build, Cursor, and SpaceXAI console",
-      "source": "TechCrunch / Axios",
-      "url": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/",
-      "date_reported": "2026-07-11"
-    },
-    {
-      "headline": "Prime Intellect raises $130M Series A at $1B valuation (led by Radical Ventures; Nvidia Ventures, Intel Capital, Dell, Iconiq) — agentic AI infrastructure platform reaches unicorn",
-      "source": "Axios Pro Rata / Tech Startups",
-      "url": "https://www.axios.com/pro/all-deals/2026/07/08/pro-rata-premium-first-look",
-      "date_reported": "2026-07-11"
-    },
-    {
-      "headline": "Monogram (Coursera co-founder Eren Bali) raises $40M seed led by DST Global and Lux Capital — voice-driven app that generates entire interactive UIs from queries (generative UI)",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/07/07/venture-capital-startup-funding-roundup-july-7-2026/",
-      "date_reported": "2026-07-11"
-    },
-    {
-      "headline": "Tour de France 2026: Pogačar seizes yellow with a Stage 6 Tourmalet attack, leads Vingegaard by 2:42 through Stage 7 (del Toro 3rd); peloton tech trends toward ultra-narrow bars and short (160mm) cranks",
-      "source": "Cyclingnews / BikeRadar",
+      "headline": "Tadej Pogačar wins a record-equaling 5th Tour de France (Paris finish), 5 stage wins, never outside GC top 4; Remco Evenepoel 2nd (+6:26), Isaac del Toro 3rd",
+      "source": "Cyclingnews / Cycling Up To Date",
       "url": "https://www.cyclingnews.com/pro-cycling/racing/tour-de-france-gc-standings-2026/",
-      "date_reported": "2026-07-11"
+      "date_reported": "2026-07-31"
     },
     {
-      "headline": "Almost 90 startups crossed $1B in H1 2026 — more than double last year's pace, AI-driven (standouts: Bezos-linked Prometheus $41B, UK Ineffable Intelligence $5.1B)",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/05/almost-40-new-unicorns-have-been-minted-so-far-this-year-here-they-are/",
-      "date_reported": "2026-07-11"
+      "headline": "Anthropic ships MCP 2026-07-28 spec (stateless core, hardened OAuth/OIDC, versioned Apps/Tasks extensions) and updates Claude voice mode (July 23) to let users pick Opus/Sonnet/Haiku, adds Notion & Canva connectors",
+      "source": "TechCrunch / Releasebot",
+      "url": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/",
+      "date_reported": "2026-07-31"
     },
     {
-      "headline": "Waymo announces driverless-ride expansion to San Diego, Las Vegas, Tampa, Denver (targets 1M weekly trips); Tesla launches unsupervised robotaxi in Miami; China's Momenta lists in Hong Kong raising ~$751M (BlackRock, Fidelity, GIC, Mercedes, BYD cornerstones)",
-      "source": "CNBC / BigGo Finance",
-      "url": "https://www.cnbc.com/2026/07/08/waymo-starts-driverless-rides-in-san-diego-las-vegas-tampa-denver.html",
-      "date_reported": "2026-07-11"
+      "headline": "ZuriQ (ETH Zürich spinout) raises $25.5M seed led by Quantonation (Extantia, Forward.one, Firgun) to scale trapped-ion quantum processors",
+      "source": "Tech Startups",
+      "url": "https://techstartups.com/2026/07/28/venture-capital-startup-funding-roundup-july-28-2026-battery-ventures-bessemer-gradient-team8-y-combinator-more/",
+      "date_reported": "2026-07-31"
     },
     {
-      "headline": "Paradigm raises $1.2B fourth fund and rebrands as a 'technical frontier' investor (AI + robotics alongside crypto); Chemistry raising $500M second fund — new-fund formation pivots to frontier tech",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/08/crypto-vc-firm-paradigm-raises-1-2b-to-invest-in-technical-frontier-startups/",
-      "date_reported": "2026-07-11"
+      "headline": "AI-agent security funding wave: Hush Security raises $30M Series A (Akamai, Battery, YL Ventures) for identity/AI-agent governance; Act Security emerges from stealth with $60M across seed and Series A",
+      "source": "Tech Startups",
+      "url": "https://techstartups.com/2026/07/28/venture-capital-startup-funding-roundup-july-28-2026-battery-ventures-bessemer-gradient-team8-y-combinator-more/",
+      "date_reported": "2026-07-31"
     },
     {
-      "headline": "Nature: 'Is AI ruining our skills? Early results are in — and they're not good' — first evidence of AI-driven deskilling (med/CS students worse when tested without AI; 77% physicians, 70% nurses worry); SciAm and APA Monitor ran companion analyses",
-      "source": "Nature / Scientific American / APA Monitor",
-      "url": "https://www.nature.com/articles/d41586-026-01947-1",
-      "date_reported": "2026-07-11"
+      "headline": "H1 2026 global venture funding hit a record ~$510B, with 70%+ of Q2 startup capital flowing into AI — concentration risk within an apparent boom",
+      "source": "Tech Startups / Crunchbase",
+      "url": "https://techstartups.com/2026/07/27/venture-capital-startup-funding-roundup-july-27-2026-b-capital-index-ventures-paradigm-point72-ventures-ribbit-capital-more/",
+      "date_reported": "2026-07-31"
     },
     {
-      "headline": "Anthropic brings Claude Cowork to cloud, iOS, Android, and web (Max subscribers first, from Jul 7) — sessions run remotely across devices with background/scheduled tasks; usage limits doubled through Aug 5",
-      "source": "NBC News / Help Net Security",
-      "url": "https://www.nbcnews.com/tech/tech-news/anthropic-will-make-claude-cowork-available-users-cloud-rcna353218",
-      "date_reported": "2026-07-11"
+      "headline": "Figure AI surpasses 10,000 humanoid deployments; second paying-customer use case deployed in 30 days vs 12 months for its first (BMW); Tesla Optimus Fremont production not yet started as of mid-July",
+      "source": "Technology.org / New Market Pitch",
+      "url": "https://www.technology.org/2026/07/18/humanoid-robots-in-2026-what-is-actually-deployed/",
+      "date_reported": "2026-07-31"
     }
   ]
 }
