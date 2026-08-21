@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-17",
+  "last_updated": "2026-08-21",
   "items": [
     {
       "headline": "Anthropic backers target a ~$2 trillion IPO in October (largest ever, would eclipse SpaceX's $1.77T June debut); MS/GS/JPM leading; ~$47B ARR by May, $100-120B projected by Dec; figure is investor speculation, not company-confirmed",
@@ -60,6 +60,60 @@
       "source": "Tech Startups / a16z",
       "url": "https://techstartups.com/2026/08/04/venture-capital-startup-funding-roundup-august-4-2026-a16z-base10-dream-ventures-jpmorgan-sequoia-capital-valor-equity-partners-yc-more/",
       "date_reported": "2026-08-17"
+    },
+    {
+      "headline": "Groq closes $350M Series A at a $3.5B valuation (led by Disruptive, NVIDIA participating), completing pivot from chipmaker to AI inference cloud; scaling 57MW -> 200MW+, 13 data centers, 6M+ developers",
+      "source": "Groq / SiliconANGLE",
+      "url": "https://siliconangle.com/2026/08/17/ai-cloud-operator-groq-raises-350m-more-in-funding/",
+      "date_reported": "2026-08-21"
+    },
+    {
+      "headline": "Higgsfield raises $400M at a $5.4B valuation (led by DST Global) for enterprise AI video/image generation; annualized revenue reportedly ~$20M -> ~$700M in roughly a year",
+      "source": "SiliconANGLE / VKTR",
+      "url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
+      "date_reported": "2026-08-21"
+    },
+    {
+      "headline": "Wispr raises $280M Series B at a $2B valuation (led by Menlo Ventures) to extend natural speech-to-text beyond dictation into meetings and note-taking",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/",
+      "date_reported": "2026-08-21"
+    },
+    {
+      "headline": "SoftBank invests $200M in Gravis Robotics (one of the week's four mega-rounds) for autonomy in heavy construction machinery",
+      "source": "Crunchbase News",
+      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-billion-dollar-raises-manufacturing-energy-ai/",
+      "date_reported": "2026-08-21"
+    },
+    {
+      "headline": "Nevada Transportation Authority approves autonomous-network permits for Tesla, Waymo and Uber to run paid robotaxis in Clark County (Las Vegas); Tesla reportedly cleared for up to 5,000 robotaxis over 12 months after Aug 20 meeting",
+      "source": "Engadget",
+      "url": "https://www.engadget.com/2241379/nevada-allows-uber-tesla-waymo-paid-robotaxis/",
+      "date_reported": "2026-08-21"
+    },
+    {
+      "headline": "Anthropic launches Claude Academy, a learning hub with courses, tutorials and badges for safe, effective AI use",
+      "source": "Anthropic Newsroom",
+      "url": "https://www.anthropic.com/news",
+      "date_reported": "2026-08-21"
+    },
+    {
+      "headline": "BikeOn unveils CycleClick, a ~$299 clip-on cycling power meter that reads power off the chain and installs in seconds, undercutting pedal/crank units",
+      "source": "GearJunkie",
+      "url": "https://gearjunkie.com/biking/cycleclick-power-meter-chain",
+      "date_reported": "2026-08-21"
+    },
+    {
+      "headline": "Markets (wk of Aug 17-21): S&P 500 ~7,674 near records, Nasdaq 100 ~29,347; Treasury doubles long-dated debt buybacks (>= $4B) on Aug 19 pulling yields lower; all eyes on Warsh's first Jackson Hole address as Fed chair Aug 28 ahead of Sept 16 FOMC",
+      "source": "CNBC / Saxo / Vantage",
+      "url": "https://www.cnbc.com/2026/08/20/stock-market-today-live-updates.html",
+      "date_reported": "2026-08-21"
+    },
+    {
+      "headline": "Humanoids scale: Figure reports surpassing 10,000 partner-warehouse deployments (2nd industrial use case took 30 days vs 12 months for the first); 1X opens consumer pre-orders for NEO home humanoid with 2026 delivery",
+      "source": "Technology.org / New Market Pitch",
+      "url": "https://newmarketpitch.com/blogs/news/humanoid-robotics-figure-vs-tesla",
+      "date_reported": "2026-08-21"
     }
   ]
 }

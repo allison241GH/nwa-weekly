@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-17",
+  "last_updated": "2026-08-21",
   "covered": [
     { "topic_slug": "follow-on-investing-strategy", "date": "2026-04-21" },
     { "topic_slug": "convertible-note-mechanics", "date": "2026-05-01" },
@@ -15,6 +15,7 @@
     { "topic_slug": "deal-flow-sourcing-and-filtering", "date": "2026-07-03" },
     { "topic_slug": "board-seats-observer-rights-governance", "date": "2026-07-11" },
     { "topic_slug": "portfolio-construction", "date": "2026-07-31" },
-    { "topic_slug": "pro-rata-rights", "date": "2026-08-17" }
+    { "topic_slug": "pro-rata-rights", "date": "2026-08-17" },
+    { "topic_slug": "product-market-fit-signals", "date": "2026-08-21" }
   ]
 }
