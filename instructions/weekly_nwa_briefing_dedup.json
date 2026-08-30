@@ -1,6 +1,72 @@
 {
-  "last_updated": "2026-08-21",
+  "last_updated": "2026-08-30",
   "items": [
+    {
+      "headline": "Markets (wk of Aug 24-28): S&P 500 +~0.5%, Nasdaq +~0.8% for the week but fell Friday after new Fed Chair Kevin Warsh's first Jackson Hole keynote called inflation 'too high'; September rate-HIKE odds spiked to ~57%, 10-yr Treasury yield rose to ~4.72%, 30-yr ~5.21%; S&P closed ~7,711",
+      "source": "CNBC / Yahoo Finance / Vista Partners",
+      "url": "https://www.cnbc.com/2026/08/27/stock-market-today-live-updates.html",
+      "date_reported": "2026-08-30"
+    },
+    {
+      "headline": "AI captured ~$407B of VC in H1 2026 (more than all of 2025) even as deal count collapsed from ~8,290 (2025) to ~3,500 (H1); OpenAI + Anthropic alone took ~$217B (~43% of all Q2 venture dollars); capital concentrating into fewer, larger checks in AI infra/defense/robotics",
+      "source": "Crunchbase News / Second Talent / The Business Perspective",
+      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-defense-fintech-robotics/",
+      "date_reported": "2026-08-30"
+    },
+    {
+      "headline": "Salesforce and Anthropic announce 'Claudeforce' — expanded strategic partnership embedding Claude into Salesforce CRM; 'Salesforce in Claude' in pilot now, open beta expected September 2026",
+      "source": "Salesforce Newsroom",
+      "url": "https://www.salesforce.com/news/press-releases/2026/08/26/salesforce-and-anthropic-announce-claudeforce/",
+      "date_reported": "2026-08-30"
+    },
+    {
+      "headline": "Anthropic unveils the Model Hardware Standard (MHS), a software standard letting Claude and similar AI assistants interoperate with robots, scientific instruments, and manufacturing hardware",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-27/anthropic-tests-new-way-for-claude-to-work-with-robots-and-scientific-lab-tools",
+      "date_reported": "2026-08-30"
+    },
+    {
+      "headline": "Valar Atomics raises ~$1B to build modular nuclear reactors to power AI data centers, underscoring the shift of the AI-compute bottleneck toward energy",
+      "source": "Tech Startups roundup (Aug 25)",
+      "url": "https://techstartups.com/2026/08/25/venture-capital-startup-funding-roundup-august-25-2026-aramco-ventures-ark-invest-salesforce-ventures-samsung-ventures-siemens-more/",
+      "date_reported": "2026-08-30"
+    },
+    {
+      "headline": "Anthropic opens ~10,000 free/discounted Claude subscription seats for scientists and adds a free 'Claude for Teachers' enterprise tier for K-12 schools/districts",
+      "source": "Anthropic Newsroom",
+      "url": "https://www.anthropic.com/news",
+      "date_reported": "2026-08-30"
+    },
+    {
+      "headline": "Tesla says its unsupervised robotaxi fleet is now 'a lot bigger' (Aug 26); registered Texas autonomous fleet reportedly ~37% the size of Waymo's, ahead of the Sept 3 Cybercab launch event",
+      "source": "The Charge Port / Tesla Oracle",
+      "url": "https://thechargeport.com/robotaxi-tracker",
+      "date_reported": "2026-08-30"
+    },
+    {
+      "headline": "Vuelta a España 2026 underway (Aug 22-Sep 13); Pogačar racing his first Vuelta since 2019; prototype Dura-Ace groupset and custom Pogačar bike on display",
+      "source": "Cyclingnews",
+      "url": "https://www.cyclingnews.com/races/vuelta-a-espana-2026/",
+      "date_reported": "2026-08-30"
+    },
+    {
+      "headline": "Enterprise-agent reality check: Gartner projects ~40% of enterprise apps embed task-specific AI agents by end-2026 (up from <5% in 2025), but McKinsey finds only ~23% of orgs scaling an agentic system while 39% still experimenting",
+      "source": "Sema4.ai / McKinsey (via roundups)",
+      "url": "https://sema4.ai/blog/ai-agent-use-cases/",
+      "date_reported": "2026-08-30"
+    },
+    {
+      "headline": "Multi-agent Claude Code workflows tutorial (Skills, Subagents & Handoffs) surfaced as buildable Applied-AI learning content",
+      "source": "YouTube",
+      "url": "https://www.youtube.com/watch?v=qiDalcMeBFk",
+      "date_reported": "2026-08-30"
+    },
+    {
+      "headline": "'AI, Human Cognition and Knowledge Collapse' (Acemoglu & Kong, MIT) argues over-reliance on AI can narrow the diversity of human knowledge; pairs with MIT Sloan 'augmentation trap' framing",
+      "source": "MIT Economics",
+      "url": "https://economics.mit.edu/sites/default/files/2026-02/AI,%20Human%20Cognition%20and%20Knowledge%20Collapse%2002-20-26.pdf",
+      "date_reported": "2026-08-30"
+    },
     {
       "headline": "Anthropic backers target a ~$2 trillion IPO in October (largest ever, would eclipse SpaceX's $1.77T June debut); MS/GS/JPM leading; ~$47B ARR by May, $100-120B projected by Dec; figure is investor speculation, not company-confirmed",
       "source": "Fortune / Forbes / Qz",
