@@ -1,0 +1,121 @@
+<!--
+  Weekly NWA Briefings — AI Investing lesson HTML template.
+
+  The weekly agent fills this template (do NOT regenerate the CSS each week).
+  Mirrors instructions/lesson_html_template.html (Venture Learning) but with the
+  violet accent used to distinguish the AI Investing section site-wide.
+
+  Placeholders to substitute:
+    AI-Native Deal Sourcing  — the lesson title (e.g., "Wrapper Risk")
+    ai-native-deal-sourcing    — kebab-case slug from the 25-topic AI Investing catalog (lib/ai-investing.ts)
+    September 2, 2026  — human-readable date (e.g., "May 25, 2026")
+    2026-09-02      — ISO date YYYY-MM-DD (e.g., "2026-05-25")
+    <p>Deal sourcing has always been two jobs pretending to be one: <em>finding</em> companies and <em>getting access</em> to them. AI has almost completely solved the first and made the second harder. Every serious fund now runs some version of the same stack &mdash; scraping GitHub commit velocity, npm and PyPI download curves, job postings, Hugging Face model downloads, app-store ranking deltas, LinkedIn departures from frontier labs &mdash; and pipes it into an LLM that summarizes, scores and routes. If a company is showing public traction, assume every fund on your cap table wish-list already has it in a dashboard. Discovery is now a commodity. The scarce thing is being the person the founder wants on the cap table before the dashboard fires.</p>
+
+<p>For an angel this inversion is the entire game, and it cuts both ways. The bad news: the window between "detectable" and "priced" has collapsed from months to days, and the funds have industrialized the detection. The good news is more interesting &mdash; because the top funds are all running <em>similar</em> signals over <em>similar</em> public data, they are converging on the same companies, which means the crowd is now concentrated in a narrower band than it was five years ago. The data bears this out: seed deal count fell 31% year over year while seed dollars rose 30%, and a16z led 46% of its 48 H1 2026 seed deals at an average check of $10.5M. Fewer companies, much bigger checks, chasing the same detectable signals. Everything <em>outside</em> that signal band &mdash; pre-launch teams, founders who haven't shipped publicly, non-obvious verticals with no GitHub footprint &mdash; is being systematically under-sourced for the first time in a decade.</p>
+
+<p>Here is the coaching insight: <strong>stop using AI to find companies and start using it to find people.</strong> A model can tell you which repos are accelerating; it cannot tell you which of the seven people who left a frontier lab in the last quarter is about to start something, or which operator in your own network is one quiet conversation away from going out on their own. Point your tooling at <em>relationship maintenance and pre-signal monitoring</em> &mdash; who in your network changed roles, who started writing publicly about a problem, who keeps showing up in the same three Discord servers &mdash; and keep your judgment pointed at the conversation. The funds have automated the search. Your edge is that you can be early to a <em>person</em> rather than early to a <em>company</em>, and no scraper has access to that.</p>
+
+<h2>Key Terms</h2>
+
+<p><strong>Proprietary Deal Flow</strong> &mdash; Deals that reach you through a channel others cannot replicate: a founder who worked for you, a mentee, a co-investor who owes you a look. In an AI-sourced market this is the <em>only</em> durable form of deal flow, because anything discoverable from public data is by definition non-proprietary the moment it becomes discoverable.</p>
+
+<p><strong>Signal Layer</strong> &mdash; The set of public, machine-readable traces a startup emits before it raises: commit frequency, package downloads, hiring posts, model-hub activity, review-site mentions. Understanding what's <em>in</em> the signal layer tells you where the crowd will be; understanding what's <em>outside</em> it tells you where you can still buy ownership at a sane price.</p>
+
+<h2>Real-World Example</h2>
+
+<p>Look at how Hugging Face itself would have read on a signal dashboard. Its model-download and repo activity curves were among the most visible in all of open-source AI &mdash; impossible to miss, and priced accordingly at a $4.5B valuation in 2023. This week Nvidia moved to acquire it for a reported $12.9&ndash;14B. The company was never hidden; the returns came from conviction about <em>what the position was worth</em>, not from finding it first. That is the shape of most AI-era outcomes now: discovery adds little alpha, and underwriting adds nearly all of it.</p>
+
+<p>Contrast that with the sourcing problem an angel actually faces. The F&eacute;lix round announced this week &mdash; $87M of a16z-led equity plus a $113M General Catalyst facility &mdash; was a WhatsApp-based remittance business, a category with almost no GitHub footprint and no model-hub presence at all. A pure signal-layer pipeline would have surfaced it late or not at all. Companies whose traction is <em>transactional</em> rather than <em>technical</em> are exactly the blind spot in an industry that has trained its instruments on developer telemetry.</p>
+
+<h2>Jamie's Action Prompt</h2>
+
+<p>Build the anti-dashboard this week. Make a list of 20 people &mdash; not companies &mdash; in your NWA, FAU and FordPass networks who could plausibly start something in the next 18 months: strong operators, technical mentees, people who left a good job recently for an unclear reason. Then have Claude help you set up a lightweight monitor over their <em>public</em> activity only (new posts, role changes, side projects) and a simple cadence for touching base with five of them a month. Track the hit rate over two quarters. The premise you're testing is the one this lesson rests on: that being early to the right twenty people beats being fast on the right two hundred companies.</p>     — the rendered lesson body. Render the markdown body to clean
+                       semantic HTML (no <html>/<body> wrappers). Expected sequence:
+                         - 2–3 <p> paragraphs of teaching
+                         - <h2>Key Terms</h2> followed by <p><strong>Term</strong> — definition.</p> entries
+                         - <h2>Real-World Example</h2> followed by 1–2 <p> paragraphs
+                         - <h2>Jamie's Action Prompt</h2> followed by one <p> paragraph
+                       Use <strong>/<em> for inline emphasis. No inline styles.
+
+  Output filename: reports/weekly_nwa_ai_investing_lesson_ai-native-deal-sourcing_2026-09-02.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Investing — AI-Native Deal Sourcing</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #ffffff; color: #1a1a1a; line-height: 1.65; font-size: 16px; }
+    .outer { max-width: 860px; margin: 0 auto; padding: 0 20px 60px; }
+
+    .site-header { background: #0a1628; color: #fff; padding: 32px 24px 28px; margin-bottom: 36px; }
+    .site-header .eyebrow { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #c4b5fd; margin-bottom: 8px; }
+    .site-header h1 { font-size: 1.55rem; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 4px; }
+    .site-header .date-range { font-size: 0.95rem; opacity: 0.78; margin-bottom: 8px; }
+    .site-header .subtitle { font-size: 0.82rem; opacity: 0.6; font-style: italic; }
+
+    .coaching-card { background: #f5f3ff; border-left: 5px solid #7c3aed; border-radius: 0 8px 8px 0; padding: 28px 30px; margin-bottom: 28px; }
+    .coaching-card .coaching-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #7c3aed; margin-bottom: 8px; }
+    .coaching-card h1.lesson-title { font-size: 1.35rem; font-weight: 700; color: #4c1d95; margin-bottom: 6px; letter-spacing: -0.01em; }
+    .coaching-card .lesson-date { font-size: 0.85rem; color: #6d28d9; margin-bottom: 18px; font-style: italic; }
+    .coaching-card h2 { font-size: 1rem; font-weight: 700; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 24px; margin-bottom: 10px; padding-top: 16px; border-top: 1px solid #ddd6fe; }
+    .coaching-card h2:first-of-type { padding-top: 0; border-top: none; }
+    .coaching-card p { font-size: 0.95rem; color: #5b21b6; margin-bottom: 14px; }
+    .coaching-card p:last-child { margin-bottom: 0; }
+    .coaching-card strong { font-weight: 700; color: #4c1d95; }
+    .coaching-card em { font-style: italic; }
+    .coaching-card a { color: #7c3aed; font-weight: 600; }
+
+    .footer-link { text-align: center; font-size: 0.85rem; color: #64748b; margin-top: 24px; }
+    .footer-link a { color: #7c3aed; font-weight: 600; text-decoration: none; }
+    .footer-link a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+<div class="site-header">
+  <div class="outer" style="padding-bottom:0;">
+    <div class="eyebrow">Weekly NWA Briefings · AI Investing</div>
+    <h1>AI-Native Deal Sourcing</h1>
+    <div class="date-range">Lesson of September 2, 2026</div>
+    <div class="subtitle">25-topic AI investing curriculum · 1:1 coaching format</div>
+  </div>
+</div>
+
+<div class="outer">
+  <div class="coaching-card">
+    <div class="coaching-label">This Week's Lesson</div>
+    <h1 class="lesson-title">AI-Native Deal Sourcing</h1>
+    <div class="lesson-date">September 2, 2026 · Topic: ai-native-deal-sourcing</div>
+
+    <p>Deal sourcing has always been two jobs pretending to be one: <em>finding</em> companies and <em>getting access</em> to them. AI has almost completely solved the first and made the second harder. Every serious fund now runs some version of the same stack &mdash; scraping GitHub commit velocity, npm and PyPI download curves, job postings, Hugging Face model downloads, app-store ranking deltas, LinkedIn departures from frontier labs &mdash; and pipes it into an LLM that summarizes, scores and routes. If a company is showing public traction, assume every fund on your cap table wish-list already has it in a dashboard. Discovery is now a commodity. The scarce thing is being the person the founder wants on the cap table before the dashboard fires.</p>
+
+<p>For an angel this inversion is the entire game, and it cuts both ways. The bad news: the window between "detectable" and "priced" has collapsed from months to days, and the funds have industrialized the detection. The good news is more interesting &mdash; because the top funds are all running <em>similar</em> signals over <em>similar</em> public data, they are converging on the same companies, which means the crowd is now concentrated in a narrower band than it was five years ago. The data bears this out: seed deal count fell 31% year over year while seed dollars rose 30%, and a16z led 46% of its 48 H1 2026 seed deals at an average check of $10.5M. Fewer companies, much bigger checks, chasing the same detectable signals. Everything <em>outside</em> that signal band &mdash; pre-launch teams, founders who haven't shipped publicly, non-obvious verticals with no GitHub footprint &mdash; is being systematically under-sourced for the first time in a decade.</p>
+
+<p>Here is the coaching insight: <strong>stop using AI to find companies and start using it to find people.</strong> A model can tell you which repos are accelerating; it cannot tell you which of the seven people who left a frontier lab in the last quarter is about to start something, or which operator in your own network is one quiet conversation away from going out on their own. Point your tooling at <em>relationship maintenance and pre-signal monitoring</em> &mdash; who in your network changed roles, who started writing publicly about a problem, who keeps showing up in the same three Discord servers &mdash; and keep your judgment pointed at the conversation. The funds have automated the search. Your edge is that you can be early to a <em>person</em> rather than early to a <em>company</em>, and no scraper has access to that.</p>
+
+<h2>Key Terms</h2>
+
+<p><strong>Proprietary Deal Flow</strong> &mdash; Deals that reach you through a channel others cannot replicate: a founder who worked for you, a mentee, a co-investor who owes you a look. In an AI-sourced market this is the <em>only</em> durable form of deal flow, because anything discoverable from public data is by definition non-proprietary the moment it becomes discoverable.</p>
+
+<p><strong>Signal Layer</strong> &mdash; The set of public, machine-readable traces a startup emits before it raises: commit frequency, package downloads, hiring posts, model-hub activity, review-site mentions. Understanding what's <em>in</em> the signal layer tells you where the crowd will be; understanding what's <em>outside</em> it tells you where you can still buy ownership at a sane price.</p>
+
+<h2>Real-World Example</h2>
+
+<p>Look at how Hugging Face itself would have read on a signal dashboard. Its model-download and repo activity curves were among the most visible in all of open-source AI &mdash; impossible to miss, and priced accordingly at a $4.5B valuation in 2023. This week Nvidia moved to acquire it for a reported $12.9&ndash;14B. The company was never hidden; the returns came from conviction about <em>what the position was worth</em>, not from finding it first. That is the shape of most AI-era outcomes now: discovery adds little alpha, and underwriting adds nearly all of it.</p>
+
+<p>Contrast that with the sourcing problem an angel actually faces. The F&eacute;lix round announced this week &mdash; $87M of a16z-led equity plus a $113M General Catalyst facility &mdash; was a WhatsApp-based remittance business, a category with almost no GitHub footprint and no model-hub presence at all. A pure signal-layer pipeline would have surfaced it late or not at all. Companies whose traction is <em>transactional</em> rather than <em>technical</em> are exactly the blind spot in an industry that has trained its instruments on developer telemetry.</p>
+
+<h2>Jamie's Action Prompt</h2>
+
+<p>Build the anti-dashboard this week. Make a list of 20 people &mdash; not companies &mdash; in your NWA, FAU and FordPass networks who could plausibly start something in the next 18 months: strong operators, technical mentees, people who left a good job recently for an unclear reason. Then have Claude help you set up a lightweight monitor over their <em>public</em> activity only (new posts, role changes, side projects) and a simple cadence for touching base with five of them a month. Track the hit rate over two quarters. The premise you're testing is the one this lesson rests on: that being early to the right twenty people beats being fast on the right two hundred companies.</p>
+  </div>
+
+  <div class="footer-link">
+    Read on web: <a href="https://nwa-weekly.vercel.app/ai-investing/ai-native-deal-sourcing/2026-09-02" target="_blank" rel="noopener">nwa-weekly.vercel.app/ai-investing/ai-native-deal-sourcing/2026-09-02</a>
+  </div>
+</div>
+</body>
+</html>

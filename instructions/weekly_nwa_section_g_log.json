@@ -1,23 +1,81 @@
 {
-  "last_updated": "2026-09-04",
+  "last_updated": "2026-09-02",
   "covered": [
-    { "topic_slug": "follow-on-investing-strategy", "date": "2026-04-21" },
-    { "topic_slug": "convertible-note-mechanics", "date": "2026-05-01" },
-    { "topic_slug": "term-sheet-anatomy", "date": "2026-05-05" },
-    { "topic_slug": "safe-notes-vs-convertible-notes-vs-priced-rounds", "date": "2026-05-09" },
-    { "topic_slug": "angel-syndicates-and-spvs", "date": "2026-05-12" },
-    { "topic_slug": "due-diligence-frameworks", "date": "2026-05-25" },
-    { "topic_slug": "pre-money-vs-post-money-valuation", "date": "2026-05-31" },
-    { "topic_slug": "power-law-vc-returns", "date": "2026-06-05" },
-    { "topic_slug": "exit-scenarios", "date": "2026-06-12" },
-    { "topic_slug": "cap-table-mechanics-and-dilution", "date": "2026-06-19" },
-    { "topic_slug": "founder-evaluation", "date": "2026-06-29" },
-    { "topic_slug": "deal-flow-sourcing-and-filtering", "date": "2026-07-03" },
-    { "topic_slug": "board-seats-observer-rights-governance", "date": "2026-07-11" },
-    { "topic_slug": "portfolio-construction", "date": "2026-07-31" },
-    { "topic_slug": "pro-rata-rights", "date": "2026-08-17" },
-    { "topic_slug": "product-market-fit-signals", "date": "2026-08-21" },
-    { "topic_slug": "market-sizing-tam-sam-som", "date": "2026-08-30" },
-    { "topic_slug": "fundable-vs-investable", "date": "2026-09-04" }
+    {
+      "topic_slug": "follow-on-investing-strategy",
+      "date": "2026-04-21"
+    },
+    {
+      "topic_slug": "convertible-note-mechanics",
+      "date": "2026-05-01"
+    },
+    {
+      "topic_slug": "term-sheet-anatomy",
+      "date": "2026-05-05"
+    },
+    {
+      "topic_slug": "safe-notes-vs-convertible-notes-vs-priced-rounds",
+      "date": "2026-05-09"
+    },
+    {
+      "topic_slug": "angel-syndicates-and-spvs",
+      "date": "2026-05-12"
+    },
+    {
+      "topic_slug": "due-diligence-frameworks",
+      "date": "2026-05-25"
+    },
+    {
+      "topic_slug": "pre-money-vs-post-money-valuation",
+      "date": "2026-05-31"
+    },
+    {
+      "topic_slug": "power-law-vc-returns",
+      "date": "2026-06-05"
+    },
+    {
+      "topic_slug": "exit-scenarios",
+      "date": "2026-06-12"
+    },
+    {
+      "topic_slug": "cap-table-mechanics-and-dilution",
+      "date": "2026-06-19"
+    },
+    {
+      "topic_slug": "founder-evaluation",
+      "date": "2026-06-29"
+    },
+    {
+      "topic_slug": "deal-flow-sourcing-and-filtering",
+      "date": "2026-07-03"
+    },
+    {
+      "topic_slug": "board-seats-observer-rights-governance",
+      "date": "2026-07-11"
+    },
+    {
+      "topic_slug": "portfolio-construction",
+      "date": "2026-07-31"
+    },
+    {
+      "topic_slug": "pro-rata-rights",
+      "date": "2026-08-17"
+    },
+    {
+      "topic_slug": "product-market-fit-signals",
+      "date": "2026-08-21"
+    },
+    {
+      "topic_slug": "market-sizing-tam-sam-som",
+      "date": "2026-08-30"
+    },
+    {
+      "topic_slug": "fundable-vs-investable",
+      "date": "2026-09-04"
+    },
+    {
+      "topic_slug": "burn-rate-and-runway",
+      "date": "2026-09-02"
+    }
   ]
 }

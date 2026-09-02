@@ -1,0 +1,119 @@
+<!--
+  Weekly NWA Briefings — Venture Learning lesson HTML template.
+
+  The weekly agent fills this template (do NOT regenerate the CSS each week).
+
+  Placeholders to substitute:
+    Burn Rate, Runway, and Cash Management Signals  — the lesson title (e.g., "Due Diligence Frameworks for Early-Stage Companies")
+    burn-rate-and-runway    — kebab-case slug from the 26-topic table (e.g., "due-diligence-frameworks")
+    September 2, 2026  — human-readable date (e.g., "May 25, 2026")
+    2026-09-02      — ISO date YYYY-MM-DD (e.g., "2026-05-25")
+    <p>Burn rate is the simplest number in venture and the one most often reported dishonestly. Gross burn is everything a company spends in a month. <strong>Net burn</strong> is what actually matters &mdash; cash out minus cash in &mdash; and runway is net burn divided into the bank balance. That's it. The arithmetic is trivial; the discipline is not. What separates a founder who will survive from one who won't is almost never the size of the burn, it's whether they can tell you their net burn, their runway, and the date they must be back in market, from memory, without opening a spreadsheet.</p>
+
+<p>For an angel or seed investor this matters more than for anyone downstream of you, because you are the one whose ownership gets destroyed when the timing goes wrong. Nearly 30% of startups fail simply by running out of money, and roughly 70% of VC-backed companies that have shut down since 2023 did so because capital ran out &mdash; not because the product was wrong. Runway is not an operating metric; it is a <em>negotiating position</em>. A founder with 18 months can walk away from a bad term sheet. A founder with five months cannot, and will sign a structured, dilutive, preference-laden round that quietly reprices your seed stake to zero. When you fund a company, you are buying a specific number of months of decision-making freedom, and you should price it that way.</p>
+
+<p>Here is what a seasoned VC will tell you that business school won't: <strong>the burn number itself is meaningless without the growth it bought.</strong> That's why the metric that actually gets a company funded in 2026 is the burn multiple &mdash; net burn divided by net new ARR &mdash; not the raw dollars. Under 2x is respectable; under 1x is exceptional; above 3x means the company is buying revenue rather than earning it. And the AI cohort has a specific version of this trap: inference, API and fine-tuning costs mean an AI application startup's effective runway on a $2M seed is now 12&ndash;15 months, not the 18 a SaaS founder would plan around &mdash; while investors have simultaneously raised their expectation to 18&ndash;24 months of post-raise runway because rounds take longer to close. The gap between those two numbers is where seed investors lose their positions. Ask for the burn <em>forecast</em> including compute costs at 3x current usage, and watch how quickly the founder answers.</p>
+
+<h2>Key Terms</h2>
+
+<p><strong>Net Burn</strong> &mdash; Monthly cash out minus monthly cash in. The only burn number worth quoting. Gross burn flatters the company; net burn tells you when the lights go off. Runway = cash on hand &divide; net burn, and should always be stated as a <em>date</em>, not a duration, because durations quietly slip and dates don't.</p>
+
+<p><strong>Burn Multiple</strong> &mdash; Net burn &divide; net new ARR over the same period. It answers "how many dollars did you incinerate to add one dollar of recurring revenue?" Under 1x is elite, under 2x is fundable, over 3x is a company buying growth it can't sustain. It is the single most efficient diligence question you can ask a seed-stage founder, because it can't be gamed by cutting headcount for a quarter.</p>
+
+<h2>Real-World Example</h2>
+
+<p>This week's F&eacute;lix round is the constructive version of the lesson. The remittance company raised $200M &mdash; but only $87M was equity (led by a16z); the other $113M came as a credit facility from General Catalyst. Because the business has real transaction volume, the working capital that funds it was financed with debt instead of stock. Every dollar structured that way is a dollar of dilution that the company's early backers did not absorb. That is what good cash management looks like at scale: matching the <em>type</em> of capital to the <em>type</em> of spend.</p>
+
+<p>The destructive version is more common and rarely makes headlines. A founder raises $2M at seed, models 18 months of runway on 2024 assumptions, then discovers that inference costs scale with usage rather than headcount. Thirteen months in, with a product that works and metrics that are merely fine, they are in market from a position of weakness &mdash; and the Series A that saves the company arrives with a structure that pushes the seed investors behind a liquidation preference stack. Nobody did anything wrong. The runway math was just optimistic by five months.</p>
+
+<h2>Jamie's Action Prompt</h2>
+
+<p>Pick the two NWA portfolio companies you'd describe as "doing fine" &mdash; not the fires, the quiet ones. Email each founder a single question: <em>"What is your net burn this month, your burn multiple over the last two quarters, and the exact calendar date you must be back in market?"</em> Note not just the answers but the <strong>latency</strong> &mdash; the founder who replies in an hour from memory is running a different company than the one who needs three days and a call with their fractional CFO. That latency is your earliest, cheapest signal, and it costs you one email to collect.</p>     — the rendered lesson body. Render the markdown body to clean
+                       semantic HTML (no <html>/<body> wrappers). Expected sequence:
+                         - 2–3 <p> paragraphs of teaching
+                         - <h2>Key Terms</h2> followed by <p><strong>Term</strong> — definition.</p> entries
+                         - <h2>Real-World Example</h2> followed by 1–2 <p> paragraphs
+                         - <h2>Jamie's Action Prompt</h2> followed by one <p> paragraph
+                       Use <strong>/<em> for inline emphasis. No inline styles.
+
+  Output filename: reports/weekly_nwa_lesson_burn-rate-and-runway_2026-09-02.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venture Learning — Burn Rate, Runway, and Cash Management Signals</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #ffffff; color: #1a1a1a; line-height: 1.65; font-size: 16px; }
+    .outer { max-width: 860px; margin: 0 auto; padding: 0 20px 60px; }
+
+    .site-header { background: #0a1628; color: #fff; padding: 32px 24px 28px; margin-bottom: 36px; }
+    .site-header .eyebrow { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #6ee7b7; margin-bottom: 8px; }
+    .site-header h1 { font-size: 1.55rem; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 4px; }
+    .site-header .date-range { font-size: 0.95rem; opacity: 0.78; margin-bottom: 8px; }
+    .site-header .subtitle { font-size: 0.82rem; opacity: 0.6; font-style: italic; }
+
+    .coaching-card { background: #f0fdf4; border-left: 5px solid #059669; border-radius: 0 8px 8px 0; padding: 28px 30px; margin-bottom: 28px; }
+    .coaching-card .coaching-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #059669; margin-bottom: 8px; }
+    .coaching-card h1.lesson-title { font-size: 1.35rem; font-weight: 700; color: #14532d; margin-bottom: 6px; letter-spacing: -0.01em; }
+    .coaching-card .lesson-date { font-size: 0.85rem; color: #047857; margin-bottom: 18px; font-style: italic; }
+    .coaching-card h2 { font-size: 1rem; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 24px; margin-bottom: 10px; padding-top: 16px; border-top: 1px solid #bbf7d0; }
+    .coaching-card h2:first-of-type { padding-top: 0; border-top: none; }
+    .coaching-card p { font-size: 0.95rem; color: #166534; margin-bottom: 14px; }
+    .coaching-card p:last-child { margin-bottom: 0; }
+    .coaching-card strong { font-weight: 700; color: #14532d; }
+    .coaching-card em { font-style: italic; }
+    .coaching-card a { color: #059669; font-weight: 600; }
+
+    .footer-link { text-align: center; font-size: 0.85rem; color: #64748b; margin-top: 24px; }
+    .footer-link a { color: #059669; font-weight: 600; text-decoration: none; }
+    .footer-link a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+<div class="site-header">
+  <div class="outer" style="padding-bottom:0;">
+    <div class="eyebrow">Weekly NWA Briefings · Venture Learning</div>
+    <h1>Burn Rate, Runway, and Cash Management Signals</h1>
+    <div class="date-range">Lesson of September 2, 2026</div>
+    <div class="subtitle">26-topic venture curriculum · 1:1 coaching format</div>
+  </div>
+</div>
+
+<div class="outer">
+  <div class="coaching-card">
+    <div class="coaching-label">This Week's Lesson</div>
+    <h1 class="lesson-title">Burn Rate, Runway, and Cash Management Signals</h1>
+    <div class="lesson-date">September 2, 2026 · Topic: burn-rate-and-runway</div>
+
+    <p>Burn rate is the simplest number in venture and the one most often reported dishonestly. Gross burn is everything a company spends in a month. <strong>Net burn</strong> is what actually matters &mdash; cash out minus cash in &mdash; and runway is net burn divided into the bank balance. That's it. The arithmetic is trivial; the discipline is not. What separates a founder who will survive from one who won't is almost never the size of the burn, it's whether they can tell you their net burn, their runway, and the date they must be back in market, from memory, without opening a spreadsheet.</p>
+
+<p>For an angel or seed investor this matters more than for anyone downstream of you, because you are the one whose ownership gets destroyed when the timing goes wrong. Nearly 30% of startups fail simply by running out of money, and roughly 70% of VC-backed companies that have shut down since 2023 did so because capital ran out &mdash; not because the product was wrong. Runway is not an operating metric; it is a <em>negotiating position</em>. A founder with 18 months can walk away from a bad term sheet. A founder with five months cannot, and will sign a structured, dilutive, preference-laden round that quietly reprices your seed stake to zero. When you fund a company, you are buying a specific number of months of decision-making freedom, and you should price it that way.</p>
+
+<p>Here is what a seasoned VC will tell you that business school won't: <strong>the burn number itself is meaningless without the growth it bought.</strong> That's why the metric that actually gets a company funded in 2026 is the burn multiple &mdash; net burn divided by net new ARR &mdash; not the raw dollars. Under 2x is respectable; under 1x is exceptional; above 3x means the company is buying revenue rather than earning it. And the AI cohort has a specific version of this trap: inference, API and fine-tuning costs mean an AI application startup's effective runway on a $2M seed is now 12&ndash;15 months, not the 18 a SaaS founder would plan around &mdash; while investors have simultaneously raised their expectation to 18&ndash;24 months of post-raise runway because rounds take longer to close. The gap between those two numbers is where seed investors lose their positions. Ask for the burn <em>forecast</em> including compute costs at 3x current usage, and watch how quickly the founder answers.</p>
+
+<h2>Key Terms</h2>
+
+<p><strong>Net Burn</strong> &mdash; Monthly cash out minus monthly cash in. The only burn number worth quoting. Gross burn flatters the company; net burn tells you when the lights go off. Runway = cash on hand &divide; net burn, and should always be stated as a <em>date</em>, not a duration, because durations quietly slip and dates don't.</p>
+
+<p><strong>Burn Multiple</strong> &mdash; Net burn &divide; net new ARR over the same period. It answers "how many dollars did you incinerate to add one dollar of recurring revenue?" Under 1x is elite, under 2x is fundable, over 3x is a company buying growth it can't sustain. It is the single most efficient diligence question you can ask a seed-stage founder, because it can't be gamed by cutting headcount for a quarter.</p>
+
+<h2>Real-World Example</h2>
+
+<p>This week's F&eacute;lix round is the constructive version of the lesson. The remittance company raised $200M &mdash; but only $87M was equity (led by a16z); the other $113M came as a credit facility from General Catalyst. Because the business has real transaction volume, the working capital that funds it was financed with debt instead of stock. Every dollar structured that way is a dollar of dilution that the company's early backers did not absorb. That is what good cash management looks like at scale: matching the <em>type</em> of capital to the <em>type</em> of spend.</p>
+
+<p>The destructive version is more common and rarely makes headlines. A founder raises $2M at seed, models 18 months of runway on 2024 assumptions, then discovers that inference costs scale with usage rather than headcount. Thirteen months in, with a product that works and metrics that are merely fine, they are in market from a position of weakness &mdash; and the Series A that saves the company arrives with a structure that pushes the seed investors behind a liquidation preference stack. Nobody did anything wrong. The runway math was just optimistic by five months.</p>
+
+<h2>Jamie's Action Prompt</h2>
+
+<p>Pick the two NWA portfolio companies you'd describe as "doing fine" &mdash; not the fires, the quiet ones. Email each founder a single question: <em>"What is your net burn this month, your burn multiple over the last two quarters, and the exact calendar date you must be back in market?"</em> Note not just the answers but the <strong>latency</strong> &mdash; the founder who replies in an hour from memory is running a different company than the one who needs three days and a call with their fractional CFO. That latency is your earliest, cheapest signal, and it costs you one email to collect.</p>
+  </div>
+
+  <div class="footer-link">
+    Read on web: <a href="https://nwa-weekly.vercel.app/learning/burn-rate-and-runway/2026-09-02" target="_blank" rel="noopener">nwa-weekly.vercel.app/learning/burn-rate-and-runway/2026-09-02</a>
+  </div>
+</div>
+</body>
+</html>

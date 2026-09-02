@@ -1,6 +1,96 @@
 {
-  "last_updated": "2026-08-30",
+  "last_updated": "2026-09-02",
   "items": [
+    {
+      "headline": "Markets (wk of Aug 31): August closed as first up-month since May (S&P +2.6%, Nasdaq +3.9%); early September gave back ground with S&P ~7,650 and Nasdaq ~26,100 as renewed U.S.-Iran hostilities pushed the 10-year Treasury to 4.81%, highest since Nov 2023, and the 30-year above 5.2%",
+      "source": "CNBC / TheStreet / Yahoo Finance",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-02-2026",
+      "date_reported": "2026-09-02"
+    },
+    {
+      "headline": "Nvidia closes in on acquisition of Hugging Face for a reported $12.9-14B (Bloomberg, Sep 2: deal could sign this week, ~$1B employee retention package); Hugging Face was valued $4.5B in 2023 and turned down a $500M Nvidia investment at $7B late last year",
+      "source": "Bloomberg / TIME / Fortune",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-02/nvidia-nears-14-billion-hugging-face-deal-this-week",
+      "date_reported": "2026-09-02"
+    },
+    {
+      "headline": "Anthropic releases Claude Fable 5.1 and Mythos 5.1 (Sep 1): 1M-token context, 128K output, 52.6% on Terminal-Bench-Science, and a 75% cache-read price cut making typical workloads ~25% cheaper and highly agentic work up to 45% cheaper",
+      "source": "Anthropic / VentureBeat / MarkTechPost",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "date_reported": "2026-09-02"
+    },
+    {
+      "headline": "Felix raises $200M (Sep 1) structured as $87M equity led by Andreessen Horowitz plus a $113M General Catalyst credit facility - an emblem of the year's equity-plus-debt growth-round pattern",
+      "source": "Tech Startups",
+      "url": "https://techstartups.com/2026/09/02/startup-funding-news-today-september-2-2026-felix-hyimpulse-lasso-peoplex-more/",
+      "date_reported": "2026-09-02"
+    },
+    {
+      "headline": "Waymo launches driverless commercial rides in San Diego, Tampa and Denver (first Colorado market) while Zoox begins supervised testing in Houston and San Diego (Sep 1); Waymo now past 4,000 vehicles across 14 U.S. cities ahead of Tesla's Sep 3 Cybercab event",
+      "source": "CNBC / TechCrunch",
+      "url": "https://www.cnbc.com/2026/09/01/waymo-and-zoox-expand-into-more-us-markets-as-robotaxi-race-heats-up.html",
+      "date_reported": "2026-09-02"
+    },
+    {
+      "headline": "AccuKnox launches AgentZ (Aug 27), a platform unifying agent build/run/governance - execution environment, tools, workflows, permissions and governance in one stack",
+      "source": "AccuKnox / agent news roundups",
+      "url": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "date_reported": "2026-09-02"
+    },
+    {
+      "headline": "Funds over $1B have taken ~72% of all venture capital raised in 2026 to date (PitchBook midyear), while H1 2026 minted 195 new unicorns - more than all of 2025's 193",
+      "source": "Fortune Term Sheet / PitchBook / Crunchbase",
+      "url": "https://fortune.com/2026/06/24/the-spacex-ipo-marks-a-lopsided-win-for-venture/",
+      "date_reported": "2026-09-02"
+    },
+    {
+      "headline": "Vuelta a Espana second week: Andreas Leknessund takes a breakaway stage win as Pogacar marches toward his first Vuelta title; 2026 route is 3,283.7km with 58,156m of climbing and seven summit finishes - more vertical than the 2026 Tour",
+      "source": "Cyclingnews / road.cc / Velo",
+      "url": "https://www.cyclingnews.com/races/vuelta-a-espana-2026/",
+      "date_reported": "2026-09-02"
+    },
+    {
+      "headline": "Seed has become a Series A: a16z led 46% of its 48 H1 2026 seed deals at an average $10.5M check; AI seed median pre-money ~$17.9M (42% above non-AI); 90th-percentile seed valuation $93.7M in Q1 (2x 2022); seed deal count -31% YoY while seed dollars +30%",
+      "source": "Value Add VC / Crunchbase / KuCoin",
+      "url": "https://valueaddvc.com/blog/seed-round-size-by-sector-in-2026-ai-fintech-saas-healthcare-defense-and-consumer-ranked",
+      "date_reported": "2026-09-02"
+    },
+    {
+      "headline": "McKinsey State of AI 2026: 32% of organizations have skipped buying at least one software product or feature because agentic coding tools let them build it internally; large enterprises scaling agents in one or more functions rose from 27% to 40%",
+      "source": "McKinsey State of AI 2026",
+      "url": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "date_reported": "2026-09-02"
+    },
+    {
+      "headline": "AI-native startups' effective seed runway is 12-15 months on a $2M raise (vs ~18 for traditional SaaS) because inference/API/fine-tuning costs scale with usage, even as investors now expect 18-24 months post-raise and grade on burn multiple under 2x",
+      "source": "Puzzle.io / SeedScope / NextWaves Insight",
+      "url": "https://nextwavesinsight.com/ai-funding-concentration-startup-runway-2026/",
+      "date_reported": "2026-09-02"
+    },
+    {
+      "headline": "AP: a university that built an AI curriculum before ChatGPT is now packaging it to help other schools do the same (Sep 2)",
+      "source": "AP via CP24",
+      "url": "https://www.cp24.com/news/world/2026/09/02/this-university-built-an-ai-curriculum-before-chatgpt-now-it-wants-to-help-other-schools-do-the-same/",
+      "date_reported": "2026-09-02"
+    },
+    {
+      "headline": "MIT Technology Review releases the full EmTech Future 2026 agenda (Sep 29 - Oct 1, MIT campus and online), framed around the intersection of AI, quantum technologies and energy systems",
+      "source": "MIT Technology Review",
+      "url": "https://finance.yahoo.com/technology/ai/articles/mit-technology-review-unveils-full-194700635.html",
+      "date_reported": "2026-09-02"
+    },
+    {
+      "headline": "AI skills as an entry-level hiring requirement: >1/3 of entry-level job postings listed AI skills in NACE's spring 2026 report (~3x YoY); ~56% wage premium for AI-skilled workers (67% in consulting/professional services); faculty intent to use AI in US/Canada fell from 76% to 67%",
+      "source": "NACE / Digital Education Council / Inside Higher Ed",
+      "url": "https://www.digitaleducationcouncil.com/resource-library-items/ai-in-higher-education-global-survey-2026",
+      "date_reported": "2026-09-02"
+    },
+    {
+      "headline": "Sports-recovery tech shifting from passive tracking to active intervention: recovery-specific footwear (CES 2026), athlete sleep-intervention audio, and IMU/digital-twin rehab simulations that predict return-to-sport outcomes",
+      "source": "STHQ / Heraleto / sports-medicine wearables literature",
+      "url": "https://sthq.org/2026/01/23/10-sports-tech-innovations-to-watch-from-ces-2026/",
+      "date_reported": "2026-09-02"
+    },
     {
       "headline": "Markets (wk of Aug 24-28): S&P 500 +~0.5%, Nasdaq +~0.8% for the week but fell Friday after new Fed Chair Kevin Warsh's first Jackson Hole keynote called inflation 'too high'; September rate-HIKE odds spiked to ~57%, 10-yr Treasury yield rose to ~4.72%, 30-yr ~5.21%; S&P closed ~7,711",
       "source": "CNBC / Yahoo Finance / Vista Partners",
@@ -66,66 +156,6 @@
       "source": "MIT Economics",
       "url": "https://economics.mit.edu/sites/default/files/2026-02/AI,%20Human%20Cognition%20and%20Knowledge%20Collapse%2002-20-26.pdf",
       "date_reported": "2026-08-30"
-    },
-    {
-      "headline": "Anthropic backers target a ~$2 trillion IPO in October (largest ever, would eclipse SpaceX's $1.77T June debut); MS/GS/JPM leading; ~$47B ARR by May, $100-120B projected by Dec; figure is investor speculation, not company-confirmed",
-      "source": "Fortune / Forbes / Qz",
-      "url": "https://fortune.com/2026/08/13/anthropic-ipo-2-trillion-october-largest-ever-spacex/",
-      "date_reported": "2026-08-17"
-    },
-    {
-      "headline": "Markets (wk of Aug 10-14): July CPI +0.1% (3.4% annual), core 2.5%, PPI flat -> September Fed hike odds fell to ~32%, funds rate held 3.50-3.75%; S&P 500 hit record Thu then slipped ~0.2% Fri for a 3rd straight weekly gain; QQQ ~$731; retail sales soft, Michigan sentiment dour",
-      "source": "CNBC / Yahoo Finance / Kiplinger",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-august-14-dow-sp-500-nasdaq-102635519.html",
-      "date_reported": "2026-08-17"
-    },
-    {
-      "headline": "AI coding-tools funding wave: Lovable raises $400M Series C (Menlo, EQT, CapitalG; ~$500M run-rate); CodeRabbit raises $143M Series C (Atomico, Smash Capital, GV, BMW i Ventures, YC)",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/08/12/venture-capital-startup-funding-roundup-august-12-2026-coatue-franklin-templeton-janus-henderson-sequoia-capital-t-rowe-price-more/",
-      "date_reported": "2026-08-17"
-    },
-    {
-      "headline": "Form Energy raises $750M Series G (T. Rowe Price lead; Sequoia, Coatue, Janus Henderson, Franklin Templeton) to scale iron-air multi-day grid storage",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/08/12/venture-capital-startup-funding-roundup-august-12-2026-coatue-franklin-templeton-janus-henderson-sequoia-capital-t-rowe-price-more/",
-      "date_reported": "2026-08-17"
-    },
-    {
-      "headline": "Skan AI raises $63M (Cathay Innovation, Dell Technologies Capital) for an enterprise 'context graph' that maps org workflows for AI agents",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/08/12/venture-capital-startup-funding-roundup-august-12-2026-coatue-franklin-templeton-janus-henderson-sequoia-capital-t-rowe-price-more/",
-      "date_reported": "2026-08-17"
-    },
-    {
-      "headline": "Mindgard raises $30M for cybersecurity purpose-built for AI systems and autonomous agents",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/08/12/venture-capital-startup-funding-roundup-august-12-2026-coatue-franklin-templeton-janus-henderson-sequoia-capital-t-rowe-price-more/",
-      "date_reported": "2026-08-17"
-    },
-    {
-      "headline": "Yulu raises $93M Series C (GEF Capital lead; Bajaj Auto, Magna International) for India EV micro-mobility, scaling toward 200,000 electric two-wheelers",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/08/12/venture-capital-startup-funding-roundup-august-12-2026-coatue-franklin-templeton-janus-henderson-sequoia-capital-t-rowe-price-more/",
-      "date_reported": "2026-08-17"
-    },
-    {
-      "headline": "Vuelta a España 2026 starts Aug 22 with a foreign grand départ in Monaco (9km ITT); Pogačar overwhelming favorite chasing his first Vuelta (career Grand Slam) after a record-equaling 5th Tour",
-      "source": "CyclingUpToDate / Wikipedia",
-      "url": "https://cyclinguptodate.com/cycling/startlist-vuelta-a-espana-2026-riders-tadej-pogacar-wout-van-aert-mads-pedersen-joao-almeida-oscar-onley-and-more",
-      "date_reported": "2026-08-17"
-    },
-    {
-      "headline": "Humanoid deployment counts rise: Figure's third-gen robot passes 1,000 units, AgiBot ~15,000 cumulative, Boston Dynamics electric Atlas deployments underway in Hyundai plants",
-      "source": "Technology.org / New Market Pitch",
-      "url": "https://newmarketpitch.com/blogs/news/humanoid-robotics-figure-vs-tesla",
-      "date_reported": "2026-08-17"
-    },
-    {
-      "headline": "HappyRobot raises $150M Series C (a16z, Base10, YC) for autonomous AI voice/email agents handling logistics workflows",
-      "source": "Tech Startups / a16z",
-      "url": "https://techstartups.com/2026/08/04/venture-capital-startup-funding-roundup-august-4-2026-a16z-base10-dream-ventures-jpmorgan-sequoia-capital-valor-equity-partners-yc-more/",
-      "date_reported": "2026-08-17"
     },
     {
       "headline": "Groq closes $350M Series A at a $3.5B valuation (led by Disruptive, NVIDIA participating), completing pivot from chipmaker to AI inference cloud; scaling 57MW -> 200MW+, 13 data centers, 6M+ developers",
