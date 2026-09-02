@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-30",
+  "last_updated": "2026-09-04",
   "covered": [
     { "topic_slug": "follow-on-investing-strategy", "date": "2026-04-21" },
     { "topic_slug": "convertible-note-mechanics", "date": "2026-05-01" },
@@ -17,6 +17,7 @@
     { "topic_slug": "portfolio-construction", "date": "2026-07-31" },
     { "topic_slug": "pro-rata-rights", "date": "2026-08-17" },
     { "topic_slug": "product-market-fit-signals", "date": "2026-08-21" },
-    { "topic_slug": "market-sizing-tam-sam-som", "date": "2026-08-30" }
+    { "topic_slug": "market-sizing-tam-sam-som", "date": "2026-08-30" },
+    { "topic_slug": "fundable-vs-investable", "date": "2026-09-04" }
   ]
 }

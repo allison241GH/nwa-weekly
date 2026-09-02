@@ -338,6 +338,69 @@ body {
   color: #4b5563;
 }
 
+.ai-content h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #7c3aed;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 2px solid #e5e7eb;
+}
+
+.ai-content h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #6d28d9;
+}
+
+.ai-content h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.ai-content p {
+  margin-bottom: 0.85rem;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+.ai-content ul,
+.ai-content ol {
+  margin: 0.5rem 0 1rem 1.25rem;
+  padding-left: 0.5rem;
+}
+
+.ai-content ul { list-style: disc; }
+.ai-content ol { list-style: decimal; }
+
+.ai-content li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+.ai-content a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.ai-content strong {
+  font-weight: 600;
+  color: #6d28d9;
+}
+
+.ai-content em {
+  font-style: italic;
+  color: #4b5563;
+}
+
 /* Tables in the watch (strike-candidate grids) */
 .watch-content table {
   width: 100%;

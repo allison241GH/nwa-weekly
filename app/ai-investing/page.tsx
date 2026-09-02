@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getTopicCatalogWithStats, getTopicBySlug, LEARNING_CATEGORIES } from "@/lib/content";
+import { getAiTopicCatalogWithStats, AI_LEARNING_CATEGORIES } from "@/lib/ai-investing";
 
 function formatDate(iso: string) {
   const d = new Date(`${iso}T12:00:00Z`);
@@ -7,12 +7,12 @@ function formatDate(iso: string) {
 }
 
 export const metadata = {
-  title: "Venture Learning — Weekly NWA Briefings",
-  description: "Weekly coaching lessons across 26 angel and venture investing topics.",
+  title: "AI Investing — Weekly NWA Briefings",
+  description: "Weekly coaching lessons on how AI is reshaping venture and angel investing itself.",
 };
 
-export default function LearningIndex() {
-  const topics = getTopicCatalogWithStats();
+export default function AiInvestingIndex() {
+  const topics = getAiTopicCatalogWithStats();
   const lessonCountBySlug = new Map(topics.map((t) => [t.slug, t.lesson_count]));
   const withLessons = topics
     .filter((t) => t.lesson_count > 0)
@@ -22,13 +22,14 @@ export default function LearningIndex() {
   return (
     <div className="max-w-3xl mx-auto px-5 py-10">
       <header className="mb-8">
-        <h1 className="text-3xl font-bold text-[#059669] mb-3">
-          Venture Learning
+        <h1 className="text-3xl font-bold text-[#7c3aed] mb-3">
+          AI Investing
         </h1>
         <p className="text-slate-700 text-base">
-          A weekly coaching curriculum across 26 angel and venture investing topics —
-          one lesson per week, building a complete foundation over time. Below: every
-          topic you&rsquo;ve already covered, plus the ones still ahead.
+          A weekly coaching curriculum across 25 topics on how AI is reshaping venture
+          and angel investing itself — deal sourcing, moat economics, founder evaluation,
+          valuation, and the VC/fund model. Separate from the core Venture Learning
+          curriculum, one lesson per week.
         </p>
       </header>
 
@@ -37,28 +38,26 @@ export default function LearningIndex() {
           Categories
         </h2>
         <p className="text-sm text-slate-500 mb-4">
-          A reference map of the curriculum by theme. Once the core 26 are covered,
-          new lessons are picked from live research — tell Jamie&rsquo;s assistant which
-          category to lean into next.
+          A reference map of this curriculum by theme.
         </p>
         <div className="grid gap-3 sm:grid-cols-2">
-          {LEARNING_CATEGORIES.map((cat) => (
+          {AI_LEARNING_CATEGORIES.map((cat) => (
             <div
               key={cat.name}
               className="border border-slate-200 rounded-lg p-4 bg-slate-50/50"
             >
-              <p className="font-semibold text-[#047857] text-sm">{cat.name}</p>
+              <p className="font-semibold text-[#6d28d9] text-sm">{cat.name}</p>
               <p className="text-xs text-slate-600 mt-1 mb-2">{cat.description}</p>
               {cat.topicSlugs.length > 0 && (
                 <ul className="text-xs text-slate-700 space-y-0.5">
                   {cat.topicSlugs.map((slug) => {
-                    const topic = getTopicBySlug(slug);
+                    const topic = topics.find((t) => t.slug === slug);
                     if (!topic) return null;
                     const hasLesson = (lessonCountBySlug.get(slug) ?? 0) > 0;
                     return (
                       <li key={slug}>
                         {hasLesson ? (
-                          <Link href={`/learning/${slug}`} className="hover:underline hover:text-[#047857]">
+                          <Link href={`/ai-investing/${slug}`} className="hover:underline hover:text-[#6d28d9]">
                             {topic.title}
                           </Link>
                         ) : (
@@ -68,18 +67,6 @@ export default function LearningIndex() {
                     );
                   })}
                 </ul>
-              )}
-              {cat.futureThemes && cat.futureThemes.length > 0 && (
-                <>
-                  <p className="text-[10px] uppercase tracking-wider text-slate-400 mt-2 mb-1">
-                    Illustrative future themes
-                  </p>
-                  <ul className="text-xs text-slate-500 italic space-y-0.5">
-                    {cat.futureThemes.map((theme) => (
-                      <li key={theme}>{theme}</li>
-                    ))}
-                  </ul>
-                </>
               )}
             </div>
           ))}
@@ -95,15 +82,15 @@ export default function LearningIndex() {
             {withLessons.map((t, i) => (
               <li key={t.slug}>
                 <Link
-                  href={`/learning/${t.slug}`}
+                  href={`/ai-investing/${t.slug}`}
                   className="block py-4 hover:bg-slate-50 -mx-2 px-2 rounded-lg"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex-1">
-                      <p className="font-semibold text-[#047857]">
+                      <p className="font-semibold text-[#6d28d9]">
                         {t.title}
                         {i === 0 && (
-                          <span className="ml-2 align-middle text-[10px] font-bold uppercase tracking-wider text-white bg-[#059669] rounded-full px-2 py-0.5">
+                          <span className="ml-2 align-middle text-[10px] font-bold uppercase tracking-wider text-white bg-[#7c3aed] rounded-full px-2 py-0.5">
                             Latest
                           </span>
                         )}
@@ -111,7 +98,7 @@ export default function LearningIndex() {
                       <p className="text-sm text-slate-600 mt-0.5">{t.blurb}</p>
                     </div>
                     <div className="text-right text-xs text-slate-500 shrink-0 pt-1">
-                      <span className="font-semibold text-[#047857]">
+                      <span className="font-semibold text-[#6d28d9]">
                         {t.lesson_count} {t.lesson_count === 1 ? "lesson" : "lessons"}
                       </span>
                       {t.latest_date && (

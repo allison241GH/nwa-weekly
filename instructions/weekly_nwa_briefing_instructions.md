@@ -6,7 +6,7 @@
 Each Friday run produces TWO independent deliverables:
 
 1. **The weekly briefing** (Sections A–E only): markdown at `content/briefings/YYYY-MM-DD.md`, rendered at `nwa-weekly.vercel.app/briefings/YYYY-MM-DD`. This is the news + insights digest.
-2. **The week's Venture Learning lesson** (formerly Section G): a standalone markdown file at `content/learning/<topic-slug>/YYYY-MM-DD.md`, rendered at `nwa-weekly.vercel.app/learning/<topic-slug>/YYYY-MM-DD`. This is the coaching curriculum, organized by topic across the 25-topic rotation.
+2. **The week's Venture Learning lesson** (formerly Section G): a standalone markdown file at `content/learning/<topic-slug>/YYYY-MM-DD.md`, rendered at `nwa-weekly.vercel.app/learning/<topic-slug>/YYYY-MM-DD`. This is the coaching curriculum, organized by topic across the 26-topic rotation.
 
 The briefing and the lesson are completely separate files. The briefing has **no Section G** — readers reach the week's lesson via the site's "Learning" nav link, not via the briefing.
 
@@ -260,7 +260,7 @@ After drafting Sections A-E, generate this week's Venture Learning lesson as a s
 ### Pick the topic
 
 1. Read `instructions/weekly_nwa_section_g_log.json`. The `covered` array lists every topic-slug + date already taught.
-2. **HARD RULE — no duplicate topics while uncovered topics remain.** Compute the set of zero-coverage topics: every slug in the 25-topic rotation table below that does NOT appear in `covered`. If this set is non-empty, you MUST pick a slug from it. Picking a slug that already appears in `covered` is forbidden until every topic has been covered at least once.
+2. **HARD RULE — no duplicate topics while uncovered topics remain.** Compute the set of zero-coverage topics: every slug in the 26-topic rotation table below that does NOT appear in `covered`. If this set is non-empty, you MUST pick a slug from it. Picking a slug that already appears in `covered` is forbidden until every topic has been covered at least once.
 3. Among zero-coverage topics, prefer the one whose subject best connects to this week's Cluster 3 (Venture and Angel Investing) research findings. If no connection is strong, pick the topic that sits highest in the rotation table.
 4. Only after every topic in the catalog has appeared in `covered` at least once may the rotation cycle restart. When it does, pick the topic that was covered longest ago (oldest `date`).
 5. **Verification before writing:** confirm the chosen `topic_slug` is not already present in `covered` (unless the cycle has restarted per step 4). If it is, the pick is invalid — stop and re-pick.
@@ -284,7 +284,7 @@ Real-World Example - A brief case study or example from a known company/deal (YC
 
 Jamie's Action Prompt - One question or exercise Jamie can act on this week to internalize the lesson
 
-### 25-topic rotation (cycle through these — same slugs as `content/learning/` folders)
+### 26-topic rotation (cycle through these — same slugs as `content/learning/` folders)
 
 | topic-slug | Title |
 |---|---|
@@ -313,6 +313,7 @@ Jamie's Action Prompt - One question or exercise Jamie can act on this week to i
 | `investment-memo` | How to Write an Investment Memo |
 | `red-flags-in-pitches` | Red Flags in Early-Stage Pitches |
 | `founder-friendly-vs-investor-friendly-terms` | Founder-Friendly vs. Investor-Friendly Terms |
+| `fundable-vs-investable` | Fundable vs. Investable |
 
 The folder structure mirrors the slugs: `content/learning/<topic-slug>/<date>.md`. Use the table's exact slugs.
 
@@ -359,7 +360,7 @@ Every run must also produce an HTML archive copy of the lesson alongside the mar
 Placeholders to substitute:
 
 - `{{LESSON_TITLE}}` — the lesson title from the markdown front-matter
-- `{{TOPIC_SLUG}}` — the kebab-case slug from the 25-topic table
+- `{{TOPIC_SLUG}}` — the kebab-case slug from the 26-topic table
 - `{{DATE_DISPLAY}}` — human-readable date (e.g., `May 25, 2026`)
 - `{{DATE_ISO}}` — ISO date `YYYY-MM-DD`
 - `{{BODY_HTML}}` — the lesson body rendered to clean semantic HTML (no `<html>`/`<body>` wrappers). Render the markdown to: 2–3 `<p>` teaching paragraphs, then `<h2>Key Terms</h2>` + bold-led `<p>` definitions, then `<h2>Real-World Example</h2>` + 1–2 `<p>` paragraphs, then `<h2>Jamie's Action Prompt</h2>` + one `<p>` paragraph. Use `<strong>`/`<em>` for inline emphasis. No inline styles.
@@ -440,6 +441,76 @@ Body (markdown, no inline HTML): 2–3 teaching paragraphs (the concept in plain
 After writing, append `{ "topic_slug": "<chosen-slug>", "date": "YYYY-MM-DD" }` to `covered` in `instructions/options_learning_log.json` and update `last_updated`.
 
 *(HTML archive mirrors in `reports/` for the Watch and options lessons are optional and not required by this step — the web tab is the deliverable.)*
+
+---
+
+## STEP 4.8 — GENERATE THIS WEEK'S AI INVESTING LESSON (STANDALONE FILE)
+
+A third, separate weekly curriculum — distinct from Venture Learning (STEP 4.5) and Options Learning (STEP 4.7) — dedicated entirely to how AI is reshaping venture and angel investing itself: deal sourcing, moat economics, founder evaluation, valuation, and the VC/fund model. Lessons live at `content/ai-investing/<topic-slug>/YYYY-MM-DD.md`, rendered at `/ai-investing/<topic-slug>/YYYY-MM-DD`.
+
+### Pick the topic
+
+1. Read `instructions/ai_investing_log.json`. The `covered` array lists every AI Investing topic-slug + date already taught.
+2. **HARD RULE — no duplicate topics while uncovered topics remain.** The catalog is `AI_TOPIC_CATALOG` in `lib/ai-investing.ts` (slugs must match its folder slugs exactly). Compute the zero-coverage set (catalog slugs not in `covered`); if non-empty, you MUST pick from it.
+3. Among zero-coverage topics, prefer the one that best connects to this week's research at the intersection of **Cluster 1 (AI Landscape, Breakthroughs and Startups)** and **Cluster 3 (Venture and Angel Investing)** — e.g. a notable AI funding round, a new valuation benchmark, or a shift in how AI startups are evaluated. Otherwise pick the highest remaining topic in catalog order.
+4. Only after every catalog topic has appeared in `covered` may the rotation restart (then pick the one covered longest ago).
+
+The 25-topic catalog, in rotation order (grouped into the 5 categories shown on `/ai-investing`):
+
+| topic-slug | Title | Category |
+|---|---|---|
+| `ai-native-deal-sourcing` | AI-Native Deal Sourcing | Deal Sourcing & Diligence in the AI Era |
+| `diligence-at-machine-speed` | Diligence at Machine Speed | Deal Sourcing & Diligence in the AI Era |
+| `the-new-ai-series-a-bar` | The New AI Series A Bar | Deal Sourcing & Diligence in the AI Era |
+| `foundation-model-vs-application-layer` | Foundation-Model vs. Application-Layer Companies | Deal Sourcing & Diligence in the AI Era |
+| `compute-efficiency-as-a-diligence-metric` | Compute Efficiency as a Diligence Metric | Deal Sourcing & Diligence in the AI Era |
+| `wrapper-risk` | Wrapper Risk | Moat Economics for AI-Era Startups |
+| `data-moats-vs-model-moats` | Data Moats vs. Model Moats | Moat Economics for AI-Era Startups |
+| `open-source-model-commoditization` | Open-Source Model Commoditization | Moat Economics for AI-Era Startups |
+| `distribution-as-the-new-ai-moat` | Distribution as the New AI Moat | Moat Economics for AI-Era Startups |
+| `workflow-lock-in-and-switching-costs` | Workflow Lock-In and Switching Costs | Moat Economics for AI-Era Startups |
+| `solo-founder-ai-leveraged-teams` | Solo-Founder, AI-Leveraged Teams | Founder & Team Evaluation in the AI Era |
+| `evaluating-technical-founders-ai-era` | Evaluating Technical Founders in the AI Era | Founder & Team Evaluation in the AI Era |
+| `founder-judgment-vs-model-access` | Founder Judgment vs. Model Access | Founder & Team Evaluation in the AI Era |
+| `compressed-fundraising-cycles` | Compressed Fundraising Cycles | Founder & Team Evaluation in the AI Era |
+| `reference-checking-ai-pedigree` | Reference-Checking AI Pedigree | Founder & Team Evaluation in the AI Era |
+| `ai-valuation-premiums` | AI Valuation Premiums: Justified or Froth? | Valuation & Deal Structure in an AI Hype Cycle |
+| `mega-round-economics` | Mega-Round Economics | Valuation & Deal Structure in an AI Hype Cycle |
+| `structuring-terms-for-unprecedented-growth-curves` | Structuring Terms for Unprecedented Growth Curves | Valuation & Deal Structure in an AI Hype Cycle |
+| `safes-and-uncapped-notes-in-the-ai-era` | SAFEs and Uncapped Notes in the AI Era | Valuation & Deal Structure in an AI Hype Cycle |
+| `the-ai-premium-discount-framework` | The AI-Premium Discount Framework | Valuation & Deal Structure in an AI Hype Cycle |
+| `ai-copilots-for-investors` | AI Copilots for Investors | The Future of the VC/Angel Model Itself |
+| `solo-gps-and-ai-augmented-micro-funds` | Solo GPs and AI-Augmented Micro-Funds | The Future of the VC/Angel Model Itself |
+| `evergreen-funds-and-continuous-deployment` | Evergreen Funds and Continuous-Deployment Capital | The Future of the VC/Angel Model Itself |
+| `ai-reshaped-syndicates-and-spvs` | AI-Reshaped Syndicates and SPVs | The Future of the VC/Angel Model Itself |
+| `algorithmic-underwriting-vs-partner-judgment` | Algorithmic Underwriting vs. Partner Judgment | The Future of the VC/Angel Model Itself |
+
+### Write the lesson
+
+Same coaching intensity and structure as Venture Learning (STEP 4.5), but the lens is always "how does AI change this specific mechanic of investing" — not general AI news. Front-matter:
+
+```yaml
+---
+title: "[Topic Title from the table above]"
+topic_slug: "[matching slug]"
+date: "YYYY-MM-DD"
+key_terms:
+  - "[Term 1]"
+  - "[Term 2]"
+---
+```
+
+Body (markdown, no inline HTML): 2–3 teaching paragraphs (the concept → why it matters for an angel/seed investor specifically → the coaching insight a seasoned investor would share), then `## Key Terms` (1–2 bold-led definitions), `## Real-World Example` (a current, named example — a real fund, round, or company; use this week's Cluster 1/3 research where it fits), then `## Jamie's Action Prompt` (one concrete thing to do this week, ideally tied to an NWA deal or discussion).
+
+### Update the rotation log
+
+After writing, append `{ "topic_slug": "<chosen-slug>", "date": "YYYY-MM-DD" }` to `covered` in `instructions/ai_investing_log.json` and update `last_updated`.
+
+### Save the lesson HTML mirror to `reports/`
+
+Use the template at `instructions/ai_investing_lesson_html_template.html` (violet-accented, do not regenerate the CSS). Output filename: `reports/weekly_nwa_ai_investing_lesson_<topic-slug>_YYYY-MM-DD.html`. If the template is missing, fail the run loudly — same rule as the Venture Learning template (STEP 4.5).
+
+Lesson HTMLs in `reports/` matching `weekly_nwa_ai_investing_lesson_*.html` are an **archive** and are **never auto-pruned** by STEP 8, same as the Venture Learning and Options Learning lesson archives.
 
 ---
 
@@ -622,7 +693,8 @@ Procedure:
 3. Do the same for `content/learning/<topic-slug>/*.md` only if a duplicate-date file exists — otherwise keep all lesson files (they are the lesson archive and must never be auto-pruned).
 4. **Lesson HTMLs in `reports/` are part of the archive — never auto-prune them.** Files matching `weekly_nwa_lesson_*.html` accumulate alongside the markdown lessons. The 2-file retention rule applies to `weekly_nwa_briefing_*.html` ONLY; do not touch `weekly_nwa_lesson_*.html` files.
 5. **Covered-Call Watch (`content/options-watch/*.md`):** apply the same 2-file retention as briefings — keep the file you just generated (#1) and the immediately prior week's (#2); delete older ones. **Options Learning lessons (`content/options-learning/<topic-slug>/*.md`) are an archive — never auto-prune them** (delete only a genuine duplicate-date file).
-6. Print a one-line confirmation: `Retention: kept [2] briefing files + [2] watch files, deleted [N] older files. Lesson HTMLs archived: [N] total (never pruned).`
+6. **AI Investing lessons (`content/ai-investing/<topic-slug>/*.md`) are an archive — never auto-prune them** (delete only a genuine duplicate-date file). Files matching `weekly_nwa_ai_investing_lesson_*.html` in `reports/` accumulate alongside them and are never auto-pruned either — same rule as `weekly_nwa_lesson_*.html`.
+7. Print a one-line confirmation: `Retention: kept [2] briefing files + [2] watch files, deleted [N] older files. Lesson HTMLs archived: [N] total (never pruned).`
 
 If for any reason deletion fails (permission error, file locked), surface the error explicitly in the status line — do not silently move on.
 
@@ -659,7 +731,7 @@ Also maintain a parallel `weekly_nwa_section_g_log.json` tracking which Section 
 }
 ```
 
-This prevents accidental repetition of Section G topics. When all 25 topics have been covered once, the cycle starts over.
+This prevents accidental repetition of Section G topics. When all 26 topics have been covered once, the cycle starts over.
 
 ---
 
@@ -674,12 +746,15 @@ Lesson saved: content/learning/<topic-slug>/YYYY-MM-DD.md
 Lesson HTML saved: reports/weekly_nwa_lesson_<topic-slug>_YYYY-MM-DD.html
 Covered-Call Watch saved: content/options-watch/YYYY-MM-DD.md
 Options lesson saved: content/options-learning/<topic-slug>/YYYY-MM-DD.md
+AI Investing lesson saved: content/ai-investing/<topic-slug>/YYYY-MM-DD.md
+AI Investing lesson HTML saved: reports/weekly_nwa_ai_investing_lesson_<topic-slug>_YYYY-MM-DD.html
 Web searches: [N] queries run
 Breadth audit: [N] initial themes, [N] duplicates resolved in [N] pass(es)
 Email sent: jallison@newworldangels.com → [link]
 Dedup log: [N] items tracked
-Section G log: [N]/25 topics covered
+Section G log: [N]/26 topics covered
 Options Learning log: [N]/12 topics covered
+AI Investing log: [N]/25 topics covered
 Retention: kept [2] briefings + [2] watch files, deleted [N] older files. Lesson HTMLs archived: [N] total (never pruned).
 ```
 

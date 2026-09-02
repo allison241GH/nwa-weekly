@@ -1,11 +1,13 @@
 <!--
-  Weekly NWA Briefings — Venture Learning lesson HTML template.
+  Weekly NWA Briefings — AI Investing lesson HTML template.
 
   The weekly agent fills this template (do NOT regenerate the CSS each week).
+  Mirrors instructions/lesson_html_template.html (Venture Learning) but with the
+  violet accent used to distinguish the AI Investing section site-wide.
 
   Placeholders to substitute:
-    {{LESSON_TITLE}}  — the lesson title (e.g., "Due Diligence Frameworks for Early-Stage Companies")
-    {{TOPIC_SLUG}}    — kebab-case slug from the 26-topic table (e.g., "due-diligence-frameworks")
+    {{LESSON_TITLE}}  — the lesson title (e.g., "Wrapper Risk")
+    {{TOPIC_SLUG}}    — kebab-case slug from the 25-topic AI Investing catalog (lib/ai-investing.ts)
     {{DATE_DISPLAY}}  — human-readable date (e.g., "May 25, 2026")
     {{DATE_ISO}}      — ISO date YYYY-MM-DD (e.g., "2026-05-25")
     {{BODY_HTML}}     — the rendered lesson body. Render the markdown body to clean
@@ -16,49 +18,49 @@
                          - <h2>Jamie's Action Prompt</h2> followed by one <p> paragraph
                        Use <strong>/<em> for inline emphasis. No inline styles.
 
-  Output filename: reports/weekly_nwa_lesson_{{TOPIC_SLUG}}_{{DATE_ISO}}.html
+  Output filename: reports/weekly_nwa_ai_investing_lesson_{{TOPIC_SLUG}}_{{DATE_ISO}}.html
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Venture Learning — {{LESSON_TITLE}}</title>
+  <title>AI Investing — {{LESSON_TITLE}}</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: system-ui, -apple-system, sans-serif; background: #ffffff; color: #1a1a1a; line-height: 1.65; font-size: 16px; }
     .outer { max-width: 860px; margin: 0 auto; padding: 0 20px 60px; }
 
     .site-header { background: #0a1628; color: #fff; padding: 32px 24px 28px; margin-bottom: 36px; }
-    .site-header .eyebrow { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #6ee7b7; margin-bottom: 8px; }
+    .site-header .eyebrow { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #c4b5fd; margin-bottom: 8px; }
     .site-header h1 { font-size: 1.55rem; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 4px; }
     .site-header .date-range { font-size: 0.95rem; opacity: 0.78; margin-bottom: 8px; }
     .site-header .subtitle { font-size: 0.82rem; opacity: 0.6; font-style: italic; }
 
-    .coaching-card { background: #f0fdf4; border-left: 5px solid #059669; border-radius: 0 8px 8px 0; padding: 28px 30px; margin-bottom: 28px; }
-    .coaching-card .coaching-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #059669; margin-bottom: 8px; }
-    .coaching-card h1.lesson-title { font-size: 1.35rem; font-weight: 700; color: #14532d; margin-bottom: 6px; letter-spacing: -0.01em; }
-    .coaching-card .lesson-date { font-size: 0.85rem; color: #047857; margin-bottom: 18px; font-style: italic; }
-    .coaching-card h2 { font-size: 1rem; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 24px; margin-bottom: 10px; padding-top: 16px; border-top: 1px solid #bbf7d0; }
+    .coaching-card { background: #f5f3ff; border-left: 5px solid #7c3aed; border-radius: 0 8px 8px 0; padding: 28px 30px; margin-bottom: 28px; }
+    .coaching-card .coaching-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #7c3aed; margin-bottom: 8px; }
+    .coaching-card h1.lesson-title { font-size: 1.35rem; font-weight: 700; color: #4c1d95; margin-bottom: 6px; letter-spacing: -0.01em; }
+    .coaching-card .lesson-date { font-size: 0.85rem; color: #6d28d9; margin-bottom: 18px; font-style: italic; }
+    .coaching-card h2 { font-size: 1rem; font-weight: 700; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 24px; margin-bottom: 10px; padding-top: 16px; border-top: 1px solid #ddd6fe; }
     .coaching-card h2:first-of-type { padding-top: 0; border-top: none; }
-    .coaching-card p { font-size: 0.95rem; color: #166534; margin-bottom: 14px; }
+    .coaching-card p { font-size: 0.95rem; color: #5b21b6; margin-bottom: 14px; }
     .coaching-card p:last-child { margin-bottom: 0; }
-    .coaching-card strong { font-weight: 700; color: #14532d; }
+    .coaching-card strong { font-weight: 700; color: #4c1d95; }
     .coaching-card em { font-style: italic; }
-    .coaching-card a { color: #059669; font-weight: 600; }
+    .coaching-card a { color: #7c3aed; font-weight: 600; }
 
     .footer-link { text-align: center; font-size: 0.85rem; color: #64748b; margin-top: 24px; }
-    .footer-link a { color: #059669; font-weight: 600; text-decoration: none; }
+    .footer-link a { color: #7c3aed; font-weight: 600; text-decoration: none; }
     .footer-link a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
 <div class="site-header">
   <div class="outer" style="padding-bottom:0;">
-    <div class="eyebrow">Weekly NWA Briefings · Venture Learning</div>
+    <div class="eyebrow">Weekly NWA Briefings · AI Investing</div>
     <h1>{{LESSON_TITLE}}</h1>
     <div class="date-range">Lesson of {{DATE_DISPLAY}}</div>
-    <div class="subtitle">26-topic venture curriculum · 1:1 coaching format</div>
+    <div class="subtitle">25-topic AI investing curriculum · 1:1 coaching format</div>
   </div>
 </div>
 
@@ -72,7 +74,7 @@
   </div>
 
   <div class="footer-link">
-    Read on web: <a href="https://nwa-weekly.vercel.app/learning/{{TOPIC_SLUG}}/{{DATE_ISO}}" target="_blank" rel="noopener">nwa-weekly.vercel.app/learning/{{TOPIC_SLUG}}/{{DATE_ISO}}</a>
+    Read on web: <a href="https://nwa-weekly.vercel.app/ai-investing/{{TOPIC_SLUG}}/{{DATE_ISO}}" target="_blank" rel="noopener">nwa-weekly.vercel.app/ai-investing/{{TOPIC_SLUG}}/{{DATE_ISO}}</a>
   </div>
 </div>
 </body>

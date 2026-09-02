@@ -53,7 +53,7 @@ export type Lesson = LessonMeta & {
   contentHtml: string;
 };
 
-// The 25-topic Section G rotation. Order matches the instructions file.
+// The 26-topic Section G rotation. Order matches the instructions file.
 export const TOPIC_CATALOG: Topic[] = [
   { slug: "pre-money-vs-post-money-valuation", title: "Pre-money vs. Post-money Valuation", blurb: "Why the same dollar amount can mean very different ownership stakes." },
   { slug: "safe-notes-vs-convertible-notes-vs-priced-rounds", title: "SAFE Notes vs. Convertible Notes vs. Priced Rounds", blurb: "How money goes in, and what each instrument actually gives you." },
@@ -80,11 +80,87 @@ export const TOPIC_CATALOG: Topic[] = [
   { slug: "investment-memo", title: "How to Write an Investment Memo", blurb: "The discipline that forces you to make your thesis explicit." },
   { slug: "red-flags-in-pitches", title: "Red Flags in Early-Stage Pitches", blurb: "The patterns that should make you pass — and the ones that shouldn't." },
   { slug: "founder-friendly-vs-investor-friendly-terms", title: "Founder-Friendly vs. Investor-Friendly Terms", blurb: "Negotiating tradeoffs without poisoning the relationship." },
+  { slug: "fundable-vs-investable", title: "Fundable vs. Investable", blurb: "Why a great pitch and a great business are two different questions." },
 ];
 
 const TOPIC_BY_SLUG: Map<string, Topic> = new Map(
   TOPIC_CATALOG.map((t) => [t.slug, t]),
 );
+
+// Reference taxonomy for the 26-topic core curriculum, plus one forward-looking
+// category with no core topics yet — it's fed entirely by the dynamic "advanced tier"
+// (lessons picked from live research once the core rotation completes). Static
+// reference only; not used to drive rotation logic.
+export type LearningCategory = {
+  name: string;
+  description: string;
+  topicSlugs: string[];
+  futureThemes?: string[];
+};
+
+export const LEARNING_CATEGORIES: LearningCategory[] = [
+  {
+    name: "Deal Structuring & Terms",
+    description: "Instruments, valuation, cap tables, and the protective provisions that decide who wins in a down round.",
+    topicSlugs: [
+      "pre-money-vs-post-money-valuation",
+      "safe-notes-vs-convertible-notes-vs-priced-rounds",
+      "convertible-note-mechanics",
+      "cap-table-mechanics-and-dilution",
+      "term-sheet-anatomy",
+      "anti-dilution-provisions",
+      "pro-rata-rights",
+      "founder-friendly-vs-investor-friendly-terms",
+    ],
+  },
+  {
+    name: "Founder & Team Evaluation",
+    description: "Reading the person and the pitch — signal versus story.",
+    topicSlugs: ["founder-evaluation", "red-flags-in-pitches"],
+  },
+  {
+    name: "Market & Product Evaluation",
+    description: "Sizing the opportunity and testing whether the product actually has legs.",
+    topicSlugs: ["product-market-fit-signals", "market-sizing-tam-sam-som", "network-effects-as-a-moat"],
+  },
+  {
+    name: "Financial & Business Diligence",
+    description: "Stress-testing the numbers and the underlying business case.",
+    topicSlugs: ["due-diligence-frameworks", "burn-rate-and-runway", "fundable-vs-investable"],
+  },
+  {
+    name: "Governance & Control",
+    description: "Board seats, voting rights, and who actually controls the company after the round.",
+    topicSlugs: ["board-seats-observer-rights-governance"],
+  },
+  {
+    name: "Portfolio Strategy & Returns",
+    description: "How many bets, how sized, and why a handful of outcomes carry the whole portfolio.",
+    topicSlugs: ["portfolio-construction", "power-law-vc-returns", "follow-on-investing-strategy", "risk-at-each-stage"],
+  },
+  {
+    name: "Deal Sourcing & Ecosystem",
+    description: "Where deals come from, who else is in them, and how to write up your own thesis.",
+    topicSlugs: ["deal-flow-sourcing-and-filtering", "angel-syndicates-and-spvs", "yc-and-accelerators", "investment-memo"],
+  },
+  {
+    name: "Exit & Liquidity",
+    description: "How angels actually get paid — M&A, IPO, and secondaries.",
+    topicSlugs: ["exit-scenarios"],
+  },
+  {
+    name: "Venture Investing in the Age of AI",
+    description: "How AI is reshaping deal sourcing, founder evaluation, moat economics, and the syndicate/VC model itself — the newest category, fed entirely by future dynamic-tier lessons.",
+    topicSlugs: [],
+    futureThemes: [
+      "AI-Native Deal Sourcing & Diligence",
+      "Moat Economics for AI-Era Startups",
+      "Compressed Fundraising Cycles & Founder Evaluation in the AI Era",
+      "The AI-Powered Syndicate & the Future of VC Fund Operations",
+      "Valuation Discipline in an AI Hype Cycle",
+    ],
+  },
+];
 
 export function getTopicBySlug(slug: string): Topic | undefined {
   return TOPIC_BY_SLUG.get(slug);
