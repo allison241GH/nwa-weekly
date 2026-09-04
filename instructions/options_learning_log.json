@@ -1,6 +1,10 @@
 {
-  "last_updated": "2026-09-02",
+  "last_updated": "2026-09-04",
   "covered": [
+    {
+      "topic_slug": "assignment-and-share-protection",
+      "date": "2026-09-04"
+    },
     {
       "topic_slug": "what-is-a-covered-call",
       "date": "2026-05-04"

@@ -1,6 +1,96 @@
 {
-  "last_updated": "2026-09-02",
+  "last_updated": "2026-09-04",
   "items": [
+    {
+      "headline": "Markets (wk of Aug 31, Fri Sep 4): hot August jobs report (+162K vs ~53K expected, unemployment 4.1%) killed the September rate-cut case a week after Fed Chair Warsh called inflation 'too high'; S&P 500 ~7,719 (-0.4%), Nasdaq ~26,507 (-0.3%), 10-yr Treasury ~4.78%, 30-yr ~5.25% into the ~Sep 16 FOMC",
+      "source": "TheStreet / Reuters / CNBC",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-04-2026",
+      "date_reported": "2026-09-04"
+    },
+    {
+      "headline": "Andreessen Horowitz raises a $1.1B 'Machine Age' fund (Aug 28) for the physical buildout of AI (chips, data centers, cooling, robots, power) and days later (Aug 31) pushes Growth Fund V to $8.5B, up $1.75B since January; growth practice now $24B+ across five vintages",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/28/a16z-creates-a-1-1b-machine-age-fund-to-accelerate-the-physical-buildout-of-ai/",
+      "date_reported": "2026-09-04"
+    },
+    {
+      "headline": "OpenAI begins staged rollout of GPT-6 'Astra' (Sep 3), billed as its most intelligent/aligned model with SOTA on computer use, software engineering, cybersecurity and science; priced $10/$50 per 1M tokens, trusted orgs first then Plus/Pro/Business/Enterprise",
+      "source": "CNBC / Al Jazeera",
+      "url": "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
+      "date_reported": "2026-09-04"
+    },
+    {
+      "headline": "Tesla launches production Cybercab robotaxi (two-seat, no wheel/pedals, nine cameras, AI4) at an invite-only Sep 3 event; limited public paid rides begin in Austin, ~45 Cybercabs in the registered Texas fleet",
+      "source": "Motor1 / Forbes",
+      "url": "https://www.motor1.com/news/805874/tesla-cybercab-robotaxi-launch-austin/",
+      "date_reported": "2026-09-04"
+    },
+    {
+      "headline": "Crusoe raises $3B+ at a ~$30B valuation (Sep 3), nearly tripling its Oct 2025 mark in a Series F co-led by Atreides and Valor; recently signed a reported $13B GPU-supply deal with Jane Street",
+      "source": "TechCrunch / Bloomberg",
+      "url": "https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/",
+      "date_reported": "2026-09-04"
+    },
+    {
+      "headline": "Wonderful raises a $550M Series C at $5B (Sep 2), led by Insight Partners (Salesforce Ventures, Index, IVP, Bessemer) - more than doubling its $2B Series B from ~6 months earlier; headcount ~650 across 35+ markets",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months/",
+      "date_reported": "2026-09-04"
+    },
+    {
+      "headline": "Global venture funding jumped 122% YoY in August 2026 to $42B across ~1,500 startups (Crunchbase; down 25% from July's $56B); seven billion-dollar rounds led by Databricks' $5B at a $190B valuation, and 5 of 7 mega-recipients had last raised under 12 months prior",
+      "source": "Crunchbase News",
+      "url": "https://news.crunchbase.com/venture/global-funding-billion-dollar-deals-august-2026/",
+      "date_reported": "2026-09-04"
+    },
+    {
+      "headline": "Unitree shed nearly half its market value in the days after its ~$66B Aug 19 IPO peak - the first clean public-market repricing of physical-AI/humanoid froth",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/26/robot-brain-builders-are-pushing-out-of-their-gpt-2-era/",
+      "date_reported": "2026-09-04"
+    },
+    {
+      "headline": "YC Summer 2026 Demo Day set for Thursday Sep 10 in San Francisco (~1,000 invited investors); through-line 'AI is the baseline not the thesis' with capital flowing to AI applied to specific industry workflows",
+      "source": "Y Combinator",
+      "url": "https://www.ycombinator.com/blog/2026-demo-days",
+      "date_reported": "2026-09-04"
+    },
+    {
+      "headline": "Ford issues three recalls in one week (headlined by 148,663 Mustangs, wiring harness) and reports August U.S. sales down 10.3% YoY; stock pinned in the mid-$14s",
+      "source": "Rolling Out / CNBC",
+      "url": "https://rollingout.com/2026/09/03/ford-mustang-two-recalls-september-2026/",
+      "date_reported": "2026-09-04"
+    },
+    {
+      "headline": "Ethan Mollick publishes 'An opinionated guide to which AI to use to do stuff (Summer 2026 Edition)' - a practical model-by-model tool-selection reference",
+      "source": "One Useful Thing (Substack)",
+      "url": "https://www.oneusefulthing.org/",
+      "date_reported": "2026-09-04"
+    },
+    {
+      "headline": "Ruben Hassid LinkedIn post (Sep 1) on a core Claude cost mechanic - the model re-reads the entire conversation on every prompt, so long threads burn usage fast",
+      "source": "LinkedIn / How to AI",
+      "url": "https://www.linkedin.com/in/ruben-hassid/",
+      "date_reported": "2026-09-04"
+    },
+    {
+      "headline": "Generative AI as 'seniority-biased technological change': Stanford HAI data shows employment for software developers aged 22-25 down ~20% since late 2022 while older devs at the same firms grew 6-12%, eroding the junior-to-senior expertise pipeline",
+      "source": "Stanford HAI / IBTimes UK",
+      "url": "https://www.ibtimes.co.uk/ai-impact-junior-employee-training-1814107",
+      "date_reported": "2026-09-04"
+    },
+    {
+      "headline": "Verticalized-AI seed pattern this week: Metal ($4.5M seed, a16z Speedrun + YC - AI fundraising software), Axle AI ($17.5M Series A, Base10/Gradient/YC - insurtech), Zeit AI (EUR5M seed, YC + Oxford) - capital to AI-in-a-workflow small teams, not horizontal tools",
+      "source": "Tech Startups",
+      "url": "https://techstartups.com/2026/09/03/venture-capital-startup-funding-roundup-september-3-2026-base10-partners-gradient-ventures-point72-y-combinator-more/",
+      "date_reported": "2026-09-04"
+    },
+    {
+      "headline": "Carta-sourced down-round data circulating this week: ~20% of 2025 rounds were down rounds (double the historical norm), bridge/extension rounds ~16.6% of cash raised, and median gap between primary rounds stretched to ~23 months",
+      "source": "Carta / Causo Hub",
+      "url": "https://hub.causo.ai/guides/down-rounds-and-bridges-this-year-2026",
+      "date_reported": "2026-09-04"
+    },
     {
       "headline": "Markets (wk of Aug 31): August closed as first up-month since May (S&P +2.6%, Nasdaq +3.9%); early September gave back ground with S&P ~7,650 and Nasdaq ~26,100 as renewed U.S.-Iran hostilities pushed the 10-year Treasury to 4.81%, highest since Nov 2023, and the 30-year above 5.2%",
       "source": "CNBC / TheStreet / Yahoo Finance",
