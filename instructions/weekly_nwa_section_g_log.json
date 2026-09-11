@@ -1,6 +1,10 @@
 {
-  "last_updated": "2026-09-04",
+  "last_updated": "2026-09-11",
   "covered": [
+    {
+      "topic_slug": "yc-and-accelerators",
+      "date": "2026-09-11"
+    },
     {
       "topic_slug": "anti-dilution-provisions",
       "date": "2026-09-04"

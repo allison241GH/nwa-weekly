@@ -1,6 +1,72 @@
 {
-  "last_updated": "2026-09-04",
+  "last_updated": "2026-09-11",
   "items": [
+    {
+      "headline": "Markets (wk of Sep 7, Fri Sep 11): hot August CPI drove Fed rate-HIKE odds to ~90% for the Sep 16 FOMC; 10-yr Treasury ~4.98% (highest since Oct 2023), 2-yr ~4.65% (2-yr high); S&P -0.8%/Nasdaq -0.7%/Dow -1.6% for the week despite a Friday +1.0% S&P bounce; Brent oil hit a two-month high",
+      "source": "TheStreet / Bloomberg / Investrade",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-11-2026",
+      "date_reported": "2026-09-11"
+    },
+    {
+      "headline": "Cohere in advanced talks to raise $2-3B at a ~$20B valuation (roughly double its early-2025 mark), with financing reportedly including the Canadian government; a marquee test of the 'sovereign AI' thesis",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-11/ai-firm-cohere-in-talks-for-up-to-3-billion-raise-report-says",
+      "date_reported": "2026-09-11"
+    },
+    {
+      "headline": "YC Summer 2026 Demo Day (Sep 10) presented 234 companies to ~1,500 investors; Industrials jumped to ~23% of the batch (2nd-largest after B2B, up from ~13%), with founders clustering around agents that do work, agent-safety infra, and AI wired into the physical world",
+      "source": "Forbes / Y Combinator / Foundevo",
+      "url": "https://www.forbes.com/sites/dariashunina/2026/09/03/meet-the-yc-startups-betting-on-what-comes-next/",
+      "date_reported": "2026-09-11"
+    },
+    {
+      "headline": "Four labs shipped new frontier models in one week (Anthropic Claude Fable/Mythos 5.1, OpenAI GPT-6 Astra, Meta Muse Spark 1.3, Google Gemini 3.8 Flash), prompting CNBC 'model fatigue' coverage (Sep 6); Anthropic also rolled out Claude Managed Agents and reportedly committed ~$80B to compute",
+      "source": "CNBC / Startup Fortune",
+      "url": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
+      "date_reported": "2026-09-11"
+    },
+    {
+      "headline": "AI infrastructure led the week's mega-rounds: Crusoe's $3B and Fluidstack's $1.5B took the top two spots in a multibillion-dollar compute/data-center haul",
+      "source": "Crunchbase News",
+      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-crusoe-fluidstack-multibillion-dollar-ai-infrastructure/",
+      "date_reported": "2026-09-11"
+    },
+    {
+      "headline": "Upwind Security raised $300M co-led by Bessemer Venture Partners and TCV (Salesforce Ventures, Greylock, Craft, Cyberstarts joining) for cloud-runtime security",
+      "source": "Tech Startups",
+      "url": "https://techstartups.com/2026/09/11/startup-funding-news-today-september-11-2026-kinetix-ai-aidin-robotics-enigmata-more/",
+      "date_reported": "2026-09-11"
+    },
+    {
+      "headline": "Pixxel closed a $100M Series C (co-led by Temasek and Seraphim; 360 ONE Asset and IMM Investment joining) - the largest single round ever for an Indian space-tech startup; hyperspectral earth observation for sovereign customers, total raised ~$195M",
+      "source": "Tech Startups",
+      "url": "https://techstartups.com/2026/09/07/startup-funding-news-today-september-7-2026-pixxel-jet-zero-navana-ai-more/",
+      "date_reported": "2026-09-11"
+    },
+    {
+      "headline": "Humanoids scale in public: the second World Humanoid Robot Games closed in Beijing (2,000+ robots, 666 teams, 51 events), XPeng closed ~$900M for IRON mass production by year-end, and Figure's Index platform passed 16M real-world training videos",
+      "source": "Humanoid Press / blog.mean.ceo",
+      "url": "https://www.humanoid.press/",
+      "date_reported": "2026-09-11"
+    },
+    {
+      "headline": "Anthropic ships enterprise agent tooling: Claude 'smart reports' (beta) analyzing team usage/costs/friction, and a commerce-agent blueprint with reference shopping/merchant agents, guardrails, and a Claude Code plugin",
+      "source": "Claude by Anthropic",
+      "url": "https://claude.com/blog/how-enterprises-are-building-ai-agents-in-2026",
+      "date_reported": "2026-09-11"
+    },
+    {
+      "headline": "Matt Wolfe YouTube: 'The Most Useful AI Tools Right Now (2026)' - a tested walkthrough of the working operator's stack (Claude, Cursor, NotebookLM, current agents)",
+      "source": "YouTube",
+      "url": "https://www.youtube.com/watch?v=SlRzTFx8Qtg",
+      "date_reported": "2026-09-11"
+    },
+    {
+      "headline": "Affinity '10 AI Tools Transforming Venture Capital in 2026' - map of AI across the VC workflow (sourcing, diligence, portfolio monitoring, LP reporting); ~85% of private-capital dealmakers now use AI daily",
+      "source": "Affinity",
+      "url": "https://www.affinity.co/guides/vc-ai-tools",
+      "date_reported": "2026-09-11"
+    },
     {
       "headline": "Markets (wk of Aug 31, Fri Sep 4): hot August jobs report (+162K vs ~53K expected, unemployment 4.1%) killed the September rate-cut case a week after Fed Chair Warsh called inflation 'too high'; S&P 500 ~7,719 (-0.4%), Nasdaq ~26,507 (-0.3%), 10-yr Treasury ~4.78%, 30-yr ~5.25% into the ~Sep 16 FOMC",
       "source": "TheStreet / Reuters / CNBC",
@@ -47,12 +113,6 @@
       "headline": "Unitree shed nearly half its market value in the days after its ~$66B Aug 19 IPO peak - the first clean public-market repricing of physical-AI/humanoid froth",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/26/robot-brain-builders-are-pushing-out-of-their-gpt-2-era/",
-      "date_reported": "2026-09-04"
-    },
-    {
-      "headline": "YC Summer 2026 Demo Day set for Thursday Sep 10 in San Francisco (~1,000 invited investors); through-line 'AI is the baseline not the thesis' with capital flowing to AI applied to specific industry workflows",
-      "source": "Y Combinator",
-      "url": "https://www.ycombinator.com/blog/2026-demo-days",
       "date_reported": "2026-09-04"
     },
     {
@@ -122,21 +182,9 @@
       "date_reported": "2026-09-02"
     },
     {
-      "headline": "AccuKnox launches AgentZ (Aug 27), a platform unifying agent build/run/governance - execution environment, tools, workflows, permissions and governance in one stack",
-      "source": "AccuKnox / agent news roundups",
-      "url": "https://aiagentstore.ai/ai-agent-news/this-week",
-      "date_reported": "2026-09-02"
-    },
-    {
       "headline": "Funds over $1B have taken ~72% of all venture capital raised in 2026 to date (PitchBook midyear), while H1 2026 minted 195 new unicorns - more than all of 2025's 193",
       "source": "Fortune Term Sheet / PitchBook / Crunchbase",
       "url": "https://fortune.com/2026/06/24/the-spacex-ipo-marks-a-lopsided-win-for-venture/",
-      "date_reported": "2026-09-02"
-    },
-    {
-      "headline": "Vuelta a Espana second week: Andreas Leknessund takes a breakaway stage win as Pogacar marches toward his first Vuelta title; 2026 route is 3,283.7km with 58,156m of climbing and seven summit finishes - more vertical than the 2026 Tour",
-      "source": "Cyclingnews / road.cc / Velo",
-      "url": "https://www.cyclingnews.com/races/vuelta-a-espana-2026/",
       "date_reported": "2026-09-02"
     },
     {
@@ -155,30 +203,6 @@
       "headline": "AI-native startups' effective seed runway is 12-15 months on a $2M raise (vs ~18 for traditional SaaS) because inference/API/fine-tuning costs scale with usage, even as investors now expect 18-24 months post-raise and grade on burn multiple under 2x",
       "source": "Puzzle.io / SeedScope / NextWaves Insight",
       "url": "https://nextwavesinsight.com/ai-funding-concentration-startup-runway-2026/",
-      "date_reported": "2026-09-02"
-    },
-    {
-      "headline": "AP: a university that built an AI curriculum before ChatGPT is now packaging it to help other schools do the same (Sep 2)",
-      "source": "AP via CP24",
-      "url": "https://www.cp24.com/news/world/2026/09/02/this-university-built-an-ai-curriculum-before-chatgpt-now-it-wants-to-help-other-schools-do-the-same/",
-      "date_reported": "2026-09-02"
-    },
-    {
-      "headline": "MIT Technology Review releases the full EmTech Future 2026 agenda (Sep 29 - Oct 1, MIT campus and online), framed around the intersection of AI, quantum technologies and energy systems",
-      "source": "MIT Technology Review",
-      "url": "https://finance.yahoo.com/technology/ai/articles/mit-technology-review-unveils-full-194700635.html",
-      "date_reported": "2026-09-02"
-    },
-    {
-      "headline": "AI skills as an entry-level hiring requirement: >1/3 of entry-level job postings listed AI skills in NACE's spring 2026 report (~3x YoY); ~56% wage premium for AI-skilled workers (67% in consulting/professional services); faculty intent to use AI in US/Canada fell from 76% to 67%",
-      "source": "NACE / Digital Education Council / Inside Higher Ed",
-      "url": "https://www.digitaleducationcouncil.com/resource-library-items/ai-in-higher-education-global-survey-2026",
-      "date_reported": "2026-09-02"
-    },
-    {
-      "headline": "Sports-recovery tech shifting from passive tracking to active intervention: recovery-specific footwear (CES 2026), athlete sleep-intervention audio, and IMU/digital-twin rehab simulations that predict return-to-sport outcomes",
-      "source": "STHQ / Heraleto / sports-medicine wearables literature",
-      "url": "https://sthq.org/2026/01/23/10-sports-tech-innovations-to-watch-from-ces-2026/",
       "date_reported": "2026-09-02"
     },
     {
@@ -246,60 +270,6 @@
       "source": "MIT Economics",
       "url": "https://economics.mit.edu/sites/default/files/2026-02/AI,%20Human%20Cognition%20and%20Knowledge%20Collapse%2002-20-26.pdf",
       "date_reported": "2026-08-30"
-    },
-    {
-      "headline": "Groq closes $350M Series A at a $3.5B valuation (led by Disruptive, NVIDIA participating), completing pivot from chipmaker to AI inference cloud; scaling 57MW -> 200MW+, 13 data centers, 6M+ developers",
-      "source": "Groq / SiliconANGLE",
-      "url": "https://siliconangle.com/2026/08/17/ai-cloud-operator-groq-raises-350m-more-in-funding/",
-      "date_reported": "2026-08-21"
-    },
-    {
-      "headline": "Higgsfield raises $400M at a $5.4B valuation (led by DST Global) for enterprise AI video/image generation; annualized revenue reportedly ~$20M -> ~$700M in roughly a year",
-      "source": "SiliconANGLE / VKTR",
-      "url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
-      "date_reported": "2026-08-21"
-    },
-    {
-      "headline": "Wispr raises $280M Series B at a $2B valuation (led by Menlo Ventures) to extend natural speech-to-text beyond dictation into meetings and note-taking",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/",
-      "date_reported": "2026-08-21"
-    },
-    {
-      "headline": "SoftBank invests $200M in Gravis Robotics (one of the week's four mega-rounds) for autonomy in heavy construction machinery",
-      "source": "Crunchbase News",
-      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-billion-dollar-raises-manufacturing-energy-ai/",
-      "date_reported": "2026-08-21"
-    },
-    {
-      "headline": "Nevada Transportation Authority approves autonomous-network permits for Tesla, Waymo and Uber to run paid robotaxis in Clark County (Las Vegas); Tesla reportedly cleared for up to 5,000 robotaxis over 12 months after Aug 20 meeting",
-      "source": "Engadget",
-      "url": "https://www.engadget.com/2241379/nevada-allows-uber-tesla-waymo-paid-robotaxis/",
-      "date_reported": "2026-08-21"
-    },
-    {
-      "headline": "Anthropic launches Claude Academy, a learning hub with courses, tutorials and badges for safe, effective AI use",
-      "source": "Anthropic Newsroom",
-      "url": "https://www.anthropic.com/news",
-      "date_reported": "2026-08-21"
-    },
-    {
-      "headline": "BikeOn unveils CycleClick, a ~$299 clip-on cycling power meter that reads power off the chain and installs in seconds, undercutting pedal/crank units",
-      "source": "GearJunkie",
-      "url": "https://gearjunkie.com/biking/cycleclick-power-meter-chain",
-      "date_reported": "2026-08-21"
-    },
-    {
-      "headline": "Markets (wk of Aug 17-21): S&P 500 ~7,674 near records, Nasdaq 100 ~29,347; Treasury doubles long-dated debt buybacks (>= $4B) on Aug 19 pulling yields lower; all eyes on Warsh's first Jackson Hole address as Fed chair Aug 28 ahead of Sept 16 FOMC",
-      "source": "CNBC / Saxo / Vantage",
-      "url": "https://www.cnbc.com/2026/08/20/stock-market-today-live-updates.html",
-      "date_reported": "2026-08-21"
-    },
-    {
-      "headline": "Humanoids scale: Figure reports surpassing 10,000 partner-warehouse deployments (2nd industrial use case took 30 days vs 12 months for the first); 1X opens consumer pre-orders for NEO home humanoid with 2026 delivery",
-      "source": "Technology.org / New Market Pitch",
-      "url": "https://newmarketpitch.com/blogs/news/humanoid-robotics-figure-vs-tesla",
-      "date_reported": "2026-08-21"
     }
   ]
 }
