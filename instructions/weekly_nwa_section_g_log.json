@@ -1,6 +1,10 @@
 {
-  "last_updated": "2026-09-11",
+  "last_updated": "2026-09-19",
   "covered": [
+    {
+      "topic_slug": "risk-at-each-stage",
+      "date": "2026-09-19"
+    },
     {
       "topic_slug": "yc-and-accelerators",
       "date": "2026-09-11"
