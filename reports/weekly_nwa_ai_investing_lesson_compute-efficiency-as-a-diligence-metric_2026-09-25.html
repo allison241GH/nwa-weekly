@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Investing — Compute Efficiency as a Diligence Metric</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #ffffff; color: #1a1a1a; line-height: 1.65; font-size: 16px; }
+    .outer { max-width: 860px; margin: 0 auto; padding: 0 20px 60px; }
+
+    .site-header { background: #0a1628; color: #fff; padding: 32px 24px 28px; margin-bottom: 36px; }
+    .site-header .eyebrow { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #c4b5fd; margin-bottom: 8px; }
+    .site-header h1 { font-size: 1.55rem; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 4px; }
+    .site-header .date-range { font-size: 0.95rem; opacity: 0.78; margin-bottom: 8px; }
+    .site-header .subtitle { font-size: 0.82rem; opacity: 0.6; font-style: italic; }
+
+    .coaching-card { background: #f5f3ff; border-left: 5px solid #7c3aed; border-radius: 0 8px 8px 0; padding: 28px 30px; margin-bottom: 28px; }
+    .coaching-card .coaching-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #7c3aed; margin-bottom: 8px; }
+    .coaching-card h1.lesson-title { font-size: 1.35rem; font-weight: 700; color: #4c1d95; margin-bottom: 6px; letter-spacing: -0.01em; }
+    .coaching-card .lesson-date { font-size: 0.85rem; color: #6d28d9; margin-bottom: 18px; font-style: italic; }
+    .coaching-card h2 { font-size: 1rem; font-weight: 700; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 24px; margin-bottom: 10px; padding-top: 16px; border-top: 1px solid #ddd6fe; }
+    .coaching-card h2:first-of-type { padding-top: 0; border-top: none; }
+    .coaching-card p { font-size: 0.95rem; color: #5b21b6; margin-bottom: 14px; }
+    .coaching-card p:last-child { margin-bottom: 0; }
+    .coaching-card strong { font-weight: 700; color: #4c1d95; }
+    .coaching-card em { font-style: italic; }
+    .coaching-card a { color: #7c3aed; font-weight: 600; }
+
+    .footer-link { text-align: center; font-size: 0.85rem; color: #64748b; margin-top: 24px; }
+    .footer-link a { color: #7c3aed; font-weight: 600; text-decoration: none; }
+    .footer-link a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+<div class="site-header">
+  <div class="outer" style="padding-bottom:0;">
+    <div class="eyebrow">Weekly NWA Briefings · AI Investing</div>
+    <h1>Compute Efficiency as a Diligence Metric</h1>
+    <div class="date-range">Lesson of September 25, 2026</div>
+    <div class="subtitle">25-topic AI investing curriculum · 1:1 coaching format</div>
+  </div>
+</div>
+
+<div class="outer">
+  <div class="coaching-card">
+    <div class="coaching-label">This Week's Lesson</div>
+    <h1 class="lesson-title">Compute Efficiency as a Diligence Metric</h1>
+    <div class="lesson-date">September 25, 2026 · Topic: compute-efficiency-as-a-diligence-metric</div>
+
+    <p>For most of AI's first act, investors underwrote <em>capability</em> — whose model is smartest — and treated compute as a background cost the founders would "figure out later." That era is ending, and this week made the reason concrete: Anthropic shipped <strong>Claude Opus 5.5 at roughly 40% lower run-cost</strong> for near-frontier capability, and OpenAI split GPT-6 into cheaper task-tiered variants. When the price of intelligence drops 40% on a single release, the durable question for a startup stops being "how good is your output" and becomes "<strong>what does it cost you to produce each unit of that output, and where is that cost heading.</strong>" Compute efficiency — cost per task, per query, per agent-run — is graduating from an engineering footnote to a <strong>core diligence metric</strong>, the AI-era equivalent of gross margin.</p>
+
+    <p>Why this matters for an angel or seed investor specifically: two AI companies can show identical demos and identical revenue, and one is a great business while the other is a subsidy machine — the difference is invisible unless you ask about inference economics. A startup burning $1.50 in compute to deliver a task it charges $1.00 for has <em>negative</em> gross margin that scales <em>with</em> its own success; every happy customer deepens the loss. In the seed diligence conversation, the tell is whether the founder can answer <strong>cost-per-task and how it trends</strong> without flinching. Founders who treat inference cost as a first-class metric — instrumenting it, driving it down with caching, smaller fine-tuned models, routing cheap queries to cheap models — are building a business; founders who wave it away as "compute will get cheaper" are betting their unit economics on someone else's roadmap.</p>
+
+    <p>Here's the coaching insight a seasoned AI investor would share that the hype cycle obscures: <strong>falling model prices cut both ways, and which way depends entirely on positioning.</strong> If a startup's product is <em>thin</em> — a light wrapper whose value is mostly the model's — then a 40% price cut mostly flows through to <em>customers</em> (or to competitors who undercut on price), and the startup captures little. But if the startup has a real moat — proprietary data, workflow lock-in, distribution — then falling compute costs drop <em>straight to its gross margin</em>, and it gets more profitable every quarter without raising prices. So compute efficiency isn't just a cost question; it's a <strong>moat test in disguise.</strong> The right diligence move is to model the company's economics <em>assuming inference gets 10x cheaper</em>: if that scenario crushes them (because their edge was cost arbitrage), pass; if it fattens them (because their edge is elsewhere), you've found operating leverage most investors aren't pricing in yet.</p>
+
+    <h2>Key Terms</h2>
+    <p><strong>Cost-per-Task (Unit Economics of Inference)</strong> — The fully-loaded compute cost to deliver one unit of the product's value (a completed query, document, agent-run), versus the price charged for it. The single most revealing AI-startup metric: it exposes whether growth compounds profit or compounds loss, and its <em>trend line</em> signals whether the team is actually engineering efficiency or hoping model prices bail them out.</p>
+    <p><strong>Gross-Margin-on-Inference</strong> — Revenue minus the direct compute cost of serving it, as a percentage. The AI analog to SaaS gross margin — but far more volatile, because the "COGS" (model API pricing) can drop 40% in a single vendor release, mechanically expanding margin for companies whose value sits <em>above</em> the model and doing little for those whose value <em>is</em> the model.</p>
+
+    <h2>Real-World Example</h2>
+    <p>This week's Claude Opus 5.5 launch is the live case. Anthropic explicitly positioned it as matching prior-frontier quality at ~40% lower cost ($4/$20 per million tokens). Now run the two-sided test on a portfolio: an application-layer company like a <strong>Harvey</strong> or a <strong>Cognition</strong> (both recently priced at foundation-model scale) <em>benefits</em> from that cut — its legal or coding workflows cost less to run overnight, and if its moat is proprietary data and enterprise lock-in, the savings drop to margin. But a generic "chat with your PDF" wrapper competing on price sees the same cut hand its customers a reason to expect lower prices, or hands a competitor room to undercut.</p>
+    <p>Same 40% price drop, opposite outcomes — and the <em>only</em> way to tell them apart in diligence is to have asked, up front, where the company's value lives relative to the model it rents.</p>
+
+    <h2>Jamie's Action Prompt</h2>
+    <p>Pick one AI company in the NWA pipeline (or one you're evaluating) and ask its founder a single question this week: <strong>"What's your cost-per-task today, and what does it become if model prices fall another 40%?"</strong> Then judge the <em>answer type</em>, not just the number — a founder who has the figure at their fingertips and can explain whether a price cut helps or hurts them is running a real business; one who deflects to "compute keeps getting cheaper" is telling you their moat is cost arbitrage, which the next Opus release can erase overnight.</p>
+  </div>
+
+  <div class="footer-link">
+    Read on web: <a href="https://nwa-weekly.vercel.app/ai-investing/compute-efficiency-as-a-diligence-metric/2026-09-25" target="_blank" rel="noopener">nwa-weekly.vercel.app/ai-investing/compute-efficiency-as-a-diligence-metric/2026-09-25</a>
+  </div>
+</div>
+</body>
+</html>

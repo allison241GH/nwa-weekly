@@ -1,6 +1,10 @@
 {
-  "last_updated": "2026-09-19",
+  "last_updated": "2026-09-25",
   "covered": [
+    {
+      "topic_slug": "network-effects-as-a-moat",
+      "date": "2026-09-25"
+    },
     {
       "topic_slug": "risk-at-each-stage",
       "date": "2026-09-19"
