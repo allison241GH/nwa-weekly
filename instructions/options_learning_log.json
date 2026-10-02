@@ -1,6 +1,10 @@
 {
-  "last_updated": "2026-09-25",
+  "last_updated": "2026-10-02",
   "covered": [
+    {
+      "topic_slug": "when-not-to-sell-covered-calls",
+      "date": "2026-10-02"
+    },
     {
       "topic_slug": "tax-treatment-of-covered-calls",
       "date": "2026-09-25"

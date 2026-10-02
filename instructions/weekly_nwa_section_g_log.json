@@ -1,6 +1,10 @@
 {
-  "last_updated": "2026-09-25",
+  "last_updated": "2026-10-02",
   "covered": [
+    {
+      "topic_slug": "investment-memo",
+      "date": "2026-10-02"
+    },
     {
       "topic_slug": "network-effects-as-a-moat",
       "date": "2026-09-25"

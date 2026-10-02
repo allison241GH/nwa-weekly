@@ -1,8 +1,80 @@
 {
-  "last_updated": "2026-09-25",
+  "last_updated": "2026-10-02",
   "items": [
     {
-      "headline": "Markets (wk of Sep 21): US equities ground higher despite a bond selloff — S&P 500 ~7,743, Nasdaq ~27,069; 10-yr Treasury ~5.18% (highest since GFC, 30-yr ~5.48%); oil slid toward $92 on easing Gulf tensions; Fed stayed hawkish (Williams: another hike by year-end 'reasonable'), Oct hike odds ~70%",
+      "headline": "Markets (wk of Sep 28): Nasdaq closed at a record ~30,808 (QQQ ~$753) and S&P 500 ~flat-to-up on the week (+0.2%) after a soft September jobs report cooled Fed-hike fears; 10-yr Treasury eased toward ~5.25% (30-yr ~5.63%), markets pricing Fed on hold in October",
+      "source": "CNBC / Yahoo Finance / GuruFocus",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-2-dow-sp-500-nasdaq-september-jobs-report-080623878.html",
+      "date_reported": "2026-10-02"
+    },
+    {
+      "headline": "Crunchbase: 40%+ of all 2026 seed & Series A dollars have gone to $100M+ rounds; this week Rhoda AI emerged from stealth with a $450M Series A (robotic intelligence), Nexthop AI raised $500M Series B (AI switching infra), Ricursive Intelligence a $300M Series A at $4B",
+      "source": "Crunchbase News",
+      "url": "https://news.crunchbase.com/venture/seed-seriesa-startup-megadeals-ai-2026/",
+      "date_reported": "2026-10-02"
+    },
+    {
+      "headline": "OpenAI DevDay (Sep 29): 20+ announcements incl. 'Dots' always-on persistent agents (each with a cloud computer), a ChatGPT Apps platform letting devs build native apps for ~1.2B weekly users, an Agents API with computer use, and GPT-6.1 Sol; Altman/Friar discussed an eventual IPO",
+      "source": "OpenAI / CNBC / InfoQ",
+      "url": "https://openai.com/index/devday-2026-recap/",
+      "date_reported": "2026-10-02"
+    },
+    {
+      "headline": "Anthropic shipped Claude Sonnet 5.5 (Sep 28) and took Claude for Government to general availability at FedRAMP High (Sep 30), opening the regulated public-sector market",
+      "source": "ExecutiveBiz / Releasebot",
+      "url": "https://executivebiz.com/articles/claude-for-government-fedramp-high-general-availability",
+      "date_reported": "2026-10-02"
+    },
+    {
+      "headline": "Varda Space raised a $251M Series D (Sep 30) to scale in-space manufacturing and orbital-return vehicles (microgravity pharma crystallization, hypersonic re-entry testing)",
+      "source": "Crunchbase News",
+      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-space-fintech-temporal/",
+      "date_reported": "2026-10-02"
+    },
+    {
+      "headline": "Cornelis Networks raised $205M for high-performance networking for AI/HPC workloads — interconnect/switching as its own fundable category in the AI buildout",
+      "source": "Crunchbase News",
+      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-space-fintech-temporal/",
+      "date_reported": "2026-10-02"
+    },
+    {
+      "headline": "Jeeves raised $110M equity as a stablecoin-native banking platform; rhymes with YC's new option to take up to $500K of its investment in stablecoins — crypto rails becoming default startup-finance infra",
+      "source": "Parsers / FinSMEs",
+      "url": "https://parsers.substack.com/p/funding-rounds-report-weekly-of-september-985",
+      "date_reported": "2026-10-02"
+    },
+    {
+      "headline": "Humanoid race now a data/deployment race: Tesla ramping Optimus toward ~1,000 units/week with a factory-work reveal expected this fall; Figure past 10,000 partner deployments; Sam Altman says OpenAI 'will definitely do a humanoid'",
+      "source": "Objectways / Digitimes",
+      "url": "https://objectways.com/blog/humanoid-robots-news-roundup-for-september-2026/",
+      "date_reported": "2026-10-02"
+    },
+    {
+      "headline": "Vertical AI kept pulling checks: Trase raised $107M seed for an AI operating system for healthcare; Confido raised a $55M Series B (Insight, YC, Footwork) for AI-powered commercial operations",
+      "source": "Crescendo AI / Crunchbase",
+      "url": "https://www.crescendo.ai/news/latest-vc-investment-deals-in-ai-startups",
+      "date_reported": "2026-10-02"
+    },
+    {
+      "headline": "Learn: 'a16z and the Architecture of AI Capital (2026 Edition)' — how a16z's thesis shifted from 'software is eating the world' to 'AI is eating software' and reorganized its deployment and US-China framing",
+      "source": "Medium / NOX Ventures",
+      "url": "https://medium.com/@NOX_Ventures/a16z-and-the-architecture-of-ai-capital-a-2026-edition-9d7e0dac22c9",
+      "date_reported": "2026-10-02"
+    },
+    {
+      "headline": "Learn: 2026 cognitive-offloading evidence (systematic review of ChatGPT in higher ed; MIT Media Lab follow-on; Michelle Miller 'Critical Thinking, Creative Thinking, and AI,' Oct 1) — scaffolded AI use protects thinking, unstructured use erodes it; FAU teaching material",
+      "source": "MIT Media Lab",
+      "url": "https://www.media.mit.edu/articles/ai-s-impact-on-cognitive-ability-mit-study-reveals-more-troubling-data/",
+      "date_reported": "2026-10-02"
+    },
+    {
+      "headline": "Cycling: Il Lombardia (Oct 10) — season's fifth and final Monument, 239km Bergamo to Como, start list with Pogacar (chasing a 6th straight), Evenepoel, van der Poel, Vingegaard",
+      "source": "Cyclingnews",
+      "url": "https://www.cyclingnews.com/pro-cycling/races/il-lombardia-2026/",
+      "date_reported": "2026-10-02"
+    },
+    {
+      "headline": "Markets (wk of Sep 21): US equities ground higher despite a bond selloff — S&P 500 ~7,743, Nasdaq ~27,069; 10-yr Treasury ~5.18% (highest since GFC, 30-yr ~5.48%); oil slid toward $92; Fed stayed hawkish (Williams: another hike by year-end 'reasonable'), Oct hike odds ~70%",
       "source": "CNBC / Yahoo Finance / TheStreet",
       "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-september-25-dow-sp-500-nasdaq-081738529.html",
       "date_reported": "2026-09-25"
@@ -26,7 +98,7 @@
       "date_reported": "2026-09-25"
     },
     {
-      "headline": "Figure unveiled Helix 2.5 (Sep 17; Forbes Sep 21) — robots completed chores in 30 unseen homes at 56% zero-shot (6x jump from 9%), the entire gain traced to training on 'Index,' its ~$1B crowdsourced human-activity dataset (same robot/architecture)",
+      "headline": "Figure unveiled Helix 2.5 (Sep 17; Forbes Sep 21) — robots completed chores in 30 unseen homes at 56% zero-shot (6x jump from 9%), the entire gain traced to training on 'Index,' its ~$1B crowdsourced human-activity dataset",
       "source": "Forbes (John Koetsier)",
       "url": "https://www.forbes.com/sites/johnkoetsier/2026/09/21/figures-billion-dollar-physical-ai-bet-delivered-a-6x-jump-in-robot-chore-success/",
       "date_reported": "2026-09-25"
@@ -38,13 +110,13 @@
       "date_reported": "2026-09-25"
     },
     {
-      "headline": "Precision Neuroscience raised a $250M Series D (Sep 24), co-led by Ackman's Pershing Square + Ackman-Oxman Institute (total ~$430M) — funds FDA review of its Layer 7 cortical brain-computer interface",
+      "headline": "Precision Neuroscience raised a $250M Series D (Sep 24), co-led by Ackman's Pershing Square (total ~$430M) — funds FDA review of its Layer 7 cortical brain-computer interface",
       "source": "Tech Startups",
       "url": "https://techstartups.com/2026/09/24/venture-capital-startup-funding-roundup-september-24-2026-ark-invest-evolution-equity-mirae-asset-capital-socratic-partners-more/",
       "date_reported": "2026-09-25"
     },
     {
-      "headline": "Rightway raised a $155M Series E (Sep 24) — healthcare-navigation/PBM platform led by Francisco Partners with Thrive Capital and Khosla; now serves 45 Fortune 500 employers, scaling AI features",
+      "headline": "Rightway raised a $155M Series E (Sep 24) — healthcare-navigation/PBM platform led by Francisco Partners with Thrive Capital and Khosla; serves 45 Fortune 500 employers, scaling AI features",
       "source": "Tech Startups",
       "url": "https://techstartups.com/2026/09/24/venture-capital-startup-funding-roundup-september-24-2026-ark-invest-evolution-equity-mirae-asset-capital-socratic-partners-more/",
       "date_reported": "2026-09-25"
@@ -65,18 +137,6 @@
       "headline": "Agent-native tools shipped: Ando exited stealth (~$20M) as team-messaging where AI agents are first-class participants (Sep 24), and Strada shipped agent record/replay automation inside legacy portals with audit logs (Sep 24)",
       "source": "AI Agent Store",
       "url": "https://aiagentstore.ai/ai-agent-news/this-week",
-      "date_reported": "2026-09-25"
-    },
-    {
-      "headline": "Learn: 'Multi-Agent Workflows in Claude Code: Skills, Subagents & Handoffs' (YouTube) — builder-grade walkthrough of orchestrating multiple Claude Code agents",
-      "source": "YouTube",
-      "url": "https://www.youtube.com/watch?v=qiDalcMeBFk",
-      "date_reported": "2026-09-25"
-    },
-    {
-      "headline": "Learn: 2026 cognitive-offloading research (Frontiers in Psychology; Shen & Tamkin developer study) — heavy AI use produces working output while eroding conceptual understanding/debugging ability; FAU teaching material",
-      "source": "Frontiers in Psychology",
-      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1878629/full",
       "date_reported": "2026-09-25"
     },
     {
@@ -110,27 +170,9 @@
       "date_reported": "2026-09-19"
     },
     {
-      "headline": "Impulse Space closed ~$308M for in-space (orbital transfer) vehicles — one of the two largest venture rounds of the week (Sep 12-18)",
-      "source": "Crunchbase News",
-      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-space-fintech-temporal/",
-      "date_reported": "2026-09-19"
-    },
-    {
       "headline": "Factory raised $200M at a $5B valuation (Sep 15) from Blackstone, Khosla, Sequoia (angels Gerstner, Benioff) — 'self-improving software factories' for enterprise engineering; tripled valuation in five months",
       "source": "SiliconANGLE",
       "url": "https://siliconangle.com/2026/09/15/factory-raises-200m-for-its-self-improving-software-development-platform/",
-      "date_reported": "2026-09-19"
-    },
-    {
-      "headline": "Anthropic shipped 'Claude for Small Business' (Sep 15): 43 workflows + 27 connectors (Shopify, Salesforce, Zoom, Xero, Gusto, Square, Stripe, Zapier), plus a Claude for Financial Advisors plugin with audit logs for RIA recordkeeping",
-      "source": "Claude by Anthropic",
-      "url": "https://claude.com/blog-category/announcements",
-      "date_reported": "2026-09-19"
-    },
-    {
-      "headline": "Tandem Health raised €86.5M (~$100M) Series B (Sep 14) for clinical AI documentation/software, scaling across European health systems (Stockholm)",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/09/14/startup-funding-news-today-september-14-2026-chift-qupital-tandem-health-fortaegis-more/",
       "date_reported": "2026-09-19"
     },
     {
@@ -138,36 +180,6 @@
       "source": "TechCrunch / Dealroom / SiliconRepublic",
       "url": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
       "date_reported": "2026-09-19"
-    },
-    {
-      "headline": "Robotics startups raised ~$55.8B in 2026 (Dealroom), already nearly double all of 2025; state capital (China ~$138B AI/robotics fund) now a structural force in physical-AI funding",
-      "source": "Briefs.co / Dealroom",
-      "url": "https://www.briefs.co/news/robotics-startups-raised-23-billion-in-2026-closing-in-on-all-of-2025/",
-      "date_reported": "2026-09-19"
-    },
-    {
-      "headline": "Reid Hoffman calls for a new, pragmatic political approach to AI focused on practical near-term benefits (WaPo, Sep 16)",
-      "source": "Washington Post",
-      "url": "https://www.washingtonpost.com/technology/2026/09/16/linkedin-co-founder-reid-hoffman-calls-new-political-approach-ai/",
-      "date_reported": "2026-09-19"
-    },
-    {
-      "headline": "NHTSA opened an investigation into Tesla's self-certification that the Cybercab (no wheel/pedals, camera-only) meets federal motor-vehicle safety standards, as paid unsupervised rides run in TX/FL",
-      "source": "TechCrunch / CNN",
-      "url": "https://en.wikipedia.org/wiki/Tesla_Cybercab",
-      "date_reported": "2026-09-19"
-    },
-    {
-      "headline": "Cohere in advanced talks to raise $2-3B at a ~$20B valuation (roughly double its early-2025 mark), reportedly including the Canadian government; a marquee test of the 'sovereign AI' thesis",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-11/ai-firm-cohere-in-talks-for-up-to-3-billion-raise-report-says",
-      "date_reported": "2026-09-11"
-    },
-    {
-      "headline": "YC Summer 2026 Demo Day (Sep 10) presented 234 companies to ~1,500 investors; Industrials jumped to ~23% of the batch, with founders clustering around agents that do work, agent-safety infra, and AI in the physical world",
-      "source": "Forbes / Y Combinator / Foundevo",
-      "url": "https://www.forbes.com/sites/dariashunina/2026/09/03/meet-the-yc-startups-betting-on-what-comes-next/",
-      "date_reported": "2026-09-11"
     }
   ]
 }

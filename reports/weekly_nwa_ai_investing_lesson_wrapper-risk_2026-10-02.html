@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Investing — Wrapper Risk</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #ffffff; color: #1a1a1a; line-height: 1.65; font-size: 16px; }
+    .outer { max-width: 860px; margin: 0 auto; padding: 0 20px 60px; }
+
+    .site-header { background: #0a1628; color: #fff; padding: 32px 24px 28px; margin-bottom: 36px; }
+    .site-header .eyebrow { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #c4b5fd; margin-bottom: 8px; }
+    .site-header h1 { font-size: 1.55rem; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 4px; }
+    .site-header .date-range { font-size: 0.95rem; opacity: 0.78; margin-bottom: 8px; }
+    .site-header .subtitle { font-size: 0.82rem; opacity: 0.6; font-style: italic; }
+
+    .coaching-card { background: #f5f3ff; border-left: 5px solid #7c3aed; border-radius: 0 8px 8px 0; padding: 28px 30px; margin-bottom: 28px; }
+    .coaching-card .coaching-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #7c3aed; margin-bottom: 8px; }
+    .coaching-card h1.lesson-title { font-size: 1.35rem; font-weight: 700; color: #4c1d95; margin-bottom: 6px; letter-spacing: -0.01em; }
+    .coaching-card .lesson-date { font-size: 0.85rem; color: #6d28d9; margin-bottom: 18px; font-style: italic; }
+    .coaching-card h2 { font-size: 1rem; font-weight: 700; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 24px; margin-bottom: 10px; padding-top: 16px; border-top: 1px solid #ddd6fe; }
+    .coaching-card h2:first-of-type { padding-top: 0; border-top: none; }
+    .coaching-card p { font-size: 0.95rem; color: #5b21b6; margin-bottom: 14px; }
+    .coaching-card p:last-child { margin-bottom: 0; }
+    .coaching-card strong { font-weight: 700; color: #4c1d95; }
+    .coaching-card em { font-style: italic; }
+    .coaching-card a { color: #7c3aed; font-weight: 600; }
+
+    .footer-link { text-align: center; font-size: 0.85rem; color: #64748b; margin-top: 24px; }
+    .footer-link a { color: #7c3aed; font-weight: 600; text-decoration: none; }
+    .footer-link a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+<div class="site-header">
+  <div class="outer" style="padding-bottom:0;">
+    <div class="eyebrow">Weekly NWA Briefings · AI Investing</div>
+    <h1>Wrapper Risk</h1>
+    <div class="date-range">Lesson of October 2, 2026</div>
+    <div class="subtitle">25-topic AI investing curriculum · 1:1 coaching format</div>
+  </div>
+</div>
+
+<div class="outer">
+  <div class="coaching-card">
+    <div class="coaching-label">This Week's Lesson</div>
+    <h1 class="lesson-title">Wrapper Risk</h1>
+    <div class="lesson-date">October 2, 2026 · Topic: wrapper-risk</div>
+
+    <p>A "wrapper" is a startup whose core product is a thin layer of UI, prompt engineering, and workflow sitting on top of someone else's foundation model — the value is mostly in the model, and the company is renting it. <strong>Wrapper risk</strong> is the diligence question that follows: if the model provider (OpenAI, Anthropic, Google) decided to offer this feature natively tomorrow, or raised prices, or changed its terms, would this company still have a business? In an AI-era deal, this is no longer a clever edge-case question — it's the first thing a serious investor should ask, because the entire moat economics of the company hinge on the answer.</p>
+
+    <p>This matters acutely for angel and seed investors because wrappers are <em>the most common shape of AI startup you'll see</em>, and they demo beautifully. A slick interface on top of GPT-6 or Claude can look like a $50M company in a 10-minute pitch while having essentially zero defensibility. The job at the earliest stage is to separate the wrapper that's a <em>feature</em> (something a platform will absorb or a competitor will clone in a weekend) from the wrapper that's a <em>company</em> — one that has used the model as a wedge to accumulate something the model provider <em>can't</em> easily replicate: proprietary data, deep workflow integration, a distribution lock, or a regulated/trusted position. The model is the commodity; the question is what durable asset the company is compounding on top of it.</p>
+
+    <p>The coaching insight a seasoned investor would share: <strong>"wrapper" is not an insult, and "not a wrapper" is not a strategy — the real test is platform risk versus platform leverage.</strong> Every great AI application is technically a wrapper at the start; the winners convert the model's leverage into a moat the platform owner won't bother or be able to attack. The way you underwrite this is with the "disintermediation test": imagine the platform launches your exact feature to its full user base. If that kills the company, you're funding a feature at a company price. If the company still wins because it owns the data, the workflow, the relationship, or the compliance posture — <em>that's</em> an investable AI business. Ask it on every AI deal, and ask it harder the week a platform expands its surface area.</p>
+
+    <h2>Key Terms</h2>
+    <p><strong>Wrapper</strong> — A startup whose product is primarily a lightweight interface and workflow layer on top of a third-party foundation model, with limited proprietary technology of its own. Defensibility depends entirely on what it builds <em>around</em> the model.</p>
+    <p><strong>Platform Risk</strong> — The risk that the platform a startup depends on (here, the foundation-model provider) changes pricing, terms, or — most dangerously — launches the startup's core feature itself, disintermediating it. The inverse is <em>platform leverage</em>: using that dependency to grow faster than you otherwise could while building a separate moat.</p>
+
+    <h2>Real-World Example</h2>
+    <p>This week's <strong>OpenAI DevDay (Sept 29, 2026)</strong> was a live wrapper-risk event. OpenAI launched a <strong>ChatGPT Apps platform</strong> letting developers build full applications <em>natively inside ChatGPT's ~1.2 billion weekly users</em>, plus "Dots" always-on agents and an Agents API. Overnight, every AI startup whose product was essentially "ChatGPT, but with a nicer interface for task X" had to ask whether OpenAI just became both its distribution channel and its most dangerous competitor.</p>
+    <p>Contrast that with a company like <strong>Harvey</strong> (legal AI) or a vertical player like this week's <strong>Trase</strong> ($107M for a healthcare AI OS): their defensibility isn't the model — it's proprietary legal/clinical data, deep integration into regulated professional workflows, and enterprise trust relationships that OpenAI has no appetite to build. Same underlying models; completely different wrapper risk.</p>
+
+    <h2>Jamie's Action Prompt</h2>
+    <p>Take one AI company in NWA's current pipeline or portfolio and run the disintermediation test in writing: <em>"If OpenAI or Anthropic shipped this exact capability to all their users next week, what specifically keeps this company alive?"</em> If your honest answer is proprietary data, workflow lock-in, distribution, or a regulated/trusted moat — strong signal. If the answer is "a nicer UI" or "we did it first," you've found the wrapper risk, and it belongs at the top of the memo.</p>
+  </div>
+
+  <div class="footer-link">
+    Read on web: <a href="https://nwa-weekly.vercel.app/ai-investing/wrapper-risk/2026-10-02" target="_blank" rel="noopener">nwa-weekly.vercel.app/ai-investing/wrapper-risk/2026-10-02</a>
+  </div>
+</div>
+</body>
+</html>
