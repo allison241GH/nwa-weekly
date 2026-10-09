@@ -1,6 +1,10 @@
 {
-  "last_updated": "2026-10-02",
+  "last_updated": "2026-10-09",
   "covered": [
+    {
+      "topic_slug": "the-wheel-and-cash-secured-puts",
+      "date": "2026-10-09"
+    },
     {
       "topic_slug": "when-not-to-sell-covered-calls",
       "date": "2026-10-02"

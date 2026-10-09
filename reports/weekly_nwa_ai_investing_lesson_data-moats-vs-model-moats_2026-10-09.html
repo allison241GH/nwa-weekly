@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Investing — Data Moats vs. Model Moats</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #ffffff; color: #1a1a1a; line-height: 1.65; font-size: 16px; }
+    .outer { max-width: 860px; margin: 0 auto; padding: 0 20px 60px; }
+
+    .site-header { background: #0a1628; color: #fff; padding: 32px 24px 28px; margin-bottom: 36px; }
+    .site-header .eyebrow { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #c4b5fd; margin-bottom: 8px; }
+    .site-header h1 { font-size: 1.55rem; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 4px; }
+    .site-header .date-range { font-size: 0.95rem; opacity: 0.78; margin-bottom: 8px; }
+    .site-header .subtitle { font-size: 0.82rem; opacity: 0.6; font-style: italic; }
+
+    .coaching-card { background: #f5f3ff; border-left: 5px solid #7c3aed; border-radius: 0 8px 8px 0; padding: 28px 30px; margin-bottom: 28px; }
+    .coaching-card .coaching-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #7c3aed; margin-bottom: 8px; }
+    .coaching-card h1.lesson-title { font-size: 1.35rem; font-weight: 700; color: #4c1d95; margin-bottom: 6px; letter-spacing: -0.01em; }
+    .coaching-card .lesson-date { font-size: 0.85rem; color: #6d28d9; margin-bottom: 18px; font-style: italic; }
+    .coaching-card h2 { font-size: 1rem; font-weight: 700; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 24px; margin-bottom: 10px; padding-top: 16px; border-top: 1px solid #ddd6fe; }
+    .coaching-card h2:first-of-type { padding-top: 0; border-top: none; }
+    .coaching-card p { font-size: 0.95rem; color: #5b21b6; margin-bottom: 14px; }
+    .coaching-card p:last-child { margin-bottom: 0; }
+    .coaching-card strong { font-weight: 700; color: #4c1d95; }
+    .coaching-card em { font-style: italic; }
+    .coaching-card a { color: #7c3aed; font-weight: 600; }
+
+    .footer-link { text-align: center; font-size: 0.85rem; color: #64748b; margin-top: 24px; }
+    .footer-link a { color: #7c3aed; font-weight: 600; text-decoration: none; }
+    .footer-link a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+<div class="site-header">
+  <div class="outer" style="padding-bottom:0;">
+    <div class="eyebrow">Weekly NWA Briefings · AI Investing</div>
+    <h1>Data Moats vs. Model Moats</h1>
+    <div class="date-range">Lesson of October 9, 2026</div>
+    <div class="subtitle">25-topic AI investing curriculum · 1:1 coaching format</div>
+  </div>
+</div>
+
+<div class="outer">
+  <div class="coaching-card">
+    <div class="coaching-label">This Week's Lesson</div>
+    <h1 class="lesson-title">Data Moats vs. Model Moats</h1>
+    <div class="lesson-date">October 9, 2026 · Topic: data-moats-vs-model-moats</div>
+
+    <p>For two years, the reflexive answer to "what's your moat?" was "our model." Founders pointed to a fine-tuned checkpoint, a clever architecture, a benchmark score, and investors nodded. In 2026 that answer is close to worthless — and this week made the reason concrete. <strong>Reflection shipped Beam</strong>, a frontier <em>open-weight</em> model that claims to match the best Chinese open models on reasoning at a fraction of the compute cost, in the same seven days that Mistral, Google, Z.ai, and Anthropic all pushed new models. A <strong>model moat</strong> — defensibility that lives <em>inside</em> the weights — evaporates the moment a comparable capability becomes available to everyone, and the field is now converging and leaking into open weights so fast that any raw-capability lead is measured in months, not years.</p>
+    <p>The durable alternative is a <strong>data moat</strong>, but the distinction most founders botch is <em>which kind</em> of data. Simply <em>possessing</em> a large, expensive-to-collect dataset is not a moat — it's static, and a competitor (or a better base model) can eventually match it. A real data moat is a <strong>flywheel</strong>: the product is used, that usage generates proprietary data, that data <em>measurably</em> improves the product for the next user, which attracts more usage, which generates more data. The dataset isn't the moat — the <em>compounding loop</em> is. This is why a startup wrapping GPT with a thin UI has no moat (nothing it touches improves anything), while one that sits inside a workflow, captures outcome data no one else sees, and gets visibly better each quarter has one that deepens with every customer.</p>
+    <p>The coaching insight that separates disciplined AI investors from the crowd: in diligence, stop grading the model and start <strong>tracing the loop</strong>. Ask the founder to draw it — what data does usage produce, how exactly does that data re-enter and improve the product, and how long until a well-funded competitor could replicate it? If they can't draw a loop, or if the loop runs on data a rival can buy or scrape, you're looking at a model moat in disguise, and you should price it as a feature with a 12-month shelf life, not a company. The best AI businesses of this cycle will look boring on the model axis and formidable on the data-and-workflow axis — proprietary feedback, outcome data, and switching costs that make them painful to rip out. That's the moat that survives the next open-weight release, and there's always a next one.</p>
+
+    <h2>Key Terms</h2>
+    <p><strong>Model Moat</strong> — Claimed defensibility that lives inside the model itself: a proprietary architecture, fine-tune, or benchmark lead. In a world of converging frontier models and open weights (e.g., Beam), this advantage is ephemeral — it erodes the moment a comparable capability ships to everyone, which now happens on a timescale of months.</p>
+    <p><strong>Data Flywheel</strong> — A self-reinforcing loop where product usage generates proprietary data that <em>measurably</em> improves the product, attracting more usage and more data. The moat is the compounding loop, not the raw dataset — static data can be matched; a faster-learning loop compounds away from competitors.</p>
+
+    <h2>Real-World Example</h2>
+    <p>Contrast two 2026 archetypes. <strong>Reflection's Beam</strong> demonstrates the commoditization pressure directly: an open-weight model matching leading reasoning benchmarks at low cost means any company whose edge <em>was</em> "a smart model" just watched that edge get handed to the public. On the other side, look at why the most defensible AI applications this cycle — vertical tools embedded in healthcare, legal, and commercial-ops workflows that kept raising at real valuations — hold up: they capture outcome data from a specific workflow (what a clinician actually corrected, which contract clause a lawyer edited) that no foundation model and no competitor can see.</p>
+    <p>The model under the hood is increasingly interchangeable; the proprietary feedback loop and the workflow lock-in are not. The flywheel, not the checkpoint, is what the smart money is now underwriting.</p>
+
+    <h2>Jamie's Action Prompt</h2>
+    <p>Take one AI company in the NWA pipeline (or one you're tracking) and run the "swap test": if its current foundation model were replaced tomorrow with a free open-weight model like Beam, what — if anything — would still make it hard to compete with? Write down the specific proprietary data it captures from usage and the exact mechanism by which that data improves the product. If your answer is thin, that's your signal the moat is in the model (temporary) rather than the data loop (durable) — and you should price the round accordingly.</p>
+  </div>
+
+  <div class="footer-link">
+    Read on web: <a href="https://nwa-weekly.vercel.app/ai-investing/data-moats-vs-model-moats/2026-10-09" target="_blank" rel="noopener">nwa-weekly.vercel.app/ai-investing/data-moats-vs-model-moats/2026-10-09</a>
+  </div>
+</div>
+</body>
+</html>

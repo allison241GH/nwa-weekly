@@ -1,6 +1,78 @@
 {
-  "last_updated": "2026-10-02",
+  "last_updated": "2026-10-09",
   "items": [
+    {
+      "headline": "Markets (wk of Oct 5): volatile week ended green — S&P 500 ~7,811 (+0.6% Fri), Nasdaq ~27,366, both up on the week into earnings season after a midweek ~1.4% Nasdaq drop on an OpenAI revenue warning and AI-bubble calls; 10-yr Treasury ~5.25% (30-yr ~5.61%), Fed-hold odds ~81% for October",
+      "source": "TheStreet / Yahoo Finance",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-09-2026",
+      "date_reported": "2026-10-09"
+    },
+    {
+      "headline": "AI-bubble debate goes mainstream: Ray Dalio warns AI is a 'classic bubble' near bursting, Mike Novogratz calls it 'the biggest bubble of our lifetime' but says pile in; an OpenAI revenue warning dragged the Nasdaq ~1.4%; Anthropic reportedly pushed its IPO Oct→Nov and OpenAI ruled out a 2026 listing",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-07/ray-dalio-warns-ai-bubble-is-approaching-burst-point",
+      "date_reported": "2026-10-09"
+    },
+    {
+      "headline": "Manus raised >$500M (Oct 8), its first round since regulators forced Meta to abandon an acquisition (Tencent among backers); same week a16z led TypeSafe AI (model hit 1T tokens in 3 days) and backed Preference Model",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/08/manus-fund-raise-meta-muse-tencent.html",
+      "date_reported": "2026-10-09"
+    },
+    {
+      "headline": "Anthropic courts builders: Claude for Startups expanded to a free year of Claude Team (5 seats) + $1,000 API credits (Oct 6), shipped Claude Haiku 5.5 (Oct 7, ~75% cheaper), and launched Claude Marketplace with 2,000+ plugins; Docs/Slides/Design out of beta on all plans",
+      "source": "TechCrunch / Releasebot",
+      "url": "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/",
+      "date_reported": "2026-10-09"
+    },
+    {
+      "headline": "Reflection debuted Beam (Oct 5), a frontier open-weight model claiming to match leading Chinese open models on reasoning at far lower compute cost; part of a release-heavy week (Mistral Large 4, Gemini Nano Banana 2.1, Z.ai GLM 5.3, Claude Haiku 5.5)",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
+      "date_reported": "2026-10-09"
+    },
+    {
+      "headline": "Instinct raised a reported $1B Series C for a personal AI assistant for everyday tasks — the clearest consumer 'do-it-for-me' agent wager of the cycle, challenging OpenAI/Google assistant ambitions",
+      "source": "Crunchbase / Superpower Daily",
+      "url": "https://superpowerdaily.com/signals/funding",
+      "date_reported": "2026-10-09"
+    },
+    {
+      "headline": "YC Fall 2026 batch skews deep tech with 'far more grounded' valuations (Demo Day Dec 2), headlined by Atomarine (nuclear-powered data centers floating at sea) — hard-atoms, capital-intensive bets back at the earliest stage",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/13/the-9-buzziest-startups-from-y-combinators-latest-demo-day-according-to-vcs/",
+      "date_reported": "2026-10-09"
+    },
+    {
+      "headline": "Physical-AI startup Atoms led the week's funding table as US venture dollars fell to ~$3.97B (-57% WoW) with 8 of 10 biggest rounds AI-native, incl. Valar Atomics $660M Series B (nuclear for AI) and Armadin $255.5M Series B at $2.5B (a16z)",
+      "source": "Crunchbase News",
+      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-physical-ai-fintech-defense-atoms/",
+      "date_reported": "2026-10-09"
+    },
+    {
+      "headline": "a16z reportedly raising toward a $10B vehicle to double down on AI, on top of its $1.1B 'Machine Age' fund for AI's physical buildout; ~40% of new capital already pointed at AI — setting pricing gravity for smaller checks",
+      "source": "ValueAdd VC / TechCrunch",
+      "url": "https://valueaddvc.com/blog/a16z-ai-fund-what-andreessen-horowitz-is-betting-on-in-the-ai-era",
+      "date_reported": "2026-10-09"
+    },
+    {
+      "headline": "Cycling: Il Lombardia (Oct 10, 239km Bergamo→Como) runs WITHOUT Tadej Pogacar for the first time since 2020 (out injured after 5 straight wins), opening the final Monument for Evenepoel, del Toro, Seixas, McNulty",
+      "source": "Cyclingnews",
+      "url": "https://www.cyclingnews.com/pro-cycling/racing/a-rare-return-to-unpredictability-as-no-tadej-pogacar-at-il-lombardia-opens-the-door-to-the-same-anarchy-as-worlds-analysis/",
+      "date_reported": "2026-10-09"
+    },
+    {
+      "headline": "Learn (video): 'Multi-Agent Workflows in Claude Code: Skills, Subagents & Handoffs (2026)' — a build-alongside walkthrough of orchestrating multiple agents and subagent handoffs with Skills",
+      "source": "YouTube",
+      "url": "https://www.youtube.com/watch?v=qiDalcMeBFk",
+      "date_reported": "2026-10-09"
+    },
+    {
+      "headline": "Learn (research): 2026 systematic review of ChatGPT in higher ed (Li, Cui & Serra) — AI boosts creative output but critical-thinking gains depend on scaffolding (verification, rubrics, AI-literacy); unstructured use erodes judgment; FAU teaching material",
+      "source": "Michelle Miller, PhD (R3, Oct 1)",
+      "url": "https://michellemillerphd.substack.com/p/r3-49-october-1-2026-critical-thinking",
+      "date_reported": "2026-10-09"
+    },
     {
       "headline": "Markets (wk of Sep 28): Nasdaq closed at a record ~30,808 (QQQ ~$753) and S&P 500 ~flat-to-up on the week (+0.2%) after a soft September jobs report cooled Fed-hike fears; 10-yr Treasury eased toward ~5.25% (30-yr ~5.63%), markets pricing Fed on hold in October",
       "source": "CNBC / Yahoo Finance / GuruFocus",
@@ -138,48 +210,6 @@
       "source": "AI Agent Store",
       "url": "https://aiagentstore.ai/ai-agent-news/this-week",
       "date_reported": "2026-09-25"
-    },
-    {
-      "headline": "Markets (wk of Sep 14): Fed hiked 25bps to 3.75-4.00% on Sep 16 — first hike in 3 years, unanimous, dot plot signals one more hike in 2026; Nasdaq +2.6% (~26,523), S&P 500 +0.7% (~7,650), Dow -733 pts; 10-yr Treasury briefly above 5.0%",
-      "source": "TheStreet / Yahoo Finance / CNBC",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-18-2026",
-      "date_reported": "2026-09-19"
-    },
-    {
-      "headline": "Profound raised $180M Series D at ~$1.8B valuation (Sep 15), co-led by Sequoia and Kleiner Perkins — 'answer engine optimization' (AEO), measuring/shaping brand visibility inside AI answer engines",
-      "source": "AlleyWatch / Tech Startups",
-      "url": "https://alleywatch.com/2026/09/the-alleywatch-startup-daily-funding-report-9-15-2026/",
-      "date_reported": "2026-09-19"
-    },
-    {
-      "headline": "Anthropic disclosed (Sep 17-18) that Claude now LEADS ~26% of its own model R&D (up from 0% in February), completing tasks end-to-end from a high-level prompt under human supervision; ~90% of R&D done 'in collaboration' with Claude",
-      "source": "U.S. News / AP / Spectrum News",
-      "url": "https://www.usnews.com/news/business/articles/2026-09-17/anthropic-says-its-model-claude-is-helping-to-build-the-next-version-of-itself",
-      "date_reported": "2026-09-19"
-    },
-    {
-      "headline": "OpenAI (Sep 17) published a formal framework for tracking/probing/disclosing model 'misalignment' and named six reports of concerning behavior; separately began testing 'Sponsored Agents' ads in ChatGPT",
-      "source": "PBS / BNN Bloomberg / AP",
-      "url": "https://www.pbs.org/newshour/nation/openai-reveals-concerning-new-ai-behavior-and-vows-to-track-it-more-closely",
-      "date_reported": "2026-09-19"
-    },
-    {
-      "headline": "Temporal raised $550M Series E at a $12.55B valuation (Sep 14), led by Lightspeed — 'durable execution' reliability infra for agentic AI; ~$250M ARR (+200% YoY); customers OpenAI, Cursor, Netflix, JPMorgan",
-      "source": "Temporal / GeekWire / BusinessWire",
-      "url": "https://temporal.io/news/temporal-raises-550m-at-a-12-55b-valuation",
-      "date_reported": "2026-09-19"
-    },
-    {
-      "headline": "Factory raised $200M at a $5B valuation (Sep 15) from Blackstone, Khosla, Sequoia (angels Gerstner, Benioff) — 'self-improving software factories' for enterprise engineering; tripled valuation in five months",
-      "source": "SiliconANGLE",
-      "url": "https://siliconangle.com/2026/09/15/factory-raises-200m-for-its-self-improving-software-development-platform/",
-      "date_reported": "2026-09-19"
-    },
-    {
-      "headline": "Cognition (Devin) hit a $48B valuation on ~$900M run-rate and Harvey (legal AI) reached $15.5B ($550M, Sep 9) — application-layer AI companies priced at foundation-model scale",
-      "source": "TechCrunch / Dealroom / SiliconRepublic",
-      "url": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
-      "date_reported": "2026-09-19"
     }
   ]
 }
