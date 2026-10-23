@@ -1,6 +1,10 @@
 {
-  "last_updated": "2026-10-09",
+  "last_updated": "2026-10-23",
   "covered": [
+    {
+      "topic_slug": "the-ai-premium-discount-framework",
+      "date": "2026-10-23"
+    },
     {
       "topic_slug": "data-moats-vs-model-moats",
       "date": "2026-10-09"
