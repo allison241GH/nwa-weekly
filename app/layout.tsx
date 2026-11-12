@@ -48,9 +48,6 @@ export default function RootLayout({
               <Link href="/ai-investing" className="hover:opacity-80">
                 AI Investing
               </Link>
-              <Link href="/options" className="hover:opacity-80">
-                Options
-              </Link>
             </nav>
           </div>
         </header>
