@@ -1,6 +1,10 @@
 {
-  "last_updated": "2026-10-30",
+  "last_updated": "2026-11-06",
   "covered": [
+    {
+      "topic_slug": "mega-round-economics",
+      "date": "2026-11-06"
+    },
     {
       "topic_slug": "ai-valuation-premiums",
       "date": "2026-10-30"
