@@ -1,6 +1,10 @@
 {
-  "last_updated": "2026-11-06",
+  "last_updated": "2026-11-13",
   "covered": [
+    {
+      "topic_slug": "term-sheet-anatomy",
+      "date": "2026-11-13"
+    },
     {
       "topic_slug": "convertible-note-mechanics",
       "date": "2026-11-06"

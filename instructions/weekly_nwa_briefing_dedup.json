@@ -1,6 +1,90 @@
 {
-  "last_updated": "2026-11-06",
+  "last_updated": "2026-11-13",
   "items": [
+    {
+      "headline": "Markets (wk of Nov 9): snapback from the prior week's correction — S&P 500 +~2.5% to 7,561.67, Nasdaq +~2.3% to 25,136.27 (best week since August) despite a Friday chip-led fade (Nvidia's 6th straight weekly drop, AMD -8.7%); the real move was rates — hot CPI/PPI drove the 10-yr Treasury +~30bps to 5.15% and lifted December Fed-HIKE odds to ~85-90%, flipping the bet from cut to hike",
+      "source": "Yahoo Finance / CNBC",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html",
+      "date_reported": "2026-11-13"
+    },
+    {
+      "headline": "Jensen Huang resigned as Nvidia CEO, president and board member effective immediately (Nov 12) after 33 years, following allegations of extramarital affairs; CFO Colette Kress named interim CEO with NO succession plan in place — board hasn't picked a search firm and reportedly approached Arm CEO Rene Haas; a landmark governance-failure case at the keystone of the AI economy",
+      "source": "Fortune / CNBC",
+      "url": "https://fortune.com/2026/11/11/nvidia-oust-jensen-huang-spy-affairs/",
+      "date_reported": "2026-11-13"
+    },
+    {
+      "headline": "Anthropic released Claude Fable 5.2 to all customers (Nov 9), currently the top-ranked model in the overall frontier top 10, alongside Mythos 5.2 — the same model without the cyber- and biology-safety guardrails for gated use; the Fable/Mythos split productizes safety tiers",
+      "source": "BenchLM frontier rankings",
+      "url": "https://benchlm.ai/frontier-ai-models",
+      "date_reported": "2026-11-13"
+    },
+    {
+      "headline": "OpenAI closed the first $11B tranche of a round valuing it at $1.25T (SoftBank, MGX) — BELOW the $1.4-1.5T it originally sought, and only part of a target that may reach $20-30B; a visible private-AI valuation haircut at the very top of the market",
+      "source": "24/7 Wall St / Bloomberg",
+      "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
+      "date_reported": "2026-11-13"
+    },
+    {
+      "headline": "Fractile (British AI-inference chip startup) raised a $720M Series C at a $7B valuation (Nov 12), co-led by General Catalyst and March Capital with Sequoia, Databricks Ventures and Prosperity7 — fresh capital attacking Nvidia's inference margins the same week Nvidia lost its founder-CEO",
+      "source": "Tech Startups",
+      "url": "https://techstartups.com/2026/11/12/startup-funding-news-today-november-12-2026-fractile-uforce-agile-robots-imprint-more/",
+      "date_reported": "2026-11-13"
+    },
+    {
+      "headline": "Tesla Robotaxi edged past Waymo on the Texas AV registry (1,302 vehicles to 1,297, as of Nov 10) and flipped to 24/7 operation across all eight of its U.S. cities (Nov 11), adding San Antonio Nov 9; Texas fleet now 729 Model Ys + 573 Cybercabs — a scale milestone in the robotaxi race",
+      "source": "EVXL",
+      "url": "https://evxl.co/2026/11/11/tesla-passes-waymo-texas-robotaxi-registry-1302/",
+      "date_reported": "2026-11-13"
+    },
+    {
+      "headline": "Google's frontier cadence continued — Gemini 4 'Hydrogen' shipped Nov 12 and Gemini 4 'Carbon' opened to developers Nov 10 — keeping the 'no single model stays best for more than days' dynamic alive",
+      "source": "BenchLM",
+      "url": "https://benchlm.ai/frontier-ai-models",
+      "date_reported": "2026-11-13"
+    },
+    {
+      "headline": "Cycling: 2027 grid reshaping off the bike — ~a quarter of the Tour peloton may be on new frames next season as Chinese carbon brands (X-LAB, Quick-Pro) displace incumbents; Alpecin stacks a Classics/sprint roster (Mihkels, Garcia Cortina, van Uden)",
+      "source": "Velo / Cyclist",
+      "url": "https://velo.outsideonline.com/road/road-racing/bianchi-out-chinese-carbon-in-and-so-long-specialized-big-changes-coming-to-pro-team-bike-sponsorship/",
+      "date_reported": "2026-11-13"
+    },
+    {
+      "headline": "Trend: AI-capex buildout meeting a new gate — public/community and permitting resistance to data-center expansion drove part of the week's selloff; the binding constraint may be shifting from chips/capital to land, power and local politics",
+      "source": "Horizon Investments weekly recap",
+      "url": "https://www.horizoninvestments.com/weekly-market-recap-11092026/",
+      "date_reported": "2026-11-13"
+    },
+    {
+      "headline": "Trend: robotics forking — OpenAI disbanded its standalone robotics team (Fortune, Nov 13), betting general models (GPT-6 'Astra') can drive robots directly, while humanoid specialists press on (Figure hiring overnight human 'shift coordinators'; Swiss startup Embodied AI unveiled factory-floor humanoid 'AIR')",
+      "source": "Fortune via ExplainX / NewsNation",
+      "url": "https://explainx.ai/blog/openai-disbands-robotics-team-gpt-6-astra-robots-fortune-2026",
+      "date_reported": "2026-11-13"
+    },
+    {
+      "headline": "Learn (build): Claude Code dynamic workflows — Anthropic refreshed its 'Orchestrate subagents at scale' docs (Nov 12) and a widely-shared '8 Production Claude Code Workflows' guide updated Nov 9; plan-then-build and subagent-fan-out patterns ready for an FAU demo",
+      "source": "Claude Code Docs / ayautomate",
+      "url": "https://code.claude.com/docs/en/workflows",
+      "date_reported": "2026-11-13"
+    },
+    {
+      "headline": "Learn (research): 'The Impact of Generative AI on Critical Thinking: Cognitive Scaffolding, Substitution, and the Risk of Deskilling' (Human Affairs, 2026) — peer-reviewed synthesis finding AI use negatively predicts critical thinking (beta ~ -0.37, p<.001); FAU 'AI for Business Leaders' teaching material",
+      "source": "Human Affairs (journal)",
+      "url": "https://doi.org/10.1515/humaff-2026-0011",
+      "date_reported": "2026-11-13"
+    },
+    {
+      "headline": "Anthropic IPO dated Nov 19 (ticker ANT): price range $70-78, 825M shares, ~$1.4T fully diluted, ~20% earmarked for retail; pricing Nov 18, Nasdaq debut Nov 19 into a jittery chip tape — first true public comparable for a frontier lab",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html",
+      "date_reported": "2026-11-13"
+    },
+    {
+      "headline": "Trend/idea: Chinese open-weight models now ~89% of enterprise open-source-model spend (Menlo Ventures: Kimi ~61%, DeepSeek ~15%, GLM ~11%) after Moonshot published Kimi K3.1 Pro weights Nov 2 — base-layer commoditization accelerating; a build/diligence lens on closed-API dependence",
+      "source": "Menlo Ventures via open-model landscape roundup",
+      "url": "https://olikhatib.substack.com/p/free-open-and-nearly-as-good-chinas",
+      "date_reported": "2026-11-13"
+    },
     {
       "headline": "Markets (wk of Nov 2): worst week since the April 2025 tariff crash — S&P 500 -2.7% to 7,376.86, Nasdaq -3.4% to 24,579.42 (slid into correction Thursday) on an AI-valuation repricing (capex-payback doubts + post-election uncertainty), partly clawed back by a Friday chip-led bounce; 10-yr Treasury eased ~7bps on the week to 4.86% but rose Friday after a strong Oct jobs report kept a December Fed hike in play",
       "source": "24/7 Wall St / CNBC",
@@ -62,7 +146,7 @@
       "date_reported": "2026-11-06"
     },
     {
-      "headline": "Cycling: 2027 grid reshaping — Netcompany-Ineos enters its first full year backed by Danish AI tech firm Netcompany; active transfer market (Alpecin bulking up Classics/sprint roster with Mihkels/Garcia Cortina/van Uden; Arnaud de Lie expected to leave Lotto-Intermarche)",
+      "headline": "Cycling: 2027 grid reshaping — Netcompany-Ineos enters its first full year backed by Danish AI tech firm Netcompany; active transfer market (Alpecin bulking Classics/sprint roster; Arnaud de Lie expected to leave Lotto-Intermarche)",
       "source": "Cyclist / Cyclingnews",
       "url": "https://www.cyclist.co.uk/news/cycling-transfer-rumours",
       "date_reported": "2026-11-06"
@@ -144,66 +228,6 @@
       "source": "APA Monitor / Greater Good (Berkeley)",
       "url": "https://www.apa.org/monitor/2026/07-08/ai-job-skills-thinking",
       "date_reported": "2026-10-30"
-    },
-    {
-      "headline": "Markets (wk of Oct 19): risk-off rotation — S&P 500 ~7,624 (-0.5% wk), Nasdaq -0.7% (QQQ ~$703 after a ~2.9% midweek drop) as investors fled AI-spending exposure into staples/energy/utilities; 10-yr Treasury broke below 5% (~4.95% Thu, biggest 1-day drop since Mar 2023) before bouncing to ~5.0%; Fed expected to hold 3.75-4.0% Oct 28",
-      "source": "CNBC / TheStreet / 24-7 Wall St",
-      "url": "https://247wallst.com/investing/2026/10/23/the-10-year-yield-just-fell-below-5-as-investors-fled-ai-stocks/",
-      "date_reported": "2026-10-23"
-    },
-    {
-      "headline": "Tenstorrent (Jim Keller) closed a $1.5B Series E at a $6.2B post-money valuation (Oct 19), led by Trace Capital and Innovation X with ARK, Fidelity, T. Rowe Price, Morgan Stanley, Sandisk, Tether; scales Galaxy AI servers + open RISC-V silicon and open-weight models — the open/licensable alternative to Nvidia",
-      "source": "unite.ai / Tenstorrent / Morningstar",
-      "url": "https://www.unite.ai/tenstorrent-raises-1-5b-series-e-at-6-2b-valuation-to-scale-ai-compute/",
-      "date_reported": "2026-10-23"
-    },
-    {
-      "headline": "Anthropic opened a research preview of Claude Duet (Oct 21), a standalone proactive-agent app on Claude Opus 5.5: sends a morning brief across connected apps, keeps working in its own cloud VM with a browser, checks in before sensitive actions; answer to OpenAI 'Dots' and Meta 'Muse'; Pro/Max in the US",
-      "source": "SiliconANGLE / 9to5Mac",
-      "url": "https://siliconangle.com/2026/10/22/anthropic-introduces-claude-duet-a-proactive-ai-agent-for-professionals/",
-      "date_reported": "2026-10-23"
-    },
-    {
-      "headline": "a16z is renaming its crypto arm 'a16z Frontier' (Oct 22) and broadening its mandate from blockchain into AI, autonomous machines, and networks connecting people and AI agents; AI now ~64% of a16z's activity; topped the 2026 Strebulaev-Jackson AI venture ranking",
-      "source": "CoinDesk",
-      "url": "https://www.coindesk.com/business/2026/10/22/a16z-is-the-latest-vc-giant-to-widen-bets-beyond-crypto-and-into-ai-and-emerging-tech",
-      "date_reported": "2026-10-23"
-    },
-    {
-      "headline": "Flapping Airplanes, a year-old AI research lab, raised a $1B Series A at a $6B valuation (Oct 21) — nine months after a $180M seed — led by Index, Lux, Sequoia, GV, Kleiner Perkins; the week's clearest froth marker as public AI multiples compress",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
-      "date_reported": "2026-10-23"
-    },
-    {
-      "headline": "Otter.ai closed a $320M growth round (Oct 20, General Catalyst) for its meeting-transcription + AI-assistant platform — applied-AI productivity now a growth-stage bet, not a feature",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/10/21/startup-funding-news-today-october-21-2026-asi-baba-pigment-eka-robotics-otter-ai-more/",
-      "date_reported": "2026-10-23"
-    },
-    {
-      "headline": "Tesla started Optimus production in Fremont (Oct 21) — first production-quality units — but pushed customer deliveries to ~Q2 2027 (hands/durability/AI 'still need work'); Q3 profit fell 43%; unsupervised FSD for customer cars slid to mid-2027",
-      "source": "TechCrunch / Electrek",
-      "url": "https://techcrunch.com/2026/10/21/tesla-stars-optimus-robot-production-in-california-as-profit-falls-43",
-      "date_reported": "2026-10-23"
-    },
-    {
-      "headline": "Cycling: 2027 transfer market and UCI reshuffle — Tao Geoghegan Hart to EF Education-EasyPost, Victoire Berteau to Canyon-SRAM; UCI's Oct 15 registration deadline left TotalEnergies, Kern Pharma, Flanders-Baloise, Euskaltel off the provisional 2027 list pending paperwork",
-      "source": "Cyclingnews",
-      "url": "https://www.cyclingnews.com/pro-cycling/transfers/theres-still-hope-for-totalenergies-as-uci-announces-team-registrations-for-2027/",
-      "date_reported": "2026-10-23"
-    },
-    {
-      "headline": "Learn (video): 'Vercel's CEO Just Unveiled The Greatest AI Coding Workflow Ever' (Oct 19) — breaks Guillermo Rauch's AI coding workflow into 7 repeatable tips, recreated in Claude Code",
-      "source": "YouTube",
-      "url": "https://www.youtube.com/watch?v=y2ifUC9_zuU",
-      "date_reported": "2026-10-23"
-    },
-    {
-      "headline": "Learn (video): 'Build a Social Media AI Agent Team Using Claude Code & Next.js' (Oct 16) — full build-along course on standing up a coordinated team of agents with handoffs; teaching artifact for FAU",
-      "source": "YouTube",
-      "url": "https://www.youtube.com/watch?v=5GWTDRrwynY",
-      "date_reported": "2026-10-23"
     }
   ]
 }
