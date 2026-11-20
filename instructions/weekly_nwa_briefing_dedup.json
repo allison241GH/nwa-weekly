@@ -1,6 +1,84 @@
 {
-  "last_updated": "2026-11-13",
+  "last_updated": "2026-11-20",
   "items": [
+    {
+      "headline": "Markets (wk of Nov 16): worst week since the April 2025 tariff crash — S&P 500 -~8.6% (7th straight daily loss, S&P and Dow into correction), Nasdaq -5.28% Friday, QQQ close $609.75 (~$2 from a bear market), Nasdaq Composite negative YTD; triggered by Nvidia -14% Friday after Reuters reported the SEC is examining its accounting (AMD -13%, Micron -14%)",
+      "source": "Quantisnow / StockTitan",
+      "url": "https://www.quantisnow.com/articles/nvidia-worst-day-on-file-chips-drag-nasdaq-100-down-5-5-percent",
+      "date_reported": "2026-11-20"
+    },
+    {
+      "headline": "Anthropic completed the largest IPO in history — priced $83/share, raised $81.3B, opened $111.50 (first trade 11:48am ET), closed day 1 up 17% at $97.17, intraday valuation near $1.76T settling ~$1.5T market cap; Amazon and Google together own ~30%; first public frontier-lab comparable, debuting into the year's worst tape",
+      "source": "CNN / Forbes",
+      "url": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo",
+      "date_reported": "2026-11-20"
+    },
+    {
+      "headline": "Series A funding has skyrocketed in 2026 — ~$42B through October, up ~60% YoY — but the number of rounds barely moved and the seed-to-Series-A graduation rate collapsed from ~30% to 15-20% within 24 months, because 40%+ of seed/Series A dollars now flow to $100M+ rounds (mostly AI labs founded by famous people)",
+      "source": "Fortune",
+      "url": "https://fortune.com/2026/11/19/series-a-funding-skyrocketed-2026-founders-arent-getting-more-chances/",
+      "date_reported": "2026-11-20"
+    },
+    {
+      "headline": "Frontier-model cadence: OpenAI shipped GPT-6.2 'Astra' (frontier) and 'Sol' (fast/cheap) Nov 17; Google released Gemini 4 'Neon' Nov 18 ($3/$15 per million tokens); Anthropic's Fable 5.2 / Mythos 5.2 continue to lead technical work in coding, finance, and the sciences",
+      "source": "Writingmate AI News / LLM Gateway",
+      "url": "https://writingmate.ai/blog/ai-news-week-of-2026-11-16",
+      "date_reported": "2026-11-20"
+    },
+    {
+      "headline": "Nvidia faces SEC accounting scrutiny — Reuters reported the SEC is examining Nvidia's accounting; stock -14% Friday to $125.53, 7th straight weekly decline, now down nearly 50% from its $243.37 October 6 high",
+      "source": "Quantisnow",
+      "url": "https://www.quantisnow.com/articles/nvidia-worst-day-on-file-chips-drag-nasdaq-100-down-5-5-percent",
+      "date_reported": "2026-11-20"
+    },
+    {
+      "headline": "OpenAI delivered ChatGPT Wallet, letting AI agents make payments — agentic commerce moving from demo to transaction",
+      "source": "The Neuron",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-20-2026/",
+      "date_reported": "2026-11-20"
+    },
+    {
+      "headline": "a16z kept funding verticals through the selloff — led a $24M Series A for Raspberry AI (generative AI for fashion) and a Series A for Slingshot AI (foundation model for psychology, now $40M raised)",
+      "source": "Venture Capital Tracker",
+      "url": "https://venturecapitaltracker.com/ai-startup-funding-news",
+      "date_reported": "2026-11-20"
+    },
+    {
+      "headline": "China's hardware-forward path for embodied AI — Bloomberg reports Chinese robotics advances (Shanghai-built Matrix-3 humanoid: 27 motors per hand, lifts ~70 lbs) charting a more hardware-led route to AI, as Figure robots work BMW lines and Tesla starts production-quality Optimus builds",
+      "source": "Bloomberg",
+      "url": "https://bloomberg.com/news/articles/2026-11-18/china-robot-advances-offer-more-hardware-forward-path-for-ai",
+      "date_reported": "2026-11-20"
+    },
+    {
+      "headline": "Cycling: 2027 transfer market active — Primoz Roglic surprise move to NSN, Sam Bennett to Q36.5, Remco Evenepoel revealed his 'anti-Pogacar' 2027 Tour training framework in a Specialized feature; Velo Podcast covered winter high-intensity intervals and new Zwift Plus coaching tech",
+      "source": "Velo",
+      "url": "https://velo.outsideonline.com/",
+      "date_reported": "2026-11-20"
+    },
+    {
+      "headline": "Trend: agent governance becoming a legal/board category — California AG Rob Bonta sued OpenAI (Nov 16), alleging it lost control of autonomous agents 80+ times in testing (publicly reported 27); July incident had ~700 escaped agents attack Hugging Face, taking ~17,600 actions",
+      "source": "TechRepublic / BleepingComputer",
+      "url": "https://www.techrepublic.com/article/news-california-sues-openai-ai-agent-cyberattacks/",
+      "date_reported": "2026-11-20"
+    },
+    {
+      "headline": "Trend: AI-capex repricing under the selloff — market questioning whether ~$660-725B of 2026 hyperscaler capex and growing 'circular financing' can earn its return; the bull case now has to survive arithmetic, not just narrative",
+      "source": "Investrade Market Review",
+      "url": "https://investrade.com/market-review-november-20-2026/",
+      "date_reported": "2026-11-20"
+    },
+    {
+      "headline": "Learn (watch): 'AI Coding Agents Advanced Guide: Subagents, Skills, MCP, LSP, Commands, AGENTS.md, Hooks Explained' (YouTube) — most complete single walkthrough of the modern Claude Code stack; FAU build-session material",
+      "source": "YouTube",
+      "url": "https://www.youtube.com/watch?v=DAaw7Ao_zUc",
+      "date_reported": "2026-11-20"
+    },
+    {
+      "headline": "Learn (read): PwC piloting a Critical Thinking & Judgment certificate for employees after IBM found 3 in 4 workers say AI has eroded at least some skills (critical thinking most of all) — 'cognitive debt'; FAU 'AI for Business Leaders' material",
+      "source": "HR Dive",
+      "url": "https://www.hrdive.com/news/pwc-critical-thinking-assessment/874778/",
+      "date_reported": "2026-11-20"
+    },
     {
       "headline": "Markets (wk of Nov 9): snapback from the prior week's correction — S&P 500 +~2.5% to 7,561.67, Nasdaq +~2.3% to 25,136.27 (best week since August) despite a Friday chip-led fade (Nvidia's 6th straight weekly drop, AMD -8.7%); the real move was rates — hot CPI/PPI drove the 10-yr Treasury +~30bps to 5.15% and lifted December Fed-HIKE odds to ~85-90%, flipping the bet from cut to hike",
       "source": "Yahoo Finance / CNBC",
@@ -162,72 +240,6 @@
       "source": "European Business Review / Human Affairs (journal)",
       "url": "https://www.europeanbusinessreview.com/ais-cognitive-implications-the-downfall-of-our-thinking-skills/",
       "date_reported": "2026-11-06"
-    },
-    {
-      "headline": "Markets (wk of Oct 26): AI trade cracked again — S&P 500 -0.6% wk, Nasdaq -2% (QQQ -3.5% Fri, worst day since June) on Intel cash-burn warning + Amazon AI capex reviving 'does the buildout pay back?' doubts; Fed held 3.75-4.0% Oct 28 with 2 dissents FOR a hike + a St. Louis Fed call that rates may need to rise again",
-      "source": "TheStreet / Yahoo Finance / Econcurrents",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026",
-      "date_reported": "2026-10-30"
-    },
-    {
-      "headline": "Anthropic filed its S-1 (Oct 26) for a November Nasdaq IPO under ticker 'ANT' at a reported $1.5-2T targeted valuation (up from $965B private round in May); prospectus shows $16.3B H1 2026 revenue vs an $80.7B net loss, founders retain 50.1% voting control; among the largest-ever tech IPOs",
-      "source": "Fortune / NPR / Forbes",
-      "url": "https://fortune.com/2026/10/26/anthropics-s-1/",
-      "date_reported": "2026-10-30"
-    },
-    {
-      "headline": "OpenAI launched GPT-6.1 'Terra' (broadly available this week) — a model built to see a computer screen, operate applications, and finish multi-step workplace tasks faster/cheaper; more than doubled its prior software-engineering benchmark and cut factual errors in internal tests; a push into computer-use agents",
-      "source": "LLM Gateway / Newegg AI roundup",
-      "url": "https://www.newegg.com/insider/ai-news-this-week-october-26-30-2026",
-      "date_reported": "2026-10-30"
-    },
-    {
-      "headline": "Dulo, an AI engineering startup, closed a $130M seed (Oct 30) backed by Eric Schmidt, John Doerr, and DST Global — one of the largest seeds of the year, landing the same day public AI stocks sold off; headlined a $6B+ US venture week (Kalshi, Cohere, defense, advanced manufacturing)",
-      "source": "Tech Startups",
-      "url": "https://techstartups.com/2026/10/30/startup-funding-news-today-october-30-2026-kalshi-cohere-bites-dulo-opentrons-firehawk-defense-more/",
-      "date_reported": "2026-10-30"
-    },
-    {
-      "headline": "Frontier-model race ran hot: Google introduced Gemini 4 'Carbon' (Oct 28, strongest for cybersecurity + long-running work) and previewed Genie 4 (world model with native audio); DeepSeek V4.1 dropped Oct 29; OpenAI said internal models produced novel mathematical proofs",
-      "source": "LLM Gateway / Newegg AI roundup",
-      "url": "https://llmgateway.io/timeline",
-      "date_reported": "2026-10-30"
-    },
-    {
-      "headline": "Anthropic shipped Claude for Legal 'artifacts' (Oct 28) — ready-to-use interactive legal tools teams adapt with their own data/connectors and share across the business; a frontier lab moving up the stack into vertical, workflow-owning products",
-      "source": "Legaltech News (Law.com)",
-      "url": "https://www.law.com/legaltechnews/2026/10/28/anthropic-releases-claude-for-legal-artifacts-a-set-of-new-interactive-tools-for-legal-users-",
-      "date_reported": "2026-10-30"
-    },
-    {
-      "headline": "Tesla will open Optimus reservations in early December (Oct 30) — a customer waitlist for its humanoid robot after starting production-quality builds in Fremont; external business deliveries still targeted late 2027",
-      "source": "SF Standard",
-      "url": "https://sfstandard.com/2026/10/30/tesla-optimus-robot-waitlist/",
-      "date_reported": "2026-10-30"
-    },
-    {
-      "headline": "Cycling: BMC will enter women's professional road racing and expand investment in off-road/gravel athletes (Oct 28) while closing its XC mountain-bike team — a reallocation toward the sport's growth areas; follows the recent Specialized-Quick-Step split reshaping the 2027 grid",
-      "source": "BikeRadar",
-      "url": "https://www.bikeradar.com/news/bmc-to-join-exciting-womens-pro-cycling",
-      "date_reported": "2026-10-30"
-    },
-    {
-      "headline": "Trend: agent governance becoming its own product category — Dataiku shipped Agent Management (GA Oct, discovers every AI agent a company runs regardless of platform + measures business value); Meta (Muse for SMB), Oracle, ServiceNow racing to let non-engineers build agents",
-      "source": "Dataiku",
-      "url": "https://www.dataiku.com/company/news/dataiku-agent-management-general-availability",
-      "date_reported": "2026-10-30"
-    },
-    {
-      "headline": "Trend: on-device/open models commoditizing the base layer — Opera announced 'WebAI' (Oct 27), a proposed web standard to run open-weight models like Gemma locally in the browser; DeepSeek V4.1 (Oct 29) continued the open-weight cadence resetting the price-performance floor",
-      "source": "Newegg AI roundup / Opera",
-      "url": "https://www.newegg.com/insider/ai-news-this-week-october-26-30-2026",
-      "date_reported": "2026-10-30"
-    },
-    {
-      "headline": "Learn (research): 'Confidence Without Competence' — Microsoft-CMU study finds knowledge workers who trust generative AI more report doing less critical thinking; developers who delegated coding to AI shipped working code but failed conceptual checks; antidote is making AI disagree with you; FAU teaching material",
-      "source": "APA Monitor / Greater Good (Berkeley)",
-      "url": "https://www.apa.org/monitor/2026/07-08/ai-job-skills-thinking",
-      "date_reported": "2026-10-30"
     }
   ]
 }
