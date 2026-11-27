@@ -1,6 +1,10 @@
 {
-  "last_updated": "2026-11-20",
+  "last_updated": "2026-11-27",
   "covered": [
+    {
+      "topic_slug": "angel-syndicates-and-spvs",
+      "date": "2026-11-27"
+    },
     {
       "topic_slug": "safe-notes-vs-convertible-notes-vs-priced-rounds",
       "date": "2026-11-20"

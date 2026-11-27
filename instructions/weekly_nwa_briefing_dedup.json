@@ -1,6 +1,84 @@
 {
-  "last_updated": "2026-11-20",
+  "last_updated": "2026-11-27",
   "items": [
+    {
+      "headline": "Markets (wk of Nov 23): violent V-shaped snapback — S&P 500 +~5.6% (best week since the April 2025 tariff crash), Nasdaq Composite +~6.7%, Nvidia +~19.9% on the week (+~33% Monday) after Jensen Huang was reinstated as CEO; QQQ climbed back out of correction even as the 10-yr Treasury held near 5.0% and December Fed-HIKE odds stayed ~83%",
+      "source": "Yahoo Finance / AI Stock Wire",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-23-221613542.html",
+      "date_reported": "2026-11-27"
+    },
+    {
+      "headline": "Nvidia's board UNANIMOUSLY reinstated Jensen Huang as president, CEO and director on Nov 23 — just 11 days after his Nov 12 resignation and days after reportedly rejecting his offer to return; board cited his 'candor' and said it received input from senior levels of the U.S. government (Trump claimed he was 'represented in the board meeting'); reinstated with SEC and DOJ probes still active; stock +~33%",
+      "source": "Axios / TechCrunch",
+      "url": "https://www.axios.com/2026/11/23/nvidia-board-jensen-huang-as-ceo",
+      "date_reported": "2026-11-27"
+    },
+    {
+      "headline": "Anthropic mathematician Levent Alpoge, working with an unreleased Claude model, produced a formal proof of the (generalized) Riemann Hypothesis; the Lean FRO and Mathlib Initiative announced Nov 21 they had machine-verified it with 'full confidence'; a tighter 300,000-line version (down from ~17M lines) was published Nov 25 — first machine-verified proof of a Millennium Prize problem",
+      "source": "NPR / Science",
+      "url": "https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai",
+      "date_reported": "2026-11-27"
+    },
+    {
+      "headline": "Sierra (Bret Taylor's enterprise AI customer-service agents) is closing a $1.75B Series F at a $30B valuation — led by Greenoaks and Lightspeed with Benchmark, Sequoia, GV, Tiger — roughly double the $15.8B it was worth in May when it raised $950M; annual revenue has passed $400M",
+      "source": "The Next Web / Bloomberg",
+      "url": "https://thenextweb.com/news/sierra-1-75b-series-f-30b-valuation-ai-agents",
+      "date_reported": "2026-11-27"
+    },
+    {
+      "headline": "Defense-AI startup Agon raised $70M at a $450M valuation (Nov 23) — 'American Dynamism' / defense-adjacent AI continuing to fund straight through market turbulence",
+      "source": "AI Funding Tracker",
+      "url": "https://aifundingtracker.com/ai-funding-news-november-23-2026/",
+      "date_reported": "2026-11-27"
+    },
+    {
+      "headline": "Marlowe raised a $277M seed at a $1.15B valuation (led by Accel) to build data centers running inference on AMD and Etched chips instead of Nvidia — non-Nvidia inference silicon attracting large capital the same week Nvidia's founder-CEO returned",
+      "source": "Analytics Insight",
+      "url": "https://www.analyticsinsight.net/news/weekly-startup-funding-roundup-sierra-raises-usd-175-billion-marlowe-usd-277-million",
+      "date_reported": "2026-11-27"
+    },
+    {
+      "headline": "a16z launched a new Frontier fund; Marc Andreessen argued the gap between what AI-native startups understand is possible and what ordinary companies grasp is 'as wide as I've ever seen in my career' — a thesis statement for why incumbents keep losing to AI-native entrants",
+      "source": "a16z / BigGo Finance",
+      "url": "https://a16z.com/",
+      "date_reported": "2026-11-27"
+    },
+    {
+      "headline": "Cycling: NSN Cycling signed BOTH Primoz Roglic and Richard Carapaz for 2027 (the winter's two biggest male transfers) just ahead of team camp; winter training camps kicked off in Spain and Nike announced a return to pro cycling — a reshaped grid for the new season",
+      "source": "Velo",
+      "url": "https://velo.outsideonline.com/road/road-racing/cycling-winter-training-camps-spain-what-to-watch",
+      "date_reported": "2026-11-27"
+    },
+    {
+      "headline": "Trend: humanoid robotics going vertically integrated — Tesla moved to acquire century-old German precision-machining specialist EMAG (Nov 25) to build Optimus drive systems in-house; Figure's CEO publicly rebutted Musk's criticism (Nov 26) with a new demo; the race shifting from demos to owning the factory/supply chain",
+      "source": "Electrek / Notebookcheck",
+      "url": "https://electrek.co/2026/11/25/tesla-emag-germany-machining-company-optimus",
+      "date_reported": "2026-11-27"
+    },
+    {
+      "headline": "Trend: the relief rally repriced the mood but not the math — one CEO headline swung the market ~6% in a week, yet the structural question of whether ~$660-725B of 2026 hyperscaler capex and 'circular financing' can earn its return is unchanged from before the selloff",
+      "source": "Gaining Green",
+      "url": "https://gaininggreen.com/article/stock-market-correction-november-2026",
+      "date_reported": "2026-11-27"
+    },
+    {
+      "headline": "Learn (build): 'Claude Code Ultimate Guide' (v3.46, updated Nov 23) — the most comprehensive open guide to the modern agentic stack (agentic workflows, hooks, skills, MCP servers, production templates across 430K+ lines, multi-agent orchestration, plan-then-build); FAU build-session reference",
+      "source": "GitHub (FlorianBruniaux)",
+      "url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+      "date_reported": "2026-11-27"
+    },
+    {
+      "headline": "Learn (read): a16z essay 'Big Pharma Can Rival Big Software' — thesis on why AI-driven drug discovery could give pharma software-like economics; investor-grade argument on where AI changes an industry's cost structure, not just its tooling",
+      "source": "a16z",
+      "url": "https://a16z.com/big-pharma-can-rival-big-software/",
+      "date_reported": "2026-11-27"
+    },
+    {
+      "headline": "Idea (Medium/FAU): OpenAI's chief scientist proposed a common yardstick for measuring AI intelligence plus a development cap tied to it — a provocative, unsettled governance question about who sets the speed limit on frontier AI",
+      "source": "The Neuron",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-23-2026/",
+      "date_reported": "2026-11-27"
+    },
     {
       "headline": "Markets (wk of Nov 16): worst week since the April 2025 tariff crash — S&P 500 -~8.6% (7th straight daily loss, S&P and Dow into correction), Nasdaq -5.28% Friday, QQQ close $609.75 (~$2 from a bear market), Nasdaq Composite negative YTD; triggered by Nvidia -14% Friday after Reuters reported the SEC is examining its accounting (AMD -13%, Micron -14%)",
       "source": "Quantisnow / StockTitan",
@@ -23,12 +101,6 @@
       "headline": "Frontier-model cadence: OpenAI shipped GPT-6.2 'Astra' (frontier) and 'Sol' (fast/cheap) Nov 17; Google released Gemini 4 'Neon' Nov 18 ($3/$15 per million tokens); Anthropic's Fable 5.2 / Mythos 5.2 continue to lead technical work in coding, finance, and the sciences",
       "source": "Writingmate AI News / LLM Gateway",
       "url": "https://writingmate.ai/blog/ai-news-week-of-2026-11-16",
-      "date_reported": "2026-11-20"
-    },
-    {
-      "headline": "Nvidia faces SEC accounting scrutiny — Reuters reported the SEC is examining Nvidia's accounting; stock -14% Friday to $125.53, 7th straight weekly decline, now down nearly 50% from its $243.37 October 6 high",
-      "source": "Quantisnow",
-      "url": "https://www.quantisnow.com/articles/nvidia-worst-day-on-file-chips-drag-nasdaq-100-down-5-5-percent",
       "date_reported": "2026-11-20"
     },
     {
@@ -80,13 +152,13 @@
       "date_reported": "2026-11-20"
     },
     {
-      "headline": "Markets (wk of Nov 9): snapback from the prior week's correction — S&P 500 +~2.5% to 7,561.67, Nasdaq +~2.3% to 25,136.27 (best week since August) despite a Friday chip-led fade (Nvidia's 6th straight weekly drop, AMD -8.7%); the real move was rates — hot CPI/PPI drove the 10-yr Treasury +~30bps to 5.15% and lifted December Fed-HIKE odds to ~85-90%, flipping the bet from cut to hike",
+      "headline": "Markets (wk of Nov 9): snapback from the prior week's correction — S&P 500 +~2.5% to 7,561.67, Nasdaq +~2.3% to 25,136.27 (best week since August) despite a Friday chip-led fade; the real move was rates — hot CPI/PPI drove the 10-yr Treasury +~30bps to 5.15% and lifted December Fed-HIKE odds to ~85-90%, flipping the bet from cut to hike",
       "source": "Yahoo Finance / CNBC",
       "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html",
       "date_reported": "2026-11-13"
     },
     {
-      "headline": "Jensen Huang resigned as Nvidia CEO, president and board member effective immediately (Nov 12) after 33 years, following allegations of extramarital affairs; CFO Colette Kress named interim CEO with NO succession plan in place — board hasn't picked a search firm and reportedly approached Arm CEO Rene Haas; a landmark governance-failure case at the keystone of the AI economy",
+      "headline": "Jensen Huang resigned as Nvidia CEO, president and board member effective immediately (Nov 12) after 33 years, following allegations of extramarital affairs; CFO Colette Kress named interim CEO with NO succession plan in place — a landmark governance-failure case at the keystone of the AI economy",
       "source": "Fortune / CNBC",
       "url": "https://fortune.com/2026/11/11/nvidia-oust-jensen-huang-spy-affairs/",
       "date_reported": "2026-11-13"
@@ -162,84 +234,6 @@
       "source": "Menlo Ventures via open-model landscape roundup",
       "url": "https://olikhatib.substack.com/p/free-open-and-nearly-as-good-chinas",
       "date_reported": "2026-11-13"
-    },
-    {
-      "headline": "Markets (wk of Nov 2): worst week since the April 2025 tariff crash — S&P 500 -2.7% to 7,376.86, Nasdaq -3.4% to 24,579.42 (slid into correction Thursday) on an AI-valuation repricing (capex-payback doubts + post-election uncertainty), partly clawed back by a Friday chip-led bounce; 10-yr Treasury eased ~7bps on the week to 4.86% but rose Friday after a strong Oct jobs report kept a December Fed hike in play",
-      "source": "24/7 Wall St / CNBC",
-      "url": "https://247wallst.com/investing/2026/11/07/the-sp-500-just-had-its-worst-week-since-the-april-2025-tariff-crash/",
-      "date_reported": "2026-11-06"
-    },
-    {
-      "headline": "fal (inference infrastructure for image/video/audio models) closed a $1.3B Series F at a $16B valuation (Nov 3), led by Bessemer with Nvidia, Sound Ventures, T. Rowe Price — doubling its $8B April valuation in seven months; CEO Burkay Gur said the round is large because demand outran compute (had to rate-limit customers over the summer); ~$800M annualized revenue",
-      "source": "SiliconANGLE",
-      "url": "https://siliconangle.com/2026/11/03/generative-media-inference-startup-fal-raises-1-3b-at-a-16b-valuation/",
-      "date_reported": "2026-11-06"
-    },
-    {
-      "headline": "OpenAI released GPT-6 Cyber (early Nov), an application-gated reasoning model for offensive/defensive security that broke into 79.4% of simulated enterprise targets in under 9 minutes in internal pentests; access restricted because the capability is dual-use; landed in a dense frontier-release week",
-      "source": "Crypto Briefing",
-      "url": "https://cryptobriefing.com/openai-anthropic-reveal-new-ai-models-products-in-week-45-of-2026/",
-      "date_reported": "2026-11-06"
-    },
-    {
-      "headline": "Musk said (Nov 6) Tesla will 'probably' RENT Optimus humanoid robots rather than sell them, starting ~$30K and falling toward ~$20K, external deliveries ~end-2027 as rentals, AI5-powered version ~April 2027; claimed Optimus will be 5x more productive than the average human — reframing embodied AI as robots-as-a-service",
-      "source": "Not a Tesla App / Forbes",
-      "url": "https://notateslaapp.com/news/4959/musk-tesla-will-rent-optimus-robots-instead-of-selling-them",
-      "date_reported": "2026-11-06"
-    },
-    {
-      "headline": "Anthropic IPO priced and dated (Nov 10): roadshow launched, 825M Class A shares at $70-78 for a $1.3-1.45T valuation, Nasdaq debut Thursday Nov 19 — band came in below the $1.5-2T chatter around the Oct S-1; first hard public read on how to price a frontier lab",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/article/anthropic-ipo-claude-maker-to-begin-trading-on-thursday-nov-19-173550865.html",
-      "date_reported": "2026-11-06"
-    },
-    {
-      "headline": "Anthropic shipped a workplace suite (Nov 10): Claude Sheets, Meetings and Whiteboards in beta plus Claude Data (formerly Dashboards) GA; Claude Meetings can join a video call as a visible participant and turn discussion into notes/action items/tasks — frontier labs moving up the stack into owned workflows",
-      "source": "TechCrunch / unite.ai",
-      "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
-      "date_reported": "2026-11-06"
-    },
-    {
-      "headline": "Moonshot's Kimi K3.1 Pro (Nov 2), an ultra-wide Mixture-of-Experts model, posted verified-coding results beating DeepSeek-V3 — continuing the open-weight cadence that keeps resetting the price-performance floor",
-      "source": "LLM Gateway / CSuite roundup",
-      "url": "https://llmgateway.io/timeline",
-      "date_reported": "2026-11-06"
-    },
-    {
-      "headline": "a16z kept writing through the selloff (early Nov): co-led a $375M Series C for Northwood Space (ground-station infrastructure, with DFJ Growth) and led a $75M Series B for robotics-labor startup Tutor Intelligence; a16z now >$100B AUM, Speedrun team grew 359% in a year",
-      "source": "a16z deal roundup / Axios Pro",
-      "url": "https://blog.mean.ceo/a16z-news-november-2026/",
-      "date_reported": "2026-11-06"
-    },
-    {
-      "headline": "Trend: AI-capex math becoming the whole debate — 5 hyperscalers on track to spend ~$660-725B on AI data-center capex in 2026 (up from ~$410B in 2025) with growing 'circular financing' concern; Gartner estimate that data centers need ~$8.5T cumulative revenue through 2030 vs ~$3.6T realistic demand, leaving $4T+ exposed to write-down risk",
-      "source": "Fortune / AL Capital Advisory",
-      "url": "https://fortune.com/2026/10/17/ai-boom-vs-bust-bubble-warning-hyperscaler-spending-debt-coreweave-nvidia/",
-      "date_reported": "2026-11-06"
-    },
-    {
-      "headline": "Trend: 'AI employees' getting real system access and real seed checks — Phaze (a16z seed) giving people AND AI agents access to computers; Clark raised an $11M seed for 'autonomous AI employees' for audit work; agents graduating from chat to operating software and taking actions (permissions, payments)",
-      "source": "a16z deal roundup / PostRound",
-      "url": "https://postround.substack.com/p/series-a-activity-week-of-november-5b2",
-      "date_reported": "2026-11-06"
-    },
-    {
-      "headline": "Cycling: 2027 grid reshaping — Netcompany-Ineos enters its first full year backed by Danish AI tech firm Netcompany; active transfer market (Alpecin bulking Classics/sprint roster; Arnaud de Lie expected to leave Lotto-Intermarche)",
-      "source": "Cyclist / Cyclingnews",
-      "url": "https://www.cyclist.co.uk/news/cycling-transfer-rumours",
-      "date_reported": "2026-11-06"
-    },
-    {
-      "headline": "Learn (video): 'Multi-Agent Workflows in Claude Code: Skills, Subagents & Handoffs (2026)' — build-along on orchestrating a team of agents with handoffs; paired with 'Build Your First AI Agent in 30 Minutes (Zero Code)' (uploaded Nov 9) as an FAU-ready on-ramp",
-      "source": "YouTube",
-      "url": "https://www.youtube.com/watch?v=qiDalcMeBFk",
-      "date_reported": "2026-11-06"
-    },
-    {
-      "headline": "Learn (research): 2026 cognitive-offloading work documents deskilling — clinicians' ability to detect tumors WITHOUT AI dropped ~6% three months after AI assistance was introduced; higher confidence in AI correlates with less critical thinking; FAU 'AI for Business Leaders' material",
-      "source": "European Business Review / Human Affairs (journal)",
-      "url": "https://www.europeanbusinessreview.com/ais-cognitive-implications-the-downfall-of-our-thinking-skills/",
-      "date_reported": "2026-11-06"
     }
   ]
 }
